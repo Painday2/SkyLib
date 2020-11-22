@@ -115,6 +115,7 @@ function SkyLib.CODZ:_init_hooks()
 
     self._hooks = {
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementSpawnEnemyDummy",
+        "classes/Gamemodes/Sora/CODZ/Hooks/ElementWave",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDManager",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDManagerPD2",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDMissionBriefing",
