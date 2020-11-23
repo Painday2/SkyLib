@@ -1,0 +1,9 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE" version="2" name="mtr_money">
+        <diffuse_texture file="units/payday2/props/bnk_safehouse_money_stack/money_stack_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2" name="mtr_money_wrapped">
+        <diffuse_texture file="units/payday2/props/bnk_safehouse_money_stack/money_stack_wrapped_df"/>
+        <bump_normal_texture file="units/payday2/props/bnk_safehouse_money_stack/money_stack_wrapped_nm"/>
+    </material>
+</materials>
