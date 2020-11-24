@@ -100,7 +100,6 @@ function SkyLib.CODZ:init(custom_rules)
         scale_value_max = 0
     }
     self:_init_hooks()
-    --self:_load_package()
     SkyLib.Sound:init()
     SkyLib.Network:_init_codz_network()
 
@@ -121,6 +120,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDMissionBriefing",
         "classes/Gamemodes/Sora/CODZ/Hooks/PlayerManager",
         "classes/Gamemodes/Sora/CODZ/Hooks/CopDamage",
+        "classes/Gamemodes/Sora/CODZ/Hooks/CoreUnit",
         --"classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBesiege",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAITweakData",
@@ -133,14 +133,6 @@ function SkyLib.CODZ:_init_hooks()
     for _, hook in pairs(self._hooks) do
         dofile(mod_path .. hook .. ".lua")
         log("[SkyLib] Included script ", hook)
-    end
-end
-
-function SkyLib.CODZ:_load_package()
-    log("flushed")
-    if not PackageManager:loaded("packages/ZMPackage") then
-        log("hi mom!")
-        PackageManager:load("packages/ZMPackage")
     end
 end
 

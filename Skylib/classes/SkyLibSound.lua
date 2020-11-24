@@ -9,7 +9,7 @@ function SkyLib.Sound:init()
         log("[SkyLibSound] Project data doesn't have a global key...")
         return
     else
-        log("Global Key found. Testing modpath: " .. SkyLib._project_key.ModPath)    
+        log("Global Key found. Testing modpath: " .. SkyLib._project_key.ModPath)
     end
 
     self:_init_xaudio()
@@ -28,7 +28,7 @@ function SkyLib.Sound:_init_xaudio()
 end
 
 function SkyLib.Sound:play(data)
-    if not self:_xaudio_ready() then
+    if not self._xaudio_initialized then
         return
     end
 
@@ -49,7 +49,13 @@ function SkyLib.Sound:play(data)
         directory = data.custom_dir .. "/"
     end
 
-    self._sound_buffers[data.name] = XAudio.Buffer:new(self:_get_mod_path() .. "assets/" .. directory .. data.file_name)
+    if data.custom_package and data.custom_package ~= "" then
+        package = data.custom_package .. "/"
+    else
+        package = "assets/"
+    end
+
+    self._sound_buffers[data.name] = XAudio.Buffer:new(SkyLib.ModPath .. package .. directory .. data.file_name)
     self._sound_sources[data.name] = XAudio.Source:new(self._sound_buffers[data.name])
 
     if not data.sound_type then
