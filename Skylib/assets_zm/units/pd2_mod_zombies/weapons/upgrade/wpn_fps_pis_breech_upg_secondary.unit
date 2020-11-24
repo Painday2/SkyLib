@@ -1,0 +1,14 @@
+<unit type="wpn" slot="1" >
+	<object file="units/pd2_dlc_old/weapons/wpn_fps_pis_breech/wpn_fps_pis_breech" />
+	
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_breech"/>
+	</dependencies>
+	
+    <extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+        <extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="breech_upg_secondary" />
+		</extension>
+    </extensions>
+</unit>

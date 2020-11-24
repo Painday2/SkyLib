@@ -99,8 +99,8 @@ function SkyLib.CODZ:init(custom_rules)
         scale = 0,
         scale_value_max = 0
     }
-
     self:_init_hooks()
+    --self:_load_package()
     SkyLib.Sound:init()
     SkyLib.Network:_init_codz_network()
 
@@ -136,6 +136,14 @@ function SkyLib.CODZ:_init_hooks()
     end
 end
 
+function SkyLib.CODZ:_load_package()
+    log("flushed")
+    if not PackageManager:loaded("packages/ZMPackage") then
+        log("hi mom!")
+        PackageManager:load("packages/ZMPackage")
+    end
+end
+
 function SkyLib.CODZ:_create_new_player(data)
     self._players[data.id].name = data.name
     self._players[data.id].codz_points = self._starting_money
@@ -160,20 +168,30 @@ function SkyLib.CODZ:_reset_wave_kills()
     self._level.zombies.killed = 0
 end
 
-function SkyLib.CODZ:start_new_wave(t)
+function SkyLib.CODZ:start_new_wave(t, was_special_wave)
     if not t then
         t = self._level.wave.delay_timeout
     end
+    local special_wave = was_special_wave
     log("start new wave")
     DelayedCalls:Add("zm_delay_between_waves", t, function()
+        if special_wave then
+            SkyLib.CODZ:_set_special_wave(false)
+            log("false")
+        end
         log("delayed call")
+        if SkyLib.CODZ._level.wave.is_special_wave and SkyLib.CODZ._level.zombies.killed == SkyLib.CODZ._level.zombies.max_special_wave_total_spawns then
+            SkyLib.CODZ:_set_special_wave(false)
+            log("special false")
+        end
+        SkyLib.CODZ:_reset_wave_kills()
+        SkyLib.CODZ:_respawn_players()
         self._level.zombies.currently_spawned = 0
-        self:_multiply_zombies_by_wave(self:_get_current_wave())
+        self:_multiply_zombies_by_wave()
     end)
-
 end
 
-function SkyLib.CODZ:_multiply_zombies_by_wave(current_wave)
+function SkyLib.CODZ:_multiply_zombies_by_wave()
     if SkyLib.Network:_is_solo() then
         self._level.zombies.max_spawns = self._level.zombies.max_spawns + 2
         return
@@ -192,7 +210,7 @@ function SkyLib.CODZ:_money_change(amount, peer_id)
     self._players[peer_id].codz_points = self._players[peer_id].codz_points + amount
 
     if not SkyLib.Network:_is_solo() then
-        local tbl = { 
+        local tbl = {
             cm = tostring(self:_get_own_money()),
             pg = tostring(amount)
         }

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/pd2_mod_zombies/power_ups/zm_pwrup_firesale/zm_pwrup_firesale" orientation_object="rp_ammo_pickup" />
+
+
+	<bodies>
+		<body name="body_static" enabled="true" template="editor">
+			<object name="rp_ammo_pickup" />
+			<object name="co_culling"/>
+			<object name="c_box" collision_type="convex" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<graphic_group name="powerup" culling_object="co_culling" enabled="true">
+			<object name="g_ammo_pickup_lod0" enabled="true" shadow_caster="false"/>
+		</graphic_group>
+	</graphics>
+	<effects>
+		<effect_spawner name="glow" enabled="true" object="g_ammo_pickup_lod0" effect="units/pd2_mod_zombies/effects/zm_power_ups/zm_powerup_glow_green" />
+	</effects>
+</dynamic_object>

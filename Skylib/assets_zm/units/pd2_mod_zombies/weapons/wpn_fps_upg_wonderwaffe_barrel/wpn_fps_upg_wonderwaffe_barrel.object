@@ -1,0 +1,7 @@
+<dynamic_object>
+    <diesel orientation_object="rp_root" materials="units/pd2_mod_zombies/weapons/wpn_fps_upg_wonderwaffe_barrel/wpn_fps_upg_wonderwaffe_barrel" />
+	<graphics>
+        <object enabled="true" name="g_pipes" inherit_bounding_volume="co_culling" />
+        <object enabled="true" name="g_metal" inherit_bounding_volume="co_culling" />
+    </graphics>
+</dynamic_object>

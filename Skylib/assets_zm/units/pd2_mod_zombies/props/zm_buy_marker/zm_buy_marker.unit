@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<unit type="zm" slot="1">
+	<network sync="spawn"/>
+	<object file="units/pd2_mod_zombies/props/zm_buy_marker/zm_buy_marker" />
+	<extensions>
+		<extension class="ScriptUnitData" name="unit_data" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="sync_unit_data" class="SyncUnitData" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="drop_in_sync_tweak_data" value="true" />
+			<var name="tweak_data" value="zm_open_path_750" />
+		</extension>
+	</extensions>
+</unit>

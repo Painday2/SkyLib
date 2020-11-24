@@ -1,0 +1,54 @@
+<table>
+	<unit>
+		<variables>
+			<v_weapon_id value="'none'"/>
+			<v_times_used value="0"/>
+			<v_fail_chance value="0"/>
+		</variables>
+		<filter name="'filter_not_none'">
+			<check value="vars.var_type ~= 'none'"/>
+		</filter>
+		<sequence editable_state="true" name="'interact'" triggable="true">
+			<interaction enabled="false"/>
+			<run_sequence name=" 'test_anim' "/>
+		</sequence>
+		<sequence name=" 'spawn_weapon' ">
+			<set_variables v_weapon_id=" 'set_weapon_id_'..pick('temp', 'temp2')"/>
+			<run_sequence name=" 'spawn_weapon_test' " start_time="150/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'spawn_weapon_test'" triggable="true">
+			<spawn_unit name=" 'units/pd2_mod_zombies/equipment/zom_mystery_box/test_weapon_pickup'" position="object_pos('sp_weapon')" rotation="object_rot('sp_weapon')"/>
+		</sequence>
+		<sequence editable_state="true" name="'test_anim'">
+			<sound action="'play'" event="'zm_box_picking'" object="'interact'"/>
+			<effect_spawner enabled="true" name="'glow_01'"/>
+			<animation_group enabled="true" from="0/30" name="'anim_open_close'" speed="4" to="80/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'close_box'" triggable="true">
+			<animation_group enabled="true" from="80/30" name="'anim_open_close'" speed="-2" to="0/30"/>
+			<sound action="'play'" event="'zm_box_shutting'" object="'interact'"/>
+			<effect_spawner enabled="false" name="'glow_01'"/>
+		</sequence>
+		<sequence editable_state="true" name="'enable_interaction'" triggable="true">
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence editable_state="true" name="'disable_interaction'" triggable="true">
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="true" name="'startup'" startup="true">
+			<animation_group enabled="true" from="0/30" name="'anim_open_close'" speed="1" to="0/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'hide'">
+			<body enabled="false" name="'body_frame'"/>
+			<body enabled="false" name="'body_animated'"/>
+			<graphic_group name="'g_all'" visibility="false"/>
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="true" name="'show'">
+			<body enabled="true" name="'body_frame'"/>
+			<body enabled="true" name="'body_animated'"/>
+			<graphic_group name="'g_all'" visibility="true"/>
+			<interaction enabled="false"/>
+		</sequence>
+	</unit>
+</table>

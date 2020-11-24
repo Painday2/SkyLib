@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+    <object file="units/pd2_dlc_par/weapons/wpn_fps_lmg_par/wpn_fps_lmg_par" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_svinet"/>
+	</dependencies>
+    <extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+        <extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="par_upg_primary" />
+		</extension>
+    </extensions>
+</unit>

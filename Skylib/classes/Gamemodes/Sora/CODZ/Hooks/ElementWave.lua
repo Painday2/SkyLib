@@ -21,6 +21,11 @@ function ElementWave:on_executed(instigator)
         return
     end
 
+    if self._values.is_special_wave then
+        SkyLib.CODZ:_set_special_wave(true)
+        log("special true")
+    end
+
     if self._values.increase_kill then
         SkyLib.CODZ:_increase_wave_kills()
         return
@@ -33,8 +38,6 @@ function ElementWave:on_executed(instigator)
     SkyLib.CODZ:_increase_wave()
     managers.hud._hud_codz:_wave_change_anim(SkyLib.CODZ:_get_current_wave())
     SkyLib.CODZ:start_new_wave(13)
-    SkyLib.CODZ:_reset_wave_kills()
-    SkyLib.CODZ:_respawn_players()
 
     ElementWave.super.on_executed(self, instigator)
 end

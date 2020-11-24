@@ -7,7 +7,8 @@ end
 
 function EditorWave:_build_panel()
     self:_create_panel()
-    self:BooleanCtrl("increase_kill", {help = "Bind this to EnemyDummyTrigger on death."})
+	self:BooleanCtrl("increase_kill", {help = "Bind this to EnemyDummyTrigger on death."})
+	self:BooleanCtrl("is_special_wave", {help = "This will cause the next wave to be a Special Wave."})
 end
 
 

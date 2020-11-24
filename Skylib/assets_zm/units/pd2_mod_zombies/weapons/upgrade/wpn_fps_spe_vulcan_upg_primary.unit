@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1">
+	<object file="units/pd2_dlc_dmg/weapons/wpn_fps_lmg_shuno/wpn_fps_lmg_shuno" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_shuno"/>
+	</dependencies>
+    <extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+        <extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="vulcan_upg" />
+		</extension>
+    </extensions>
+</unit>

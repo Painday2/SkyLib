@@ -36,4 +36,6 @@
         <font load="true" path="fonts/escom_outline"/>
         <texture path="fonts/escom_outline"/>
     </AddFiles>
+    
+    <Package file="ZMAssets.xml" id="packages/ZMAssets"/>
 </mod>

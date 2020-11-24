@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+    <object file="units/pd2_dlc_gage_snp/weapons/wpn_fps_snp_m95/wpn_fps_snp_m95" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_barrett"/>
+	</dependencies>
+    <extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+        <extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="m95_secondary" />
+		</extension>
+    </extensions>
+</unit>

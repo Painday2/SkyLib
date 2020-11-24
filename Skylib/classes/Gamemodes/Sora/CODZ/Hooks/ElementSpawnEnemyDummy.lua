@@ -8,24 +8,46 @@ function ElementSpawnEnemyDummy:produce(params)
 			return
 		end
 	else
-		local total_spe_spawns = SkyLib.CODZ._level.zombies.max_special_wave_spawns
+		local total_spe_spawns = SkyLib.CODZ._level.zombies.max_special_wave_total_spawns
 		if SkyLib.CODZ._level.zombies.currently_spawned >= math.floor(total_spe_spawns) then
 			return
 		end
 	end
 
-    local unit = nil
+	local unit = nil
+	local units_special_wave = {}
 
 	SkyLib.CODZ._level.zombies.currently_spawned = SkyLib.CODZ._level.zombies.currently_spawned + 1
 	log(tostring(SkyLib.CODZ._level.zombies.currently_spawned))
 
 	if params and params.name then
-		unit = safe_spawn_unit(params.name, self:get_orientation())
-		local spawn_ai = self:_create_spawn_AI_parametric(params.stance, params.objective, self._values)
+		if SkyLib.CODZ._level.wave.is_special_wave then
+			units_special_wave = {
+				Idstring("units/pd2_dlc_hvh/characters/ene_bulldozer_hvh_1/ene_bulldozer_hvh_1"),
+				Idstring("units/pd2_dlc_hvh/characters/ene_bulldozer_hvh_2/ene_bulldozer_hvh_2"),
+				Idstring("units/pd2_dlc_hvh/characters/ene_bulldozer_hvh_3/ene_bulldozer_hvh_3"),
+				Idstring("units/pd2_dlc_hvh/characters/ene_spook_hvh_1/ene_spook_hvh_1"),
+				--Idstring("units/pd2_mod_zombies/characters/ene_shadow_cloaker_1/ene_shadow_cloaker_1"),
+				Idstring("units/pd2_dlc_hvh/characters/ene_bulldozer_hvh_1/ene_bulldozer_hvh_1"),
+				Idstring("units/pd2_dlc_hvh/characters/ene_spook_hvh_1/ene_spook_hvh_1"),
+				Idstring("units/pd2_dlc_hvh/characters/ene_bulldozer_hvh_2/ene_bulldozer_hvh_2"),
+				Idstring("units/pd2_dlc_hvh/characters/ene_spook_hvh_1/ene_spook_hvh_1"),
+				Idstring("units/pd2_dlc_hvh/characters/ene_bulldozer_hvh_3/ene_bulldozer_hvh_3"),
+				--Idstring("units/pd2_mod_zombies/characters/ene_shadow_cloaker_1/ene_shadow_cloaker_1"),
+				Idstring("units/pd2_dlc_hvh/characters/ene_spook_hvh_1/ene_spook_hvh_1")
+			}
 
+			unit = safe_spawn_unit(units_special_wave[ math.random( #units_special_wave ) ], self:get_orientation())
+		else
+			unit = safe_spawn_unit(params.name, self:get_orientation())
+		end
+		local spawn_ai = self:_create_spawn_AI_parametric(params.stance, params.objective, self._values)
 		unit:brain():set_spawn_ai(spawn_ai)
 	else
 		local enemy_name = self:value("enemy") or self._enemy_name
+		if managers.wdu:_is_special_wave() then
+			enemy_name = units_special_wave[ math.random( #units_special_wave ) ]
+		end
 		unit = safe_spawn_unit(enemy_name, self:get_orientation())
 		local objective = nil
 		local action = self._create_action_data(CopActionAct._act_redirects.enemy_spawn[self._values.spawn_action])

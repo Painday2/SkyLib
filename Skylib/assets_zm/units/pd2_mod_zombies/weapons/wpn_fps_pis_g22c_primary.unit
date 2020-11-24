@@ -1,0 +1,12 @@
+<unit type="static" slot="1" >
+    <object file="units/payday2/weapons/wpn_fps_pis_g22c/wpn_fps_pis_g22c" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_g22"/>
+	</dependencies>
+    <extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+        <extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="g22c_primary" />
+		</extension>
+    </extensions>
+</unit>

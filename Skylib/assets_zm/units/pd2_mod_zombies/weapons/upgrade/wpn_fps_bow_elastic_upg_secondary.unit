@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >	
+	<object file="units/pd2_dlc_ram/weapons/wpn_fps_bow_elastic/wpn_fps_bow_elastic" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_elastic"/>
+	</dependencies>
+	<extensions>
+		<extension class="ScriptUnitData" name="unit_data" />
+		<extension name="base" class="BowWeaponBase" >
+			<var name="name_id" value="elastic_upg_secondary" />
+		</extension>
+	</extensions>
+</unit>
