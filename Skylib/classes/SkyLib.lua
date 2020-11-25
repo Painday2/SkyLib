@@ -34,7 +34,7 @@ end
 function SkyLib:wait(seconds, func)
     local id = "SkyLib_DelayedCall_" .. #self._delayed_calls
     table.insert(self._delayed_calls, id)
-    
+
     DelayedCalls:Add(id, seconds, func)
 end
 

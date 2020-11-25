@@ -97,7 +97,7 @@ function SkyLib.CODZ:init(custom_rules)
             "zombie_blood"
         },
         scale = 0,
-        scale_value_max = 0
+        scale_value_max = 25
     }
     self:_init_hooks()
     SkyLib.Sound:init()
@@ -121,6 +121,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/PlayerManager",
         "classes/Gamemodes/Sora/CODZ/Hooks/CopDamage",
         "classes/Gamemodes/Sora/CODZ/Hooks/CoreUnit",
+        "classes/Gamemodes/Sora/CODZ/Hooks/CharacterTweakData",
         --"classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBesiege",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAITweakData",
@@ -190,6 +191,18 @@ function SkyLib.CODZ:_multiply_zombies_by_wave()
     end
 
     self._level.zombies.max_spawns = self._level.zombies.max_spawns + (self._level.zombies.add_on_end_wave + 2)
+end
+
+function SkyLib.CODZ:_increase_scale_value()
+    self._level.scale = self._level.scale + 1
+end
+
+function SkyLib.CODZ:_scale_required()
+    if self._level.scale >= self._level.scale_value_max then
+        return false
+    end
+
+    return true
 end
 
 function SkyLib.CODZ:_get_own_money()
