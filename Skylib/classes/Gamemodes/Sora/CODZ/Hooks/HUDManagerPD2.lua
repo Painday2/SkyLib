@@ -15,6 +15,7 @@ HUDCODZ.DEFAULT_SHADOW_FONT = "fonts/font_medium_shadow_mf"
 function HUDCODZ:init(parent)
     self:_init_waves(parent)
     self:_init_points(parent)
+    self:_create_gift_hud(parent)
 end
 
 function HUDCODZ:_init_waves(parent)
@@ -180,4 +181,278 @@ function HUDCODZ:_init_points(parent)
         player_points:set_left(player_avatar:right() + 20)
         player_points:set_world_center_y(player_avatar:world_center_y())
     end
+end
+
+function HUDCODZ:_create_gift_hud(parent)
+    local is_firesale = false
+    local is_instakill = false
+    local is_double_points = false
+    local is_zombie_blood = false
+
+    local gift_panel = parent:panel({
+        name = "gift_panel",
+        w = parent:w(),
+        h = 64
+    })
+    gift_panel:set_y(parent:bottom() - 200)
+
+    self.gift_panel = gift_panel
+
+    local weapon_name_bottom_right = gift_panel:text({
+        font = "units/pd2_mod_zombies/fonts/escom_outline",
+        font_size = 18,
+        color = Color(0.8, 0.8, 0.8),
+        text = "",
+        align = "right",
+        vertical = "bottom",
+        valign = "bottom",
+        y = -16
+    })
+    weapon_name_bottom_right:set_center_x(parent:center_x())
+    weapon_name_bottom_right:set_text(managers.localization:text("wpn_m1911_name"))
+
+    self.weapon_name_bottom_right = weapon_name_bottom_right
+
+    local icon_instakill = gift_panel:bitmap({
+        name = "icon_instakill",
+        texture = "units/pd2_mod_zombies/guis/power_ups/power_instakill",
+        w = 64,
+        h = 64,
+        visible = is_instakill
+    })
+    icon_instakill:set_center_x(parent:center_x())
+
+    local icon_firesale = gift_panel:bitmap({
+        name = "icon_firesale",
+        texture = "units/pd2_mod_zombies/guis/power_ups/power_fire_sale",
+        w = 64,
+        h = 64,
+        visible = is_firesale
+    })
+    icon_firesale:set_right(icon_instakill:left())
+
+    local icon_double_points = gift_panel:bitmap({
+        name = "icon_double_points",
+        texture = "units/pd2_mod_zombies/guis/power_ups/power_double_points",
+        w = 64,
+        h = 64,
+        visible = is_double_points
+    })
+    icon_double_points:set_left(icon_instakill:right())
+
+    local icon_zombie_blood = gift_panel:bitmap({
+        name = "icon_zombie_blood",
+        texture = "units/pd2_mod_zombies/guis/power_ups/power_zombie_blood",
+        w = 64,
+        h = 64,
+        visible = is_zombie_blood
+    })
+
+    icon_zombie_blood:set_left(icon_double_points:right())
+end
+
+function HUDCODZ:_set_gift_visible(gift, visible)
+    local texture = self.gift_panel:child(gift)
+    texture:set_visible(visible)
+
+    local function animate_icon_lifetime(o)
+        o:stop()
+
+        local from = 1
+        local to = 0
+        local t = 0
+
+        o:set_alpha(from)
+        wait(18)
+        
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+        o:set_alpha(to)
+        wait(0.25)
+        o:set_alpha(from)
+        wait(0.25)
+
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+        o:set_alpha(to)
+        wait(0.1)
+        o:set_alpha(from)
+        wait(0.1)
+
+        o:set_alpha(to)
+		
+		--But why...
+        
+    end
+
+    texture:animate(animate_icon_lifetime)
 end

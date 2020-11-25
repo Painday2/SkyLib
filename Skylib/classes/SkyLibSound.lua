@@ -90,3 +90,11 @@ function SkyLib.Sound:_get_mod_path()
 
     return SkyLib._project_key.ModPath
 end
+
+function SkyLib.Sound:_destroy_source(id)
+    if self._sound_sources[id] then
+		self._sound_buffers[id]:close()
+        self._sound_sources[id]:close()
+        self._sound_sources[id] = nil
+    end
+end

@@ -43,9 +43,25 @@ function ElementSpawnEnemyDummy:produce(params)
 		end
 		local spawn_ai = self:_create_spawn_AI_parametric(params.stance, params.objective, self._values)
 		unit:brain():set_spawn_ai(spawn_ai)
+
+		local power_up_table = SkyLib.CODZ._level.power_up_table
+		local random_power_up_chance = SkyLib.CODZ._level.power_up_chance
+		local random_number = math.random(0, 100)
+
+		if not SkyLib.CODZ._level.wave.is_special_wave then
+			if random_number < random_power_up_chance then
+				local pickup_name = power_up_table[ math.random(#power_up_table) ]
+				unit:character_damage():set_pickup(pickup_name)
+			end
+		else
+			if SkyLib.CODZ._level.zombies.currently_spawned >= SkyLib.CODZ._level.zombies.max_special_wave_total_spawns then
+				unit:character_damage():set_pickup("zm_pwrup_max_ammo")
+				log("thonkers")
+			end
+		end
 	else
 		local enemy_name = self:value("enemy") or self._enemy_name
-		if managers.wdu:_is_special_wave() then
+		if SkyLib.CODZ._level.wave.is_special_wave then
 			enemy_name = units_special_wave[ math.random( #units_special_wave ) ]
 		end
 		unit = safe_spawn_unit(enemy_name, self:get_orientation())
@@ -78,6 +94,21 @@ function ElementSpawnEnemyDummy:produce(params)
 
 		if self._values.voice then
 			unit:sound():set_voice_prefix(self._values.voice)
+		end
+		local power_up_table = SkyLib.CODZ._level.power_up_table
+		local random_power_up_chance = SkyLib.CODZ._level.power_up_chance
+		local random_number = math.random(0, 100)
+
+		if not SkyLib.CODZ._level.wave.is_special_wave then
+			if random_number < random_power_up_chance then
+				local pickup_name = power_up_table[ math.random(#power_up_table) ]
+				unit:character_damage():set_pickup(pickup_name)
+			end
+		else
+			if SkyLib.CODZ._level.zombies.currently_spawned >= SkyLib.CODZ._level.zombies.max_special_wave_total_spawns then
+				log("thonk")
+				unit:character_damage():set_pickup("zm_pwrup_max_ammo")
+			end
 		end
 	end
 

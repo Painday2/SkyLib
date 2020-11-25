@@ -86,15 +86,15 @@ function SkyLib.CODZ:init(custom_rules)
             firesale = false,
             zombie_blood = false
         },
-        power_up_chance = 3,
+        power_up_chance = 5,
         power_up_table = {
-            "max_ammo",
-            "double_points",
-            "firesale",
-            "instakill",
-            "nuke",
-            "blood_money",
-            "zombie_blood"
+            "zm_pwrup_max_ammo",
+            "zm_pwrup_double_points",
+            "zm_pwrup_firesale",
+            "zm_pwrup_instakill",
+            "zm_pwrup_nuke",
+            "zm_pwrup_blood_money",
+            "zm_pwrup_zombie_blood"
         },
         scale = 0,
         scale_value_max = 25
@@ -122,6 +122,11 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/CopDamage",
         "classes/Gamemodes/Sora/CODZ/Hooks/CoreUnit",
         "classes/Gamemodes/Sora/CODZ/Hooks/CharacterTweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerDamage",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PowerUps",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PowerUpManager",
+        "classes/Gamemodes/Sora/CODZ/Hooks/TweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/NewRaycastWeaponBase",
         --"classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBesiege",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAITweakData",
@@ -205,6 +210,11 @@ function SkyLib.CODZ:_scale_required()
     return true
 end
 
+function SkyLib.CODZ:points_round(points)
+    local mult = 10^(-1)
+    return math.floor(points * mult + 0.5) / mult
+end
+
 function SkyLib.CODZ:_get_own_money()
     local my_id = SkyLib.Network:_my_peer_id()
     return self._players[my_id].codz_points
@@ -277,7 +287,7 @@ function SkyLib.CODZ:_update_hud_element()
             local avatar = texture or "guis/textures/pd2/none_icon"
             player_panel:child("player_avatar_1"):set_image(avatar)
         end)
-        
+
         player_panel:child("player_points_1"):set_text(tostring(self._players[1].codz_points))
     end
 end
@@ -292,6 +302,14 @@ end
 
 function SkyLib.CODZ:_set_special_wave(status)
     self._level.wave.is_special_wave = status
+end
+
+function SkyLib.CODZ:_setup_event_state(event, state)
+    self._level.active_events[event] = state
+end
+
+function SkyLib.CODZ:_is_event_active(event)
+    return self._level.active_events[event]
 end
 
 function SkyLib.CODZ:_create_new_weapon(data)

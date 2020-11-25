@@ -39,7 +39,7 @@ function SkyLib.Network:_is_solo()
     end
 
     local nb_players = self:_number_of_players()
-    
+
     if nb_players == 1 then
         return true
     end
