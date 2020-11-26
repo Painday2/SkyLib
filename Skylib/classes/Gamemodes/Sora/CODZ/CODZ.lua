@@ -2,7 +2,7 @@ SkyLib.CODZ = SkyLib.CODZ or class()
 SkyLib.CODZ.INITIALIZED = false
 
 function SkyLib.CODZ:init(custom_rules)
-    self._starting_money = custom_rules and custom_rules.mod_start_money or 500
+    self._starting_money = custom_rules and custom_rules.mod_start_money or 50000
     self._pregame_music = custom_rules and custom_rules.mod_pregame_music or nil
     self._gameover_music = custom_rules and custom_rules.mod_gameover_music or nil
     self._victory_music = custom_rules and custom_rules.mod_victory_music or nil
@@ -86,7 +86,7 @@ function SkyLib.CODZ:init(custom_rules)
             firesale = false,
             zombie_blood = false
         },
-        power_up_chance = 5,
+        power_up_chance = 99,
         power_up_table = {
             "zm_pwrup_max_ammo",
             "zm_pwrup_double_points",
@@ -113,11 +113,15 @@ function SkyLib.CODZ:_init_hooks()
     local mod_path = SkyLib.ModPath
 
     self._hooks = {
+        "classes/Gamemodes/Sora/CODZ/Hooks/InteractionTweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/InteractionExt",
+        "classes/Gamemodes/Sora/CODZ/Hooks/EquipmentsTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementSpawnEnemyDummy",
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementWave",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDManager",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDManagerPD2",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDMissionBriefing",
+        "classes/Gamemodes/Sora/CODZ/Hooks/HUDIconsTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/PlayerManager",
         "classes/Gamemodes/Sora/CODZ/Hooks/CopDamage",
         "classes/Gamemodes/Sora/CODZ/Hooks/CoreUnit",
@@ -127,6 +131,12 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/PowerUpManager",
         "classes/Gamemodes/Sora/CODZ/Hooks/TweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/NewRaycastWeaponBase",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerTased",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerTweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerMovement",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerStandard",
+        "classes/Gamemodes/Sora/CODZ/Hooks/ProjectilesTweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/TimeSpeedEffectTweakData",
         --"classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBesiege",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAITweakData",
@@ -218,6 +228,14 @@ end
 function SkyLib.CODZ:_get_own_money()
     local my_id = SkyLib.Network:_my_peer_id()
     return self._players[my_id].codz_points
+end
+
+function SkyLib.CODZ:_player_connected(id)
+    if self._players[id] and self._players[id].steam_id == 0 then
+        return false
+    end
+
+    return true
 end
 
 function SkyLib.CODZ:_money_change(amount, peer_id)

@@ -19,7 +19,13 @@
 
     <Hooks directory="hooks">
         <hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
+        <hook file="EquipmentsTweakdata.lua" source_file="lib/tweak_data/equipmentstweakdata"/>
+        <hook file="HUDIconsTweakdata.lua" source_file="lib/tweak_data/hudiconstweakdata"/>
     </Hooks>
+
+    <Localization default="unique_lines.txt" directory="loc">
+		<loc file="unique_lines.txt" language="english"/>
+	</Localization>
 
     <AddFiles directory="assets">
         <texture path="ui/bloodtrail"/>
@@ -36,6 +42,6 @@
         <font load="true" path="fonts/escom_outline"/>
         <texture path="fonts/escom_outline"/>
     </AddFiles>
-    
+
     <Package file="ZMAssets.xml" id="packages/ZMAssets"/>
 </mod>

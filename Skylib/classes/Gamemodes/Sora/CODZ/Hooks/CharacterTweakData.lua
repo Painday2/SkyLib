@@ -184,3 +184,5 @@ Hooks:PostHook(CharacterTweakData, "_init_tank", "zm_bulldozer_tweak", function(
 	self.tank.weapon.is_lmg.focus_delay = 1
 	self.tank_hw.HEALTH_INIT = 500
 end)
+--hooks gets set too late, need to reinit
+tweak_data.character:init(tweak_data)
