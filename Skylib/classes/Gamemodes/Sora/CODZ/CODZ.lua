@@ -99,6 +99,10 @@ function SkyLib.CODZ:init(custom_rules)
         scale = 0,
         scale_value_max = 25
     }
+
+    self._weapons = {}
+
+
     self:_init_hooks()
     SkyLib.Sound:init()
     SkyLib.Network:_init_codz_network()
@@ -135,6 +139,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/PlayerTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/PlayerMovement",
         "classes/Gamemodes/Sora/CODZ/Hooks/PlayerStandard",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerInventory",
         "classes/Gamemodes/Sora/CODZ/Hooks/ProjectilesTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/TimeSpeedEffectTweakData",
         --"classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
@@ -371,8 +376,41 @@ function SkyLib.CODZ:_create_new_weapon(data)
         custom_stats = data.custom_stats or nil,
         custom_ammo_clip = data.custom_ammo_clip or nil,
         custom_ammo_clips_max = data.custom_ammo_clips_max or nil,
-        custom_animation = data.custom_animation or nil 
+        custom_animation = data.custom_animation or nil
     }
+end
+
+function SkyLib.CODZ:_perform_weapon_switch(weapon_id)
+    local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(weapon_id)
+    local blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
+    local current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
+    local equip_index = current_index_equipped == 1 and true or false
+    local idx_weapon_tweak = tweak_data.weapon[weapon_id].use_data.selection_index
+    local cosmetics = {
+        id = "nil",
+        quality = 1,
+        bonus = 0
+    }
+
+    managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, current_index_equipped, false, blueprint, cosmetics, false, current_index_equipped)
+        
+    if managers.player:player_unit():movement().sync_equip_weapon then
+        managers.player:player_unit():movement():sync_equip_weapon()
+    end
+    if  managers.player:player_unit():inventory().equip_selection then
+        managers.player:player_unit():inventory():equip_selection(current_index_equipped, false)
+    end
+
+    --self:_perform_hand_out_in(idx_weapon_tweak)
+end
+
+function SkyLib.CODZ:_perform_hand_out_in(idx)
+    local player = managers.player:player_unit()
+    local current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
+
+    player:movement():current_state():_start_action_unequip_weapon(managers.player:player_timer():time(), {
+        selection_wanted = idx
+    })
 end
 
 function SkyLib.CODZ:_respawn_players()
