@@ -49,6 +49,7 @@ function SkyLib.CODZ.WeaponHelper:_create_new_weapon(data)
     }
 
 end
+
 local debug
 function SkyLib.CODZ.WeaponHelper:_get_random_weapon()
     --PrintTable(SkyLib.CODZ._weapons.mystery_box)
@@ -57,7 +58,7 @@ function SkyLib.CODZ.WeaponHelper:_get_random_weapon()
     SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(debug)
 end
 
-function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id)
+function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, force_secondary, force_primary)
     log(tostring(weapon_id))
     local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(tostring(weapon_id))
     log(tostring(factory_id))
@@ -71,8 +72,13 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id)
         bonus = 0
     }
 
+    if force_secondary then
+        managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, 1, false, blueprint, cosmetics, false, 1)
+    elseif force_primary then
+        managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, 2, false, blueprint, cosmetics, false, 2)
+    else
     managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, current_index_equipped, false, blueprint, cosmetics, false, current_index_equipped)
-
+    end
     if managers.player:player_unit():movement().sync_equip_weapon then
         managers.player:player_unit():movement():sync_equip_weapon()
     end
@@ -122,7 +128,6 @@ function SkyLib.CODZ.WeaponHelper:_setup_box_weapons(custom_data)
     weapon_ids = remove_from_table_with_ending(weapon_ids, "factory")
     --this is disgusting but i cannot be bothered to make it better right now
 if data then
-    --blah blah
     for i, weapon_data in ipairs(data) do
         if tweak[weapon_data.weapon_id] then
             SkyLib.CODZ._weapons[i] = { weapon_data.weapon_id }

@@ -21,7 +21,7 @@ function SkyLib.Sound:_init_xaudio()
         return
     end
 
-    blt.xaudio.setup()
+    --blt.xaudio.setup()
     self._xaudio_initialized = true
 
     log("XAudio initialized and ready to use.")

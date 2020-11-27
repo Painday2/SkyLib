@@ -2,7 +2,7 @@
 	<Localization default="english.txt" directory="loc">
 		<loc file="english.txt" language="english"/>
 	</Localization>
-	<level ai_group_type="america" id="despacito2_theheist" max_bags="54" team_ai_off="true">
+	<level ai_group_type="Zombie" briefing_dialog="" id="despacito2_theheist" intro_event="" max_bags="54" music="no_music" orig_id="despacito2_theheist" player_style="generic" team_ai_off="true">
 		<add file="levels/despacito2_theheist/add.xml"/>
 		<assets>
 			<asset name="ammo_bag"/>
@@ -27,6 +27,9 @@
 			<file file="cover_data.cover_data" type="binary"/>
 			<file file="environments/default.environment" type="custom_xml"/>
 		</include>
+		<outro_event>
+			<value_node value=""/>
+		</outro_event>
 		<packages>
 			<value_node value="levels/instances/unique/brb/civ_intro_spawner/world/world"/>
 			<value_node value="packages/narr_hvh"/>
@@ -37,6 +40,7 @@
 				<options merge_mode="add" mode="add"/>
 			</mod>
 		</script_data_mods>
+		<sound full_path="mods/SkyLib/assets_zm/units/pd2_mod_zombies/sounds/zm_perks/zm_perk_bought.ogg" id="zm_perk_bought"/>
 	</level>
 	<narrative contact="custom" id="despacito2_theheist">
 		<chain>
