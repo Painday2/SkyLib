@@ -107,7 +107,7 @@ function SkyLib.CODZ:init(custom_rules)
 
     self:_init_hooks()
     SkyLib.Sound:init()
-    SkyLib.CODZ.WeaponHelper:init()
+    --SkyLib.CODZ.WeaponHelper:init()
     SkyLib.Network:_init_codz_network()
 
     SkyLib.CODZ.INITIALIZED = true

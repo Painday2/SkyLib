@@ -127,18 +127,27 @@ function SkyLib.CODZ.WeaponHelper:_setup_box_weapons(custom_data)
     weapon_ids = remove_from_table_with_ending(weapon_ids, "stats")
     weapon_ids = remove_from_table_with_ending(weapon_ids, "factory")
     --this is disgusting but i cannot be bothered to make it better right now
-if data then
-    for i, weapon_data in ipairs(data) do
-        if tweak[weapon_data.weapon_id] then
-            SkyLib.CODZ._weapons[i] = { weapon_data.weapon_id }
+    if data then
+        for i, weapon_data in ipairs(data) do
+            if tweak[weapon_data.weapon_id] then
+                local weapon = tweak[weapon_data].global_value and not managers.dlc:is_dlc_unlocked(tweak[weapon_data].global_value) and tweak_data.lootdrop.global_values[tweak[weapon_data].global_value].dlc
+                if not weapon then
+                    table.insert(SkyLib.CODZ._weapons.mystery_box, tostring(weapon_data.weapon_id))
+                end
+            end
         end
-    end
-else
-        for i, weapon_id in pairs(weapon_ids) do
-            if tweak[weapon_id] then
-                table.insert(SkyLib.CODZ._weapons.mystery_box, tostring(weapon_id))
-            else
-                log("[ERROR-WeaponHelper._add_new_weapon] Weapon id doesn't exist!", weapon_id)
+    else
+        if Network:is_server() then
+            for i, weapon_id in pairs(weapon_ids) do
+                if tweak[weapon_id] then
+                        local weapon = tweak[weapon_id].global_value and not managers.dlc:is_dlc_unlocked(tweak[weapon_id].global_value) and tweak_data.lootdrop.global_values[tweak[weapon_id].global_value].dlc
+                        if not weapon then
+                            log(tostring(weapon_id))
+                            table.insert(SkyLib.CODZ._weapons.mystery_box, tostring(weapon_id))
+                        end
+                else
+                    log("[ERROR-WeaponHelper._add_new_weapon] Weapon id doesn't exist!", weapon_id)
+                end
             end
         end
     end
