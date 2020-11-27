@@ -1,4 +1,7 @@
 <table global_key="himom" name="despacito2_theheist">
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
 	<level ai_group_type="america" id="despacito2_theheist" max_bags="54" team_ai_off="true">
 		<add file="levels/despacito2_theheist/add.xml"/>
 		<assets>
@@ -35,9 +38,6 @@
 			</mod>
 		</script_data_mods>
 	</level>
-	<Localization default="english.txt" directory="loc">
-		<loc file="english.txt" language="english"/>
-	</Localization>
 	<narrative contact="custom" id="despacito2_theheist">
 		<chain>
 			<table level_id="despacito2_theheist" type="d" type_id="heist_type_assault"/>

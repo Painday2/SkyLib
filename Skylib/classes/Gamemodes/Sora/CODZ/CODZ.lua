@@ -100,11 +100,14 @@ function SkyLib.CODZ:init(custom_rules)
         scale_value_max = 25
     }
 
-    self._weapons = {}
+    self._weapons = {
+        mystery_box = { }
+    }
 
 
     self:_init_hooks()
     SkyLib.Sound:init()
+    SkyLib.CODZ.WeaponHelper:init()
     SkyLib.Network:_init_codz_network()
 
     SkyLib.CODZ.INITIALIZED = true
@@ -333,84 +336,6 @@ end
 
 function SkyLib.CODZ:_is_event_active(event)
     return self._level.active_events[event]
-end
-
-function SkyLib.CODZ:_create_new_weapon(data)
-
-    --[[
-        Parameters:
-
-        {
-            weapon_id = "xxx"                                           -- ID Used in weapontweakdata
-            factory_id = "wpn_fps_smg_xxx"                              -- ID Used in weaponfactorytweakdata
-            based_on = {                                                -- IDs about the base weapon.
-                weapon_id = "based_on_id",
-                factory_id = "wpn_fps_smg_based_on"
-            }
-            generate_stances = true/false ; default: false              -- Automatically generate stances
-            custom_factory_unit = "path_to_unit"                        -- Defines a new unit. If nothing defined, use the one from based_on.
-            custom_blueprint = {                                        -- Weapon mod IDs for the new blueprint. If nothing defined, use the one from based_on.
-                <blueprint data>
-            }
-            custom_stats = {                                            -- Stats as they would be defined in weapontweakdata. If nothing defined, use the one from based_on.
-                <custom stats>
-            },
-            custom_ammo_clip = 30                                       -- How much bullets in mag. If nothing defined, use the one from based_on.
-            custom_ammo_clips_max = 5                                   -- How much mags (Ammo clip * Clip Max). If nothing defined, use the one from based_on.
-            custom_animation = {                                        -- Sometimes you have to define these, to make animations working. If nothing defined, use the one from based_on.
-                hold = "anim",
-                reload = "anim"
-            }
-        }
-
-        weapon name string ID is defined:           wpn_<weapon_id>_name
-    ]]
-
-    local weapon_data = {
-        weapon_id = data.weapon_id,
-        factory_id = data.factory_id,
-        based_on = data.based_on,
-        generate_stances = data.generate_stances or false,
-        custom_factory_unit = data.custom_factory_unit or nil,
-        custom_blueprint = data.custom_blueprint or nil,
-        custom_stats = data.custom_stats or nil,
-        custom_ammo_clip = data.custom_ammo_clip or nil,
-        custom_ammo_clips_max = data.custom_ammo_clips_max or nil,
-        custom_animation = data.custom_animation or nil
-    }
-end
-
-function SkyLib.CODZ:_perform_weapon_switch(weapon_id)
-    local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(weapon_id)
-    local blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
-    local current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
-    local equip_index = current_index_equipped == 1 and true or false
-    local idx_weapon_tweak = tweak_data.weapon[weapon_id].use_data.selection_index
-    local cosmetics = {
-        id = "nil",
-        quality = 1,
-        bonus = 0
-    }
-
-    managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, current_index_equipped, false, blueprint, cosmetics, false, current_index_equipped)
-        
-    if managers.player:player_unit():movement().sync_equip_weapon then
-        managers.player:player_unit():movement():sync_equip_weapon()
-    end
-    if  managers.player:player_unit():inventory().equip_selection then
-        managers.player:player_unit():inventory():equip_selection(current_index_equipped, false)
-    end
-
-    --self:_perform_hand_out_in(idx_weapon_tweak)
-end
-
-function SkyLib.CODZ:_perform_hand_out_in(idx)
-    local player = managers.player:player_unit()
-    local current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
-
-    player:movement():current_state():_start_action_unequip_weapon(managers.player:player_timer():time(), {
-        selection_wanted = idx
-    })
 end
 
 function SkyLib.CODZ:_respawn_players()

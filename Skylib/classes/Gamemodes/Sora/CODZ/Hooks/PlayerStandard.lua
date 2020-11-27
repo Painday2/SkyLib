@@ -33,7 +33,7 @@ end)
 
 -- Following fix below is made by Pawcio / >:3
 
-function PlayerStandard:_start_action_reload_enter(t)
+--[[function PlayerStandard:_start_action_reload_enter(t)
     if self._equipped_unit:base():can_reload() then
         local weapon = self._equipped_unit:base()
         local tweak_data = weapon:weapon_tweak_data()
@@ -51,7 +51,7 @@ function PlayerStandard:_start_action_reload_enter(t)
         end
         self:_start_action_reload(t)
     end
-end
+end]]
 
 function PlayerStandard:_start_action_intimidate(t, secondary)
 	if not self._intimidate_t or tweak_data.player.movement_state.interaction_delay < t - self._intimidate_t then

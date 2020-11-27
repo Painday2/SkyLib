@@ -10,6 +10,7 @@
         <class file="SkyLibSound.lua"/>
         <class file="SkyLibNetwork.lua"/>
         <class file="Gamemodes/Sora/CODZ/CODZ.lua"/>
+        <class file="Gamemodes/Sora/CODZ/CODZ_WeaponHelper.lua"/>
         <class file="Gamemodes/Sora/Survival/Survival.lua"/>
         <class file="Gamemodes/Sora/Survival/Survival_GameManager.lua"/>
         <class file="Gamemodes/Sora/Survival/Survival_BuyMenu.lua"/>

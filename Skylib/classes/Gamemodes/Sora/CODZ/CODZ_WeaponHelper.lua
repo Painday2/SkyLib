@@ -4,7 +4,7 @@ function SkyLib.CODZ.WeaponHelper:init()
     log("[SkyLib.CODZ.WeaponHelper] Initd")
 end
 
-function SkyLib.CODZ:_create_new_weapon(data)
+function SkyLib.CODZ.WeaponHelper:_create_new_weapon(data)
 
     --[[
         Parameters:
@@ -47,11 +47,44 @@ function SkyLib.CODZ:_create_new_weapon(data)
         custom_ammo_clips_max = data.custom_ammo_clips_max or nil,
         custom_animation = data.custom_animation or nil
     }
+
+end
+local debug
+function SkyLib.CODZ.WeaponHelper:_get_random_weapon()
+    --PrintTable(SkyLib.CODZ._weapons.mystery_box)
+    debug = tostring(SkyLib.CODZ._weapons.mystery_box[math.random(#SkyLib.CODZ._weapons.mystery_box)])
+    log(debug)
+    SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(debug)
 end
 
-function SkyLib.CODZ.WeaponHelper:_add_new_weapon(data)
-    local tweak = tweak_data.weapon
+function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id)
+    log(tostring(weapon_id))
+    local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(tostring(weapon_id))
+    log(tostring(factory_id))
+    local blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
+    local current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
+    --local equip_index = current_index_equipped == 1 and true or false
+    --local idx_weapon_tweak = tweak_data.weapon[weapon_id].use_data.selection_index
+    local cosmetics = {
+        id = "nil",
+        quality = 1,
+        bonus = 0
+    }
 
+    managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, current_index_equipped, false, blueprint, cosmetics, false, current_index_equipped)
+
+    if managers.player:player_unit():movement().sync_equip_weapon then
+        managers.player:player_unit():movement():sync_equip_weapon()
+    end
+    if  managers.player:player_unit():inventory().equip_selection then
+        managers.player:player_unit():inventory():equip_selection(current_index_equipped, false)
+    end
+
+end
+
+function SkyLib.CODZ.WeaponHelper:_setup_box_weapons(custom_data)
+    local tweak = tweak_data.weapon
+    local data = custom_data or nil
     --[[
         All weapons added are allowed for sale by default.
 
@@ -62,27 +95,52 @@ function SkyLib.CODZ.WeaponHelper:_add_new_weapon(data)
             ...
         }
     ]]
+    local function remove_from_table_with_ending(tabley, ending)
+        local output_table = {}
 
+        for index, value in pairs(tabley) do
+            if ( not (ending == "" or value:sub(-#ending) == ending) ) then
+                table.insert(output_table, value)
+            end
+        end
+
+        return output_table
+    end
+
+    local weapon_ids = table.map_keys(tweak_data.weapon)
+    weapon_ids = remove_from_table_with_ending(weapon_ids, "_npc")
+    weapon_ids = remove_from_table_with_ending(weapon_ids, "_crew")
+    weapon_ids = remove_from_table_with_ending(weapon_ids, "_secondary")
+    weapon_ids = remove_from_table_with_ending(weapon_ids, "module")
+    weapon_ids = remove_from_table_with_ending(weapon_ids, "mk2")
+    weapon_ids = remove_from_table_with_ending(weapon_ids, "range")
+    weapon_ids = remove_from_table_with_ending(weapon_ids, "idle")
+    weapon_ids = remove_from_table_with_ending(weapon_ids, "m203")
+    weapon_ids = remove_from_table_with_ending(weapon_ids, "trip_mines")
+    weapon_ids = remove_from_table_with_ending(weapon_ids, "_melee")
+    weapon_ids = remove_from_table_with_ending(weapon_ids, "stats")
+    weapon_ids = remove_from_table_with_ending(weapon_ids, "factory")
+    --this is disgusting but i cannot be bothered to make it better right now
+if data then
+    --blah blah
     for i, weapon_data in ipairs(data) do
         if tweak[weapon_data.weapon_id] then
-            tweak[weapon_data.weapon_id].CODZ_cost = tonumber(weapon_data.price)
-            SkyLib.CODZ._weapons[i] = { weapon_data.weapon_id, weapon_data.price }
-            
-            if not weapon_data.disable_sales then
-                SkyLib.CODZ._sales[i] = {
-                    weapon_id = weapon_data.weapon_id,
-                    sale_status = false,
-                    sale_discount = 0
-                }
+            SkyLib.CODZ._weapons[i] = { weapon_data.weapon_id }
+        end
+    end
+else
+        for i, weapon_id in pairs(weapon_ids) do
+            if tweak[weapon_id] then
+                table.insert(SkyLib.CODZ._weapons.mystery_box, tostring(weapon_id))
+            else
+                log("[ERROR-WeaponHelper._add_new_weapon] Weapon id doesn't exist!", weapon_id)
             end
-        else
-            log("[ERROR-WeaponHelper._add_new_weapon] Weapon id doesn't exist!", weapon_id)
         end
     end
 end
 
 function SkyLib.CODZ.WeaponHelper:_change_stats_of(weapon_id, tbl_new_stats)
-    -- Provide stats in a normal way, as in stability 88 WILL mean 84 in game 
+    -- Provide stats in a normal way, as in stability 88 WILL mean 84 in game
     -- (you remove -4 due to some obscure reason for recoil and spread)
     -- Same for rof, I do the maths for you
     -- Due to damage caps, please use damage_mul with a low damage value. (10 damage with 100 mul = 10*100 = 1000.)
