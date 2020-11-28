@@ -9,7 +9,10 @@ SkyHook:Post(HUDMissionBriefing, "set_player_slot", function(self, nr, params)
 
     SkyLib.CODZ:_create_new_player(data)
 end)
-SkyHook:Post(HUDMissionBriefing, "init", function(self, hud, workspace)
+
+
+--THIS CRASHES WHENEVER YOU PLACE A UNIT SEQUENCE AND I DON'T KNOW WHY.
+--[[SkyHook:Post(HUDMissionBriefing, "init", function(self, hud, workspace)
     DelayedCalls:Add("zm_remove_current_song", 0.1, function()
         managers.music:post_event("stop_all_music")
     end)
@@ -46,4 +49,4 @@ function HUDMissionBriefing:set_slot_outfit(peer_id, criminal_name, outfit)
 	slot:child("detection_value"):set_visible(true)
     slot:child("detection_value"):set_text("MAX: " .. tostring(SkyLib.CODZ._players[peer_id].max_waves_survived))
     slot:child("detection_value"):set_color(Color(1, 0, 1))
-end
+end]]

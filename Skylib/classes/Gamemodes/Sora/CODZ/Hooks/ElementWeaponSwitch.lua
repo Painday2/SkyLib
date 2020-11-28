@@ -69,30 +69,6 @@ function ElementWeaponSwitch:on_executed(instigator)
     ElementWeaponSwitch.super.on_executed(self, instigator)
 end
 
-function ElementWeaponSwitch:_get_punched_weapon_by_factory(factory)
-	local tbl = managers.wdu:_convert_factory_to_upgrade()
-
-	local punch_tbl = {}
-
-	for k, v in pairs(tbl) do
-		table.insert(punch_tbl, v)
-	end
-
-	for _, v in ipairs(punch_tbl) do -- Refill ammo on punched weapon.
-		if v == factory then
-			return v
-		end
-	end
-
-	for k, v in pairs(tbl) do
-		if k == factory then
-			return v
-		end
-	end
-
-	return "wpn_fps_ass_m4"
-end
-
 function ElementWeaponSwitch:on_script_activated()
     self._mission_script:add_save_state_cb(self._id)
 end

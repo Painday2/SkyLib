@@ -40,7 +40,6 @@
 				<options merge_mode="add" mode="add"/>
 			</mod>
 		</script_data_mods>
-		<sound full_path="mods/SkyLib/assets_zm/units/pd2_mod_zombies/sounds/zm_perks/zm_perk_bought.ogg" id="zm_perk_bought"/>
 	</level>
 	<narrative contact="custom" id="despacito2_theheist">
 		<chain>
