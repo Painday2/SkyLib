@@ -1,5 +1,5 @@
 function PlayerInventory:add_unit_by_factory_name_selection_index(factory_name, equip, instant, blueprint, cosmetics, texture_switches, selection_index)
-	local factory_weapon = tweak_data.weapon.factory[tostring(factory_name)]
+	local factory_weapon = tweak_data.weapon.factory[factory_name]
 	local ids_unit_name = Idstring(factory_weapon.unit)
 
 	if not managers.dyn_resource:is_resource_ready(Idstring("unit"), ids_unit_name, managers.dyn_resource.DYN_RESOURCES_PACKAGE) then
