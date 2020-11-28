@@ -141,6 +141,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/PowerUpManager",
         "classes/Gamemodes/Sora/CODZ/Hooks/TweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/NewRaycastWeaponBase",
+        "classes/Gamemodes/Sora/CODZ/Hooks/RaycastWeaponBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/PlayerTased",
         "classes/Gamemodes/Sora/CODZ/Hooks/PlayerTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/PlayerMovement",

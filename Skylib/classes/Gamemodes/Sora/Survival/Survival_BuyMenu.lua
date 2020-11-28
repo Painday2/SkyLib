@@ -921,7 +921,7 @@ function BuyMenu:_calc_stat_bar_width(statistic, nb, cat)
     end
 
 -- 250 * 100 / 400 = 62.5 AKA dmg * percent / top
--- 
+--
 -- then percentage / 100 : 0.625 * bar length (330)
 
     for stat_top, top in pairs(toppers) do
@@ -932,7 +932,7 @@ function BuyMenu:_calc_stat_bar_width(statistic, nb, cat)
 
             if result > 330 then return 330 end
 
-            return result 
+            return result
         end
     end
 end

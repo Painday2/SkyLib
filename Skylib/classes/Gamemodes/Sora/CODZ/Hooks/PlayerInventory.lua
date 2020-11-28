@@ -11,13 +11,13 @@ function PlayerInventory:add_unit_by_factory_name_selection_index(factory_name, 
 	new_unit:base():set_factory_data(factory_name)
 	new_unit:base():set_cosmetics_data(cosmetics)
 	new_unit:base():set_texture_switches(texture_switches)
+	new_unit:base():_apply_cosmetics()
 
 	if blueprint then
 		new_unit:base():assemble_from_blueprint(factory_name, blueprint)
 	else
 		new_unit:base():assemble(factory_name)
 	end
-
 	local setup_data = {
 		user_unit = self._unit,
 		ignore_units = {

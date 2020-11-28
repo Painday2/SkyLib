@@ -102,6 +102,7 @@ function SkyLib.Survival.WeaponHelper:_add_mod_to_weapon(equipped_unit, part_id)
 end
 
 function SkyLib.Survival.WeaponHelper:_current_equipped_weapon()
+    return managers.player:player_unit():inventory():equipped_unit()
 end
 
 function SkyLib.Survival.WeaponHelper:_weapon_has_part(weapon_id, part_id)

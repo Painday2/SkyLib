@@ -21,19 +21,37 @@ function ElementWeaponSwitch:on_executed(instigator)
         if instigator == managers.player:player_unit() then
             managers.player:add_grenade_amount(10, true)
         end
-        
+
         ElementWeaponSwitch.super.on_executed(self, instigator)
         return
     end
 
     -- Base Factory ID before assuming the current slot
-    local factory_id = self._values.weapon_id or "wpn_fps_ass_m4"
+    local cosmetics
+    local cosmetics_string = self._values.skin_id or "nil" .. "-1-0"
+    local cosmetics_data = string.split(cosmetics_string, "-")
+    local weapon_skin_id = cosmetics_data[1] or "nil"
+    local quality_index_s = cosmetics_data[2] or "1"
+    local bonus_id_s = cosmetics_data[3] or "0"
+    if weapon_skin_id ~= "nil" then
+        local quality = tweak_data.economy:get_entry_from_index("qualities", tonumber(quality_index_s))
+        local bonus = bonus_id_s == "1" and true or false
+        cosmetics = "pap-1-0"
+
+        if instigator == managers.player:player_unit() then
+            cosmetics = {
+                id = weapon_skin_id,
+                quality = quality,
+                bonus = bonus
+            }
+        end
+    end
 
     -- Random factory weapon if the interaction is on a mystery box
     if self._values.is_mystery_box then
         SkyLib.CODZ.WeaponHelper:_get_random_weapon()
     end
-    
+
     -- Script used to get the start weapons
     if self._values.force_secondary then
         SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._values.weapon_id, true, false)
@@ -45,14 +63,9 @@ function ElementWeaponSwitch:on_executed(instigator)
 
     -- Get the upgraded weapon ID if the pack-a-punch box is used.
     if self._values.is_pap_engine then
-        local current_peer_weapon = instigator:inventory():equipped_unit():base()._factory_id
-        local clbk_gpwbf = self:_get_punched_weapon_by_factory(current_peer_weapon)
-        if clbk_gpwbf then
-            factory_id = clbk_gpwbf
-        end
+        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(false, false, false, true, cosmetics)
     end
-	
-    
+
     ElementWeaponSwitch.super.on_executed(self, instigator)
 end
 

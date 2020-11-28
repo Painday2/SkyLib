@@ -58,19 +58,34 @@ function SkyLib.CODZ.WeaponHelper:_get_random_weapon()
     SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(debug)
 end
 
-function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, force_secondary, force_primary)
-    log(tostring(weapon_id))
-    local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(tostring(weapon_id))
-    log(tostring(factory_id))
-    local blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
-    local current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
+function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, force_secondary, force_primary, pap, skin)
+    local factory_id
+    local blueprint
+    local current_index_equipped
     --local equip_index = current_index_equipped == 1 and true or false
     --local idx_weapon_tweak = tweak_data.weapon[weapon_id].use_data.selection_index
-    local cosmetics = {
+    local cosmetics = skin or {
         id = "nil",
         quality = 1,
         bonus = 0
     }
+
+    if weapon_id then
+        log(tostring(weapon_id))
+        factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(tostring(weapon_id))
+        log(tostring(factory_id))
+        blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
+        current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
+        --local equip_index = current_index_equipped == 1 and true or false
+        --local idx_weapon_tweak = tweak_data.weapon[weapon_id].use_data.selection_index
+    elseif pap then
+        local current_peer_weapon = managers.player:player_unit():inventory():equipped_unit()
+        self:_add_mod_to_weapon(current_peer_weapon)
+        factory_id = current_peer_weapon:base()._factory_id
+        current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
+    else
+        log("[SkyLib] Error: Weapon Switch")
+    end
 
     if force_secondary then
         managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, 1, false, blueprint, cosmetics, false, 1)
@@ -201,10 +216,30 @@ function SkyLib.CODZ.WeaponHelper:_change_stats_of(weapon_id, tbl_new_stats)
     end
 end
 
-function SkyLib.CODZ.WeaponHelper:_add_mod_to_weapon(equipped_unit, part_id)
+function SkyLib.CODZ.WeaponHelper:_add_mod_to_weapon(equipped_unit)
     local factory_id = equipped_unit:base()._factory_id
     local weapon_id = managers.weapon_factory:get_weapon_id_by_factory_id(factory_id)
     local blueprint = equipped_unit:base()._blueprint
+    local pap = equipped_unit:base()._pap
+    local shitass = managers.weapon_factory:get_parts_from_weapon_id(weapon_id)
+    local part_id
+    --log(pap)
+    PrintTable(shitass)
+
+    --this doesn't work past the first, how do make work?
+    if pap == nil then
+    part_id = tostring(shitass.sight[math.random(#shitass.sight)])
+    log("partid:" .. part_id)
+    pap = 1
+    elseif pap == "1" then
+    part_id = tostring(shitass.magazine[math.random(#shitass.magazine)])
+    log("partid:" .. part_id)
+    pap = 2
+    elseif pap == "2" then
+    part_id = tostring(shitass.gadget[math.random(#shitass.gadget)])
+    log("partid:" .. part_id)
+    pap = 3
+    end
 
     if not self:_weapon_has_part(weapon_id, part_id) then
         SkyLib:log("[SkyLib.CODZ.WeaponHelper:_add_mod_to_weapon] Error! Part <".. tostring(part_id) .."> do not exist for the weapon <".. tostring(weapon_id) .."> (".. tostring(factory_id) .. ")")
