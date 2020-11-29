@@ -37,7 +37,9 @@ function ElementWave:on_executed(instigator)
     SkyLib.CODZ:_increase_wave()
     managers.hud._hud_codz:_wave_change_anim(SkyLib.CODZ:_get_current_wave())
     SkyLib.CODZ:start_new_wave(13)
+    SkyLib.CODZ._level.zombies.added_contour = false
     if SkyLib.CODZ:_scale_required() then
+        SkyLib.CODZ:_increase_scale_value()
         tweak_data.character:_multiply_by_wave_nb(SkyLib.CODZ:_get_current_wave())
     end
 

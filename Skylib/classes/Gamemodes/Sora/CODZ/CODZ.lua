@@ -67,13 +67,14 @@ function SkyLib.CODZ:init(custom_rules)
 
     self._level = custom_rules and custom_rules.mod_level_rules or {
         zombies = {
-            currently_spawned = 8,
+            currently_spawned = 0,
             total_alive = 0,
             max_spawns = 8,
             max_special_wave_total_spawns = 10,
             killed = 0,
             add_on_end_wave = 2,
-            max_special_wave_spawns = 2
+            max_special_wave_spawns = 2,
+            added_contour = false
         },
         wave = {
             current = 0,
@@ -151,7 +152,7 @@ function SkyLib.CODZ:_init_hooks()
         --"classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBesiege",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAITweakData",
-        "classes/Gamemodes/Sora/CODZ/Hooks/WeaponFactoryTweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/EnemyManager",
 
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMMoneyExt",
 
@@ -215,10 +216,12 @@ end
 function SkyLib.CODZ:_multiply_zombies_by_wave()
     if SkyLib.Network:_is_solo() then
         self._level.zombies.max_spawns = self._level.zombies.max_spawns + 2
+        self._level.zombies.max_special_wave_total_spawns = self._level.zombies.max_special_wave_total_spawns + 2
         return
     end
 
     self._level.zombies.max_spawns = self._level.zombies.max_spawns + (self._level.zombies.add_on_end_wave + 2)
+    self._level.zombies.max_special_wave_total_spawns = self._level.zombies.max_special_wave_total_spawns + (self._level.zombies.add_on_end_wave + 2)
 end
 
 function SkyLib.CODZ:_increase_scale_value()
@@ -321,6 +324,26 @@ function SkyLib.CODZ:_update_hud_element()
 
         player_panel:child("player_points_1"):set_text(tostring(self._players[1].codz_points))
     end
+end
+
+function SkyLib.CODZ:_get_max_special_wave_spawns()
+    local nb_players = SkyLib.Network:_number_of_players()
+
+    return self._level.zombies.max_special_wave_spawns * nb_players
+end
+
+function SkyLib.CODZ:_create_last_enemies_outline()
+    if not Network:is_server() then
+        return
+    end
+
+    SkyLib:wait(0.5, function()
+        for u_k, u_d in pairs(managers.enemy:all_enemies()) do
+            u_d.unit:contour():add("highlight_character", true)
+        end
+    end)
+    log("create outlines?")
+    self._level.zombies.added_contour = true
 end
 
 function SkyLib.CODZ:_increase_wave()

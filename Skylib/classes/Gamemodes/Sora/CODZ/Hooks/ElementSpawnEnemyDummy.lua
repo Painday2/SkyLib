@@ -8,7 +8,7 @@ function ElementSpawnEnemyDummy:produce(params)
 			return
 		end
 	else
-		local total_spe_spawns = SkyLib.CODZ._level.zombies.max_special_wave_total_spawns
+		local total_spe_spawns = SkyLib.CODZ._level.zombies.max_special_wave_total_spawns * SkyLib.Network:_number_of_players()
 		if SkyLib.CODZ._level.zombies.currently_spawned >= math.floor(total_spe_spawns) then
 			return
 		end
@@ -16,6 +16,19 @@ function ElementSpawnEnemyDummy:produce(params)
 
 	local unit = nil
 	local units_special_wave = {}
+
+	if SkyLib.CODZ._level.wave.is_special_wave then
+		if (SkyLib.CODZ._level.zombies.killed) == math.floor((SkyLib.CODZ._level.zombies.max_special_wave_total_spawns * SkyLib.Network:_number_of_players()) - 3) then
+			SkyLib.CODZ:_create_last_enemies_outline()
+		end
+		if managers.player.totalCopAlive >= SkyLib.CODZ:_get_max_special_wave_spawns() then
+			return
+		end
+	else
+		if (SkyLib.CODZ._level.zombies.killed) == math.floor(SkyLib.CODZ._level.zombies.max_spawns - 3) then
+			SkyLib.CODZ:_create_last_enemies_outline()
+		end
+	end
 
 	SkyLib.CODZ._level.zombies.currently_spawned = SkyLib.CODZ._level.zombies.currently_spawned + 1
 

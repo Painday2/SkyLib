@@ -76,20 +76,27 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, force_second
         current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
     elseif pap then
         local current_peer_weapon = managers.player:player_unit():inventory():equipped_unit()
-        if current_peer_weapon:base():get_cosmetics_id() == "pap3" then
-            cosmetics = {id = "pap3", quality = 5, bonus = 0 }
-        elseif current_peer_weapon:base():get_cosmetics_id() == "pap2" then
-            cosmetics = {id = "pap3", quality = 5, bonus = 0 }
-        elseif current_peer_weapon:base():get_cosmetics_id() == "pap1" then
-            cosmetics = {id = "pap2", quality = 5, bonus = 0 }
-        elseif current_peer_weapon:base():get_cosmetics_id() == "nil" then
-            cosmetics = {id = "pap1", quality = 5, bonus = 0 }
-        end
-        --blueprint = self:_add_mod_to_weapon(current_peer_weapon)
         factory_id = current_peer_weapon:base()._factory_id
+        weapon_id = managers.weapon_factory:get_weapon_id_by_factory_id(factory_id)
+        PrintTable(weapon_id)
         current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
         local primary_category = current_peer_weapon:base():weapon_tweak_data().categories and current_peer_weapon:base():weapon_tweak_data().categories[1]
-        blueprint = tweak_data.weapon.factory:_assemble_random_blueprint(factory_id, primary_category)
+        if current_peer_weapon:base():get_cosmetics_id() == "pap3" then
+            cosmetics = {id = "pap3", quality = 5, bonus = 0 }
+            blueprint = current_peer_weapon:base()._blueprint
+        elseif current_peer_weapon:base():get_cosmetics_id() == "pap2" then
+            cosmetics = {id = "pap3", quality = 5, bonus = 0 }
+            self._change_stats_of(nil, weapon_id, {damage_mul = 8})
+            blueprint = current_peer_weapon:base()._blueprint
+        elseif current_peer_weapon:base():get_cosmetics_id() == "pap1" then
+            cosmetics = {id = "pap2", quality = 5, bonus = 0 }
+            self._change_stats_of(nil, weapon_id, {damage_mul = 4})
+            blueprint = current_peer_weapon:base()._blueprint
+        elseif current_peer_weapon:base():get_cosmetics_id() == "nil" then
+            cosmetics = {id = "pap1", quality = 5, bonus = 0 }
+            self._change_stats_of(nil, weapon_id, {damage_mul = 2})
+            blueprint = tweak_data.weapon.factory:_assemble_random_blueprint(factory_id, primary_category)
+        end
     else
         log("[SkyLib] Error: Weapon Switch")
     end
@@ -197,7 +204,7 @@ function SkyLib.CODZ.WeaponHelper:_change_stats_of(weapon_id, tbl_new_stats)
     -- SkyLib.CODZ.WeaponHelper:_change_stats_of( "new_m4" , { rof = 900, damage = 60, damage_mul = 3, total_clips = 4 } )
     -- SkyLib.CODZ.WeaponHelper:_change_stats_of( "ak74" , { cost = 2000, stability = 80, accuracy = 60 } )
 
-    if not tweak_data.weapon[weapon_id] then log("[ERROR-WeaponHelper._change_stats_of] Weapon id doesn't exist!", weapon_id) return end
+    if not tweak_data.weapon[weapon_id] then log("[ERROR-WeaponHelper._change_stats_of] Weapon id doesn't exist!", tostring(weapon_id)) return end
 
     local stats = {
         damage = tbl_new_stats.damage or nil,

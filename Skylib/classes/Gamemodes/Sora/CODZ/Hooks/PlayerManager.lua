@@ -1,5 +1,6 @@
 SkyHook:Post(PlayerManager, "init", function(self)
-    self._updated_codz_panel = false
+	self._updated_codz_panel = false
+	self.totalCopAlive = 0
 end)
 
 SkyHook:Post(PlayerManager, "update", function(self, t, dt)
