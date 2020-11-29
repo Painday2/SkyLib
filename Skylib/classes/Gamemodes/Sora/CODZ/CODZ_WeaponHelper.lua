@@ -69,9 +69,9 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, force_second
     }
 
     if weapon_id then
-        log(tostring(weapon_id))
+        --log(tostring(weapon_id))
         factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(tostring(weapon_id))
-        log(tostring(factory_id))
+        --log(tostring(factory_id))
         blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
         current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
     elseif pap then
@@ -158,8 +158,8 @@ function SkyLib.CODZ.WeaponHelper:_setup_box_weapons(custom_data)
     weapon_ids = remove_from_table_with_ending(weapon_ids, "_melee")
     weapon_ids = remove_from_table_with_ending(weapon_ids, "stats")
     weapon_ids = remove_from_table_with_ending(weapon_ids, "factory")
-    weapon_ids = remove_from_table(weapon_ids, "x_")
-    weapon_ids = remove_from_table(weapon_ids, "bow")
+    weapon_ids = remove_from_table(weapon_ids, "sentry")
+    weapon_ids = remove_from_table(weapon_ids, "nil")
     --this is disgusting but i cannot be bothered to make it better right now
     if data then
         for i, weapon_data in ipairs(data) do
@@ -176,7 +176,7 @@ function SkyLib.CODZ.WeaponHelper:_setup_box_weapons(custom_data)
                 if tweak[weapon_id] then
                         local weapon = tweak[weapon_id].global_value and not managers.dlc:is_dlc_unlocked(tweak[weapon_id].global_value) and tweak_data.lootdrop.global_values[tweak[weapon_id].global_value].dlc
                         if not weapon then
-                            log(tostring(weapon_id))
+                            --log(tostring(weapon_id))
                             table.insert(SkyLib.CODZ._weapons.mystery_box, tostring(weapon_id))
                         end
                 else
@@ -233,39 +233,6 @@ function SkyLib.CODZ.WeaponHelper:_change_stats_of(weapon_id, tbl_new_stats)
             tweak_data.weapon[weapon_id].AMMO_MAX = tweak_data.weapon[weapon_id].CLIP_AMMO_MAX * tweak_data.weapon[weapon_id].NR_CLIPS_MAX
         end
     end
-end
-
-function SkyLib.CODZ.WeaponHelper:_add_mod_to_weapon(equipped_unit)
-    local factory_id = equipped_unit:base()._factory_id
-    local weapon_id = managers.weapon_factory:get_weapon_id_by_factory_id(factory_id)
-    local blueprint = equipped_unit:base()._blueprint
-    local shitass = managers.weapon_factory:get_parts_from_weapon_id(weapon_id)
-    local part_id
-    log("PaP:" .. tostring(equipped_unit:base():get_cosmetics_id()))
-    PrintTable(blueprint)
-
-    --this doesn't work past the first, how do make work?
-    if equipped_unit:base():get_cosmetics_id() == "pap2" then
-        part_id = tostring(shitass.gadget[math.random(#shitass.gadget)])
-        log("partid:" .. part_id)
-    elseif equipped_unit:base():get_cosmetics_id() == "pap1" then
-    part_id = tostring(shitass.magazine[math.random(#shitass.magazine)])
-    log("partid:" .. part_id)
-    elseif equipped_unit:base():get_cosmetics_id() == "nil" then
-        part_id = tostring(shitass.sight[math.random(#shitass.sight)])
-        log("partid:" .. part_id)
-    end
-
-    if not self:_weapon_has_part(weapon_id, part_id) then
-        SkyLib:log("[SkyLib.CODZ.WeaponHelper:_add_mod_to_weapon] Error! Part <".. tostring(part_id) .."> do not exist for the weapon <".. tostring(weapon_id) .."> (".. tostring(factory_id) .. ")")
-        return blueprint
-    end
-
-    table.insert(blueprint, part_id)
-
-    local new_blueprint = managers.weapon_factory:get_assembled_blueprint(factory_id, blueprint)
-
-    return new_blueprint
 end
 
 function SkyLib.CODZ.WeaponHelper:_current_equipped_weapon()

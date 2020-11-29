@@ -23,7 +23,6 @@ function ElementWave:on_executed(instigator)
 
     if self._values.is_special_wave then
         SkyLib.CODZ:_set_special_wave(true)
-        log("special true")
     end
 
     if self._values.increase_kill then

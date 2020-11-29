@@ -62,7 +62,6 @@ end
 
 Hooks:PostHook(CharacterTweakData, "_init_fbi", "zm_disable_surrenders", function(self, presets)
 	self.fbi.surrender = nil
-	log("TONIS POGGERS")
 	self.fbi.rescue_hostages = false
 	self.fbi.allowed_poses = {crouch = false, stand = true}
 	self.fbi.dodge = nil
@@ -77,7 +76,6 @@ end)
 
 Hooks:PostHook(CharacterTweakData, "_init_swat", "zm_disable_surrenders_2", function(self, presets)
 	self.swat.surrender = nil
-	log("TONIS POGGERS2")
 	self.swat.rescue_hostages = false
 	self.swat.allowed_poses = {crouch = false, stand = true}
 	self.swat.dodge = nil

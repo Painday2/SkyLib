@@ -18,7 +18,6 @@ function ElementSpawnEnemyDummy:produce(params)
 	local units_special_wave = {}
 
 	SkyLib.CODZ._level.zombies.currently_spawned = SkyLib.CODZ._level.zombies.currently_spawned + 1
-	log(tostring(SkyLib.CODZ._level.zombies.currently_spawned))
 
 	if params and params.name then
 		if SkyLib.CODZ._level.wave.is_special_wave then
@@ -56,7 +55,6 @@ function ElementSpawnEnemyDummy:produce(params)
 		else
 			if SkyLib.CODZ._level.zombies.currently_spawned >= SkyLib.CODZ._level.zombies.max_special_wave_total_spawns then
 				unit:character_damage():set_pickup("zm_pwrup_max_ammo")
-				log("thonkers")
 			end
 		end
 	else
@@ -106,7 +104,6 @@ function ElementSpawnEnemyDummy:produce(params)
 			end
 		else
 			if SkyLib.CODZ._level.zombies.currently_spawned >= SkyLib.CODZ._level.zombies.max_special_wave_total_spawns then
-				log("thonk")
 				unit:character_damage():set_pickup("zm_pwrup_max_ammo")
 			end
 		end

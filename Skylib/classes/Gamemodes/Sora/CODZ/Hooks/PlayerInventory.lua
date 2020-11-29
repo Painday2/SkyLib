@@ -48,10 +48,8 @@ function PlayerInventory:add_unit_selection_index(new_unit, is_equip, equip_is_i
 	local use_data = new_unit:base():get_use_data(self._use_data_alias)
 	new_selection.use_data = use_data
 	new_selection.unit = new_unit
-
 	new_unit:base():add_destroy_listener(self._listener_id, callback(self, self, "clbk_weapon_unit_destroyed"))
 	new_unit:base().forced_selection_index = selection_index
-
 	if self._available_selections[selection_index] then
 		local old_weapon_unit = self._available_selections[selection_index].unit
 		is_equip = is_equip or old_weapon_unit == self:equipped_unit()

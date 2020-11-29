@@ -1,5 +1,5 @@
 Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", function(self, tweak_data)
-    log("hi")
+
 	self.pick_lock_hard_no_skill.timer = 7
 	
 
