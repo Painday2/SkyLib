@@ -151,6 +151,7 @@ function SkyLib.CODZ:_init_hooks()
         --"classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBesiege",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAITweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/WeaponFactoryTweakData",
 
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMMoneyExt",
 

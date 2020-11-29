@@ -23,6 +23,7 @@
         <hook file="WeaponSkins.lua" source_file="lib/tweak_data/blackmarket/weaponskinstweakdata"/>
         <hook file="EquipmentsTweakdata.lua" source_file="lib/tweak_data/equipmentstweakdata"/>
         <hook file="HUDIconsTweakdata.lua" source_file="lib/tweak_data/hudiconstweakdata"/>
+        <hook file="WeaponFactoryTweakData.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
     </Hooks>
 
     <Localization default="unique_lines.txt" directory="loc">

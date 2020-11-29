@@ -62,8 +62,6 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, force_second
     local factory_id
     local blueprint
     local current_index_equipped
-    --local equip_index = current_index_equipped == 1 and true or false
-    --local idx_weapon_tweak = tweak_data.weapon[weapon_id].use_data.selection_index
     local cosmetics = skin or {
         id = "nil",
         quality = 1,
@@ -76,17 +74,25 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, force_second
         log(tostring(factory_id))
         blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
         current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
-        --local equip_index = current_index_equipped == 1 and true or false
-        --local idx_weapon_tweak = tweak_data.weapon[weapon_id].use_data.selection_index
     elseif pap then
         local current_peer_weapon = managers.player:player_unit():inventory():equipped_unit()
-        blueprint = self:_add_mod_to_weapon(current_peer_weapon)
+        if current_peer_weapon:base():get_cosmetics_id() == "pap3" then
+            cosmetics = {id = "pap3", quality = 5, bonus = 0 }
+        elseif current_peer_weapon:base():get_cosmetics_id() == "pap2" then
+            cosmetics = {id = "pap3", quality = 5, bonus = 0 }
+        elseif current_peer_weapon:base():get_cosmetics_id() == "pap1" then
+            cosmetics = {id = "pap2", quality = 5, bonus = 0 }
+        elseif current_peer_weapon:base():get_cosmetics_id() == "nil" then
+            cosmetics = {id = "pap1", quality = 5, bonus = 0 }
+        end
+        --blueprint = self:_add_mod_to_weapon(current_peer_weapon)
         factory_id = current_peer_weapon:base()._factory_id
         current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
+        local primary_category = current_peer_weapon:base():weapon_tweak_data().categories and current_peer_weapon:base():weapon_tweak_data().categories[1]
+        blueprint = tweak_data.weapon.factory:_assemble_random_blueprint(factory_id, primary_category)
     else
         log("[SkyLib] Error: Weapon Switch")
     end
-
     if force_secondary then
         managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, 1, false, blueprint, cosmetics, false, 1)
     elseif force_primary then
@@ -127,6 +133,17 @@ function SkyLib.CODZ.WeaponHelper:_setup_box_weapons(custom_data)
 
         return output_table
     end
+    local function remove_from_table(tabley, ending)
+        local output_table = {}
+
+        for index, value in pairs(tabley) do
+            if ( not (ending == "" or value:match(ending) == ending) ) then
+                table.insert(output_table, value)
+            end
+        end
+
+        return output_table
+    end
 
     local weapon_ids = table.map_keys(tweak_data.weapon)
     weapon_ids = remove_from_table_with_ending(weapon_ids, "_npc")
@@ -141,6 +158,8 @@ function SkyLib.CODZ.WeaponHelper:_setup_box_weapons(custom_data)
     weapon_ids = remove_from_table_with_ending(weapon_ids, "_melee")
     weapon_ids = remove_from_table_with_ending(weapon_ids, "stats")
     weapon_ids = remove_from_table_with_ending(weapon_ids, "factory")
+    weapon_ids = remove_from_table(weapon_ids, "x_")
+    weapon_ids = remove_from_table(weapon_ids, "bow")
     --this is disgusting but i cannot be bothered to make it better right now
     if data then
         for i, weapon_data in ipairs(data) do
@@ -220,25 +239,21 @@ function SkyLib.CODZ.WeaponHelper:_add_mod_to_weapon(equipped_unit)
     local factory_id = equipped_unit:base()._factory_id
     local weapon_id = managers.weapon_factory:get_weapon_id_by_factory_id(factory_id)
     local blueprint = equipped_unit:base()._blueprint
-    local pap = equipped_unit:base()._pap
     local shitass = managers.weapon_factory:get_parts_from_weapon_id(weapon_id)
     local part_id
-    --log(pap)
-    PrintTable(shitass)
+    log("PaP:" .. tostring(equipped_unit:base():get_cosmetics_id()))
+    PrintTable(blueprint)
 
     --this doesn't work past the first, how do make work?
-    if pap == nil then
-    part_id = tostring(shitass.sight[math.random(#shitass.sight)])
-    log("partid:" .. part_id)
-    pap = 1
-    elseif pap == "1" then
+    if equipped_unit:base():get_cosmetics_id() == "pap2" then
+        part_id = tostring(shitass.gadget[math.random(#shitass.gadget)])
+        log("partid:" .. part_id)
+    elseif equipped_unit:base():get_cosmetics_id() == "pap1" then
     part_id = tostring(shitass.magazine[math.random(#shitass.magazine)])
     log("partid:" .. part_id)
-    pap = 2
-    elseif pap == "2" then
-    part_id = tostring(shitass.gadget[math.random(#shitass.gadget)])
-    log("partid:" .. part_id)
-    pap = 3
+    elseif equipped_unit:base():get_cosmetics_id() == "nil" then
+        part_id = tostring(shitass.sight[math.random(#shitass.sight)])
+        log("partid:" .. part_id)
     end
 
     if not self:_weapon_has_part(weapon_id, part_id) then
