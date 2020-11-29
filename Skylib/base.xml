@@ -20,6 +20,7 @@
 
     <Hooks directory="hooks">
         <hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
+        <hook file="WeaponSkins.lua" source_file="lib/tweak_data/blackmarket/weaponskinstweakdata"/>
         <hook file="EquipmentsTweakdata.lua" source_file="lib/tweak_data/equipmentstweakdata"/>
         <hook file="HUDIconsTweakdata.lua" source_file="lib/tweak_data/hudiconstweakdata"/>
     </Hooks>

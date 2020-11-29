@@ -55,7 +55,7 @@ Hooks:PostHook(HudIconsTweakData, "init", "init_zm_icons_gui", function(self)
 			128
 		}
 	}
-	
+
 	--Junk
 	self.zm_power_on = {
         texture = "perks/power",

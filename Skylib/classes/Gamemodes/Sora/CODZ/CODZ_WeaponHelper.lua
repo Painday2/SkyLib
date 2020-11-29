@@ -80,7 +80,7 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, force_second
         --local idx_weapon_tweak = tweak_data.weapon[weapon_id].use_data.selection_index
     elseif pap then
         local current_peer_weapon = managers.player:player_unit():inventory():equipped_unit()
-        self:_add_mod_to_weapon(current_peer_weapon)
+        blueprint = self:_add_mod_to_weapon(current_peer_weapon)
         factory_id = current_peer_weapon:base()._factory_id
         current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
     else

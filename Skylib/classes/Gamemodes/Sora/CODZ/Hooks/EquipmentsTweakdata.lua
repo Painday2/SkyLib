@@ -1,5 +1,4 @@
 Hooks:PostHook(EquipmentsTweakData, "init", "init_zm_perks", function(self)
-	log("flushed")
     self.specials.zm_power_on = {
         sync_possession = true,
 		transfer_quantity = 0,
@@ -50,14 +49,5 @@ Hooks:PostHook(EquipmentsTweakData, "init", "init_zm_perks", function(self)
 		icon = "perk_god",
 		text_id = "hud_perk_god"
     }
-	
-	self.specials.key_doubletap = {
-		sync_possession = true,
-		action_message = "key_doubletap_obtained",
-		transfer_quantity = 4,
-		text_id = "hud_key_doubletap",
-		icon = "hud_perk_doubletap"
-	}
-end)
 
-EquipmentsTweakData:init(tweak_data)
+end)
