@@ -18,6 +18,11 @@ function ElementSpawnEnemyDummy:produce(params)
 	local units_special_wave = {}
 
 	SkyLib.CODZ:check_contours()
+	if SkyLib.CODZ._level.wave.is_special_wave then
+		if managers.player.totalCopAlive >= SkyLib.CODZ:_get_max_special_wave_spawns() then
+		return
+		end
+	end
 
 	SkyLib.CODZ._level.zombies.currently_spawned = SkyLib.CODZ._level.zombies.currently_spawned + 1
 	log(SkyLib.CODZ._level.zombies.currently_spawned)

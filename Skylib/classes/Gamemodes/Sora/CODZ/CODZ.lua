@@ -354,9 +354,6 @@ function SkyLib.CODZ:check_contours()
 		if (self._level.zombies.killed) == math.floor((self._level.zombies.max_special_wave_total_spawns * SkyLib.Network:_number_of_players()) - 3) then
 			self:_create_last_enemies_outline()
 		end
-		if managers.player.totalCopAlive >= self:_get_max_special_wave_spawns() then
-			return
-		end
 	else
 		if (self._level.zombies.killed) == math.floor(self._level.zombies.max_spawns - 3) then
 			self:_create_last_enemies_outline()
