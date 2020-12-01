@@ -67,13 +67,13 @@ function SkyLib.CODZ:init(custom_rules)
 
     self._level = custom_rules and custom_rules.mod_level_rules or {
         zombies = {
-            currently_spawned = 0,
+            currently_spawned = 8,
             total_alive = 0,
             max_spawns = 8,
             max_special_wave_total_spawns = 10,
             killed = 0,
             add_on_end_wave = 2,
-            max_special_wave_spawns = 2,
+            max_special_wave_spawns = 3,
             added_contour = false
         },
         wave = {
@@ -190,18 +190,21 @@ function SkyLib.CODZ:_reset_wave_kills()
     self._level.zombies.killed = 0
 end
 
-function SkyLib.CODZ:start_new_wave(t, was_special_wave)
+function SkyLib.CODZ:start_new_wave(t, was_special_wave, fuck)
     if not t then
         t = self._level.wave.delay_timeout
     end
     local special_wave = was_special_wave
-    --log("start new wave")
+    log("start new wave")
     DelayedCalls:Add("zm_delay_between_waves", t, function()
+        if fuck then
+            SkyLib.CODZ:_set_special_wave(true)
+        end
         if special_wave then
             SkyLib.CODZ:_set_special_wave(false)
             --("false")
         end
-        --log("delayed call")
+        log("delayed call")
         if SkyLib.CODZ._level.wave.is_special_wave and SkyLib.CODZ._level.zombies.killed == SkyLib.CODZ._level.zombies.max_special_wave_total_spawns then
             SkyLib.CODZ:_set_special_wave(false)
             --log("special false")
@@ -344,6 +347,21 @@ function SkyLib.CODZ:_create_last_enemies_outline()
     end)
     log("create outlines?")
     self._level.zombies.added_contour = true
+end
+
+function SkyLib.CODZ:check_contours()
+    if self._level.wave.is_special_wave then
+		if (self._level.zombies.killed) == math.floor((self._level.zombies.max_special_wave_total_spawns * SkyLib.Network:_number_of_players()) - 3) then
+			self:_create_last_enemies_outline()
+		end
+		if managers.player.totalCopAlive >= self:_get_max_special_wave_spawns() then
+			return
+		end
+	else
+		if (self._level.zombies.killed) == math.floor(self._level.zombies.max_spawns - 3) then
+			self:_create_last_enemies_outline()
+		end
+	end
 end
 
 function SkyLib.CODZ:_increase_wave()

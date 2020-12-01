@@ -20,13 +20,14 @@ function ElementWave:on_executed(instigator)
     if self._stopped then
         return
     end
-
+    local yes = false
     if self._values.is_special_wave then
-        SkyLib.CODZ:_set_special_wave(true)
+        yes = true
     end
 
     if self._values.increase_kill then
         SkyLib.CODZ:_increase_wave_kills()
+        SkyLib.CODZ:check_contours()
         return
     end
 
@@ -34,9 +35,9 @@ function ElementWave:on_executed(instigator)
         managers.player:add_grenade_amount(2, true)
     end
 
+    SkyLib.CODZ:start_new_wave(13, false, yes)
     SkyLib.CODZ:_increase_wave()
     managers.hud._hud_codz:_wave_change_anim(SkyLib.CODZ:_get_current_wave())
-    SkyLib.CODZ:start_new_wave(13)
     SkyLib.CODZ._level.zombies.added_contour = false
     if SkyLib.CODZ:_scale_required() then
         SkyLib.CODZ:_increase_scale_value()
