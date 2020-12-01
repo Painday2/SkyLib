@@ -17,6 +17,14 @@
 		<texture path="units/pd2_mod_zombies/skins/pap_1/pattern/pat_pack-a-punch_bo1"/>
 		<texture path="units/pd2_mod_zombies/skins/pap_1/pattern_gradient/patgra_pack-a-punch"/>
 		<texture path="units/pd2_mod_zombies/skins/pap_1/pattern_gradient/patgra_pack-a-punch_new"/>
+		<texture path="units/pd2_mod_zombies/skins/pap_dm/pattern/i_mtl_p7_zm_ctl_packapunch_crystal_e"/>
+		<texture path="units/pd2_mod_zombies/skins/pap_dm/pattern_gradient/patgra_pap_3_diner"/>
+		<texture path="units/pd2_mod_zombies/skins/pap_dm/pattern_gradient/patgra_pap_3_red"/>
+		<texture path="units/pd2_mod_zombies/skins/pap_dm/pattern_gradient/patgra_pap_3_blue"/>
+		<texture path="units/pd2_mod_zombies/skins/pap_dm/pattern_gradient/patgra_pap_3_cyan"/>
+		<texture path="units/pd2_mod_zombies/skins/pap_dm/pattern_gradient/patgra_pap_3_yellow"/>
+		<texture path="units/pd2_mod_zombies/skins/pap_dm/pattern_gradient/patgra_pap_3_pink"/>
+
 	</add>
 	<add>
 		<unit path="units/pd2_mod_zombies/props/zm_buy_marker/zm_buy_marker"/>
