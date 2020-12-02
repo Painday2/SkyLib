@@ -10,6 +10,14 @@
 		<texture path="units/pd2_mod_zombies/guis/power_ups/power_fire_sale"/>
 	</add>
 	<add>
+		<unit load="true"	path="units/pd2_mod_zombies/equipment/weapon_buy_safe/weapon_buy_safe"/>
+		<object				path="units/pd2_mod_zombies/equipment/weapon_buy_safe/weapon_buy_safe"/>
+		<model				path="units/pd2_mod_zombies/equipment/weapon_buy_safe/weapon_buy_safe"/>
+		<material_config	path="units/pd2_mod_zombies/equipment/weapon_buy_safe/weapon_buy_safe"/>
+		<sequence_manager	path="units/pd2_mod_zombies/equipment/weapon_buy_safe/weapon_buy_safe"/>
+		<texture			path="units/pd2_mod_zombies/equipment/weapon_buy_safe/weapon_buy_safe_df"/>
+	</add>
+	<add>
 		<texture path="units/pd2_mod_zombies/skins/pap_1/base_gradient/base_pack-a-punch"/>
 		<texture path="units/pd2_mod_zombies/skins/pap_1/base_gradient/base_pack-a-punch_2"/>
 		<texture path="units/pd2_mod_zombies/skins/pap_1/base_gradient/base_pack-a-punch_3"/>

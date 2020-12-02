@@ -1,0 +1,84 @@
+
+<table>
+	<unit>
+		<variables>
+			<var_in value="0"/>
+		</variables>
+		<filter name="'filter_0'">
+			<check value="vars.var_in == 0"/>
+		</filter>
+		<filter name="'filter_1'">
+			<check value="vars.var_in == 1"/>
+		</filter>
+		
+		<sequence editable_state="true" name="'show_safe'" triggable="true" >
+			<animation_group enabled="true" from="1" to="1" name="'anim_group_spawn'" />
+			<animation_group enabled="true" from="0" to="0" name="'anim_group_door'" />
+			<graphic_group visibility="true" name="'grp_graphics'" />
+			<body enabled="true" name="'body_main_safe'" />
+			<body enabled="true" name="'body_main_safe_door'" />
+			<interaction enabled="true" />
+		</sequence>
+		
+		<sequence editable_state="true" name="'hide_safe'" triggable="true" >
+			<animation_group enabled="true" from="1" to="1" name="'anim_group_spawn'" />
+			<animation_group enabled="true" from="0" to="0" name="'anim_group_door'" />
+			<graphic_group visibility="false" name="'grp_graphics'" />
+			<body enabled="false" name="'body_main_safe'" />
+			<body enabled="false" name="'body_main_safe_door'" />
+			<interaction enabled="false" />
+		</sequence>
+		
+		<sequence editable_state="true" name="'anim_arrive'" triggable="true" >
+			<animation_group enabled="true" from="0" to="1"name="'anim_group_spawn'" />
+			<sound action="'play'" event="'saw_impact_heavy'" object="'anim_spawn'"	start_time="20/30" />
+			<body enabled="true" name="'body_main_safe'"							start_time="20/30" />
+			<body enabled="true" name="'body_main_safe_door'"						start_time="20/30" />
+			<body enabled="true" name="'body_fun_police'" />
+			<body enabled="false" name="'body_fun_police'" start_time="1" />
+			<graphic_group visibility="true" name="'grp_graphics'" />
+			<interaction enabled="true" start_time="1.5" />
+		</sequence>
+		
+		<sequence editable_state="true" name="'anim_leave'" triggable="true" >
+			<interaction enabled="false" />
+			<animation_group enabled="true" from="30/30" to="0/30" speed="-1" name="'anim_group_spawn'" />
+			<body enabled="false" name="'body_main_safe'" />
+			<body enabled="false" name="'body_main_safe_door'" />
+			<graphic_group visibility="false" name="'grp_graphics'" start_time="1"/>
+		</sequence>
+		
+		<sequence editable_state="true" name="'anim_close_door'" triggable="true" >
+			<set_variables var_in="0"/>
+			<function extension="'base'" function="'set_state'" param1="'false'" start_time="0.1" />
+			<interaction enabled="false" />
+			<interaction enabled="true" start_time="2" />
+			<function extension="'interaction'" function="'set_tweak_data'" param1="'zm_mystery_box'"/>
+			<animation_group enabled="true" from="30/30" to="0/30" speed="-0.5" name="'anim_group_door'" />
+			<body enabled="false" name="'body_main_safe_door_nomover'"	start_time="1" />
+			<body enabled="true" name="'body_main_safe_door'"			start_time="1" />
+			<function extension="'timer_gui'" function="'stop'" />
+			<function extension="'timer_gui'" function="'reset'" />
+		</sequence>
+		
+		<sequence editable_state="true" name="'anim_open_door'" triggable="true" >
+			<set_variables var_in="1"/>
+			<animation_group enabled="true" from="0" speed="0.5" to="1" name="'anim_group_door'" />
+			<function extension="'interaction'" function="'set_tweak_data'" param1="'zm_take_weapon'"/>
+			<interaction enabled="true" start_time="2" />
+			<body enabled="true" name="'body_main_safe_door_nomover'" />
+			<body enabled="false" name="'body_main_safe_door'" />
+			<interaction enabled="true" start_time="20/30*0.5" />
+			<run_sequence name="'timer_done'" start_time="8"/>
+		</sequence>
+		
+		<sequence editable_state="true" name="'timer_done'" filter="'filter_1'" triggable="true" >
+			<run_sequence name="'anim_close_door'"/>
+		</sequence>
+		
+		<sequence editable_state="true" name="'took_weapon'" triggable="true" >
+			<set_variables var_in="0"/>
+		</sequence>
+		
+	</unit>
+</table>
