@@ -1,54 +1,84 @@
 <table>
 	<unit>
 		<variables>
-			<v_weapon_id value="'none'"/>
-			<v_times_used value="0"/>
-			<v_fail_chance value="0"/>
+			<var_in value="0"/>
 		</variables>
-		<filter name="'filter_not_none'">
-			<check value="vars.var_type ~= 'none'"/>
+		<filter name="'filter_0'">
+			<check value="vars.var_in == 0"/>
 		</filter>
-		<sequence editable_state="true" name="'interact'" triggable="true">
-			<interaction enabled="false"/>
-			<run_sequence name=" 'test_anim' "/>
-		</sequence>
-		<sequence name=" 'spawn_weapon' ">
-			<set_variables v_weapon_id=" 'set_weapon_id_'..pick('temp', 'temp2')"/>
-			<run_sequence name=" 'spawn_weapon_test' " start_time="150/30"/>
-		</sequence>
-		<sequence editable_state="true" name="'spawn_weapon_test'" triggable="true">
-			<spawn_unit name=" 'units/pd2_mod_zombies/equipment/zom_mystery_box/test_weapon_pickup'" position="object_pos('sp_weapon')" rotation="object_rot('sp_weapon')"/>
-		</sequence>
-		<sequence editable_state="true" name="'test_anim'">
-			<sound action="'play'" event="'zm_box_picking'" object="'interact'"/>
-			<effect_spawner enabled="true" name="'glow_01'"/>
-			<animation_group enabled="true" from="0/30" name="'anim_open_close'" speed="4" to="80/30"/>
-		</sequence>
-		<sequence editable_state="true" name="'close_box'" triggable="true">
-			<animation_group enabled="true" from="80/30" name="'anim_open_close'" speed="-2" to="0/30"/>
-			<sound action="'play'" event="'zm_box_shutting'" object="'interact'"/>
-			<effect_spawner enabled="false" name="'glow_01'"/>
-		</sequence>
-		<sequence editable_state="true" name="'enable_interaction'" triggable="true">
-			<interaction enabled="true"/>
-		</sequence>
-		<sequence editable_state="true" name="'disable_interaction'" triggable="true">
-			<interaction enabled="false"/>
-		</sequence>
-		<sequence editable_state="true" name="'startup'" startup="true">
-			<animation_group enabled="true" from="0/30" name="'anim_open_close'" speed="1" to="0/30"/>
-		</sequence>
-		<sequence editable_state="true" name="'hide'">
-			<body enabled="false" name="'body_frame'"/>
-			<body enabled="false" name="'body_animated'"/>
-			<graphic_group name="'g_all'" visibility="false"/>
-			<interaction enabled="false"/>
-		</sequence>
-		<sequence editable_state="true" name="'show'">
-			<body enabled="true" name="'body_frame'"/>
+		<filter name="'filter_1'">
+			<check value="vars.var_in == 1"/>
+		</filter>
+		
+		<sequence editable_state="true" name="'show_safe'" triggable="true" >
+			<animation_group enabled="true" from="1" to="1" name="'anim_group_spawn'" />
+			<animation_group enabled="true" from="0" to="0" name="'anim_group_door'" />
+			<graphic_group visibility="true" name="'grp_graphics'" />
+			<body enabled="true" name="'body_main_safe'" />
 			<body enabled="true" name="'body_animated'"/>
-			<graphic_group name="'g_all'" visibility="true"/>
-			<interaction enabled="false"/>
+			<interaction enabled="true" />
+		</sequence>
+		
+		<sequence editable_state="true" name="'hide_safe'" triggable="true" >
+			<animation_group enabled="true" from="1" to="1" name="'anim_group_spawn'" />
+			<animation_group enabled="true" from="0" to="0" name="'anim_group_door'" />
+			<graphic_group visibility="false" name="'grp_graphics'" />
+			<body enabled="false" name="'body_animated'"/>
+			<interaction enabled="false" />
+		</sequence>
+		
+		<sequence editable_state="true" name="'anim_arrive'" triggable="true" >
+			<animation_group enabled="true" from="40/30" name="'anim_enter'" speed="1" to="90/30"/>
+			<animation_group enabled="true" from="40/30" name="'anim_box_exit'" speed="1" to="90/30"/>
+			<body enabled="true" name="'body_animated'"							start_time="20/30" />
+			<graphic_group visibility="true" name="'g_all'" />
+			<interaction enabled="true" start_time="1.5" />
+		</sequence>
+		
+		<sequence editable_state="true" name="'anim_leave'" triggable="true" >
+			<interaction enabled="false" />
+			<animation_group enabled="true" from="0/30" name="'anim_box_exit'" speed="1" to="30/30"/>
+			<body enabled="false" name="'body_animated'" />
+			<graphic_group visibility="false" name="'g_all'" start_time="1"/>
+		</sequence>
+		
+		<sequence editable_state="true" name="'anim_close_door'" triggable="true" >
+			<set_variables var_in="0"/>
+			<effect_spawner enabled="false" name="'glow_01'"/>
+			<sound action="'play'" event="'zm_box_shutting'" object="'interact'"/>
+			<function extension="'base'" function="'set_state'" param1="'false'" start_time="0.1" />
+			<interaction enabled="false" />
+			<interaction enabled="true" start_time="2" />
+			<function extension="'interaction'" function="'set_tweak_data'" param1="'zm_mystery_box'"/>
+			<animation_group enabled="true" from="30/30" name="'anim_close_open'" speed="-1" to="0/30"/>
+			<function extension="'timer_gui'" function="'stop'" />
+			<function extension="'timer_gui'" function="'reset'" />
+		</sequence>
+		
+		<sequence editable_state="true" name="'anim_open_door'" triggable="true" >
+			<set_variables var_in="1"/>
+			<effect_spawner enabled="true" name="'glow_01'"/>
+			<sound action="'play'" event="'zm_box_picking'" object="'interact'"/>
+			<animation_group enabled="true" from="0/30" name="'anim_close_open'" speed="1" to="30/30"/>
+			<function extension="'interaction'" function="'set_tweak_data'" param1="'zm_take_weapon'"/>
+			<run_sequence name="'weapon_down'" start_time="2"/>
+			<interaction enabled="true" start_time="2" />
+			<body enabled="true" name="'body_main_safe_door_nomover'" />
+			<body enabled="false" name="'body_main_safe_door'" />
+			<interaction enabled="true" start_time="20/30*0.5" />
+			<run_sequence name="'timer_done'" start_time="8"/>
+		</sequence>
+		
+		<sequence editable_state="true" name="'weapon_down'" triggable="true" >
+			<animation_group enabled="true" from="0/30" name="'anim_weapon'" speed="0.1" to="30/30"/>
+		</sequence>
+
+		<sequence editable_state="true" name="'timer_done'" filter="'filter_1'" triggable="true" >
+			<run_sequence name="'anim_close_door'"/>
+		</sequence>
+		
+		<sequence editable_state="true" name="'took_weapon'" triggable="true" >
+			<set_variables var_in="0"/>
 		</sequence>
 	</unit>
 </table>

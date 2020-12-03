@@ -1,15 +1,17 @@
 <?xml version="1.0" ?>
 <dynamic_object>
-	<diesel materials="units/pd2_mod_zombies/equipment/mystery_box/zm_random_weapon_box" orientation_object="rp_gen_interactable_sec_safe_2x05_titan" />
+	<diesel materials="units/pd2_mod_zombies/equipment/mystery_box/zm_random_weapon_box" orientation_object="rp_root" />
 	<sequence_manager file="units/pd2_mod_zombies/equipment/mystery_box/zm_random_weapon_box" />
 
 	<animations>
-		<animation_group name="anim_open_close" enabled="false">
-			<object name="anim_open_close" />
-			<object name="anim_handle" />
+		<animation_group name="anim_close_open" enabled="false">
+			<object name="anim_close_open" />
 		</animation_group>
-		<animation_group name="anim_explosion_in_out" enabled="false">
-			<object name="anim_explosion_in_out" />
+		<animation_group name="anim_box_exit" enabled="false">
+			<object name="anim_enter_exit" />
+		</animation_group>
+		<animation_group name="anim_weapon" enabled="false">
+			<object name="sp_weapon" />
 		</animation_group>
 	</animations>
 
@@ -18,21 +20,14 @@
 	</effects>
 	
 	<bodies>
-		<body name="body_frame" enabled="true" template="static" >
+		<body name="body_animated" enabled="true" template="animated" >
+			<object name="g_box_anim"		collision_type="mesh_mopp"  />
+			<object name="g_metal_anim"		collision_type="mesh_mopp"  />
 			<object name="g_box_static"		collision_type="mesh_mopp"  />
 			<object name="g_box_static2"	collision_type="mesh_mopp"  />
 			<object name="g_metal_static"	collision_type="mesh_mopp"  />
 		</body>
-		<body name="body_animated" enabled="true" template="animated" >
-			<object name="g_box_anim"		collision_type="mesh_mopp"  />
-			<object name="g_metal_anim"		collision_type="mesh_mopp"  />
-		</body>
 	</bodies>
-<!-- 
-	<decal_surfaces default_material="steel" static="false">
-		<decal_mesh name="g_safe" 		enabled="true" 	material="steel" />
-		<decal_mesh name="g_door" 		enabled="true" 	material="steel" />
-	</decal_surfaces> -->	
 
 	<graphics>
 		<graphic_group name="g_all" enabled="true" culling_object="co_culling">

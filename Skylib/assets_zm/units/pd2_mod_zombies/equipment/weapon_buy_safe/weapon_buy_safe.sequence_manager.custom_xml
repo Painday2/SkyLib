@@ -30,7 +30,7 @@
 		</sequence>
 		
 		<sequence editable_state="true" name="'anim_arrive'" triggable="true" >
-			<animation_group enabled="true" from="0" to="1"name="'anim_group_spawn'" />
+			<animation_group enabled="true" from="0" to="1" name="'anim_group_spawn'" />
 			<sound action="'play'" event="'saw_impact_heavy'" object="'anim_spawn'"	start_time="20/30" />
 			<body enabled="true" name="'body_main_safe'"							start_time="20/30" />
 			<body enabled="true" name="'body_main_safe_door'"						start_time="20/30" />

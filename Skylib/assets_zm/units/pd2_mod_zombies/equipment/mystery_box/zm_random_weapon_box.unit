@@ -5,10 +5,11 @@
 	<extensions>
 		<extension class="ScriptUnitData" name="unit_data" />
 		<extension name="damage" class="UnitDamage" />
+		<extension name="base" class="MisterySafeBase" />
 		<extension name="sync_unit_data" class="SyncUnitData" />
 		
 		<!--Buy Box-->
-		<extension name="interaction" class="UseInteractionExt">
+		<extension name="interaction" class="MisterySafeInteractionExt">
 			<var name="tweak_data" value="zm_mystery_box" />
 			<var name="_interact_object" value="interact"/>
 			<var name="drop_in_sync_tweak_data" value="true" />
