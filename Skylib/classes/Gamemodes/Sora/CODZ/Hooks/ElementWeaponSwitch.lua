@@ -63,7 +63,7 @@ function ElementWeaponSwitch:on_executed(instigator)
 
     -- Get the upgraded weapon ID if the pack-a-punch box is used.
     if self._values.is_pap_engine then
-        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(false, false, false, true, cosmetics)
+        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(false, false, false, true, cosmetics, instigator)
     end
 
     ElementWeaponSwitch.super.on_executed(self, instigator)

@@ -83,5 +83,153 @@ function SkyLib.Network:_init_codz_network()
 
             SkyLib.CODZ:_update_total_score(sender, tonumber(tbl_data.pg))
         end
+        if id == "PWUP_EXECUTE" then
+            local power_up = tonumber(data)
+    
+            if power_up == 1 then
+                PowerUpManager:execute_max_ammo()
+            elseif power_up == 2 then
+                PowerUpManager:execute_double_points()
+            elseif power_up == 3 then
+                PowerUpManager:execute_instakill()
+            elseif power_up == 4 then
+                PowerUpManager:execute_firesale()
+            elseif power_up == 5 then
+                PowerUpManager:execute_kaboom()
+            elseif power_up == 7 then
+                local unit_by_peer = managers.criminals:character_unit_by_peer_id(sender)
+                if alive(unit_by_peer) then
+                    unit_by_peer:movement():set_team(managers.groupai:state():team_data(tweak_data.levels:get_default_team_ID("non_combatant")))
+                end
+    
+                PowerUpManager:execute_zombie_blood_on(unit_by_peer)
+            end
+        end
+    
+        if id == "ZombieBloodEnded" then
+            local unit_by_peer = managers.criminals:character_unit_by_peer_id(sender)
+            if alive(unit_by_peer) then
+                unit_by_peer:movement():set_team(managers.groupai:state():team_data(tweak_data.levels:get_default_team_ID("player")))
+            end
+        end
+    
+        if id == "SpecialWave_PlayShadowSpook" then
+            local pos = string_to_vector(data)
+    
+            SkyLib.Sound:play({
+                name = "play_shadow_spook",
+                custom_dir = "units/pd2_mod_zombies/sounds/zm_enemy/shadow",
+                custom_package = "assets_zm",
+                file_name = "zm_ene_shadow_scream_01.ogg",
+                is_loop = false,
+                is_relative = false,
+                is_3d = true,
+                position = pos
+            })
+        end
+
+        if id == "SpecialWave_SpawnPosition" then
+            --if managers.wdu:_is_special_wave() then
+                local pos = string_to_vector(data)
+
+                if pos then
+                    World:effect_manager():spawn({
+                        effect = Idstring("units/pd2_mod_zombies/effects/zm/zm_special_spawn"),
+                        position = pos
+                    })
+                end
+
+                SkyLib.Sound:play({
+                    name = "zm_enemy_spawn_electrical",
+                    file_name = "zm_enemy_spawn_electrical.ogg",
+                    custom_dir = "units/pd2_mod_zombies/sounds/zm_enemy/spawning",
+                    custom_package = "assets_zm",
+                    is_loop = false,
+                    is_relative = false
+                })
+
+                DelayedCalls:Add("zm_shake_little_delay", 1.6, function()
+                    if alive(managers.player:player_unit()) then
+                        local feedback = managers.feedback:create("mission_triggered")
+                        feedback:set_unit(managers.player:player_unit())
+                        feedback:set_enabled("camera_shake", true)
+                        feedback:set_enabled("rumble", true)
+                        feedback:set_enabled("above_camera_effect", false)
+
+                        local params = {
+                            "camera_shake",
+                            "multiplier",
+                            1,
+                            "camera_shake",
+                            "amplitude",
+                            0.5,
+                            "camera_shake",
+                            "attack",
+                            0.05,
+                            "camera_shake",
+                            "sustain",
+                            0.15,
+                            "camera_shake",
+                            "decay",
+                            0.5,
+                            "rumble",
+                            "multiplier_data",
+                            1,
+                            "rumble",
+                            "peak",
+                            0.5,
+                            "rumble",
+                            "attack",
+                            0.05,
+                            "rumble",
+                            "sustain",
+                            0.15,
+                            "rumble",
+                            "release",
+                            0.5
+                        }
+
+                        feedback:play(unpack(params))
+                    end
+                end)
+            --end
+        end
+
+        if id == "ZMStatsEndGame" then
+            local player_id = sender
+            local panel_endgame = managers.hud._zm_result_panel[player_id]
+            local kills_text = panel_endgame:child("total_kills")
+            local downs_text = panel_endgame:child("total_downs")
+            local revives_text = panel_endgame:child("total_revives")
+            local total_score = panel_endgame:child("total_score")
+
+            local stats = LuaNetworking:StringToTable(data)
+
+            kills_text:set_text(stats.kills)
+            downs_text:set_text(stats.downs)
+            revives_text:set_text(stats.revives)
+            total_score:set_text(stats.total_score)
+        end
+
+        if id == "ShareCashTo" then
+            local player_id = tonumber(data)
+            managers.wdu:_add_money_to(player_id, 1000, true)
+        end
+
+        if id == "SecretsCompleted" then
+            if Network:is_server() then
+                local unit_by_peer = managers.criminals:character_unit_by_peer_id(sender)
+                if alive(unit_by_peer) then
+                    local rpc_params = {
+                        "give_equipment",
+                        "perk_god",
+                        1,
+                        false
+                    }
+
+                    unit_by_peer:network():send_to_unit(rpc_params)
+                end
+            end
+        end
     end)
 end

@@ -58,7 +58,7 @@ function SkyLib.CODZ.WeaponHelper:_get_random_weapon()
     SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(debug)
 end
 
-function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, force_secondary, force_primary, pap, skin)
+function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, force_secondary, force_primary, pap, skin, instigator)
     local factory_id
     local blueprint
     local current_index_equipped
@@ -104,8 +104,8 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, force_second
         managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, 1, false, blueprint, cosmetics, false, 1)
     elseif force_primary then
         managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, 2, false, blueprint, cosmetics, false, 2)
-    else
-    managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, current_index_equipped, false, blueprint, cosmetics, false, current_index_equipped)
+    elseif instigator == managers.player:player_unit() then
+        managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, current_index_equipped, false, blueprint, cosmetics, false, current_index_equipped)
     end
     if managers.player:player_unit():movement().sync_equip_weapon then
         managers.player:player_unit():movement():sync_equip_weapon()

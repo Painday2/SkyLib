@@ -59,6 +59,7 @@
 			<set_variables var_in="1"/>
 			<effect_spawner enabled="true" name="'glow_01'"/>
 			<sound action="'play'" event="'zm_box_picking'" object="'interact'"/>
+			<animation_group enabled="true" from="30/30" name="'anim_weapon'" speed="-0.9" to="0/30"/>
 			<animation_group enabled="true" from="0/30" name="'anim_close_open'" speed="1" to="30/30"/>
 			<function extension="'interaction'" function="'set_tweak_data'" param1="'zm_take_weapon'"/>
 			<run_sequence name="'weapon_down'" start_time="2"/>

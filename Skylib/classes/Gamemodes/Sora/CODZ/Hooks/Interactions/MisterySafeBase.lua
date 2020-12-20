@@ -10,12 +10,17 @@ end
 
 function MisterySafeBase:interacted(player)
     if self._weapon_spawned and player and player ==  self._weapon_owner then
-        --local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(self._weapon_id)
+        local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(self._weapon_id)
         local current_index_equipped = player:inventory():equipped_selection()
-
-        --local blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
+        local blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
+        local cosmetics =  {
+            id = "nil",
+            quality = 1,
+            bonus = 0
+        }
 
         SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._weapon_id)
+        managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, current_index_equipped, false, blueprint, cosmetics, false, current_index_equipped)
 
         if player:movement().sync_equip_weapon then
             player:movement():sync_equip_weapon()

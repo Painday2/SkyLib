@@ -3,6 +3,10 @@
         "undefined-global",
         "undefined-global",
         "undefined-global",
+        "undefined-global",
         "undefined-global"
+    ],
+    "Lua.diagnostics.globals": [
+        "tweak_data"
     ]
 }
