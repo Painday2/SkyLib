@@ -126,6 +126,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/EquipmentsTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementSpawnEnemyDummy",
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementWeaponSwitch",
+        "classes/Gamemodes/Sora/CODZ/Hooks/ElementWallBuy",
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementWave",
         "classes/Gamemodes/Sora/CODZ/Hooks/IngameWaitingForPlayersState",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDManager",
@@ -159,6 +160,7 @@ function SkyLib.CODZ:_init_hooks()
 
         "classes/Gamemodes/Sora/CODZ/Editor/EditorWave",
         "classes/Gamemodes/Sora/CODZ/Editor/EditorWeaponSwitch",
+        "classes/Gamemodes/Sora/CODZ/Editor/EditorWallBuy",
     }
 
     for _, hook in pairs(self._hooks) do

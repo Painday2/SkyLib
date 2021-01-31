@@ -78,7 +78,6 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, force_second
         local current_peer_weapon = managers.player:player_unit():inventory():equipped_unit()
         factory_id = current_peer_weapon:base()._factory_id
         weapon_id = managers.weapon_factory:get_weapon_id_by_factory_id(factory_id)
-        PrintTable(weapon_id)
         current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
         local primary_category = current_peer_weapon:base():weapon_tweak_data().categories and current_peer_weapon:base():weapon_tweak_data().categories[1]
         if current_peer_weapon:base():get_cosmetics_id() == "pap3" then
@@ -153,21 +152,14 @@ function SkyLib.CODZ.WeaponHelper:_setup_box_weapons(custom_data)
     end
 
     local weapon_ids = table.map_keys(tweak_data.weapon)
-    weapon_ids = remove_from_table_with_ending(weapon_ids, "_npc")
-    weapon_ids = remove_from_table_with_ending(weapon_ids, "_crew")
-    weapon_ids = remove_from_table_with_ending(weapon_ids, "_secondary")
-    weapon_ids = remove_from_table_with_ending(weapon_ids, "module")
-    weapon_ids = remove_from_table_with_ending(weapon_ids, "mk2")
-    weapon_ids = remove_from_table_with_ending(weapon_ids, "range")
-    weapon_ids = remove_from_table_with_ending(weapon_ids, "idle")
-    weapon_ids = remove_from_table_with_ending(weapon_ids, "m203")
-    weapon_ids = remove_from_table_with_ending(weapon_ids, "trip_mines")
-    weapon_ids = remove_from_table_with_ending(weapon_ids, "_melee")
-    weapon_ids = remove_from_table_with_ending(weapon_ids, "stats")
-    weapon_ids = remove_from_table_with_ending(weapon_ids, "factory")
+    local removethese = {"_npc","_crew","_secondary","module","mk2","range","idle","m203","trip_mines","_melee","stats","factory"}
+    for k, v in pairs(removethese) do
+        weapon_ids = remove_from_table_with_ending(weapon_ids, v)
+    end
     weapon_ids = remove_from_table(weapon_ids, "sentry")
     weapon_ids = remove_from_table(weapon_ids, "nil")
-    --this is disgusting but i cannot be bothered to make it better right now
+
+
     if data then
         for i, weapon_data in ipairs(data) do
             if tweak[weapon_data.weapon_id] then
