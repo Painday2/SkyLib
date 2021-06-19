@@ -1,6 +1,6 @@
 <mod name="SkyLib" global_key="SkyLib" color="Color(0.63, 0.58, 0.95)" priority="999">
 
-    <AssetUpdates id="23809" version="1.0.0" provider="modworkshop" use_local_dir="true" use_local_path="true"/>
+    <AssetUpdates id="23809" version="prealpha" provider="modworkshop" use_local_dir="true" use_local_path="true"/>
 
     <Classes directory="classes">
         <class file="Utils/SkyHook.lua"/>
@@ -25,6 +25,9 @@
         <hook file="HUDIconsTweakdata.lua" source_file="lib/tweak_data/hudiconstweakdata"/>
         <hook file="WeaponFactoryTweakData.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
     </Hooks>
+    <Hooks>
+        <hook file="classes/Gamemodes/Sora/CODZ/Hooks/LoadSounds.lua" source_file="lib/setups/gamesetup"/>
+    </Hooks>
 
     <Localization default="unique_lines.txt" directory="loc">
 		<loc file="unique_lines.txt" language="english"/>
@@ -33,6 +36,8 @@
     <AddFiles directory="assets">
         <texture path="ui/bloodtrail"/>
         <texture path="ui/bloodtrail_other"/>
+        <font load="true" path="fonts/escom_outline"/>
+        <texture path="fonts/escom_outline"/>
         <texture path="ui/survival/stat_bar_empty"/>
         <texture path="ui/survival/stat_bar_fill"/>
         <texture path="ui/survival/menu_cat_ar"/>
@@ -42,8 +47,6 @@
         <texture path="ui/survival/menu_cat_sg"/>
         <texture path="ui/survival/menu_cat_pistol"/>
         <texture path="ui/survival/menu_cat_snp"/>
-        <font load="true" path="fonts/escom_outline"/>
-        <texture path="fonts/escom_outline"/>
     </AddFiles>
-    <Package file="ZMAssets.xml" id="packages/ZMAssets"/>
+    <Package file="assets_zm/ZMAssets.xml" id="packages/ZMAssets"/>
 </mod>

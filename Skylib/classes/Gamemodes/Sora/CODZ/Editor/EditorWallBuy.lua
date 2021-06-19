@@ -1,6 +1,6 @@
 EditorWallBuy = EditorWallBuy or class(MissionScriptEditor)
 function EditorWallBuy:init(...)
-	local unit = "units/dev_tools/mission_elements/point_interaction/interaction_dummy"
+	local unit = "units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy"
 	local assets = self:GetPart("world")._assets_manager
 	if not PackageManager:has(Idstring("unit"), Idstring(unit)) and assets then
 		BeardLibEditor.Utils:QuickDialog({title = "An error appears!", message = "This element requires the interaction dummy unit to be loaded or else it won't work!"}, {{"Load it", function()
@@ -26,7 +26,7 @@ function EditorWallBuy:update_interaction_unit(pos, rot)
 	if element then
 		if tweak_data.interaction[self._element.values.tweak_data_id] then
 			if not alive(element._unit) then
-				element._unit = CoreUnit.safe_spawn_unit("units/dev_tools/mission_elements/point_interaction/interaction_dummy", self._element.values.position, self._element.values.rotation)
+				element._unit = CoreUnit.safe_spawn_unit("units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy", self._element.values.position, self._element.values.rotation)
 				element._unit:interaction():set_mission_element(element)
 			end
 			element._unit:interaction():set_tweak_data(self._element.values.tweak_data_id)

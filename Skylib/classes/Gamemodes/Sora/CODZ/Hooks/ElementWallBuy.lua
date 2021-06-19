@@ -26,9 +26,9 @@ function ElementWallBuy:init(...)
 		local host_only = self:value("host_only")
 
 		if host_only then
-			self._unit = CoreUnit.safe_spawn_unit("units/dev_tools/mission_elements/point_interaction/interaction_dummy_nosync", self._values.position, self._values.rotation)
+			self._unit = CoreUnit.safe_spawn_unit("units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy_nosync", self._values.position, self._values.rotation)
 		else
-			self._unit = CoreUnit.safe_spawn_unit("units/dev_tools/mission_elements/point_interaction/interaction_dummy", self._values.position, self._values.rotation)
+			self._unit = CoreUnit.safe_spawn_unit("units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy", self._values.position, self._values.rotation)
 		end
 
 		if self._unit then
@@ -55,7 +55,7 @@ function ElementWallBuy:on_executed(instigator, ...)
     end   
 
     -- Random factory weapon if the interaction is on a mystery box
-    if self._values.weapon_id then
+    --[[if self._values.weapon_id then
         self._weapon_id = self._values.weapon_id
         log(self._weapon_id)
         local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(self._weapon_id)
@@ -64,16 +64,16 @@ function ElementWallBuy:on_executed(instigator, ...)
 	    local unit_name = tweak_data.weapon.factory[factory_id].unit
 	    if not managers.dyn_resource:is_resource_ready(Idstring("unit"), unit_name, managers.dyn_resource.DYN_RESOURCES_PACKAGE) then
 	    	managers.dyn_resource:load(Idstring("unit"), Idstring(unit_name), DynamicResourceManager.DYN_RESOURCES_PACKAGE, false)
-        end
+		end
 	    self._weapon_unit = World:spawn_unit(Idstring(unit_name), self._values.position, self._values.rotation)
         self._parts = managers.weapon_factory:assemble_from_blueprint(factory_id, self._weapon_unit, blueprint, true, true, callback(self, self, "_assemble_completed"))
-    end
+    end]]
 
     ElementWallBuy.super.on_executed(self, instigator, ...)
 end
 
 function ElementWallBuy:_assemble_completed(parts, blueprint)
-    self._unit:link(Idstring("root_point"), self._weapon_unit, self._weapon_unit:orientation_object():name())
+    self._unit:link(Idstring("sp_weapon"), self._weapon_unit, self._weapon_unit:orientation_object():name())
 end
 
 function ElementWallBuy:on_script_activated()
@@ -88,6 +88,18 @@ function ElementWallBuy:set_enabled(enabled)
 	if alive(self._unit) then
 		self._unit:interaction():set_active(enabled, true)
 	end
+end
+
+function ElementWallBuy:on_interacted(instigator)
+	self:on_executed(instigator, "interacted")
+end
+
+function ElementWallBuy:on_interact_start(instigator)
+	self:on_executed(instigator, "start")
+end
+
+function ElementWallBuy:on_interact_interupt(instigator)
+	self:on_executed(instigator, "interupt")
 end
 
 function ElementWallBuy:stop_simulation(...)
