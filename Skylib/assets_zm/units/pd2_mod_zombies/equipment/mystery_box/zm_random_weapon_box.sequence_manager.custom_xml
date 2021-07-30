@@ -67,7 +67,7 @@
 			<body enabled="true" name="'body_main_safe_door_nomover'" />
 			<body enabled="false" name="'body_main_safe_door'" />
 			<interaction enabled="true" start_time="20/30*0.5" />
-			<run_sequence name="'timer_done'" start_time="8"/>
+			<function extension="'base'" function="'timer_start'" start_time="0.1" />
 		</sequence>
 		
 		<sequence editable_state="true" name="'weapon_down'" triggable="true" >

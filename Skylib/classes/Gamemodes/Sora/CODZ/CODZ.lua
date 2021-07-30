@@ -2,7 +2,7 @@ SkyLib.CODZ = SkyLib.CODZ or class()
 SkyLib.CODZ.INITIALIZED = false
 
 function SkyLib.CODZ:init(custom_rules)
-    self._starting_money = custom_rules and custom_rules.mod_start_money or 50000
+    self._starting_money = custom_rules and custom_rules.mod_start_money or 694200
     self._pregame_music = custom_rules and custom_rules.mod_pregame_music or nil
     self._gameover_music = custom_rules and custom_rules.mod_gameover_music or nil
     self._victory_music = custom_rules and custom_rules.mod_victory_music or nil
@@ -126,7 +126,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/EquipmentsTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementSpawnEnemyDummy",
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementWeaponSwitch",
-        --"classes/Gamemodes/Sora/CODZ/Hooks/ElementWallBuy",
+        "classes/Gamemodes/Sora/CODZ/Hooks/ElementWallBuy",
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementWave",
         "classes/Gamemodes/Sora/CODZ/Hooks/IngameWaitingForPlayersState",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDManager",

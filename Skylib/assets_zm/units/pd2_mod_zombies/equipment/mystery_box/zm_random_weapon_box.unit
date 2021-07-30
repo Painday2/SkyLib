@@ -7,7 +7,6 @@
 		<extension name="damage" class="UnitDamage" />
 		<extension name="base" class="MisterySafeBase" />
 		<extension name="sync_unit_data" class="SyncUnitData" />
-		
 		<!--Buy Box-->
 		<extension name="interaction" class="MisterySafeInteractionExt">
 			<var name="tweak_data" value="zm_mystery_box" />

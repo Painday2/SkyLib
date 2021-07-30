@@ -5,6 +5,7 @@ function MisterySafeBase:init(unit)
 
     self._unit = unit
     self._weapon_spawned = false
+    self._weapon_queue = 0
 end
 
 
@@ -85,6 +86,21 @@ function MisterySafeBase:_get_random_weapon()
 
     local random_entry = table_available_weapons_mystery_box[math.random(#table_available_weapons_mystery_box)]
 	return random_entry
+end
+
+function MisterySafeBase:timer_start()
+    if self._weapon_spawned then
+        self._weapon_queue = self._weapon_queue + 1
+        SkyLib:wait(8, function()
+            log("wait done")
+            if self._weapon_spawned and self._weapon_queue == 1 then
+                self._unit:damage():run_sequence_simple("anim_close_door")
+                self._weapon_queue = 0
+            else
+                self._weapon_queue = self._weapon_queue - 1
+            end
+        end)
+    end
 end
 
 MisterySafeInteractionExt = MisterySafeInteractionExt or class(UseInteractionExt)
