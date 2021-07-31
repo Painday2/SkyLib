@@ -121,13 +121,16 @@ function SkyLib.CODZ:_init_hooks()
     local mod_path = SkyLib.ModPath
 
     self._hooks = {
+
+        "classes/Gamemodes/Sora/CODZ/Hooks/ElementWeaponSwitch",
+        "classes/Gamemodes/Sora/CODZ/Hooks/ElementWallBuy",
+        "classes/Gamemodes/Sora/CODZ/Hooks/ElementWave",
+        "classes/Gamemodes/Sora/CODZ/Hooks/EditWallBuy",
+
         "classes/Gamemodes/Sora/CODZ/Hooks/InteractionTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/InteractionExt",
         "classes/Gamemodes/Sora/CODZ/Hooks/EquipmentsTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementSpawnEnemyDummy",
-        "classes/Gamemodes/Sora/CODZ/Hooks/ElementWeaponSwitch",
-        "classes/Gamemodes/Sora/CODZ/Hooks/ElementWallBuy",
-        "classes/Gamemodes/Sora/CODZ/Hooks/ElementWave",
         "classes/Gamemodes/Sora/CODZ/Hooks/IngameWaitingForPlayersState",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDManager",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDManagerPD2",
@@ -157,12 +160,21 @@ function SkyLib.CODZ:_init_hooks()
 
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMMoneyExt",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/MisterySafeBase",
-        "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMWallbuyBase",
-
-        "classes/Gamemodes/Sora/CODZ/Editor/EditorWave",
-        "classes/Gamemodes/Sora/CODZ/Editor/EditorWeaponSwitch",
-        "classes/Gamemodes/Sora/CODZ/Editor/EditorWallBuy",
+        "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMWallbuyBase"
     }
+
+    self._elements = {
+        "Wave",
+        "WeaponSwitch",
+        "WallBuy"
+    }
+
+    if Global.editor_mode then
+        for _, element in pairs(self._elements) do
+            dofile(mod_path .. "classes/Gamemodes/Sora/CODZ/Editor/Editor" .. element .. ".lua")
+            table.insert(BLE._config.MissionElements, "Element".. element)
+        end
+    end
 
     for _, hook in pairs(self._hooks) do
         dofile(mod_path .. hook .. ".lua")

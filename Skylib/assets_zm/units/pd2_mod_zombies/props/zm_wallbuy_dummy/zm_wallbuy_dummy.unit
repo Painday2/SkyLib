@@ -13,5 +13,6 @@
 			<var name="tweak_data" value="zm_mystery_box" />
 			<var name="_interact_object" value="interact"/>
 		</extension>
+		<extension class="wallbuy" name="wallbuy"/>
 	</extensions>
 </unit>

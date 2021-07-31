@@ -9,7 +9,7 @@ end
 
 
 function ZMWallbuyBase:interacted(player)
-    if self._weapon_spawned and player and player ==  self._weapon_owner then
+    if player then
         local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(self._weapon_id)
         local current_index_equipped = player:inventory():equipped_selection()
         local blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)

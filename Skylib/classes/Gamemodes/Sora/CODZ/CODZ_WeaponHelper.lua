@@ -128,17 +128,6 @@ function SkyLib.CODZ.WeaponHelper:_setup_box_weapons(custom_data)
             ...
         }
     ]]
-    local function remove_from_table_with_ending(tabley, ending)
-        local output_table = {}
-
-        for index, value in pairs(tabley) do
-            if ( not (ending == "" or value:sub(-#ending) == ending) ) then
-                table.insert(output_table, value)
-            end
-        end
-
-        return output_table
-    end
     local function remove_from_table(tabley, ending)
         local output_table = {}
 
@@ -154,7 +143,7 @@ function SkyLib.CODZ.WeaponHelper:_setup_box_weapons(custom_data)
     local weapon_ids = table.map_keys(tweak_data.weapon)
     local removethese = {"_npc","_crew","_secondary","module","mk2","range","idle","m203","trip_mines","_melee","stats","factory"}
     for k, v in pairs(removethese) do
-        weapon_ids = remove_from_table_with_ending(weapon_ids, v)
+        weapon_ids = SkyLib.Utils:remove_from_table_with_ending(weapon_ids, v)
     end
     weapon_ids = remove_from_table(weapon_ids, "sentry")
     weapon_ids = remove_from_table(weapon_ids, "nil")

@@ -327,7 +327,7 @@ function BuyMenu:_init_weapon_list()
 
     self.WeaponPanels = {}
 
-    for _, wpn_tbl in nb_pairs(self._weapons, function(t,a,b) return t[b][2] > t[a][2] end) do
+    for _, wpn_tbl in SkyLib.Utils:nb_pairs(self._weapons, function(t,a,b) return t[b][2] > t[a][2] end) do
         local wpn_data = wpn_tbl[1]
         local wpn_tweak = tweak_data.weapon[wpn_data]
 
