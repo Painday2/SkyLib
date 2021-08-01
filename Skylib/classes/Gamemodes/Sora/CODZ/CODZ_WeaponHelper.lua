@@ -58,7 +58,7 @@ function SkyLib.CODZ.WeaponHelper:_get_random_weapon()
     SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(debug)
 end
 
-function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, force_secondary, force_primary, pap, skin, instigator)
+function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, instigator, force_secondary, force_primary, pap, skin)
     local factory_id
     local blueprint
     local current_index_equipped

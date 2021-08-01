@@ -54,16 +54,16 @@ function ElementWeaponSwitch:on_executed(instigator)
 
     -- Script used to get the start weapons
     if self._values.force_secondary then
-        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._values.weapon_id, true, false)
+        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._values.weapon_id, nil, true, false)
     end
 
     if self._values.force_primary then
-        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._values.weapon_id, false, true)
+        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._values.weapon_id, nil, false, true)
     end
 
     -- Get the upgraded weapon ID if the pack-a-punch box is used.
     if self._values.is_pap_engine then
-        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(false, false, false, true, cosmetics, instigator)
+        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(false, instigator, false, true, cosmetics)
     end
 
     ElementWeaponSwitch.super.on_executed(self, instigator)

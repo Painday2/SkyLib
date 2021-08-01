@@ -20,7 +20,7 @@ function MisterySafeBase:interacted(player)
             bonus = 0
         }
 
-        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._weapon_id)
+        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._weapon_id, player)
         managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, current_index_equipped, false, blueprint, cosmetics, false, current_index_equipped)
 
         if player:movement().sync_equip_weapon then
