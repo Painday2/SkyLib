@@ -1,5 +1,7 @@
 SkyLib.CODZ.WeaponHelper = SkyLib.CODZ.WeaponHelper or class()
 
+local Utils = SkyLib.Utils
+
 function SkyLib.CODZ.WeaponHelper:init()
     log("[SkyLib.CODZ.WeaponHelper] Initd")
 end
@@ -70,7 +72,7 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, instigator, 
 
     if weapon_id then
         --log(tostring(weapon_id))
-        factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(tostring(weapon_id))
+        factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(tostring(weapon_id)) or managers.weapon_factory:get_factory_id_by_weapon_id("amcar")
         --log(tostring(factory_id))
         blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
         current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
@@ -118,6 +120,7 @@ end
 function SkyLib.CODZ.WeaponHelper:_setup_box_weapons(custom_data)
     local tweak = tweak_data.weapon
     local data = custom_data or nil
+    local weapon_ids = self:map_weapon_ids()
     --[[
         All weapons added are allowed for sale by default.
 
@@ -128,26 +131,6 @@ function SkyLib.CODZ.WeaponHelper:_setup_box_weapons(custom_data)
             ...
         }
     ]]
-    local function remove_from_table(tabley, ending)
-        local output_table = {}
-
-        for index, value in pairs(tabley) do
-            if ( not (ending == "" or value:match(ending) == ending) ) then
-                table.insert(output_table, value)
-            end
-        end
-
-        return output_table
-    end
-
-    local weapon_ids = table.map_keys(tweak_data.weapon)
-    local removethese = {"_npc","_crew","_secondary","module","mk2","range","idle","m203","trip_mines","_melee","stats","factory"}
-    for k, v in pairs(removethese) do
-        weapon_ids = SkyLib.Utils:remove_from_table_with_ending(weapon_ids, v)
-    end
-    weapon_ids = remove_from_table(weapon_ids, "sentry")
-    weapon_ids = remove_from_table(weapon_ids, "nil")
-
 
     if data then
         for i, weapon_data in ipairs(data) do
@@ -238,4 +221,15 @@ function SkyLib.CODZ.WeaponHelper:_weapon_has_part(weapon_id, part_id)
     end
 
     return false
+end
+
+function SkyLib.CODZ.WeaponHelper:map_weapon_ids()
+    local weapon_ids = table.map_keys(tweak_data.weapon)
+    local removethese = {"_npc","_crew","_secondary","module","mk2","range","idle","m203","trip_mines","_melee","stats","factory","_underbarrel"}
+    for k, v in pairs(removethese) do
+        weapon_ids = Utils:remove_from_table_with_ending(weapon_ids, v)
+    end
+    weapon_ids = Utils:remove_from_table(weapon_ids, "sentry")
+    weapon_ids = Utils:remove_from_table(weapon_ids, "nil")
+    return weapon_ids
 end

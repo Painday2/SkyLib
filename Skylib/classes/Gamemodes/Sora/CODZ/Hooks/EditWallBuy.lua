@@ -16,24 +16,13 @@ function EditWallBuy:set_unit_data(weapon_id)
     local unit = self:selected_unit()
     local ud = unit:unit_data()
     ud.weapon_id = weapon_id or self._menu:GetItem("WeaponId"):SelectedItem()
-end
-
-function EditWallBuy:get_weapon_list()
-    local weapon_ids = nil
-    if not weapon_ids then
-        weapon_ids = table.map_keys(tweak_data.weapon)
-        local removethese = {"_npc","_crew","_secondary","module","mk2","range","idle","m203","trip_mines","_melee","stats","factory"}
-        for k, v in pairs(removethese) do
-            weapon_ids = Utils:remove_from_table_with_ending(weapon_ids, v)
-        end
-    end
-
-    return weapon_ids
+    unit:base():despawn_weapon()
+    unit:base():spawn_weapon()
 end
 
 function EditWallBuy:set_menu_unit(unit)
     local material = self._menu:GetItem("WeaponId")
-    local materials = self:get_weapon_list()
+    local materials = SkyLib.CODZ.WeaponHelper:map_weapon_ids()
     local selectedItem = Utils:index_from_value(materials, unit:unit_data().weapon_id)
 
     material:SetVisible(materials and unit:unit_data().name == "units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy")

@@ -11,7 +11,7 @@ end
 
 function MisterySafeBase:interacted(player)
     if self._weapon_spawned and player and player ==  self._weapon_owner then
-        local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(self._weapon_id)
+        local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(self._weapon_id) or managers.weapon_factory:get_factory_id_by_weapon_id("amcar")
         local current_index_equipped = player:inventory():equipped_selection()
         local blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
         local cosmetics =  {
@@ -45,7 +45,7 @@ function MisterySafeBase:set_state(state, player)
 
         self._weapon_id = self:_get_random_weapon()
         log(self._weapon_id)
-        local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(self._weapon_id)
+        local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(self._weapon_id) or managers.weapon_factory:get_factory_id_by_weapon_id("amcar")
         local blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
         log("Factory ID:" .. factory_id)
 	    local unit_name = tweak_data.weapon.factory[factory_id].unit
