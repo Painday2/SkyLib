@@ -123,7 +123,6 @@ function SkyLib.CODZ:_init_hooks()
     self._hooks = {
 
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementWeaponSwitch",
-        "classes/Gamemodes/Sora/CODZ/Hooks/ElementWallBuy",
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementWave",
         "classes/Gamemodes/Sora/CODZ/Hooks/EditWallBuy",
 
@@ -165,8 +164,7 @@ function SkyLib.CODZ:_init_hooks()
 
     self._elements = {
         "Wave",
-        "WeaponSwitch",
-        "WallBuy"
+        "WeaponSwitch"
     }
 
     if Global.editor_mode then

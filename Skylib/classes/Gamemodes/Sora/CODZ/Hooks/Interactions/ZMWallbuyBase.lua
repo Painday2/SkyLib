@@ -60,15 +60,17 @@ function ZMWallbuyBase:despawn_weapon()
 	end
 end
 
-function ZMWallbuyBase:_assemble_completed(parts, blueprint)
+function ZMWallbuyBase:_assemble_completed()
     --have to manually set position/rotation for them to update correctly
     self._unit:link(Idstring("sp_weapon"), self._weapon_unit, self._weapon_unit:orientation_object():name())
-    self._weapon_unit:set_position(self._unit:position() + self._unit:rotation():x() * 5)
-    self._weapon_unit:set_rotation(self._unit:rotation() * Rotation(180, 0, 0))
+    --position weapon to not be in the wall, works for most AR/SG/SNP, LMGs will probably clip no matter what
+    self._weapon_unit:set_position(self._unit:position() + self._unit:rotation():x() * 4)
+    --position second weapon
     if self._second_unit then
+        self._weapon_unit:set_position(self._unit:position() + self._unit:rotation():x() * 5)
         local rotation = self._weapon_unit:rotation()
         self._weapon_unit:link(self._weapon_unit:orientation_object():name(), self._second_unit)
-        self._second_unit:set_position(self._weapon_unit:position() + rotation:x() * 5 + rotation:z() * 7 + rotation:y() * 5)
+        self._second_unit:set_position(self._weapon_unit:position() + rotation:x() * -5 + rotation:z() * 7 + rotation:y() * 1)
         self._second_unit:set_rotation(self._weapon_unit:rotation() * Rotation(0, 8, 0))
     end
 end

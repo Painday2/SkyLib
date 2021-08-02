@@ -54,9 +54,8 @@ end
 
 local debug
 function SkyLib.CODZ.WeaponHelper:_get_random_weapon()
-    --PrintTable(SkyLib.CODZ._weapons.mystery_box)
     debug = tostring(SkyLib.CODZ._weapons.mystery_box[math.random(#SkyLib.CODZ._weapons.mystery_box)])
-    log(debug)
+
     SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(debug)
 end
 
@@ -82,6 +81,7 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, instigator, 
         weapon_id = managers.weapon_factory:get_weapon_id_by_factory_id(factory_id)
         current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
         local primary_category = current_peer_weapon:base():weapon_tweak_data().categories and current_peer_weapon:base():weapon_tweak_data().categories[1]
+        -- TODO: clean this up to use a value in the base
         if current_peer_weapon:base():get_cosmetics_id() == "pap3" then
             cosmetics = {id = "pap3", quality = 5, bonus = 0 }
             blueprint = current_peer_weapon:base()._blueprint
