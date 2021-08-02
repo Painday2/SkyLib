@@ -245,10 +245,11 @@ end
 
 function SkyLib.CODZ.WeaponHelper:map_pap_parts()
     if not self.parts then
-        self.parts = {}
+        --this can't be empty or the remove stuff complains
+        self.parts = {"nil"}
         local keys = table.map_keys(tweak_data.weapon.factory.parts)
         for k, v in ipairs(keys) do
-            --dlc check, if no dlc tag add it
+            --dlc check, if no dlc tag add the part
             if tweak_data.weapon.factory.parts[v].dlc then
                 if managers.dlc:is_dlc_unlocked(tweak_data.weapon.factory.parts[v].dlc) then
                     table.insert(self.parts, v)
@@ -257,18 +258,9 @@ function SkyLib.CODZ.WeaponHelper:map_pap_parts()
                 table.insert(self.parts, v)
             end
         end
-        --This is the skylib.utils:remove_from_table_with_ending() func but it doesn't work if i call that
-        --i have to copy it here otherwise it crashes thinking it's a string instead of table
-        local removethese = {"standard", "nil", "vanllia", "legendary"}
+        local removethese = {"standard", "nil", "vanllia", "legend", "legendary"}
         for _, v in pairs(removethese) do
-            local output_table = {}
-
-            for index, value in pairs(self.parts) do
-                if ( not (v == "" or value:sub(-#v) == v) ) then
-                    table.insert(output_table, value)
-                end
-            end
-            self.parts = output_table
+            self.parts = Utils:remove_from_table_with_ending(self.parts, v)
         end
     --PrintTable(self.parts)
     end
