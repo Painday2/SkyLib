@@ -4,6 +4,7 @@ local Utils = SkyLib.Utils
 
 function SkyLib.CODZ.WeaponHelper:init()
     log("[SkyLib.CODZ.WeaponHelper] Initd")
+    self.parts = self:map_pap_parts()
 end
 
 function SkyLib.CODZ.WeaponHelper:_create_new_weapon(data)
@@ -225,11 +226,51 @@ end
 
 function SkyLib.CODZ.WeaponHelper:map_weapon_ids()
     local weapon_ids = table.map_keys(tweak_data.weapon)
+    --PrintTable(tweak_data.weapon)
     local removethese = {"_npc","_crew","_secondary","module","mk2","range","idle","m203","trip_mines","_melee","stats","factory","_underbarrel"}
+    --Remove all custom weapons, i'd like to support them but from leon's testing they're more likely to crash than be used
+    for key, _ in pairs(tweak_data.weapon) do
+       if tweak_data.weapon[key].custom then
+            table.insert(removethese, key)
+       end
+    end
     for k, v in pairs(removethese) do
         weapon_ids = Utils:remove_from_table_with_ending(weapon_ids, v)
     end
     weapon_ids = Utils:remove_from_table(weapon_ids, "sentry")
     weapon_ids = Utils:remove_from_table(weapon_ids, "nil")
+
     return weapon_ids
+end
+
+function SkyLib.CODZ.WeaponHelper:map_pap_parts()
+    if not self.parts then
+        self.parts = {}
+        local keys = table.map_keys(tweak_data.weapon.factory.parts)
+        for k, v in ipairs(keys) do
+            --dlc check, if no dlc tag add it
+            if tweak_data.weapon.factory.parts[v].dlc then
+                if managers.dlc:is_dlc_unlocked(tweak_data.weapon.factory.parts[v].dlc) then
+                    table.insert(self.parts, v)
+                end
+            else
+                table.insert(self.parts, v)
+            end
+        end
+        --This is the skylib.utils:remove_from_table_with_ending() func but it doesn't work if i call that
+        --i have to copy it here otherwise it crashes thinking it's a string instead of table
+        local removethese = {"standard", "nil", "vanllia", "legendary"}
+        for _, v in pairs(removethese) do
+            local output_table = {}
+
+            for index, value in pairs(self.parts) do
+                if ( not (v == "" or value:sub(-#v) == v) ) then
+                    table.insert(output_table, value)
+                end
+            end
+            self.parts = output_table
+        end
+    --PrintTable(self.parts)
+    end
+    return self.parts
 end

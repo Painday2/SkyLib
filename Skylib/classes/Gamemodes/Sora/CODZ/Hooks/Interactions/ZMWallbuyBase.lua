@@ -11,6 +11,7 @@ end
 function ZMWallbuyBase:interacted(player)
     if player then        
         SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._weapon_id, player)
+        self._unit:damage():run_sequence_simple("interact")
     end
 end
 
@@ -20,7 +21,7 @@ function ZMWallbuyBase:spawn_weapon()
     local blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
     local cosmetics =  {id = "nil", quality = 1, bonus = 0}
     local unit_name = tweak_data.weapon.factory[factory_id].unit
-
+    log(tostring(factory_id))
     if not managers.dyn_resource:is_resource_ready(Idstring("unit"), unit_name, managers.dyn_resource.DYN_RESOURCES_PACKAGE) then
         managers.dyn_resource:load(Idstring("unit"), Idstring(unit_name), DynamicResourceManager.DYN_RESOURCES_PACKAGE, false)
     end
@@ -28,6 +29,8 @@ function ZMWallbuyBase:spawn_weapon()
     self._weapon_unit = World:spawn_unit(Idstring(unit_name), self._unit:position(), Rotation())
     self._parts = managers.weapon_factory:assemble_from_blueprint(factory_id, self._weapon_unit, blueprint, true, true, callback(self, self, "_assemble_completed"))
     --if akimbo, spawn a second weapon
+    --log(tostring(self._weapon_unit:base()._setup))
+    --PrintTable(self._weapon_unit:base())
     if self._weapon_unit:base().AKIMBO and not self._second_unit then
 		self._second_unit = World:spawn_unit(Idstring(unit_name), self._weapon_unit:position(), self._weapon_unit:rotation())
         self._second_parts = managers.weapon_factory:assemble_from_blueprint(factory_id, self._second_unit, blueprint, true, true, callback(self, self, "_assemble_completed"))

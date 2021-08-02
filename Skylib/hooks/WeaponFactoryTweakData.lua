@@ -1,6 +1,7 @@
-Hooks:PostHook(WeaponFactoryTweakData, "init", "zm_init_weapon_data_factory", function(self)
-	self:_init_pap_parts()
-end)
+--[[Hooks:PostHook(WeaponFactoryTweakData, "init", "zm_init_weapon_data_factory", function(self)
+	--self:_init_pap_parts()
+	self:_create_pap_parts()
+end)]]
 
 function WeaponFactoryTweakData:_assemble_random_blueprint(factory_id, weapon_category)
     local tweak = self[factory_id]
@@ -11,7 +12,7 @@ function WeaponFactoryTweakData:_assemble_random_blueprint(factory_id, weapon_ca
 		local part_tweak = self.parts[part]
 		table.insert(required_types, part_tweak.type)
 	end
-    local allowed_parts = self.pap_parts[weapon_category]
+    local allowed_parts = SkyLib.CODZ.WeaponHelper:map_pap_parts()
 	local available_parts = {}
 	local available_parts_count = 0
 	local part_types = {}
@@ -82,7 +83,8 @@ function WeaponFactoryTweakData:_assemble_random_blueprint(factory_id, weapon_ca
 	return blueprint
 end
 
-function WeaponFactoryTweakData:_init_pap_parts()
+
+--[[function WeaponFactoryTweakData:_init_pap_parts()
     self.pap_parts = {
         assault_rifle = {
             "wpn_fps_lmg_hk21_g_standard",
@@ -432,4 +434,4 @@ function WeaponFactoryTweakData:_init_pap_parts()
 			"wpn_fps_upg_o_fc1"
         }
     }
-end
+end]]
