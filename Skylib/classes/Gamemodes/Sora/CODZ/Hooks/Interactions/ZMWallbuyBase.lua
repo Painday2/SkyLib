@@ -9,7 +9,8 @@ end
 
 
 function ZMWallbuyBase:interacted(player)
-    if player then        
+    if player then
+        log(tostring(self._weapon_id))
         SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._weapon_id, player)
         self._unit:damage():run_sequence_simple("interact")
     end

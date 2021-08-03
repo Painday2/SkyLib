@@ -11,6 +11,7 @@ end
 
 function MisterySafeBase:interacted(player)
     if self._weapon_spawned and player and player ==  self._weapon_owner then
+        log(tostring(self._weapon_id))
         SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._weapon_id, player)
     end
     self:set_state(not self._weapon_spawned, player)

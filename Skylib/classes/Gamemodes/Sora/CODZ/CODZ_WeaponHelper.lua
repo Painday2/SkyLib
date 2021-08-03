@@ -100,7 +100,12 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, instigator, 
             blueprint = tweak_data.weapon.factory:_assemble_random_blueprint(factory_id, primary_category)
         end
     else
+        --if not weapon_id and not pap, something fucked up, set amcar as weapon id and spawn it as a failsafe
         log("[SkyLib] Error: Weapon Switch")
+        weapon_id = "amcar"
+        factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(tostring(weapon_id)) or managers.weapon_factory:get_factory_id_by_weapon_id("amcar")
+        blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
+        current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
     end
     if force_secondary then
         managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, 1, false, blueprint, cosmetics, false, 1)
