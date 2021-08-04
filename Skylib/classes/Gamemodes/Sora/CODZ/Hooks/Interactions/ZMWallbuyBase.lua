@@ -1,16 +1,17 @@
 ZMWallbuyBase = ZMWallbuyBase or class(UnitBase)
-
+ZMWallbuyBase.unit_list = {}
 function ZMWallbuyBase:init(unit)
 	UnitBase.init(self, unit, false)
 
     self._unit = unit
     self._weapon_spawned = false
+    --insert so we can access the units for sync reasons
+    table.insert(ZMWallbuyBase.unit_list, unit)
 end
 
 
 function ZMWallbuyBase:interacted(player)
     if player then
-        log(tostring(self._weapon_id))
         SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._weapon_id, player)
         self._unit:damage():run_sequence_simple("interact")
     end
@@ -22,16 +23,15 @@ function ZMWallbuyBase:spawn_weapon()
     local blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
     local cosmetics =  {id = "nil", quality = 1, bonus = 0}
     local unit_name = tweak_data.weapon.factory[factory_id].unit
-    log(tostring(factory_id))
+
     if not managers.dyn_resource:is_resource_ready(Idstring("unit"), unit_name, managers.dyn_resource.DYN_RESOURCES_PACKAGE) then
         managers.dyn_resource:load(Idstring("unit"), Idstring(unit_name), DynamicResourceManager.DYN_RESOURCES_PACKAGE, false)
     end
 
     self._weapon_unit = World:spawn_unit(Idstring(unit_name), self._unit:position(), Rotation())
     self._parts = managers.weapon_factory:assemble_from_blueprint(factory_id, self._weapon_unit, blueprint, true, true, callback(self, self, "_assemble_completed"))
+    
     --if akimbo, spawn a second weapon
-    --log(tostring(self._weapon_unit:base()._setup))
-    --PrintTable(self._weapon_unit:base())
     if self._weapon_unit:base().AKIMBO and not self._second_unit then
 		self._second_unit = World:spawn_unit(Idstring(unit_name), self._weapon_unit:position(), self._weapon_unit:rotation())
         self._second_parts = managers.weapon_factory:assemble_from_blueprint(factory_id, self._second_unit, blueprint, true, true, callback(self, self, "_assemble_completed"))
@@ -79,8 +79,49 @@ function ZMWallbuyBase:_assemble_completed()
     end
 end
 
-ZMWallbuyInteractionExt = ZMWallbuyInteractionExt or class(UseInteractionExt)
+--send unit id and weapon id for sync
+function ZMWallbuyBase:sync_data(unit)
+    local uid = unit:id()
+    local wid = unit:unit_data().weapon_id or self._weapon_id
+    local data = {uid, wid}
+    SkyLib.Network:_send("ZMWallBuyData", data)
+end
 
+--recieve wallbuy data (unit id and weapon id) from host and spawn unit
+function ZMWallbuyBase:sync_spawn(data)
+    if data then
+        for _, unit in ipairs(ZMWallbuyBase.unit_list) do
+            if unit:id() == tonumber(data["1"]) then
+                unit:unit_data().weapon_id = tostring(data["2"])
+                unit:base():spawn_weapon()
+                table.remove(ZMWallbuyBase.unit_list, data["1"])
+                break
+            end
+        end
+    end
+end
+
+--Needed to load the unit data correctly, i guess?
+SkyHook:Post(WorldDefinition, "assign_unit_data", function(self, unit, data)
+    if data.weapon_id then
+		unit:unit_data().weapon_id = data.weapon_id
+	end
+end)
+
+--Hook to send wallbuy data on spawn, due to unit networking not being setup til around then. 
+SkyHook:Post(CriminalsManager, "add_character", function(self, _, peer_id)
+    --ran per player, make sure it only runs once
+    self.bad_code_already_ran = self.bad_code_already_ran or nil
+    if Network:is_server() and not self.bad_code_already_ran then
+        for _, unit in ipairs(ZMWallbuyBase.unit_list) do
+            log(tostring(unit:unit_data().weapon_id))
+            unit:base():sync_data(unit)
+            self.bad_code_already_ran = true
+        end
+    end
+end)
+
+ZMWallbuyInteractionExt = ZMWallbuyInteractionExt or class(UseInteractionExt)
 function ZMWallbuyInteractionExt:interact(player)
 	ZMWallbuyInteractionExt.super.interact(self, player)
 	self._unit:base():interacted(player)

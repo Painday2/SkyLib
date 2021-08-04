@@ -37,12 +37,3 @@ end
 SkyHook:Post(StaticEditor, "build_extension_items", function(self)
     self._editors.wallbuy = EditWallBuy:new():is_editable(self)
 end)
-
---Required to have the current weapon_id show in editor after restarting
-SkyHook:Post(WorldDefinition, "assign_unit_data", function(self, unit, data)
-    if not data.weapon_id then
-		return
-	end
-
-	unit:unit_data().weapon_id = data.weapon_id
-end)

@@ -106,16 +106,22 @@ function SkyLib.Network:_init_codz_network()
             end
         end
     
+        if id == "ZMWallBuyData" then
+            local decode = LuaNetworking:StringToTable(data)
+            PrintTable(decode)
+            ZMWallbuyBase:sync_spawn(decode)
+        end
+
         if id == "ZombieBloodEnded" then
             local unit_by_peer = managers.criminals:character_unit_by_peer_id(sender)
             if alive(unit_by_peer) then
                 unit_by_peer:movement():set_team(managers.groupai:state():team_data(tweak_data.levels:get_default_team_ID("player")))
             end
         end
-    
+
         if id == "SpecialWave_PlayShadowSpook" then
             local pos = string_to_vector(data)
-    
+
             SkyLib.Sound:play({
                 name = "play_shadow_spook",
                 custom_dir = "units/pd2_mod_zombies/sounds/zm_enemy/shadow",
