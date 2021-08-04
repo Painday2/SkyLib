@@ -13,6 +13,5 @@
 			<var name="_interact_object" value="interact"/>
 			<var name="drop_in_sync_tweak_data" value="true" />
 		</extension>
-		
 	</extensions>
 </unit>

@@ -148,17 +148,14 @@ function SkyLib.CODZ.WeaponHelper:_setup_box_weapons(custom_data)
             end
         end
     else
-        if Network:is_server() then
-            for i, weapon_id in pairs(weapon_ids) do
-                if tweak[weapon_id] then
-                        local weapon = tweak[weapon_id].global_value and not managers.dlc:is_dlc_unlocked(tweak[weapon_id].global_value) and tweak_data.lootdrop.global_values[tweak[weapon_id].global_value].dlc
-                        if not weapon then
-                            --log(tostring(weapon_id))
-                            table.insert(SkyLib.CODZ._weapons.mystery_box, tostring(weapon_id))
-                        end
-                else
-                    log("[ERROR-WeaponHelper._add_new_weapon] Weapon id doesn't exist!", weapon_id)
+        for i, weapon_id in pairs(weapon_ids) do
+            if tweak[weapon_id] then
+                local weapon = tweak[weapon_id].global_value and not managers.dlc:is_dlc_unlocked(tweak[weapon_id].global_value) and tweak_data.lootdrop.global_values[tweak[weapon_id].global_value].dlc
+                if not weapon then
+                    table.insert(SkyLib.CODZ._weapons.mystery_box, tostring(weapon_id))
                 end
+            else
+                log("[ERROR-WeaponHelper._add_new_weapon] Weapon id doesn't exist!", weapon_id)
             end
         end
     end
@@ -231,7 +228,6 @@ end
 
 function SkyLib.CODZ.WeaponHelper:map_weapon_ids()
     local weapon_ids = table.map_keys(tweak_data.weapon)
-    --PrintTable(tweak_data.weapon)
     local removethese = {"_npc","_crew","_secondary","module","mk2","range","idle","m203","trip_mines","_melee","stats","factory","_underbarrel"}
     --Remove all custom weapons, i'd like to support them but from leon's testing they're more likely to crash than be used
     for key, _ in pairs(tweak_data.weapon) do

@@ -108,8 +108,12 @@ function SkyLib.Network:_init_codz_network()
     
         if id == "ZMWallBuyData" then
             local decode = LuaNetworking:StringToTable(data)
-            PrintTable(decode)
             ZMWallbuyBase:sync_spawn(decode)
+        end
+
+        if id == "ZMBoxData" then
+            local decode = LuaNetworking:StringToTable(data)
+            MisterySafeBase:sync_spawn(decode)
         end
 
         if id == "ZombieBloodEnded" then

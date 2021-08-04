@@ -1,19 +1,21 @@
 MisterySafeBase = MisterySafeBase or class(UnitBase)
-
+MisterySafeBase.unit_list = {}
 function MisterySafeBase:init(unit)
 	UnitBase.init(self, unit, false)
 
     self._unit = unit
     self._weapon_spawned = false
     self._weapon_queue = 0
+    --insert so we can access the units for sync reasons
+    table.insert(MisterySafeBase.unit_list, unit)
 end
 
 
 function MisterySafeBase:interacted(player)
-    if self._weapon_spawned and player and player ==  self._weapon_owner then
-        log(tostring(self._weapon_id))
+    if self._weapon_spawned and player and player:id() == self._weapon_owner:id() then
         SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._weapon_id, player)
     end
+
     self:set_state(not self._weapon_spawned, player)
 end
 
@@ -25,10 +27,14 @@ function MisterySafeBase:set_state(state, player)
     if state and player then
         self._weapon_spawned = true
         self._weapon_owner = player
-        self._unit:damage():run_sequence_simple("anim_open_door")
+        self._unit:damage():run_sequence("anim_open_door")
+        self._weapon_id = self.sync_weapon_id or self:_get_random_weapon() or "amcar"
+        --prevent loops of syncing
+        if not self.sync_weapon_id then
+            self:sync_data(self._unit, player, self._weapon_id)
+            self.sync_weapon_id = self._weapon_id
+        end
 
-        self._weapon_id = self:_get_random_weapon()
-        --log(self._weapon_id)
         local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(self._weapon_id) or managers.weapon_factory:get_factory_id_by_weapon_id("amcar")
         local blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
         --log("Factory ID:" .. factory_id)
@@ -47,8 +53,11 @@ function MisterySafeBase:set_state(state, player)
         self._weapon_spawned = false
         self._weapon_owner = nil
         self._weapon_id = nil
+        self.sync_weapon_id = nil
+
         if player then
-            self._unit:damage():run_sequence_simple("anim_close_door")
+            self._unit:damage():run_sequence("anim_close_door")
+            self:sync_data(self._unit)
         end
     end
 end
@@ -101,9 +110,8 @@ function MisterySafeBase:timer_start()
     if self._weapon_spawned then
         self._weapon_queue = self._weapon_queue + 1
         SkyLib:wait(8, function()
-            log("wait done")
             if self._weapon_spawned and self._weapon_queue == 1 then
-                self._unit:damage():run_sequence_simple("anim_close_door")
+                self._unit:damage():run_sequence("anim_close_door")
                 self._weapon_queue = 0
             else
                 self._weapon_queue = self._weapon_queue - 1
@@ -112,16 +120,45 @@ function MisterySafeBase:timer_start()
     end
 end
 
-MisterySafeInteractionExt = MisterySafeInteractionExt or class(UseInteractionExt)
+--send box state data to other players
+function MisterySafeBase:sync_data(unit, player, weapon_id)
+    local pid = player and player:id() or nil
+    local data = {unit:id(), pid, weapon_id}
+    SkyLib.Network:_send("ZMBoxData", data)
+end
 
+--recieve box data (unit, player, weapon_id) from host and set the state for the other players
+function MisterySafeBase:sync_spawn(data)
+    if data then
+        for _, unit in ipairs(MisterySafeBase.unit_list) do
+            if unit:id() == tonumber(data["1"]) then
+                local player = data["2"] or nil
+                self.sync_weapon_id = data["3"] or nil
+                if player then
+                    unit:base():set_state(not self._weapon_spawned, player)
+                else
+                    unit:base():set_state(false)
+                    unit:damage():run_sequence("anim_close_door")
+                end
+                break
+            end
+        end
+    end
+end
+
+MisterySafeInteractionExt = MisterySafeInteractionExt or class(UseInteractionExt)
+--prevent other players from stealing your box
 function MisterySafeInteractionExt:can_select(player)
-    if self._weapon_spawned and not self._weapon_owner == player then
+    if self._unit:base()._weapon_spawned and self._unit:base()._weapon_owner ~= player then
         return false
     end
 	return MisterySafeInteractionExt.super.can_select(self, player)
 end
 
 function MisterySafeInteractionExt:interact(player)
+    if not self:can_interact(player) then
+        return
+    end
 	MisterySafeInteractionExt.super.interact(self, player)
 	self._unit:base():interacted(player)
 end

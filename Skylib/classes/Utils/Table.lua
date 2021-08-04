@@ -52,11 +52,10 @@ function Utils:remove_from_table(tabley, ending)
 end
 function Utils:index_from_value(table, value)
     local index = {}
+
     for i, v in ipairs(table) do
         index[v] = i
-        --log(index[v])
     end
-    --log(tostring(value))
-    --PrintTable(index)
+    
     return index[value]
 end
