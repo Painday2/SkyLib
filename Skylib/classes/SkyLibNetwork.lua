@@ -87,22 +87,22 @@ function SkyLib.Network:_init_codz_network()
             local power_up = tonumber(data)
     
             if power_up == 1 then
-                PowerUpManager:execute_max_ammo()
+                SkyLib.CODZ.PowerUpManager:execute_max_ammo()
             elseif power_up == 2 then
-                PowerUpManager:execute_double_points()
+                SkyLib.CODZ.PowerUpManager:execute_double_points()
             elseif power_up == 3 then
-                PowerUpManager:execute_instakill()
+                SkyLib.CODZ.PowerUpManager:execute_instakill()
             elseif power_up == 4 then
-                PowerUpManager:execute_firesale()
+                SkyLib.CODZ.PowerUpManager:execute_firesale()
             elseif power_up == 5 then
-                PowerUpManager:execute_kaboom()
+                SkyLib.CODZ.PowerUpManager:execute_kaboom()
             elseif power_up == 7 then
                 local unit_by_peer = managers.criminals:character_unit_by_peer_id(sender)
                 if alive(unit_by_peer) then
                     unit_by_peer:movement():set_team(managers.groupai:state():team_data(tweak_data.levels:get_default_team_ID("non_combatant")))
                 end
     
-                PowerUpManager:execute_zombie_blood_on(unit_by_peer)
+                SkyLib.CODZ.PowerUpManager:execute_zombie_blood_on(unit_by_peer)
             end
         end
     

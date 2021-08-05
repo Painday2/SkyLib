@@ -1,6 +1,6 @@
-PowerUpManager = PowerUpManager or class()
+SkyLib.CODZ.PowerUpManager = SkyLib.CODZ.PowerUpManager or class()
 
-function PowerUpManager:init()
+function SkyLib.CODZ.PowerUpManager:init()
     self._default_color_grading = "color_payday"
 
     self._zombie_blood_obj = {
@@ -38,7 +38,7 @@ function PowerUpManager:init()
     }
 end
 
-function PowerUpManager:execute_max_ammo()
+function SkyLib.CODZ.PowerUpManager:execute_max_ammo()
     local player_unit = managers.player:player_unit()
 
     if player_unit then
@@ -61,7 +61,7 @@ function PowerUpManager:execute_max_ammo()
     self._source:post_event("zm_pwrup_max_ammo")
 end
 
-function PowerUpManager:execute_double_points()
+function SkyLib.CODZ.PowerUpManager:execute_double_points()
     managers.hud._hud_codz:_set_gift_visible("icon_double_points", true)
     SkyLib.CODZ:_setup_event_state("double_points", true)
 
@@ -86,7 +86,7 @@ function PowerUpManager:execute_double_points()
     end)
 end
 
-function PowerUpManager:execute_firesale()
+function SkyLib.CODZ.PowerUpManager:execute_firesale()
     if managers.hud then
         managers.hud._hud_codz:_set_gift_visible("icon_firesale", true) 
     end
@@ -125,7 +125,7 @@ function PowerUpManager:execute_firesale()
     end)
 end
 
-function PowerUpManager:execute_instakill()
+function SkyLib.CODZ.PowerUpManager:execute_instakill()
     managers.hud._hud_codz:_set_gift_visible("icon_instakill", true)
     SkyLib.CODZ:_setup_event_state("instakill", true)
     self._source = SoundDevice:create_source("instakill_announcer")
@@ -149,7 +149,7 @@ function PowerUpManager:execute_instakill()
     end)
 end
 
-function PowerUpManager:execute_kaboom()
+function SkyLib.CODZ.PowerUpManager:execute_kaboom()
     local overlay_effect = {
         blend_mode = "normal",
         sustain = 0,
@@ -236,7 +236,7 @@ function PowerUpManager:execute_kaboom()
     end)
 end
 
-function PowerUpManager:execute_blood_money()
+function SkyLib.CODZ.PowerUpManager:execute_blood_money()
     SkyLib.Sound:play({
         name = "blood_money_pickup",
         file_name = "zm_pwrup_float_collect.ogg",
@@ -268,7 +268,7 @@ function PowerUpManager:execute_blood_money()
     SkyLib.CODZ:_money_change(random_cash, peer_id)
 end
 
-function PowerUpManager:execute_zombie_blood()
+function SkyLib.CODZ.PowerUpManager:execute_zombie_blood()
     local previous_grading = self._default_color_grading
     local zb_grading = "color_sin_classic"
     local zb_duration = 30
@@ -322,7 +322,7 @@ function PowerUpManager:execute_zombie_blood()
     end)
 end
 
-function PowerUpManager:execute_zombie_blood_on(unit)
+function SkyLib.CODZ.PowerUpManager:execute_zombie_blood_on(unit)
     if not unit then
         return
     end

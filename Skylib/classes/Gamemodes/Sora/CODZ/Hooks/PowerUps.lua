@@ -99,27 +99,27 @@ function PowerUps:_pickup(unit)
         self._picked_up = true
 
         if self._power_up_id == 1 then  -- MAX AMMO
-            PowerUpManager:execute_max_ammo()
+            SkyLib.CODZ.PowerUpManager:execute_max_ammo()
             LuaNetworking:SendToPeers( "PWUP_EXECUTE", "1" )
         elseif self._power_up_id == 2 then -- DOUBLE POINTS
-            PowerUpManager:execute_double_points()
+            SkyLib.CODZ.PowerUpManager:execute_double_points()
             LuaNetworking:SendToPeers( "PWUP_EXECUTE", "2" )
         elseif self._power_up_id == 3 then -- INSTAKILL
-            PowerUpManager:execute_instakill()
+            SkyLib.CODZ.PowerUpManager:execute_instakill()
             LuaNetworking:SendToPeers( "PWUP_EXECUTE", "3" )
         elseif self._power_up_id == 4 then -- FIRESALE
-            PowerUpManager:execute_firesale()
+            SkyLib.CODZ.PowerUpManager:execute_firesale()
             LuaNetworking:SendToPeers( "PWUP_EXECUTE", "4" )
         elseif self._power_up_id == 5 then -- KABOOM
-            PowerUpManager:execute_kaboom()
+            SkyLib.CODZ.PowerUpManager:execute_kaboom()
             LuaNetworking:SendToPeers( "PWUP_EXECUTE", "5" )
         elseif self._power_up_id == 6 then -- BLOOD MONEY
-            PowerUpManager:execute_blood_money()
+            SkyLib.CODZ.PowerUpManager:execute_blood_money()
         elseif self._power_up_id == 7 then -- ZOMBIE BLOOD
-            PowerUpManager:execute_zombie_blood()
+            SkyLib.CODZ.PowerUpManager:execute_zombie_blood()
             LuaNetworking:SendToPeers( "PWUP_EXECUTE", "7" )
         elseif self._power_up_id == 8 then -- FREE PERK
-            PowerUpManager:execute_double_points()
+            SkyLib.CODZ.PowerUpManager:execute_double_points()
             LuaNetworking:SendToPeers( "PWUP_EXECUTE", "8" )
         end
 
