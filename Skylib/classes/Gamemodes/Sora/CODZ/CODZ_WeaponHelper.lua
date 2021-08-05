@@ -53,11 +53,10 @@ function SkyLib.CODZ.WeaponHelper:_create_new_weapon(data)
 
 end
 
-local debug
 function SkyLib.CODZ.WeaponHelper:_get_random_weapon()
-    debug = tostring(SkyLib.CODZ._weapons.mystery_box[math.random(#SkyLib.CODZ._weapons.mystery_box)])
+    local weapon = tostring(SkyLib.CODZ._weapons.mystery_box[math.random(#SkyLib.CODZ._weapons.mystery_box)])
 
-    SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(debug)
+    SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon)
 end
 
 function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, instigator, force_secondary, force_primary, pap, skin)
