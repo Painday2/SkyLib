@@ -1,4 +1,4 @@
-function PlayerInventory:add_unit_by_factory_name_selection_index(factory_name, equip, instant, blueprint, cosmetics, texture_switches, selection_index)
+function PlayerInventory:add_unit_by_factory_name_selection_index(factory_name, equip, instant, blueprint, cosmetics, texture_switches, selection_index, pap_level)
 	local factory_weapon = tweak_data.weapon.factory[factory_name]
 	local ids_unit_name = Idstring(factory_weapon.unit)
 
@@ -12,6 +12,8 @@ function PlayerInventory:add_unit_by_factory_name_selection_index(factory_name, 
 	new_unit:base():set_cosmetics_data(cosmetics)
 	new_unit:base():set_texture_switches(texture_switches)
 	new_unit:base():_apply_cosmetics()
+	--set pap level, because we recreate the gun each time, probably a bad thing.
+	new_unit:base().pap_level = pap_level or 1
 
 	if blueprint then
 		new_unit:base():assemble_from_blueprint(factory_name, blueprint)

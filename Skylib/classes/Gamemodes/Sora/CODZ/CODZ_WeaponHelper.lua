@@ -64,6 +64,7 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, instigator, 
     local factory_id
     local blueprint
     local current_index_equipped
+    local pap_level
     local cosmetics = skin or {
         id = "nil",
         quality = 1,
@@ -82,22 +83,23 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, instigator, 
         weapon_id = managers.weapon_factory:get_weapon_id_by_factory_id(factory_id)
         current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
         local primary_category = current_peer_weapon:base():weapon_tweak_data().categories and current_peer_weapon:base():weapon_tweak_data().categories[1]
-        -- TODO: clean this up to use a value in the base
-        if current_peer_weapon:base():get_cosmetics_id() == "pap3" then
-            cosmetics = {id = "pap3", quality = 5, bonus = 0 }
-            blueprint = current_peer_weapon:base()._blueprint
-        elseif current_peer_weapon:base():get_cosmetics_id() == "pap2" then
-            cosmetics = {id = "pap3", quality = 5, bonus = 0 }
-            self._change_stats_of(nil, weapon_id, {damage_mul = 8})
-            blueprint = current_peer_weapon:base()._blueprint
-        elseif current_peer_weapon:base():get_cosmetics_id() == "pap1" then
-            cosmetics = {id = "pap2", quality = 5, bonus = 0 }
-            self._change_stats_of(nil, weapon_id, {damage_mul = 4})
-            blueprint = current_peer_weapon:base()._blueprint
-        elseif current_peer_weapon:base():get_cosmetics_id() == "nil" then
-            cosmetics = {id = "pap1", quality = 5, bonus = 0 }
-            self._change_stats_of(nil, weapon_id, {damage_mul = 2})
-            blueprint = tweak_data.weapon.factory:_assemble_random_blueprint(factory_id, primary_category)
+
+        for i = 1, 4, 1 do
+            if current_peer_weapon:base().pap_level == i then
+                --max pap 4 for now, might change this to be more or less
+                pap_level = math.clamp(i + 1, 1, 4)
+                local damage_mul = math.clamp(2 * i, 1, 8)
+                cosmetics = {id = "pap"..tostring(i), quality = 5, bonus = 0 }
+                self._change_stats_of(nil, weapon_id, {damage_mul = damage_mul})
+                --first pap generates attachments, otherwise use same blueprint
+                if i == 1 then
+                    blueprint = tweak_data.weapon.factory:_assemble_random_blueprint(factory_id, primary_category)
+                    break
+                else
+                    blueprint = current_peer_weapon:base()._blueprint
+                    break
+                end
+            end
         end
     else
         --if not weapon_id and not pap, something fucked up, set amcar as weapon id and spawn it as a failsafe
@@ -112,7 +114,7 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, instigator, 
     elseif force_primary then
         managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, 2, false, blueprint, cosmetics, false, 2)
     elseif instigator == managers.player:player_unit() then
-        managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, current_index_equipped, false, blueprint, cosmetics, false, current_index_equipped)
+        managers.player:player_unit():inventory():add_unit_by_factory_name_selection_index(factory_id, current_index_equipped, false, blueprint, cosmetics, false, current_index_equipped, pap_level)
     end
     if managers.player:player_unit():movement().sync_equip_weapon then
         managers.player:player_unit():movement():sync_equip_weapon()
