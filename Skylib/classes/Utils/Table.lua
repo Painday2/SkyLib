@@ -59,3 +59,17 @@ function Utils:index_from_value(table, value)
     
     return index[value]
 end
+
+function Utils:string_to_vector(str)
+    local data = string.split( str, "[|]" )
+    if #data < 3 then
+        return nil
+    end
+    local split_str = "[:]"
+
+    local x = tonumber(string.split(data[1], split_str)[2])
+    local y = tonumber(string.split(data[2], split_str)[2])
+    local z = tonumber(string.split(data[3], split_str)[2])
+
+    return Vector3(x, y, z)
+end

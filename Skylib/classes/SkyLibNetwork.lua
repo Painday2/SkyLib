@@ -83,9 +83,15 @@ function SkyLib.Network:_init_codz_network()
 
             SkyLib.CODZ:_update_total_score(sender, tonumber(tbl_data.pg))
         end
+
+        if id == "ZMWavesHighScore" then
+            local max_waves = tonumber(data)
+            SkyLib.CODZ._players[sender].codz_max_waves = max_waves
+        end
+
         if id == "PWUP_EXECUTE" then
             local power_up = tonumber(data)
-    
+
             if power_up == 1 then
                 SkyLib.CODZ.PowerUpManager:execute_max_ammo()
             elseif power_up == 2 then
@@ -101,11 +107,11 @@ function SkyLib.Network:_init_codz_network()
                 if alive(unit_by_peer) then
                     unit_by_peer:movement():set_team(managers.groupai:state():team_data(tweak_data.levels:get_default_team_ID("non_combatant")))
                 end
-    
+
                 SkyLib.CODZ.PowerUpManager:execute_zombie_blood_on(unit_by_peer)
             end
         end
-    
+
         if id == "ZMWallBuyData" then
             local decode = LuaNetworking:StringToTable(data)
             ZMWallbuyBase:sync_spawn(decode)
@@ -124,7 +130,7 @@ function SkyLib.Network:_init_codz_network()
         end
 
         if id == "SpecialWave_PlayShadowSpook" then
-            local pos = string_to_vector(data)
+            local pos = SkyLib.Utils:string_to_vector(data)
 
             SkyLib.Sound:play({
                 name = "play_shadow_spook",
@@ -140,7 +146,7 @@ function SkyLib.Network:_init_codz_network()
 
         if id == "SpecialWave_SpawnPosition" then
             --if managers.wdu:_is_special_wave() then
-                local pos = string_to_vector(data)
+                local pos = SkyLib.Utils:string_to_vector(data)
 
                 if pos then
                     World:effect_manager():spawn({

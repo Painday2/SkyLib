@@ -690,7 +690,7 @@ Hooks:PostHook(ReviveInteractionExt, "interact", "zm_post_interact_revive", func
 	local helper_id = managers.criminals:character_peer_id_by_unit(reviving_unit)
 
 	if helped_id then
-		local money_to_add = SkyLib.CODZ:points_round(SkyLib.CODZ._players[helped_id].money * 0.15)
+		local money_to_add = SkyLib.CODZ:points_round(SkyLib.CODZ._players[helped_id].codz_points * 0.15)
 		SkyLib.CODZ:_money_change(math.floor(money_to_add), helper_id)
 	end
 end)
