@@ -985,6 +985,17 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		special_equipment_block = "blueprints"
 	}
 
+    self.zm_take_weapon = {
+        zm_interaction = true,
+        box_weapon = true,
+        points_cost = 0,
+        stay_active = false,
+        action_text_id = "zm_buy_weapon",
+        start_active = true,
+        sound_done = "zm_gen_ching",
+        timer = 0.5
+    }
+
 end)
 --hooks gets set too late, need to reinit
 tweak_data.interaction:init(tweak_data)

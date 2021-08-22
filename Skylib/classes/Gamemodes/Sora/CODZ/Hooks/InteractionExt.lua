@@ -10,6 +10,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 	self:_add_string_macros(string_macros)
 
 	local text = ""
+	local icon = ""
 	local current_money = SkyLib.CODZ:_get_own_money()
 	local cost = self._tweak_data.points_cost or 0
 
@@ -242,25 +243,17 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		
 		--Is a ZM Box Weapon Grab Interaction?
 		if self._tweak_data.box_weapon then
-			local item = self._tweak_data.box_weapon
+			local weapon_id = self._unit:base()._weapon_id or "amcar"
+			local item = managers.localization:text(tostring(tweak_data.weapon[weapon_id].name_id))
 			local own_weapon = false
 			
 			text = "Hold " .. managers.localization:btn_macro("interact") .. " to grab the " .. item
-			
+
 			local current_state = managers.player:get_current_state()
 			if current_state then
 				local current_weapon = current_state:get_equipped_weapon()
-				local is_secondary = managers.player:player_unit():inventory():equipped_selection() == 1
-				local is_primary = managers.player:player_unit():inventory():equipped_selection() == 2
-				local suffix = "_primary"
-
-				if is_secondary then
-					suffix = "_secondary"
-				end
-
-				local converted_id_to_new_system = self._tweak_data.weapon_id .. suffix
-
-				if current_weapon.name_id == converted_id_to_new_system then
+				
+				if current_weapon.name_id == weapon_id then
 					text = "Hold " .. managers.localization:btn_macro("interact") .. " to refill the ammo of the " .. item
 					own_weapon = true
 				end

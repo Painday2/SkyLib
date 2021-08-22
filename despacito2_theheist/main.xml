@@ -13,20 +13,6 @@
 		<hooks directory="hooks">
 			<hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
 		</hooks>
-		<include directory="levels/despacito2_theheist">
-			<file file="world.world" type="binary"/>
-			<file file="continents.continents" type="binary"/>
-			<file file="mission.mission" type="binary"/>
-			<file file="nav_manager_data.nav_data" type="binary"/>
-			<file file="world_sounds.world_sounds" type="binary"/>
-			<file file="world_cameras.world_cameras" type="binary"/>
-			<file file="editor_only/editor_only.continent" type="binary"/>
-			<file file="editor_only/editor_only.mission" type="binary"/>
-			<file file="world/world.continent" type="binary"/>
-			<file file="world/world.mission" type="binary"/>
-			<file file="cover_data.cover_data" type="binary"/>
-			<file file="environments/default.environment" type="custom_xml"/>
-		</include>
 		<outro_event>
 			<value_node value=""/>
 		</outro_event>
@@ -34,6 +20,7 @@
 			<value_node value="levels/instances/unique/brb/civ_intro_spawner/world/world"/>
 			<value_node value="packages/narr_hvh"/>
 			<value_node value="packages/ZMAssets"/>
+			<value_node value="levels/instances/unique/hox_estate_security_room_door/world/world"/>
 		</packages>
 		<script_data_mods directory="scriptdata">
 			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
