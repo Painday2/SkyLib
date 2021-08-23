@@ -8,15 +8,17 @@ function EditWallBuy:editable(unit)
     return weapons
 end
 
-function EditWallBuy:build_menu()
+function EditWallBuy:build_menu(units)
     local main = self._menu:GetItem("Main")
     main:combobox("WeaponId", ClassClbk(self._parent, "set_unit_data"), {}, 1, {help = "Select an Weapon ID, Refer to the MWS wiki for names.", free_typing = true})
+    main:numberbox("Cost", ClassClbk(self._parent, "set_unit_data"), units[1]:unit_data().cost or 500000, {help = "Cost of buying the weapon, MAKE SURE TO CHANGE THIS AT LEAST ONCE", min = 0, step = 50, floats = 0})
 end
 
-function EditWallBuy:set_unit_data(weapon_id)
+function EditWallBuy:set_unit_data(weapon_id, cost)
     local unit = self:selected_unit()
     local ud = unit:unit_data()
     ud.weapon_id = weapon_id or self._menu:GetItem("WeaponId"):SelectedItem()
+    ud.cost = cost or self._menu:GetItem("Cost"):Value()
     --despawn/spawn weapon on weapon change
     unit:base():despawn_weapon()
     unit:base():spawn_weapon()

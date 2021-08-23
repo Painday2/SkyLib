@@ -12,8 +12,22 @@ end
 
 function ZMWallbuyBase:interacted(player)
     if player then
-        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._weapon_id, player)
-        self._unit:damage():run_sequence_simple("interact")
+        --check if player is refilling ammo, if so refill it
+        local weapon_id = self._unit:base()._weapon_id or "amcar"
+        local current_state = managers.player:get_current_state()
+        if current_state then
+            local current_weapon = current_state:get_equipped_weapon()
+            if weapon_id == current_weapon.name_id then
+                current_weapon._unit:base():soft_replenish()
+                managers.hud:set_ammo_amount( current_weapon.forced_selection_index, current_weapon._unit:base():ammo_info() )
+            else
+                SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._weapon_id, player)
+                self._unit:damage():run_sequence_simple("interact")
+            end
+        else
+            SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(self._weapon_id, player)
+            self._unit:damage():run_sequence_simple("interact")
+        end
     end
 end
 
@@ -79,20 +93,22 @@ function ZMWallbuyBase:_assemble_completed()
     end
 end
 
---send unit id and weapon id for sync
+--send unit id weapon id and cost for sync
 function ZMWallbuyBase:sync_data(unit)
     local uid = unit:id()
     local wid = unit:unit_data().weapon_id or self._weapon_id
-    local data = {uid, wid}
+    local cost = unit:unit_data().cost or 5000
+    local data = {uid, wid, cost}
     SkyLib.Network:_send("ZMWallBuyData", data)
 end
 
---recieve wallbuy data (unit id and weapon id) from host and spawn unit
+--recieve wallbuy data (unit id, weapon id and cost) from host and spawn unit
 function ZMWallbuyBase:sync_spawn(data)
     if data then
         for _, unit in ipairs(ZMWallbuyBase.unit_list) do
             if unit:id() == tonumber(data["1"]) then
                 unit:unit_data().weapon_id = tostring(data["2"])
+                unit:unit_data().cost = tostring(data["3"])
                 unit:base():spawn_weapon()
                 table.remove(ZMWallbuyBase.unit_list, data["1"])
                 break
@@ -105,6 +121,7 @@ end
 SkyHook:Post(WorldDefinition, "assign_unit_data", function(self, unit, data)
     if data.weapon_id then
 		unit:unit_data().weapon_id = data.weapon_id
+        unit:unit_data().cost = data.cost
 	end
 end)
 
@@ -114,7 +131,7 @@ SkyHook:Post(CriminalsManager, "add_character", function(self, _, peer_id)
     self.bad_code_already_ran = self.bad_code_already_ran or nil
     if Network:is_server() and not self.bad_code_already_ran then
         for _, unit in ipairs(ZMWallbuyBase.unit_list) do
-            log(tostring(unit:unit_data().weapon_id))
+            --log(tostring(unit:unit_data().weapon_id))
             unit:base():sync_data(unit)
             self.bad_code_already_ran = true
         end

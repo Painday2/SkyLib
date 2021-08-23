@@ -11,7 +11,7 @@
 		<extension name="damage" class="UnitDamage" />
 		<extension name="sync_unit_data" class="SyncUnitData" />
 		<extension name="interaction" class="ZMWallbuyInteractionExt">
-			<var name="tweak_data" value="zm_mystery_box" />
+			<var name="tweak_data" value="zm_wallbuy" />
 			<var name="_interact_object" value="interact"/>
 			<var name="drop_in_sync_tweak_data" value="true" />
 		</extension>

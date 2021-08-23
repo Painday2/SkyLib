@@ -12,37 +12,30 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 	local text = ""
 	local icon = ""
 	local current_money = SkyLib.CODZ:_get_own_money()
-	local cost = self._tweak_data.points_cost or 0
+	local cost
 
 	--Is a Zombie Mode Interaction?
 	if self._tweak_data.zm_interaction then
+		cost = self._unit:unit_data().cost or self._tweak_data.points_cost or 0
 		text = "Hold " .. managers.localization:btn_macro("interact") .. " to buy"
 
-		if self._tweak_data.weapon then
+		if self._tweak_data.wallbuy then
 			if self._tweak_data.grenade_spot then
 				text = "Hold " .. managers.localization:btn_macro("interact") .. " to refill your throwables"
 			end
 
-			local item = self._tweak_data.weapon
+			local weapon_id = self._unit:base()._weapon_id or "amcar"
+			local item = self._tweak_data.weapon or managers.localization:text(tostring(tweak_data.weapon[weapon_id].name_id))
 			local own_weapon = false
 
 			if not self._tweak_data.grenade_spot then
 				local current_state = managers.player:get_current_state()
 				if current_state then
 					local current_weapon = current_state:get_equipped_weapon()
-					local is_secondary = managers.player:player_unit():inventory():equipped_selection() == 1
-					local is_primary = managers.player:player_unit():inventory():equipped_selection() == 2
-					local suffix = "_primary"
 
-					if is_secondary then
-						suffix = "_secondary"
-					end
-
-					local converted_id_to_new_system = self._tweak_data.weapon_id .. suffix
-
-					if current_weapon.name_id == converted_id_to_new_system then
+					if current_weapon.name_id == weapon_id then
 						text = "Hold " .. managers.localization:btn_macro("interact") .. " to refill the ammo of"
-						cost = cost / 2
+						cost = math.round(cost / 2, 50)
 						own_weapon = true
 					end
 				end
@@ -259,8 +252,6 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 				end
 			end
 		end
-		
-		
 
 		--Is a ZM Trade Points Interaction?
 		if self._tweak_data.point_giveaway_spot then
@@ -403,22 +394,14 @@ function BaseInteractionExt:can_interact(player)
 			end
 		end
 
-		if self._tweak_data.weapon and not self._tweak_data.grenade_spot then
+		if self._tweak_data.wallbuy and not self._tweak_data.grenade_spot then
 			local current_state = managers.player:get_current_state()
 			if current_state then
 				local current_weapon = current_state:get_equipped_weapon()
-				local is_secondary = managers.player:player_unit():inventory():equipped_selection() == 1
-				local is_primary = managers.player:player_unit():inventory():equipped_selection() == 2
-				local suffix = "_primary"
+				local weapon_id = self._unit:base()._weapon_id or "amcar"
 
-				if is_secondary then
-					suffix = "_secondary"
-				end
-
-				local converted_id_to_new_system = self._tweak_data.weapon_id .. suffix
-
-				if current_weapon.name_id == converted_id_to_new_system then
-					cost = cost / 2
+				if current_weapon.name_id == weapon_id then
+					cost = math.round(cost / 2, 50)
 				end
 			end
 		end
@@ -513,29 +496,25 @@ function BaseInteractionExt:interact(player)
 
 			return
 		end
+		--TODO: fix this jank, for now it can't be helped until i seperate everything into seperate interactionext
+		if not self._unit:unit_data().cost then
+			self._unit:unit_data().cost = self._tweak_data.points_cost or 0
+		end
 
-		local amount_to_deduct = 0 - self._tweak_data.points_cost or 0
+		local amount_to_deduct = 0 - self._unit:unit_data().cost or 0 - self._tweak_data.points_cost or 0
 
 		if self.tweak_data == "zm_mystery_box" and SkyLib.CODZ:_is_event_active("firesale") then
 			amount_to_deduct = 0 - 10
 		end
 
-		if self._tweak_data.weapon and not self._tweak_data.grenade_spot then
+		if self._tweak_data.wallbuy and not self._tweak_data.grenade_spot then
+			local weapon_id = self._unit:base()._weapon_id or "amcar"
 			local current_state = managers.player:get_current_state()
 			if current_state then
 				local current_weapon = current_state:get_equipped_weapon()
-				local is_secondary = managers.player:player_unit():inventory():equipped_selection() == 1
-				local is_primary = managers.player:player_unit():inventory():equipped_selection() == 2
-				local suffix = "_primary"
-
-				if is_secondary then
-					suffix = "_secondary"
-				end
-
-				local converted_id_to_new_system = self._tweak_data.weapon_id .. suffix
-
-				if current_weapon.name_id == converted_id_to_new_system then
-					amount_to_deduct = amount_to_deduct / 2
+				
+				if current_weapon.name_id == weapon_id then
+					amount_to_deduct = math.round(amount_to_deduct / 2, 50)
 				end
 			end
 		end
