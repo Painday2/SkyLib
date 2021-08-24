@@ -5,7 +5,7 @@
 	<extensions>
 		<extension name="damage" class="UnitDamage" />
 		<extension name="unit_data" class="ScriptUnitData" />
-		<extension name="interaction" class="UseInteractionExt" >
+		<extension name="interaction" class="ZMPackAPunchExt" >
 			<var name="tweak_data" value="zm_pack_a_punch" />
 			<var name="_interact_object" value="a_buy"/>
 		</extension>

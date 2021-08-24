@@ -198,7 +198,7 @@ function ZMWallbuyInteractionExt:selected(player, locator, hand_id)
 
 	--Is a Zombie Mode Interaction?
 	if self._tweak_data.zm_interaction then
-		cost = self._unit:unit_data().cost or self._tweak_data.points_cost or 0
+		cost = tonumber(self._unit:unit_data().cost) or self._tweak_data.points_cost or 0
 		text = "Hold " .. managers.localization:btn_macro("interact") .. " to buy"
 
 		if self._tweak_data.wallbuy then

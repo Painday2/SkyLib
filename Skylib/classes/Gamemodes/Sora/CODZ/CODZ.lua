@@ -160,6 +160,7 @@ function SkyLib.CODZ:_init_hooks()
 
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMMoneyExt",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPerkExt",
+        "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPackAPunchExt",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/MisterySafeBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMWallbuyBase"
     }

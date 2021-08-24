@@ -12,11 +12,14 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 	local text = ""
 	local icon = ""
 	local current_money = SkyLib.CODZ:_get_own_money()
-	local cost
+	local cost = self._tweak_data.points_cost or 0
 
 	--Is a Zombie Mode Interaction?
 	if self._tweak_data.zm_interaction then
-		cost = self._unit:unit_data().cost or self._tweak_data.points_cost or 0
+		if self._unit:unit_data() and self._unit:unit_data().cost then
+			cost = self._unit:unit_data().cost
+		end
+		--cost = self._unit:unit_data().cost
 		text = "Hold " .. managers.localization:btn_macro("interact") .. " to buy"
 
 		--[[if self._tweak_data.wallbuy then
@@ -116,6 +119,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		end]]
 
 		--Is a ZM Obstacle Interaction?
+		--Has a base, left in for interaction element.
 		if self._tweak_data.path then
 			text = "Hold " .. managers.localization:btn_macro("interact") .. " to open "
 			local path_type = "the path"
@@ -134,6 +138,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		end
 
 		--Is a ZM Elevator Interaction?
+		--Currently unused, if needed will port to a base
 		if self._tweak_data.zm_elevator then
 			text = "Hold " .. managers.localization:btn_macro("interact") .. " to call "
 			local path_type = "the elevator"
@@ -152,6 +157,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		end
 
 		--Is a ZM Trap Interaction?
+		--Currently unused, if needed will port to a base
 		if self._tweak_data.zm_trap then
 			text = "Hold " .. managers.localization:btn_macro("interact") .. " to activate "
 			local path_type = "the trap"
@@ -170,6 +176,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		end
 
 		--Is a ZM Hack Interaction?
+		--Could use a base, probably more useful as a tweakdata, will port if needed
 		if self._tweak_data.hack then
 			text = "Hold " .. managers.localization:btn_macro("interact") .. " to start "
 			local hack_type = "the hack"
@@ -188,6 +195,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		end
 		
 		--Is a ZM Key Interaction?
+		--Currently unused, if needed will port to a base
 		if self._tweak_data.key then
 			text = "Hold " .. managers.localization:btn_macro("interact") .. " to start "
 			local key_type = "the car"
@@ -206,6 +214,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		end
 		
 		--Is a ZM Pack-A-Punch Interaction?
+		--Has a base, Left in for interaction element.
 		if self._tweak_data.pack_a_punch then
 			text = "Hold " .. managers.localization:btn_macro("interact") .. " to upgrade your weapon"
 
@@ -366,7 +375,8 @@ function BaseInteractionExt:can_interact(player)
 		if self.tweak_data == "zm_mystery_box" and SkyLib.CODZ:_is_event_active("firesale") then
 			cost = 10
 		end
-
+		--!no longer needed, leaving for now
+		--[[
 		if self._tweak_data.pack_a_punch then
 			local current_state = managers.player:get_current_state()
 			if current_state then
@@ -377,7 +387,7 @@ function BaseInteractionExt:can_interact(player)
 					return false
 				end
 			end
-		end
+		end]]
 
 		if self._tweak_data.point_giveaway_spot then
 			local amount = 1000
@@ -497,12 +507,13 @@ function BaseInteractionExt:interact(player)
 
 			return
 		end
-
-		if not self._unit:unit_data().cost then
-			self._unit:unit_data().cost = self._tweak_data.points_cost or 0
+		local cost = self._tweak_data.points_cost or 0
+		--compatibility with interaction elements
+		if self._unit:unit_data() and self._unit:unit_data().cost then
+			cost = self._unit:unit_data().cost
 		end
 
-		local amount_to_deduct = 0 - self._unit:unit_data().cost or 0
+		local amount_to_deduct = 0 - cost or 0
 		--more effort to make this it's own thing
 		if self.tweak_data == "zm_mystery_box" and SkyLib.CODZ:_is_event_active("firesale") then
 			amount_to_deduct = 0 - 10
