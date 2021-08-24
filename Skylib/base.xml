@@ -17,7 +17,6 @@
         <class file="Gamemodes/Sora/Survival/Survival_WeaponHelper.lua"/>
         <class file="Gamemodes/Sora/Survival/Survival_Profile.lua"/>
     </Classes>
-
     <Hooks directory="hooks">
         <hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
         <hook file="WeaponSkins.lua" source_file="lib/tweak_data/blackmarket/weaponskinstweakdata"/>

@@ -140,6 +140,112 @@ end)
 
 ZMWallbuyInteractionExt = ZMWallbuyInteractionExt or class(UseInteractionExt)
 function ZMWallbuyInteractionExt:interact(player)
-	ZMWallbuyInteractionExt.super.interact(self, player)
-	self._unit:base():interacted(player)
+	--ZMWallbuyInteractionExt.super.interact(self, player)
+    self._tweak_data_at_interact_start = nil
+
+	if self._tweak_data.zm_interaction then
+
+		if not self._unit:unit_data().cost then
+			self._unit:unit_data().cost = self._tweak_data.points_cost or 0
+		end
+
+		local amount_to_deduct = 0 - self._unit:unit_data().cost 
+
+		if self._tweak_data.wallbuy and not self._tweak_data.grenade_spot then
+			local weapon_id = self._unit:base()._weapon_id or "amcar"
+			local current_state = managers.player:get_current_state()
+			if current_state then
+				local current_weapon = current_state:get_equipped_weapon()
+				
+				if current_weapon.name_id == weapon_id then
+					amount_to_deduct = math.round(amount_to_deduct / 2, 50)
+				end
+			end
+		end
+		
+		local peer_id = 1
+
+		if managers and managers.network then
+			local peer = managers.network:session():peer_by_unit(player)
+			peer_id = peer:id()
+		end
+
+		if peer_id == SkyLib.Network:_my_peer_id() then
+			SkyLib.CODZ:_money_change(amount_to_deduct, peer_id)
+		end
+        
+        self._unit:base():interacted(player)
+	end
+
+	self:_post_event(player, "sound_done")
+end
+
+function ZMWallbuyInteractionExt:selected(player, locator, hand_id)
+	if not self:can_select(player) then
+		return
+	end
+
+	self._hand_id = hand_id
+	self._is_selected = true
+	local string_macros = {}
+
+	self:_add_string_macros(string_macros)
+
+	local text = ""
+	local icon = ""
+	local current_money = SkyLib.CODZ:_get_own_money()
+	local cost
+
+	--Is a Zombie Mode Interaction?
+	if self._tweak_data.zm_interaction then
+		cost = self._unit:unit_data().cost or self._tweak_data.points_cost or 0
+		text = "Hold " .. managers.localization:btn_macro("interact") .. " to buy"
+
+		if self._tweak_data.wallbuy then
+			if self._tweak_data.grenade_spot then
+				text = "Hold " .. managers.localization:btn_macro("interact") .. " to refill your throwables"
+			end
+            
+			local weapon_id = self._unit:base()._weapon_id or "amcar"
+			local item = self._tweak_data.weapon or managers.localization:text(tostring(tweak_data.weapon[weapon_id].name_id))
+			local own_weapon = false
+
+			if not self._tweak_data.grenade_spot then
+				local current_state = managers.player:get_current_state()
+				if current_state then
+					local current_weapon = current_state:get_equipped_weapon()
+
+					if current_weapon.name_id == weapon_id then
+						text = "Hold " .. managers.localization:btn_macro("interact") .. " to refill the ammo of"
+						cost = math.round(cost / 2, 50)
+						own_weapon = true
+					end
+				end
+			end
+
+			if current_money >= cost then
+				if not self._tweak_data.grenade_spot then text = text .. " the " .. item end
+				text = text .. " [Cost : " .. cost .. "]"
+			else
+				local points_needed = cost - current_money
+				
+				if not self._tweak_data.grenade_spot then 
+					text = "You need " .. points_needed .. " more points to buy the " .. item 
+				else
+					text = "You need " .. points_needed .. " more points to refill your throwables" 
+				end
+
+				if own_weapon then
+					if not self._tweak_data.grenade_spot then text = "You need " .. points_needed .. " more points to refill the ammo of the " .. item end
+				end
+			end
+		end
+    end
+
+	managers.hud:show_interact({
+		text = text,
+		icon = icon
+	})
+
+	return true
 end

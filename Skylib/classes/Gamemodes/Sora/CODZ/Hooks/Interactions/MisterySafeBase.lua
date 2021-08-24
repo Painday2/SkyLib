@@ -155,6 +155,70 @@ function MisterySafeInteractionExt:can_select(player)
 	return MisterySafeInteractionExt.super.can_select(self, player)
 end
 
+function MisterySafeInteractionExt:selected(player, locator, hand_id)
+	if not self:can_select(player) then
+		return
+	end
+
+	self._hand_id = hand_id
+	self._is_selected = true
+	local string_macros = {}
+
+	self:_add_string_macros(string_macros)
+
+	local text = ""
+	local icon = ""
+    local current_money = SkyLib.CODZ:_get_own_money()
+	local cost
+
+	--Is a Zombie Mode Interaction?
+	if self._tweak_data.zm_interaction then
+		cost = self._unit:unit_data().cost or self._tweak_data.points_cost or 0
+		text = "Hold " .. managers.localization:btn_macro("interact") .. " to buy"
+
+        if self._tweak_data.mystery_box then
+			text = text .. " a random weapon"
+
+			if SkyLib.CODZ:_is_event_active("firesale") then
+				cost = 10
+				self:quick_swap()
+			end
+
+			if current_money >= cost then
+				text = text .. " [Cost : " .. cost .. "]"
+			else
+				local points_needed = cost - current_money
+				text = "You need " .. points_needed .. " more points to buy a random weapon"
+			end
+		end
+
+        if self._tweak_data.box_weapon then
+			local weapon_id = self._unit:base()._weapon_id or "amcar"
+			local item = managers.localization:text(tostring(tweak_data.weapon[weapon_id].name_id))
+			local own_weapon = false
+
+			text = "Hold " .. managers.localization:btn_macro("interact") .. " to grab the " .. item
+
+			local current_state = managers.player:get_current_state()
+			if current_state then
+				local current_weapon = current_state:get_equipped_weapon()
+
+				if current_weapon.name_id == weapon_id then
+					text = "Hold " .. managers.localization:btn_macro("interact") .. " to refill the ammo of the " .. item
+					own_weapon = true
+				end
+			end
+		end
+    end
+
+	managers.hud:show_interact({
+		text = text,
+		icon = icon
+	})
+
+	return true
+end
+
 function MisterySafeInteractionExt:interact(player)
     if not self:can_interact(player) then
         return

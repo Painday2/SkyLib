@@ -19,7 +19,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		cost = self._unit:unit_data().cost or self._tweak_data.points_cost or 0
 		text = "Hold " .. managers.localization:btn_macro("interact") .. " to buy"
 
-		if self._tweak_data.wallbuy then
+		--[[if self._tweak_data.wallbuy then
 			if self._tweak_data.grenade_spot then
 				text = "Hold " .. managers.localization:btn_macro("interact") .. " to refill your throwables"
 			end
@@ -57,8 +57,8 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 					if not self._tweak_data.grenade_spot then text = "You need " .. points_needed .. " more points to refill the ammo of the " .. item end
 				end
 			end
-		end
-
+		end]]
+		--Left in for compatibility, not planned to be added to any bases
 		if self._tweak_data.dyn_price_by_wave then
 			local base_price = self._tweak_data.dyn_price_base or 1000
 			local increase_by_wave = self._tweak_data.dyn_price_increase or 1000
@@ -76,7 +76,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 			end
 		end
 
-		--Is a ZM Perk Interaction?
+		--[[Is a ZM Perk Interaction?
 		if self._tweak_data.perk then
 			local item = self._tweak_data.perk
 
@@ -113,7 +113,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 				local points_needed = cost - current_money
 				text = "You need " .. points_needed .. " more points to buy " .. item
 			end
-		end
+		end]]
 
 		--Is a ZM Obstacle Interaction?
 		if self._tweak_data.path then
@@ -217,7 +217,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 			end
 		end
 
-		--Is a ZM Mystery Box Interaction?
+		--[[Is a ZM Mystery Box Interaction?
 		if self._tweak_data.mystery_box then
 			text = text .. " a random weapon"
 
@@ -232,9 +232,9 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 				local points_needed = cost - current_money
 				text = "You need " .. points_needed .. " more points to buy a random weapon"
 			end
-		end
+		end]]
 		
-		--Is a ZM Box Weapon Grab Interaction?
+		--[[Is a ZM Box Weapon Grab Interaction?
 		if self._tweak_data.box_weapon then
 			local weapon_id = self._unit:base()._weapon_id or "amcar"
 			local item = managers.localization:text(tostring(tweak_data.weapon[weapon_id].name_id))
@@ -251,7 +251,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 					own_weapon = true
 				end
 			end
-		end
+		end]]
 
 		--Is a ZM Trade Points Interaction?
 		if self._tweak_data.point_giveaway_spot then
@@ -326,7 +326,7 @@ function BaseInteractionExt:quick_swap()
 		SkyLib.CODZ._level.active_events.firesale_box_swap = true
 	end
 end
-
+--i could copy this to the seperate bases, but seems more efficent to not, not lazy promise.
 function BaseInteractionExt:can_interact(player)
 	if self._host_only and not Network:is_server() then
 		return false
@@ -335,11 +335,12 @@ function BaseInteractionExt:can_interact(player)
 	if self._disabled then
 		return false
     end
-    
+
     local count_perks = managers.player:_count_nb_perks()
 	local max_perks = 4
 	local current_money = SkyLib.CODZ:_get_own_money()
 
+	--Left in for compatibility, not planned to be added to any bases
 	if self._tweak_data.dyn_price_by_wave then
 		local base_price = self._tweak_data.dyn_price_base or 1000
 		local increase_by_wave = self._tweak_data.dyn_price_increase or 1000
@@ -350,7 +351,7 @@ function BaseInteractionExt:can_interact(player)
 			return false
 		end
 	end
-	
+
 	if self._tweak_data.is_teleporter and not SkyLib.CODZ:_is_teleporter_available() then
 		return false
 	end
@@ -358,7 +359,7 @@ function BaseInteractionExt:can_interact(player)
     if self._tweak_data.is_perk_interaction and count_perks >= max_perks then
         return false
 	end
-	
+
 	if self._tweak_data.zm_interaction then
 		local cost = self._tweak_data.points_cost or 0
 
@@ -476,7 +477,7 @@ function BaseInteractionExt:interact(player)
 	self._tweak_data_at_interact_start = nil
 
 	if self._tweak_data.zm_interaction then
-
+		--Left in for compatibility, not planned to be added to any bases
 		if self._tweak_data.dyn_price_by_wave then
 			local base_price = self._tweak_data.dyn_price_base or 1000
 			local increase_by_wave = self._tweak_data.dyn_price_increase or 1000
@@ -496,27 +497,15 @@ function BaseInteractionExt:interact(player)
 
 			return
 		end
-		--TODO: fix this jank, for now it can't be helped until i seperate everything into seperate interactionext
+
 		if not self._unit:unit_data().cost then
 			self._unit:unit_data().cost = self._tweak_data.points_cost or 0
 		end
 
-		local amount_to_deduct = 0 - self._unit:unit_data().cost or 0 - self._tweak_data.points_cost or 0
-
+		local amount_to_deduct = 0 - self._unit:unit_data().cost or 0
+		--more effort to make this it's own thing
 		if self.tweak_data == "zm_mystery_box" and SkyLib.CODZ:_is_event_active("firesale") then
 			amount_to_deduct = 0 - 10
-		end
-
-		if self._tweak_data.wallbuy and not self._tweak_data.grenade_spot then
-			local weapon_id = self._unit:base()._weapon_id or "amcar"
-			local current_state = managers.player:get_current_state()
-			if current_state then
-				local current_weapon = current_state:get_equipped_weapon()
-				
-				if current_weapon.name_id == weapon_id then
-					amount_to_deduct = math.round(amount_to_deduct / 2, 50)
-				end
-			end
 		end
 
 		if self._tweak_data.point_giveaway_spot then

@@ -11,7 +11,7 @@ end
 function EditWallBuy:build_menu(units)
     local main = self._menu:GetItem("Main")
     main:combobox("WeaponId", ClassClbk(self._parent, "set_unit_data"), {}, 1, {help = "Select an Weapon ID, Refer to the MWS wiki for names.", free_typing = true})
-    main:numberbox("Cost", ClassClbk(self._parent, "set_unit_data"), units[1]:unit_data().cost or 500000, {help = "Cost of buying the weapon, MAKE SURE TO CHANGE THIS AT LEAST ONCE", min = 0, step = 50, floats = 0})
+    main:combobox("Cost", ClassClbk(self._parent, "set_unit_data"), {}, 1, {help = "Cost of buying the weapon, You can enter a custom number. Try to make it a multiple of 10 that is divisable by 2 or you'll get some weird rounding", min = 0, free_typing = true})
 end
 
 function EditWallBuy:set_unit_data(weapon_id, cost)
@@ -33,6 +33,14 @@ function EditWallBuy:set_menu_unit(unit)
     weaponid:SetVisible(weaponids and unit:unit_data().name == "units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy")
     weaponid:SetItems(weaponids)
     weaponid:SetSelectedItem(selectedItem or "")
+
+    local cost = self._menu:GetItem("Cost")
+    local amounts = {0, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4500, 5000}
+    local selectedItem2 = Utils:index_from_value(amounts, unit:unit_data().cost) or tostring(unit:unit_data().cost) or 1
+
+    cost:SetVisible(unit:unit_data().name == "units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy")
+    cost:SetItems(amounts)
+    cost:SetSelectedItem(selectedItem2)
 end
 
 --Adds weapon_id menu to the editor menu
