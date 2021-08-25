@@ -19,7 +19,6 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		if self._unit:unit_data() and self._unit:unit_data().cost then
 			cost = self._unit:unit_data().cost
 		end
-		--cost = self._unit:unit_data().cost
 		text = "Hold " .. managers.localization:btn_macro("interact") .. " to buy"
 
 		--[[if self._tweak_data.wallbuy then
@@ -61,7 +60,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 				end
 			end
 		end]]
-		--Left in for compatibility, not planned to be added to any bases
+		--Left in for compatibility, not planned to be added to any ext
 		if self._tweak_data.dyn_price_by_wave then
 			local base_price = self._tweak_data.dyn_price_base or 1000
 			local increase_by_wave = self._tweak_data.dyn_price_increase or 1000
@@ -119,7 +118,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		end]]
 
 		--Is a ZM Obstacle Interaction?
-		--Has a base, left in for interaction element.
+		--Has a Base/Ext, left in for interaction element.
 		if self._tweak_data.path then
 			text = "Hold " .. managers.localization:btn_macro("interact") .. " to open "
 			local path_type = "the path"
@@ -138,7 +137,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		end
 
 		--Is a ZM Elevator Interaction?
-		--Currently unused, if needed will port to a base
+		--Currently unused, if needed will port to a ext
 		if self._tweak_data.zm_elevator then
 			text = "Hold " .. managers.localization:btn_macro("interact") .. " to call "
 			local path_type = "the elevator"
@@ -157,7 +156,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		end
 
 		--Is a ZM Trap Interaction?
-		--Currently unused, if needed will port to a base
+		--Currently unused, if needed will port to a ext
 		if self._tweak_data.zm_trap then
 			text = "Hold " .. managers.localization:btn_macro("interact") .. " to activate "
 			local path_type = "the trap"
@@ -195,13 +194,13 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		end
 		
 		--Is a ZM Key Interaction?
-		--Currently unused, if needed will port to a base
+		--Currently unused, if needed will port to a ext
 		if self._tweak_data.key then
 			text = "Hold " .. managers.localization:btn_macro("interact") .. " to start "
 			local key_type = "the car"
 			
 			if self._tweak_data.key then
-				hkey_type = self._tweak_data.custom_key
+				key_type = self._tweak_data.custom_key
 			end
 
 			if current_money >= cost then
@@ -263,6 +262,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		end]]
 
 		--Is a ZM Trade Points Interaction?
+		--Will get a base, will be purged when completed.
 		if self._tweak_data.point_giveaway_spot then
 			local player_name_aimed_at = SkyLib.CODZ._players[self._tweak_data.spot_nb].player_name
 			cost = 1000
@@ -335,7 +335,7 @@ function BaseInteractionExt:quick_swap()
 		SkyLib.CODZ._level.active_events.firesale_box_swap = true
 	end
 end
---i could copy this to the seperate bases, but seems more efficent to not, not lazy promise.
+--i could copy this to the seperate ext, but seems more efficent to not, not lazy promise.
 function BaseInteractionExt:can_interact(player)
 	if self._host_only and not Network:is_server() then
 		return false

@@ -5,8 +5,9 @@
 	<extensions>
 		<extension class="ScriptUnitData" name="unit_data" />
 		<extension name="damage" class="UnitDamage" />
+		<extension name="base" class="ZMPathBase" />
 		<extension name="sync_unit_data" class="SyncUnitData" />
-		<extension name="interaction" class="UseInteractionExt">
+		<extension name="interaction" class="ZMPathExt">
 			<var name="drop_in_sync_tweak_data" value="true" />
 			<var name="tweak_data" value="zm_open_path_750" />
 		</extension>

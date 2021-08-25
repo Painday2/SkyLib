@@ -125,7 +125,6 @@ function SkyLib.CODZ:_init_hooks()
 
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementWeaponSwitch",
         "classes/Gamemodes/Sora/CODZ/Hooks/ElementWave",
-        "classes/Gamemodes/Sora/CODZ/Hooks/EditWallBuy",
 
         "classes/Gamemodes/Sora/CODZ/Hooks/InteractionTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/InteractionExt",
@@ -161,6 +160,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMMoneyExt",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPerkExt",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPackAPunchExt",
+        "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPathBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/MisterySafeBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMWallbuyBase"
     }
@@ -170,10 +170,19 @@ function SkyLib.CODZ:_init_hooks()
         "WeaponSwitch"
     }
 
+    self._editor_hooks = {
+        "classes/Gamemodes/Sora/CODZ/Editor/EditPath",
+        "classes/Gamemodes/Sora/CODZ/Editor/EditWallBuy",
+    }
+
     if Global.editor_mode then
         for _, element in pairs(self._elements) do
             dofile(mod_path .. "classes/Gamemodes/Sora/CODZ/Editor/Editor" .. element .. ".lua")
             table.insert(BLE._config.MissionElements, "Element".. element)
+        end
+        for _, hook in pairs(self._editor_hooks) do
+            dofile(mod_path .. hook .. ".lua")
+            log("[SkyLib] Included Editor script ", hook)
         end
     end
 
