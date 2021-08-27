@@ -22,7 +22,7 @@ function SkyLib.CODZ:init(custom_rules)
         },
         [2] = {
             name = "none",
-            steam_id = 1,
+            steam_id = 0,
             connected = false,
             codz_points = self._starting_money,
             codz_score = self._starting_money,
@@ -30,7 +30,7 @@ function SkyLib.CODZ:init(custom_rules)
         },
         [3] = {
             name = "none",
-            steam_id = 2,
+            steam_id = 0,
             connected = false,
             codz_points = self._starting_money,
             codz_score = self._starting_money,
@@ -420,11 +420,9 @@ function SkyLib.CODZ:_get_connected_players()
     local t = {}
 
     for i, player in ipairs(self._players) do
-        --if player.connected then
-            log(tostring(i))
-            PrintTable(player)
+        if player.connected then
             table.insert(t, player)
-        --end
+        end
     end
 
     return t

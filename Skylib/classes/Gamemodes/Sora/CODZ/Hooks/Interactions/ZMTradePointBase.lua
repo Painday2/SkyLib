@@ -65,7 +65,6 @@ function TradeMenu:_init_header()
             item:SetPosition(self._menu_panel:w() / 2 - item.w / 2 , self._menu_panel:h() / 2 - item.h / 2)
         end
     })
-    --self.GameInfo:SetPosition(self._menu_panel:w() / 2 - self.GameInfo.w / 2 , self._menu_panel:h() / 2 - self.GameInfo.h / 2)
 
     self.PlayerInfo = self.GameInfo:Menu({
         name = "PlayerInfo",
@@ -82,10 +81,6 @@ function TradeMenu:_init_header()
     self.PlayerPanels = {}
 
     for peer_id, player_info in ipairs(SkyLib.CODZ:_get_connected_players()) do
-        if peer_id == 4 then
-            --self.PlayerInfo:Panel():set_bottom(self.PlayerInfo.h + 64)
-            return
-        end
         self.PlayerPanels[peer_id] = self.PlayerInfo:Menu({
             name = "PlayerPanel_" .. peer_id,
             background_color = Color(0, 0, 0):with_alpha(0.55),
@@ -93,12 +88,9 @@ function TradeMenu:_init_header()
             scrollbar = false,
             align_method = "grid"
         })
-        log(tostring(self.PlayerPanels[peer_id]:Panel():h()))
         self.PlayerInfo:Panel():set_h(self.PlayerPanels[peer_id]:Panel():h())
-        self.GameInfo:Panel():set_h(self.PlayerPanels[peer_id]:Panel():h())
-        log(tostring(self.GameInfo.h))
 
-        --[[local player_avatar = self.PlayerPanels[peer_id]:ImageButton({
+        local player_avatar = self.PlayerPanels[peer_id]:ImageButton({
             name = "SteamAvatar_" .. peer_id,
             texture = "guis/textures/pd2/none_icon",
             w = 28,
@@ -110,7 +102,7 @@ function TradeMenu:_init_header()
                 local avatar = texture or "guis/textures/pd2/none_icon"
                 player_avatar:SetImage(avatar)
             end)
-        end]]
+        end
 
         self.PlayerPanels[peer_id]:Divider({
             name = "player_name_" .. peer_id,
@@ -121,8 +113,8 @@ function TradeMenu:_init_header()
             foreground = SkyLib.Network:_get_tweak_color_by_peer_id(peer_id),
             text_vertical = "center"
         })
-
-        --[[self.PlayerPanels[peer_id]:Divider({
+        
+        self.PlayerPanels[peer_id]:Divider({
             name = "player_balance_" .. peer_id,
             text = "$" .. SkyLib.CODZ:_get_money_by_peer(peer_id),
             font = Font,
@@ -176,12 +168,13 @@ function TradeMenu:_init_header()
             background_color = Color(50, 50, 50):with_alpha(0.15),
             foreground = Color(0, 1, 0),
             text_vertical = "center"
-        })]]
-    end
+        })
+        self.GameInfo:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() + 2)
+	end
 end
 
 function TradeMenu:_init_game_info()
-    
+
 end
 
 
