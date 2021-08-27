@@ -372,6 +372,10 @@ function BaseInteractionExt:can_interact(player)
 	if self._tweak_data.zm_interaction then
 		local cost = self._tweak_data.points_cost or 0
 
+		if self._unit:unit_data() and self._unit:unit_data().cost then
+			cost = self._unit:unit_data().cost
+		end
+
 		if self.tweak_data == "zm_mystery_box" and SkyLib.CODZ:_is_event_active("firesale") then
 			cost = 10
 		end

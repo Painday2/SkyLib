@@ -19,14 +19,8 @@ function TradeMenu:init()
     self._current_category = "pistol"
     self._current_weapon_info = ""
 
-    self:_init_tweakdata()
     self:_init_bg()
     self:_init_header()
-    self:_init_game_info()
-end
-
-function TradeMenu:_init_tweakdata()
-
 end
 
 function TradeMenu:_init_bg()
@@ -51,7 +45,7 @@ function TradeMenu:_init_bg()
 end
 
 function TradeMenu:_init_header()
-    self.GameInfo = self._menu:Menu({
+    self.GameInfo = self._menu:Holder({
         name = "GameInfo",
         background_color = Color(0, 0, 0):with_alpha(0.35),
         h = self._menu_panel:h() / 2.25,
@@ -79,7 +73,7 @@ function TradeMenu:_init_header()
     })
 
     self.PlayerPanels = {}
-
+    --Create a seperate panel for each player
     for peer_id, player_info in ipairs(SkyLib.CODZ:_get_connected_players()) do
         self.PlayerPanels[peer_id] = self.PlayerInfo:Menu({
             name = "PlayerPanel_" .. peer_id,
@@ -88,7 +82,7 @@ function TradeMenu:_init_header()
             scrollbar = false,
             align_method = "grid"
         })
-        self.PlayerInfo:Panel():set_h(self.PlayerPanels[peer_id]:Panel():h())
+        self.PlayerInfo:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() - 4)
 
         local player_avatar = self.PlayerPanels[peer_id]:ImageButton({
             name = "SteamAvatar_" .. peer_id,
@@ -109,75 +103,123 @@ function TradeMenu:_init_header()
             text = player_info.name,
             font = Font,
             size = 20,
-            w = 109,
+            max_height = 28,
+            w = 99,
+            background_color = Color(0, 0, 0):with_alpha(0.55),
             foreground = SkyLib.Network:_get_tweak_color_by_peer_id(peer_id),
             text_vertical = "center"
         })
-        
+        -- thanks luffy :angryboye:
+        --set the wrap so long names will get cut and not distort the menu
+        self.PlayerPanels[peer_id]:GetItem("player_name_" .. peer_id).title:set_wrap(false)
+
         self.PlayerPanels[peer_id]:Divider({
             name = "player_balance_" .. peer_id,
             text = "$" .. SkyLib.CODZ:_get_money_by_peer(peer_id),
             font = Font,
-            w = 70,
+            w = 80,
             size = 20,
             visible = tonumber(player_info.steam_id) > 0 and true or false,
             background_color = Color(0, 0, 0):with_alpha(0.55),
             foreground = Color(0, 1, 0),
-            text_vertical = "center"
+            text_vertical = "center",
+            text_align = "right"
         })
-        self.PlayerPanels[peer_id]:Button({
-            name = "player_send_500" .. peer_id,
-            text = "$500",
-            font = Font,
-            w = 45,
-            size = 20,
-            visible = tonumber(player_info.steam_id) > 0 and true or false,
-            background_color = Color(50, 50, 50):with_alpha(0.15),
-            foreground = Color(0, 1, 0),
-            text_vertical = "center"
-        })
-        self.PlayerPanels[peer_id]:Button({
-            name = "player_send_1000" .. peer_id,
-            text = "$1000",
-            font = Font,
-            w = 50,
-            size = 20,
-            visible = tonumber(player_info.steam_id) > 0 and true or false,
-            background_color = Color(50, 50, 50):with_alpha(0.15),
-            foreground = Color(0, 1, 0),
-            text_vertical = "center"
-        })
-        self.PlayerPanels[peer_id]:Button({
-            name = "player_send_2500" .. peer_id,
-            text = "$2500",
-            font = Font,
-            w = 55,
-            size = 20,
-            visible = tonumber(player_info.steam_id) > 0 and true or false,
-            background_color = Color(50, 50, 50):with_alpha(0.15),
-            foreground = Color(0, 1, 0),
-            text_vertical = "center"
-        })
-        self.PlayerPanels[peer_id]:Button({
-            name = "player_send_5000" .. peer_id,
-            text = "$5000",
-            font = Font,
-            w = 55,
-            size = 20,
-            visible = tonumber(player_info.steam_id) > 0 and true or false,
-            background_color = Color(50, 50, 50):with_alpha(0.15),
-            foreground = Color(0, 1, 0),
-            text_vertical = "center"
-        })
-        self.GameInfo:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() + 2)
+        --if not current player, add the buttons, else remove the button's space
+        if peer_id ~= SkyLib.Network:_my_peer_id() then
+            self.PlayerPanels[peer_id]:Button({
+                name = "player_send_500" .. peer_id,
+                text = "$500",
+                font = Font,
+                w = 45,
+                size = 20,
+                size_by_text = true,
+                visible = tonumber(player_info.steam_id) > 0 and true or false,
+                background_color = Color(50, 50, 50):with_alpha(0.15),
+                foreground = Color(0, 1, 0),
+                text_vertical = "center",
+                on_callback = ClassClbk(self, "check_money", 500, peer_id)
+            })
+            self.PlayerPanels[peer_id]:Button({
+                name = "player_send_1000" .. peer_id,
+                text = "$1000",
+                font = Font,
+                w = 50,
+                size = 20,
+                visible = tonumber(player_info.steam_id) > 0 and true or false,
+                background_color = Color(50, 50, 50):with_alpha(0.15),
+                foreground = Color(0, 1, 0),
+                text_vertical = "center",
+                on_callback = ClassClbk(self, "check_money", 1000, peer_id)
+            })
+            self.PlayerPanels[peer_id]:Button({
+                name = "player_send_2500" .. peer_id,
+                text = "$2500",
+                font = Font,
+                w = 55,
+                size = 20,
+                visible = tonumber(player_info.steam_id) > 0 and true or false,
+                background_color = Color(50, 50, 50):with_alpha(0.15),
+                foreground = Color(0, 1, 0),
+                text_vertical = "center",
+                on_callback = ClassClbk(self, "check_money", 2500, peer_id)
+            })
+            self.PlayerPanels[peer_id]:Button({
+                name = "player_send_5000" .. peer_id,
+                text = "$5000",
+                font = Font,
+                w = 55,
+                size = 20,
+                visible = tonumber(player_info.steam_id) > 0 and true or false,
+                background_color = Color(50, 50, 50):with_alpha(0.15),
+                foreground = Color(0, 1, 0),
+                text_vertical = "center",
+                on_callback = ClassClbk(self, "check_money", 5000, peer_id)
+            })
+        else
+            self.PlayerPanels[peer_id]:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() - 32)
+        end
+        self.GameInfo:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() + 5)
 	end
 end
 
-function TradeMenu:_init_game_info()
-
+function TradeMenu:update_panel_data()
+    for peer_id, _ in ipairs(SkyLib.CODZ:_get_connected_players()) do
+        local playerbal = self.PlayerPanels[peer_id]:GetItem("player_balance_" .. peer_id)
+        if playerbal then
+            playerbal:SetText("$" .. SkyLib.CODZ:_get_money_by_peer(peer_id))
+            --have to cut the player's panel down again, because yes.
+            if peer_id == SkyLib.Network:_my_peer_id() then
+                self.PlayerPanels[peer_id]:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() - 32)
+            end
+        end
+    end
 end
-
 
 function TradeMenu:toggle()
     self._menu:SetEnabled(true)
+end
+
+function TradeMenu:send_money(amount_to_deduct, peer_id)
+    --Add to player, and remove from sender
+    SkyLib.CODZ:_money_change(amount_to_deduct, peer_id)
+    SkyLib.CODZ:_money_change(0 - amount_to_deduct, SkyLib.Network:_my_peer_id())
+    self:update_panel_data()
+end
+
+function TradeMenu:check_money(amount_to_deduct, peer_id)
+    local current_money = SkyLib.CODZ:_get_own_money()
+    if not SkyLib.CODZ:_player_connected(peer_id) then
+        return
+    end
+
+    if peer_id == SkyLib.Network:_my_peer_id() then
+        return
+    end
+
+    if current_money < amount_to_deduct then
+        return
+    end
+
+    self:send_money(amount_to_deduct, peer_id)
 end
