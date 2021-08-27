@@ -128,52 +128,52 @@ function TradeMenu:_init_header()
         --if not current player, add the buttons, else remove the button's space
         if peer_id ~= SkyLib.Network:_my_peer_id() then
             self.PlayerPanels[peer_id]:Button({
-                name = "player_send_500" .. peer_id,
+                name = "player_send_500_" .. peer_id,
                 text = "$500",
                 font = Font,
                 w = 45,
                 size = 20,
                 size_by_text = true,
+                text_vertical = "center",
                 visible = tonumber(player_info.steam_id) > 0 and true or false,
                 background_color = Color(50, 50, 50):with_alpha(0.15),
-                foreground = Color(0, 1, 0),
-                text_vertical = "center",
+                foreground = self:set_color(500),
                 on_callback = ClassClbk(self, "check_money", 500, peer_id)
             })
             self.PlayerPanels[peer_id]:Button({
-                name = "player_send_1000" .. peer_id,
+                name = "player_send_1000_" .. peer_id,
                 text = "$1000",
                 font = Font,
                 w = 50,
                 size = 20,
+                text_vertical = "center",
                 visible = tonumber(player_info.steam_id) > 0 and true or false,
                 background_color = Color(50, 50, 50):with_alpha(0.15),
-                foreground = Color(0, 1, 0),
-                text_vertical = "center",
+                foreground = self:set_color(1000),
                 on_callback = ClassClbk(self, "check_money", 1000, peer_id)
             })
             self.PlayerPanels[peer_id]:Button({
-                name = "player_send_2500" .. peer_id,
+                name = "player_send_2500_" .. peer_id,
                 text = "$2500",
                 font = Font,
                 w = 55,
                 size = 20,
+                text_vertical = "center",
                 visible = tonumber(player_info.steam_id) > 0 and true or false,
                 background_color = Color(50, 50, 50):with_alpha(0.15),
-                foreground = Color(0, 1, 0),
-                text_vertical = "center",
+                foreground = self:set_color(2500),
                 on_callback = ClassClbk(self, "check_money", 2500, peer_id)
             })
             self.PlayerPanels[peer_id]:Button({
-                name = "player_send_5000" .. peer_id,
+                name = "player_send_5000_" .. peer_id,
                 text = "$5000",
                 font = Font,
                 w = 55,
                 size = 20,
+                text_vertical = "center",
                 visible = tonumber(player_info.steam_id) > 0 and true or false,
                 background_color = Color(50, 50, 50):with_alpha(0.15),
-                foreground = Color(0, 1, 0),
-                text_vertical = "center",
+                foreground = self:set_color(5000),
                 on_callback = ClassClbk(self, "check_money", 5000, peer_id)
             })
         else
@@ -193,6 +193,20 @@ function TradeMenu:update_panel_data()
                 self.PlayerPanels[peer_id]:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() - 32)
             end
         end
+
+        local playerbuttons = self.PlayerPanels[peer_id]:Items()
+        if playerbuttons then
+            for i, v in pairs(playerbuttons) do
+                local amount = playerbuttons[i].text:gsub("%$", "")
+                --log(amount)
+                if playerbuttons[i].name == "player_send_"..amount.."_" .. peer_id then
+                    amount = tonumber(amount)
+                    local color = self:set_color(amount)
+                    playerbuttons[i].title:set_color(color)
+                    playerbuttons[i].foreground = color
+                end
+            end
+        end
     end
 end
 
@@ -209,6 +223,7 @@ end
 
 function TradeMenu:check_money(amount_to_deduct, peer_id)
     local current_money = SkyLib.CODZ:_get_own_money()
+
     if not SkyLib.CODZ:_player_connected(peer_id) then
         return
     end
@@ -222,4 +237,16 @@ function TradeMenu:check_money(amount_to_deduct, peer_id)
     end
 
     self:send_money(amount_to_deduct, peer_id)
+end
+
+function TradeMenu:set_color(amount)
+    local current_money = SkyLib.CODZ:_get_own_money()
+    amount = amount - 1
+    if current_money > amount then
+        log("true")
+        return Color(0, 1, 0)
+    else
+        log("false")
+        return Color(1, 0, 0)
+    end
 end
