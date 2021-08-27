@@ -22,7 +22,7 @@ function SkyLib.CODZ:init(custom_rules)
         },
         [2] = {
             name = "none",
-            steam_id = 0,
+            steam_id = 1,
             connected = false,
             codz_points = self._starting_money,
             codz_score = self._starting_money,
@@ -30,7 +30,7 @@ function SkyLib.CODZ:init(custom_rules)
         },
         [3] = {
             name = "none",
-            steam_id = 0,
+            steam_id = 2,
             connected = false,
             codz_points = self._starting_money,
             codz_score = self._starting_money,
@@ -160,6 +160,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMMoneyExt",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPerkExt",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPackAPunchExt",
+        "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMTradePointBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPathBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/MisterySafeBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMWallbuyBase"
@@ -413,4 +414,22 @@ function SkyLib.CODZ:_respawn_players()
             IngameWaitingForRespawnState.request_player_spawn(i)
         end
     end
+end
+
+function SkyLib.CODZ:_get_connected_players()
+    local t = {}
+
+    for i, player in ipairs(self._players) do
+        --if player.connected then
+            log(tostring(i))
+            PrintTable(player)
+            table.insert(t, player)
+        --end
+    end
+
+    return t
+end
+
+function SkyLib.CODZ:_get_money_by_peer(peer_id)
+    return tonumber(self._players[peer_id].codz_points)
 end
