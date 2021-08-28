@@ -222,19 +222,16 @@ function SkyLib.CODZ:start_new_wave(t, was_special_wave, fuck)
         t = self._level.wave.delay_timeout
     end
     local special_wave = was_special_wave
-    log("start new wave")
+
     DelayedCalls:Add("zm_delay_between_waves", t, function()
         if fuck then
             SkyLib.CODZ:_set_special_wave(true)
         end
         if special_wave then
             SkyLib.CODZ:_set_special_wave(false)
-            --("false")
         end
-        log("delayed call")
         if SkyLib.CODZ._level.wave.is_special_wave and SkyLib.CODZ._level.zombies.killed == SkyLib.CODZ._level.zombies.max_special_wave_total_spawns then
             SkyLib.CODZ:_set_special_wave(false)
-            --log("special false")
         end
         SkyLib.CODZ:_reset_wave_kills()
         SkyLib.CODZ:_respawn_players()
@@ -372,7 +369,7 @@ function SkyLib.CODZ:_create_last_enemies_outline()
             u_d.unit:contour():add("highlight_character", true)
         end
     end)
-    log("create outlines?")
+
     self._level.zombies.added_contour = true
 end
 

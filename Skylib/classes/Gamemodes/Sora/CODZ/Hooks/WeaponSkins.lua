@@ -26,5 +26,5 @@ Hooks:PostHook(BlackMarketTweakData, "_init_weapon_skins", "zm_init_new_weapon_c
 		cubemap_pattern_control = Vector3(1, 1, 1)
 	}
 end)
-log("help")
+
 BlackMarketTweakData:init(tweak_data)

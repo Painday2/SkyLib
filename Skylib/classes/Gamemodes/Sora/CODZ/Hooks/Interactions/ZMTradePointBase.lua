@@ -193,12 +193,12 @@ function TradeMenu:update_panel_data()
                 self.PlayerPanels[peer_id]:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() - 32)
             end
         end
-
+        --Setting buttons to red if you don't have enough
         local playerbuttons = self.PlayerPanels[peer_id]:Items()
         if playerbuttons then
             for i, v in pairs(playerbuttons) do
+                --remove dollar sign to use as amount
                 local amount = playerbuttons[i].text:gsub("%$", "")
-                --log(amount)
                 if playerbuttons[i].name == "player_send_"..amount.."_" .. peer_id then
                     amount = tonumber(amount)
                     local color = self:set_color(amount)
@@ -243,10 +243,66 @@ function TradeMenu:set_color(amount)
     local current_money = SkyLib.CODZ:_get_own_money()
     amount = amount - 1
     if current_money > amount then
-        log("true")
         return Color(0, 1, 0)
     else
-        log("false")
         return Color(1, 0, 0)
     end
+end
+
+ZMTradePointBase = ZMTradePointBase or class(UnitBase)
+
+function ZMTradePointBase:init(unit)
+	UnitBase.init(self, unit, false)
+
+    self._unit = unit
+end
+
+function ZMTradePointBase:interacted(player)
+    if player then
+        if not SkyLib.CODZ.TradeMenu._menu then
+            SkyLib.CODZ.TradeMenu:init()
+        end
+        SkyLib.CODZ.TradeMenu:toggle()
+        self._unit:damage():run_sequence_simple("interact")
+    end
+end
+
+ZMTradePointInteractionExt = ZMTradePointInteractionExt or class(UseInteractionExt)
+function ZMTradePointInteractionExt:interact(player)
+    if not SkyLib.Network:_is_solo() and SkyLib.CODZ:_get_connected_players() then
+        self._unit:base():interacted(player)
+    end
+
+	self:_post_event(player, "sound_done")
+end
+
+function ZMTradePointInteractionExt:selected(player, locator, hand_id)
+	if not self:can_select(player) then
+		return
+	end
+
+	self._hand_id = hand_id
+	self._is_selected = true
+	local string_macros = {}
+
+	self:_add_string_macros(string_macros)
+
+	local text = ""
+	local icon = ""
+
+	text = "Press " .. managers.localization:btn_macro("interact") .. " to open the menu"
+
+	managers.hud:show_interact({
+		text = text,
+		icon = icon
+	})
+
+	return true
+end
+
+function ZMTradePointInteractionExt:can_select(player)
+    if SkyLib.Network:_is_solo() then
+        return false
+    end
+	return MisterySafeInteractionExt.super.can_select(self, player)
 end

@@ -1,0 +1,16 @@
+<table>
+	<unit>
+		<filter name="'filter_0'">
+			<check value="vars.var_spawned == 0"/>
+		</filter>
+		<sequence editable_state="true" name=" 'interact' " triggable="true">
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence editable_state="true" name="'startup'" triggable="true">
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence editable_state="true" name="'hide'" triggable="true">
+			<interaction enabled="false"/>
+		</sequence>
+	</unit>
+</table>

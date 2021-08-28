@@ -571,6 +571,11 @@
 		<object path="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy"/>
 		<sequence_manager path="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy"/>
 		<unit path="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy"/>
-		<unit path="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy_nosync"/>
+	</add>
+	<add>
+		<model path="units/pd2_mod_zombies/props/zm_tradepoint_dummy/zm_tradepoint_dummy"/>
+		<object path="units/pd2_mod_zombies/props/zm_tradepoint_dummy/zm_tradepoint_dummy"/>
+		<sequence_manager path="units/pd2_mod_zombies/props/zm_tradepoint_dummy/zm_tradepoint_dummy"/>
+		<unit path="units/pd2_mod_zombies/props/zm_tradepoint_dummy/zm_tradepoint_dummy"/>
 	</add>
 </table>

@@ -1006,6 +1006,14 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         timer = 0.5
     }
 
+    self.zm_tradepoint = {
+        zm_interaction = true,
+        stay_active = true,
+        action_text_id = "zm_buy_weapon",
+        start_active = true,
+        timer = 0
+    }
+
 end)
 --hooks gets set too late, need to reinit
 tweak_data.interaction:init(tweak_data)

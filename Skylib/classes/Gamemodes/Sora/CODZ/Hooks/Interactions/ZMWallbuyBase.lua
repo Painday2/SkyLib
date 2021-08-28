@@ -131,7 +131,6 @@ SkyHook:Post(CriminalsManager, "add_character", function(self, _, peer_id)
     self.bad_code_already_ran = self.bad_code_already_ran or nil
     if Network:is_server() and not self.bad_code_already_ran then
         for _, unit in ipairs(ZMWallbuyBase.unit_list) do
-            --log(tostring(unit:unit_data().weapon_id))
             unit:base():sync_data(unit)
             self.bad_code_already_ran = true
         end

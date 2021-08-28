@@ -25,7 +25,6 @@ function ElementSpawnEnemyDummy:produce(params)
 	end
 
 	SkyLib.CODZ._level.zombies.currently_spawned = SkyLib.CODZ._level.zombies.currently_spawned + 1
-	log(SkyLib.CODZ._level.zombies.currently_spawned)
 
 	if params and params.name then
 		if SkyLib.CODZ._level.wave.is_special_wave then
