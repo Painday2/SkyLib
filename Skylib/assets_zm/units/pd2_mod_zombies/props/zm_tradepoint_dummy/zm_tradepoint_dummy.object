@@ -9,5 +9,4 @@
 			<object name="c_collison" collision_type="box" padding="-2.5"/>
 		</body>
 	</bodies>
-
 </dynamic_object>

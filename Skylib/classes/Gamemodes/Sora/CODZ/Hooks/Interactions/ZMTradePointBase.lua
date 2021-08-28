@@ -255,6 +255,65 @@ function ZMTradePointBase:init(unit)
 	UnitBase.init(self, unit, false)
 
     self._unit = unit
+
+    --yes i stole the missionelement base. no i won't say sorry.
+    --Add a element icon/text to display location and info
+    if Global.editor_mode then
+        local iconsize = EditorPart:Val("ElementsSize") or 32
+        local root = self._unit:get_objects_by_type(Idstring("object3d"))[1]
+        if root == nil then
+            return
+        end
+
+        self._gui = World:newgui()
+        local pos = root:position() - Vector3(iconsize / 2, iconsize / 2, 0)
+        self._ws = self._gui:create_linked_workspace(iconsize / 2, iconsize / 2, root, pos, Vector3(iconsize, 0, 0), Vector3(0, iconsize, 0))
+        self._ws:set_billboard(self._ws.BILLBOARD_BOTH)
+        local colors = {
+            Color("ffffff"),
+            Color("0d449c"),
+            Color("16b329"),
+            Color("eec022"),
+            Color("9519ca"),
+            Color("d31f07"),
+            Color("555555"),
+            Color("ea34ca"),
+            Color("179d9b"),
+            Color("0c243e"),
+            Color("2c2c2c"),
+            Color("5fc16f"),
+        }
+
+        self._color = EditorPart:Val("RandomizedElementsColor") and colors[math.random(1, #colors)] or EditorPart:Val("ElementsColor")
+        local texture, rect = "textures/editor_icons_df", {225, 1, 62, 62}
+        local size = iconsize / 4
+        local font_size = iconsize / 8
+        self._icon = self._ws:panel():bitmap({
+            texture = texture,
+            texture_rect = rect,
+            render_template = "OverlayVertexColorTextured",
+            color = self._color,
+            rotation = 360,
+            y = font_size,
+            x = font_size,
+            w = size,
+            h = size,
+        }) 
+        self._text = self._ws:panel():text({
+            render_template = "OverlayVertexColorTextured",
+            font = "fonts/font_large_mf",
+            font_size = font_size,
+            w = iconsize / 2,
+            h = font_size,
+            rotation = 360,
+            align = "center",
+            color = self._color,
+            text = "SkyLib (Unit) - zm_tradepoint",
+        })
+        self._enabled = true
+        self._visible = true
+        self._text:set_bottom(self._icon:top() - font_size)
+    end
 end
 
 function ZMTradePointBase:interacted(player)
@@ -265,6 +324,10 @@ function ZMTradePointBase:interacted(player)
         SkyLib.CODZ.TradeMenu:toggle()
         self._unit:damage():run_sequence_simple("interact")
     end
+end
+
+function ZMTradePointBase:destroy()
+	self._gui:destroy_workspace(self._ws)
 end
 
 ZMTradePointInteractionExt = ZMTradePointInteractionExt or class(UseInteractionExt)
