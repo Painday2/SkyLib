@@ -212,10 +212,13 @@ end
 
 function TradeMenu:toggle()
     self._menu:SetEnabled(true)
+    TradeMenu:update_panel_data()
 end
 
 function TradeMenu:send_money(amount_to_deduct, peer_id)
     --Add to player, and remove from sender
+    local data = {amount = amount_to_deduct, peer_id = peer_id}
+    LuaNetworking:SendToPeers( "ShareCashTo", LuaNetworking:TableToString(data) )
     SkyLib.CODZ:_money_change(amount_to_deduct, peer_id)
     SkyLib.CODZ:_money_change(0 - amount_to_deduct, SkyLib.Network:_my_peer_id())
     self:update_panel_data()
@@ -327,7 +330,9 @@ function ZMTradePointBase:interacted(player)
 end
 
 function ZMTradePointBase:destroy()
-	self._gui:destroy_workspace(self._ws)
+	if Global.editor_mode then
+        self._gui:destroy_workspace(self._ws)
+    end
 end
 
 ZMTradePointInteractionExt = ZMTradePointInteractionExt or class(UseInteractionExt)

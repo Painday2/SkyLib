@@ -80,6 +80,11 @@ function SkyLib.Network:_init_codz_network()
                 SkyLib.CODZ:_update_hud_element()
                 --managers.hud._hud_zm_points:_animate_points_gained_v2(sender, tonumber(tbl_data.pg), positive)
             end
+            if SkyLib.CODZ.TradeMenu._menu and SkyLib.CODZ.TradeMenu._menu:Enabled() then
+                SkyLib.CODZ.TradeMenu:update_panel_data()
+                SkyLib.CODZ:_update_hud_element()
+                --managers.hud._hud_zm_points:_animate_points_gained_v2(sender, tonumber(tbl_data.pg), positive)
+            end
 
             SkyLib.CODZ:_update_total_score(sender, tonumber(tbl_data.pg))
         end
@@ -120,6 +125,11 @@ function SkyLib.Network:_init_codz_network()
         if id == "ZMBoxData" then
             local decode = LuaNetworking:StringToTable(data)
             MisterySafeBase:sync_spawn(decode)
+        end
+
+        if id == "ZMPathData" then
+            local decode = LuaNetworking:StringToTable(data)
+            ZMPathBase:sync_spawn(decode)
         end
 
         if id == "ZombieBloodEnded" then
@@ -228,8 +238,10 @@ function SkyLib.Network:_init_codz_network()
         end
 
         if id == "ShareCashTo" then
-            local player_id = tonumber(data)
-            managers.wdu:_add_money_to(player_id, 1000, true)
+            local tbl_data = LuaNetworking:StringToTable(data)
+            local amount = tonumber(tbl_data.amount)
+            local peer_id = tonumber(tbl_data.peer_id)
+            SkyLib.CODZ._players[peer_id].codz_points = SkyLib.CODZ._players[peer_id].codz_points + amount
         end
 
         if id == "SecretsCompleted" then

@@ -16,47 +16,48 @@ function ZMPathBase:interacted(player)
     end
 end
 
---[[send unit id weapon id and cost for sync
+--send unit id and cost for sync
 function ZMPathBase:sync_data(unit)
     local uid = unit:id()
     local cost = unit:unit_data().cost or 5000
+	log("aaaa "..tostring(cost))
     local data = {uid, cost}
     SkyLib.Network:_send("ZMPathData", data)
 end
 
---recieve wallbuy data (unit id, weapon id and cost) from host and spawn unit
+--recieve path data (unit id and cost) from host and spawn unit
 function ZMPathBase:sync_spawn(data)
     if data then
         for _, unit in ipairs(ZMPathBase.unit_list) do
             if unit:id() == tonumber(data["1"]) then
-                unit:unit_data().cost = tostring(data["2"])
-                unit:base():spawn_weapon()
+                unit:unit_data().cost = tonumber(data["2"])
+				log("sp" .. tostring(unit:unit_data().cost))
                 table.remove(ZMPathBase.unit_list, data["1"])
                 break
             end
         end
     end
-end]]
+end
 
 --Needed to load the unit data correctly, i guess?
 SkyHook:Post(WorldDefinition, "assign_unit_data", function(self, unit, data)
     if data.cost then
         unit:unit_data().cost = data.cost
+		log("aud " .. tostring(unit:unit_data().cost))
 	end
 end)
 
---[[Hook to send wallbuy data on spawn, due to unit networking not being setup til around then. 
+--Hook to send path data on spawn, due to unit networking not being setup til around then. 
 SkyHook:Post(CriminalsManager, "add_character", function(self, _, peer_id)
     --ran per player, make sure it only runs once
-    self.bad_code_already_ran = self.bad_code_already_ran or nil
-    if Network:is_server() and not self.bad_code_already_ran then
+    self.path_sync_setup = self.path_sync_setup or nil
+    if Network:is_server() and not self.path_sync_setup then
         for _, unit in ipairs(ZMPathBase.unit_list) do
-            --log(tostring(unit:unit_data().weapon_id))
             unit:base():sync_data(unit)
-            self.bad_code_already_ran = true
+            self.path_sync_setup = true
         end
     end
-end)]]
+end)
 
 
 ZMPathExt = ZMPathExt or class(UseInteractionExt)
@@ -81,6 +82,7 @@ function ZMPathExt:selected(player, locator, hand_id)
 	if self._tweak_data.zm_interaction then
 		if self._unit:unit_data() and self._unit:unit_data().cost then
 			cost = self._unit:unit_data().cost
+			log(tostring(cost))
 		end
 		text = "Hold " .. managers.localization:btn_macro("interact") .. " to buy"
 

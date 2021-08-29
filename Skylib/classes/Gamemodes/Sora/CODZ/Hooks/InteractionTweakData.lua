@@ -824,7 +824,8 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		points_cost = 950,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		axis = "x",
+        --TODO: fix this by rotating the interact point 180 in model
+		--axis = "y", 
 		timer = 0.5
 	}
 

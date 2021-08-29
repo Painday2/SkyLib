@@ -7,6 +7,65 @@ function ZMWallbuyBase:init(unit)
     self._weapon_spawned = false
     --insert so we can access the units for sync reasons
     table.insert(ZMWallbuyBase.unit_list, unit)
+
+	--yes i stole the missionelement base. no i won't say sorry.
+    --Add a element icon/text to display location and info
+	if Global.editor_mode then
+        local iconsize = EditorPart:Val("ElementsSize") or 32
+        local root = self._unit:get_objects_by_type(Idstring("object3d"))[1]
+        if root == nil then
+            return
+        end
+
+        self._gui = World:newgui()
+        local pos = root:position() - Vector3(iconsize / 2, iconsize / 2, 0)
+        self._ws = self._gui:create_linked_workspace(iconsize / 2, iconsize / 2, root, pos, Vector3(iconsize, 0, 0), Vector3(0, iconsize, 0))
+        self._ws:set_billboard(self._ws.BILLBOARD_BOTH)
+        local colors = {
+            Color("ffffff"),
+            Color("0d449c"),
+            Color("16b329"),
+            Color("eec022"),
+            Color("9519ca"),
+            Color("d31f07"),
+            Color("555555"),
+            Color("ea34ca"),
+            Color("179d9b"),
+            Color("0c243e"),
+            Color("2c2c2c"),
+            Color("5fc16f"),
+        }
+
+        self._color = EditorPart:Val("RandomizedElementsColor") and colors[math.random(1, #colors)] or EditorPart:Val("ElementsColor")
+        local texture, rect = "textures/editor_icons_df", {225, 1, 62, 62}
+        local size = iconsize / 4
+        local font_size = iconsize / 8
+        self._icon = self._ws:panel():bitmap({
+            texture = texture,
+            texture_rect = rect,
+            render_template = "OverlayVertexColorTextured",
+            color = self._color,
+            rotation = 360,
+            y = font_size,
+            x = font_size,
+            w = size,
+            h = size,
+        }) 
+        self._text = self._ws:panel():text({
+            render_template = "OverlayVertexColorTextured",
+            font = "fonts/font_large_mf",
+            font_size = font_size,
+            w = iconsize / 2,
+            h = font_size,
+            rotation = 360,
+            align = "center",
+            color = self._color,
+            text = "SkyLib (Unit) - zm_wallbuy",
+        })
+        self._enabled = true
+        self._visible = true
+        self._text:set_bottom(self._icon:top() - font_size)
+    end
 end
 
 
@@ -108,7 +167,7 @@ function ZMWallbuyBase:sync_spawn(data)
         for _, unit in ipairs(ZMWallbuyBase.unit_list) do
             if unit:id() == tonumber(data["1"]) then
                 unit:unit_data().weapon_id = tostring(data["2"])
-                unit:unit_data().cost = tostring(data["3"])
+                unit:unit_data().cost = tonumber(data["3"])
                 unit:base():spawn_weapon()
                 table.remove(ZMWallbuyBase.unit_list, data["1"])
                 break
@@ -128,11 +187,11 @@ end)
 --Hook to send wallbuy data on spawn, due to unit networking not being setup til around then. 
 SkyHook:Post(CriminalsManager, "add_character", function(self, _, peer_id)
     --ran per player, make sure it only runs once
-    self.bad_code_already_ran = self.bad_code_already_ran or nil
-    if Network:is_server() and not self.bad_code_already_ran then
+    self.wallbuy_sync_setup = self.wallbuy_sync_setup or nil
+    if Network:is_server() and not self.wallbuy_sync_setup then
         for _, unit in ipairs(ZMWallbuyBase.unit_list) do
             unit:base():sync_data(unit)
-            self.bad_code_already_ran = true
+            self.wallbuy_sync_setup = true
         end
     end
 end)
