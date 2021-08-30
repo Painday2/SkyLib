@@ -179,7 +179,7 @@ function TradeMenu:_init_header()
         else
             self.PlayerPanels[peer_id]:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() - 32)
         end
-        self.GameInfo:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() + 5)
+        self.GameInfo:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() + 4)
 	end
 end
 --updates the panel data, duh
@@ -189,8 +189,12 @@ function TradeMenu:update_panel_data()
         if playerbal then
             playerbal:SetText("$" .. SkyLib.CODZ:_get_money_by_peer(peer_id))
             --have to cut the player's panel down again, because yes.
-            if peer_id == SkyLib.Network:_my_peer_id() then
+            if peer_id == SkyLib.Network:_my_peer_id() and Network:is_server() then
                 self.PlayerPanels[peer_id]:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() - 32)
+            elseif peer_id == SkyLib.Network:_my_peer_id() then
+                --for some reason, somewhere along the line an extra 64 is added, i'm too tired to figure it out.
+                --only happens to clients as well so poop
+                self.PlayerPanels[peer_id]:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() - 96)
             end
         end
         --Setting buttons to red if you don't have enough
@@ -207,6 +211,7 @@ function TradeMenu:update_panel_data()
                 end
             end
         end
+        self.GameInfo:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() + 4)
     end
 end
 
