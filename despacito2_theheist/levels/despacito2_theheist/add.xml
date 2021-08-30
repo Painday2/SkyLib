@@ -45,9 +45,29 @@
 		<unit path="units/world/props/moneyprinter/money_brush6" unload="true"/>
 	</add>
 	<add from_db="true" path="units/dev_tools/dev_ladder/dev_ladder" type="unit">
-		<unit path="units/dev_tools/dev_ladder/dev_ladder" unload="true"/>
-		<object path="units/dev_tools/dev_ladder/dev_ladder" unload="true"/>
 		<material_config path="units/dev_tools/dev_ladder/dev_ladder" unload="true"/>
+		<object path="units/dev_tools/dev_ladder/dev_ladder" unload="true"/>
 		<sequence_manager path="units/dev_tools/dev_ladder/dev_ladder" unload="true"/>
+		<unit path="units/dev_tools/dev_ladder/dev_ladder" unload="true"/>
+	</add>
+	<add from_db="true" path="units/test/jocke/oneplanetorulethemall" type="unit">
+		<material_config path="units/test/jocke/simple_temp" unload="true"/>
+		<object path="units/test/jocke/oneplanetorulethemall" unload="true"/>
+		<unit path="units/test/jocke/oneplanetorulethemall" unload="true"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_64x3m" type="unit">
+		<material_config path="core/material_configs/hub_elements" unload="true"/>
+		<object path="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_64x3m" unload="true"/>
+		<unit path="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_64x3m" unload="true"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/editable_text_short/editable_text_short" type="unit">
+		<material_config path="units/dev_tools/editable_text_short/editable_text_short" unload="true"/>
+		<object path="units/dev_tools/editable_text_short/editable_text_short" unload="true"/>
+		<unit path="units/dev_tools/editable_text_short/editable_text_short" unload="true"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/mkp/mkp_ext_wall_8m_a" type="unit">
+		<unit path="units/payday2/architecture/mkp/mkp_ext_wall_8m_a" unload="true"/>
+		<object path="units/payday2/architecture/mkp/mkp_ext_wall_8m_a" unload="true"/>
+		<material_config path="units/payday2/architecture/mkp/mkp" unload="true"/>
 	</add>
 </table>
