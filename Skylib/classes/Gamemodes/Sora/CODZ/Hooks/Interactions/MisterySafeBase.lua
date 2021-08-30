@@ -25,7 +25,6 @@ function MisterySafeBase:set_state(state, player)
     end
 
     if state and player then
-        log("set state")
         self._weapon_spawned = true
         self._weapon_owner = player
         self._unit:damage():run_sequence("anim_open_door")
@@ -34,6 +33,7 @@ function MisterySafeBase:set_state(state, player)
         if not self.sync_weapon_id then
             self:sync_data(self._unit, player, self._weapon_id)
             self.sync_weapon_id = self._weapon_id
+            self._sender = true
         end
 
         local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(self._weapon_id) or managers.weapon_factory:get_factory_id_by_weapon_id("amcar")
@@ -51,18 +51,15 @@ function MisterySafeBase:set_state(state, player)
             self._second_parts = managers.weapon_factory:assemble_from_blueprint(factory_id, self._second_unit, blueprint, true, true, callback(self, self, "_assemble_completed"))
         end
     else
-        if self._weapon_spawned then
-            self._weapon_spawned = false
-            self._weapon_owner = nil
-            self._weapon_id = nil
-            self.sync_weapon_id = nil
-
-            if player then
-                self._unit:damage():run_sequence("anim_close_door")
-                self:sync_data(self._unit)
-                log("ELSE")
-            end
+        self._weapon_spawned = false
+        self._weapon_owner = nil
+        self._weapon_id = nil
+        self.sync_weapon_id = nil
+        if self._sender then
+            self._unit:damage():run_sequence("timer_done")
+            self:sync_data(self._unit)
         end
+        self._sender = false
     end
 end
 
@@ -115,7 +112,7 @@ function MisterySafeBase:timer_start()
         self._weapon_queue = self._weapon_queue + 1
         SkyLib:wait(8, function()
             if self._weapon_spawned and self._weapon_queue == 1 then
-                self._unit:damage():run_sequence("anim_close_door")
+                self._unit:damage():run_sequence("timer_done")
                 self._weapon_queue = 0
             else
                 self._weapon_queue = self._weapon_queue - 1
@@ -128,7 +125,6 @@ end
 function MisterySafeBase:sync_data(unit, player, weapon_id)
     local pid = player and player:id() or nil
     local data = {unit:id(), pid, weapon_id}
-    log("send data")
     SkyLib.Network:_send("ZMBoxData", data)
 end
 
@@ -140,12 +136,9 @@ function MisterySafeBase:sync_spawn(data)
                 local player = data["2"] or nil
                 self.sync_weapon_id = data["3"] or nil
                 if player then
-                    log("sync spawn player")
                     unit:base():set_state(not self._weapon_spawned, player)
                 else
-                    log("sync spawn else")
-                    unit:base():set_state(false)
-                    unit:damage():run_sequence("anim_close_door")
+                    unit:damage():run_sequence("timer_done")
                 end
                 break
             end
@@ -159,6 +152,7 @@ function MisterySafeInteractionExt:can_select(player)
     if self._unit:base()._weapon_spawned and self._unit:base()._weapon_owner ~= player then
         return false
     end
+
 	return MisterySafeInteractionExt.super.can_select(self, player)
 end
 

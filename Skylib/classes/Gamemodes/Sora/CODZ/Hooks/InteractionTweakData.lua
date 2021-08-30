@@ -992,7 +992,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         points_cost = 0,
         stay_active = false,
         action_text_id = "zm_buy_weapon",
-        start_active = true,
+        start_active = false,
         sound_done = "zm_gen_ching",
         timer = 0.5
     }

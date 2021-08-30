@@ -139,9 +139,13 @@ end
 
 function ZMWallbuyBase:_assemble_completed()
     --have to manually set position/rotation for them to update correctly
-    self._unit:link(Idstring("sp_weapon"), self._weapon_unit, self._weapon_unit:orientation_object():name())
-    --position weapon to not be in the wall, works for most AR/SG/SNP, LMGs will probably clip no matter what
-    self._weapon_unit:set_position(self._unit:position() + self._unit:rotation():x() * 4)
+	if self._weapon_unit then
+		self._unit:link(Idstring("sp_weapon"), self._weapon_unit, self._weapon_unit:orientation_object():name())
+		--position weapon to not be in the wall, works for most AR/SG/SNP, LMGs will probably clip no matter what
+		self._weapon_unit:set_position(self._unit:position() + self._unit:rotation():x() * 4)
+	else
+		log("weapon unit no existy")
+	end
     --position second weapon
     if self._second_unit then
         self._weapon_unit:set_position(self._unit:position() + self._unit:rotation():x() * 5)

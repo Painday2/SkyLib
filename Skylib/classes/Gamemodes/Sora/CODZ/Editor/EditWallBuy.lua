@@ -1,7 +1,8 @@
 EditWallBuy = EditWallBuy or class(EditUnit)
 
 local Utils = SkyLib.Utils
-
+--local amounts = {"0", "500", "1000", "1500", "2000", "2500", "3000", "3500", "4500", "5000"}
+local amounts = {0, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4500, 5000}
 --idk what this does tbh.
 function EditWallBuy:editable(unit)
     local weapons = unit:unit_data().name == "units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy"
@@ -18,7 +19,7 @@ function EditWallBuy:set_unit_data(weapon_id, cost)
     local unit = self:selected_unit()
     local ud = unit:unit_data()
     ud.weapon_id = weapon_id or self._menu:GetItem("WeaponId"):SelectedItem()
-    ud.cost = cost or self._menu:GetItem("Cost"):Value()
+    ud.cost = cost or amounts[self._menu:GetItem("Cost"):Value()]
     --despawn/spawn weapon on weapon change
     unit:base():despawn_weapon()
     unit:base():spawn_weapon()
@@ -35,7 +36,6 @@ function EditWallBuy:set_menu_unit(unit)
     weaponid:SetSelectedItem(selectedItem or "")
 
     local cost = self._menu:GetItem("Cost")
-    local amounts = {0, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4500, 5000}
     local selectedItem2 = Utils:index_from_value(amounts, unit:unit_data().cost) or 1
 
     cost:SetVisible(unit:unit_data().name == "units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy")

@@ -182,7 +182,7 @@ function TradeMenu:_init_header()
         self.GameInfo:Panel():set_h(self.PlayerPanels[peer_id]:Panel():bottom() + 5)
 	end
 end
-
+--updates the panel data, duh
 function TradeMenu:update_panel_data()
     for peer_id, _ in ipairs(SkyLib.CODZ:_get_connected_players()) do
         local playerbal = self.PlayerPanels[peer_id]:GetItem("player_balance_" .. peer_id)
@@ -241,7 +241,7 @@ function TradeMenu:check_money(amount_to_deduct, peer_id)
 
     self:send_money(amount_to_deduct, peer_id)
 end
-
+--Sets color based on if player has enough to send
 function TradeMenu:set_color(amount)
     local current_money = SkyLib.CODZ:_get_own_money()
     amount = amount - 1

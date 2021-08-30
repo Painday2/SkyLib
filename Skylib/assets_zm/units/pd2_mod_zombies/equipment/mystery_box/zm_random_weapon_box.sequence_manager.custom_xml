@@ -14,8 +14,8 @@
 			<animation_group enabled="true" from="1" to="1" name="'anim_group_spawn'" />
 			<animation_group enabled="true" from="0" to="0" name="'anim_group_door'" />
 			<graphic_group visibility="true" name="'grp_graphics'" />
-			<body enabled="true" name="'body_main_safe'" />
-			<body enabled="true" name="'body_animated'"/>
+			<body enabled="true" name="'door_animated'"/>
+			<body enabled="true" name="'box'"/>
 			<interaction enabled="true" />
 		</sequence>
 		
@@ -23,14 +23,16 @@
 			<animation_group enabled="true" from="1" to="1" name="'anim_group_spawn'" />
 			<animation_group enabled="true" from="0" to="0" name="'anim_group_door'" />
 			<graphic_group visibility="false" name="'grp_graphics'" />
-			<body enabled="false" name="'body_animated'"/>
+			<body enabled="false" name="'door_animated'"/>
+			<body enabled="false" name="'box'"/>
 			<interaction enabled="false" />
 		</sequence>
 		
 		<sequence editable_state="true" name="'anim_arrive'" triggable="true" >
 			<animation_group enabled="true" from="40/30" name="'anim_enter'" speed="1" to="90/30"/>
 			<animation_group enabled="true" from="40/30" name="'anim_box_exit'" speed="1" to="90/30"/>
-			<body enabled="true" name="'body_animated'"							start_time="20/30" />
+			<body enabled="true" name="'door_animated'"	start_time="20/30" />
+			<body enabled="true" name="'box'" start_time="20/30"/>
 			<graphic_group visibility="true" name="'g_all'" />
 			<interaction enabled="true" start_time="1.5" />
 		</sequence>
@@ -38,7 +40,8 @@
 		<sequence editable_state="true" name="'anim_leave'" triggable="true" >
 			<interaction enabled="false" />
 			<animation_group enabled="true" from="0/30" name="'anim_box_exit'" speed="1" to="30/30"/>
-			<body enabled="false" name="'body_animated'" />
+			<body enabled="false" name="'door_animated'"/>
+			<body enabled="true" name="'box'"/>
 			<graphic_group visibility="false" name="'g_all'" start_time="1"/>
 		</sequence>
 		
@@ -62,11 +65,11 @@
 			<animation_group enabled="true" from="30/30" name="'anim_weapon'" speed="-0.9" to="0/30"/>
 			<animation_group enabled="true" from="0/30" name="'anim_close_open'" speed="1" to="30/30"/>
 			<function extension="'interaction'" function="'set_tweak_data'" param1="'zm_take_weapon'"/>
+			<interaction enabled="false" />
 			<run_sequence name="'weapon_down'" start_time="2"/>
 			<interaction enabled="true" start_time="2" />
-			<body enabled="true" name="'body_main_safe_door_nomover'" />
-			<body enabled="false" name="'body_main_safe_door'" />
-			<interaction enabled="true" start_time="20/30*0.5" />
+			<body enabled="false" name="'door_animated'" />
+			<body enabled="true" name="'door_animated'" start_time="1" />
 			<function extension="'base'" function="'timer_start'" start_time="0.1" />
 		</sequence>
 		
