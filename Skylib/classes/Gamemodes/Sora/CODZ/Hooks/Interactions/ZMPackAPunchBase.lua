@@ -1,5 +1,6 @@
 ZMPackAPunchBase = ZMPackAPunchBase or class(UnitBase)
 ZMPackAPunchBase.unit_list = {}
+ZMPackAPunchBase.prop_list = {"units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch"}
 function ZMPackAPunchBase:init(unit)
 	UnitBase.init(self, unit, false)
 
@@ -7,12 +8,18 @@ function ZMPackAPunchBase:init(unit)
     self._weapon_spawned = false
     --insert so we can access the units for sync reasons
     table.insert(ZMPackAPunchBase.unit_list, unit)
+    ZMPackAPunchBase:fill_prop_list()
 end
 
+--if you make a custom unit, post hook this and insert your unit.
+function ZMPackAPunchBase:fill_prop_list()
+    --table.insert(ZMPackAPunchBase.prop_list, "units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch")
+end
 
 function ZMPackAPunchBase:interacted(player)
     if player then
         self._unit:damage():run_sequence_simple("interact")
+        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(false, player, false, false, true)
     end
 end
 
@@ -100,10 +107,38 @@ end
 
 function ZMPackAPunchExt:interact(player)
     if player then
-        SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(false, player, false, false, true)
-        
-        if self._unit:damage() then
-            self._unit:damage():run_sequence_simple("interact", {unit = player})
+
+        if self._tweak_data.zm_interaction then
+
+            if not self._unit:unit_data().cost then
+                self._unit:unit_data().cost = self._tweak_data.points_cost or 0
+            end
+
+            local amount_to_deduct = 0 - self._unit:unit_data().cost
+
+            if self._tweak_data.wallbuy and not self._tweak_data.grenade_spot then
+                local weapon_id = self._unit:base()._weapon_id or "amcar"
+                local current_state = managers.player:get_current_state()
+                if current_state then
+                    local current_weapon = current_state:get_equipped_weapon()
+                    if current_weapon.name_id == weapon_id then
+                        amount_to_deduct = math.round(amount_to_deduct / 2, 50)
+                    end
+                end
+            end
+
+            local peer_id = 1
+
+            if managers and managers.network then
+                local peer = managers.network:session():peer_by_unit(player)
+                peer_id = peer:id()
+            end
+
+            if peer_id == SkyLib.Network:_my_peer_id() then
+                SkyLib.CODZ:_money_change(amount_to_deduct, peer_id)
+            end
+
+            self._unit:base():interacted(player)
         end
     end
 end

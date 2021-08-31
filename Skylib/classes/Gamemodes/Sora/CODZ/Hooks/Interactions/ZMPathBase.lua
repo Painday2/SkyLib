@@ -1,5 +1,6 @@
 ZMPathBase = ZMPathBase or class(UnitBase)
 ZMPathBase.unit_list = {}
+ZMPathBase.prop_list = {"units/pd2_mod_zombies/props/zm_buy_marker/zm_buy_marker", "units/pd2_mod_zombies/props/zm_buy_marker/zm_buy_marker_double"}
 function ZMPathBase:init(unit)
 	UnitBase.init(self, unit, false)
 
@@ -9,6 +10,11 @@ function ZMPathBase:init(unit)
     table.insert(ZMPathBase.unit_list, unit)
 end
 
+--if you make a custom unit, hook this and insert your unit.
+--only used for editor menus atm
+function ZMPathBase:fill_prop_list()
+    --table.insert(ZMPathBase.prop_list, "units/pd2_mod_zombies/props/zm_buy_marker/zm_buy_marker")
+end
 
 function ZMPathBase:interacted(player)
     if player then

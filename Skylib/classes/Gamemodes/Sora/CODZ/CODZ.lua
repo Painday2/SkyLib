@@ -2,7 +2,7 @@ SkyLib.CODZ = SkyLib.CODZ or class()
 SkyLib.CODZ.INITIALIZED = false
 
 function SkyLib.CODZ:init(custom_rules)
-    self._starting_money = custom_rules and custom_rules.mod_start_money or 100000
+    self._starting_money = custom_rules and custom_rules.mod_start_money or 1000000
     self._pregame_music = custom_rules and custom_rules.mod_pregame_music or nil
     self._gameover_music = custom_rules and custom_rules.mod_gameover_music or nil
     self._victory_music = custom_rules and custom_rules.mod_victory_music or nil
@@ -159,7 +159,7 @@ function SkyLib.CODZ:_init_hooks()
 
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMMoneyExt",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPerkExt",
-        "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPackAPunchExt",
+        "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPackAPunchBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMTradePointBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPathBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/MisterySafeBase",
@@ -174,6 +174,7 @@ function SkyLib.CODZ:_init_hooks()
     self._editor_hooks = {
         "classes/Gamemodes/Sora/CODZ/Editor/EditPath",
         "classes/Gamemodes/Sora/CODZ/Editor/EditWallBuy",
+        "classes/Gamemodes/Sora/CODZ/Editor/EditPackAPunch",
     }
 
     if Global.editor_mode then

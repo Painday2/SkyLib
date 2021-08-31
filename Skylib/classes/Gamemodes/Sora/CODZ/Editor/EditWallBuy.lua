@@ -5,7 +5,7 @@ local Utils = SkyLib.Utils
 local amounts = {0, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4500, 5000}
 --idk what this does tbh.
 function EditWallBuy:editable(unit)
-    local weapons = unit:unit_data().name == "units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy"
+    local weapons = table.contains(ZMWallbuyBase.prop_list, unit:unit_data().name)
     return weapons
 end
 
@@ -31,14 +31,14 @@ function EditWallBuy:set_menu_unit(unit)
     local weaponids = SkyLib.CODZ.WeaponHelper:map_weapon_ids()
     local selectedItem = Utils:index_from_value(weaponids, unit:unit_data().weapon_id) or 1
 
-    weaponid:SetVisible(weaponids and unit:unit_data().name == "units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy")
+    weaponid:SetVisible(weaponids and table.contains(ZMWallbuyBase.prop_list, unit:unit_data().name))
     weaponid:SetItems(weaponids)
     weaponid:SetSelectedItem(selectedItem or "")
 
     local cost = self._menu:GetItem("Cost")
     local selectedItem2 = Utils:index_from_value(amounts, unit:unit_data().cost) or 1
 
-    cost:SetVisible(unit:unit_data().name == "units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy")
+    cost:SetVisible(table.contains(ZMWallbuyBase.prop_list, unit:unit_data().name))
     cost:SetItems(amounts)
     cost:SetSelectedItem(selectedItem2)
 end

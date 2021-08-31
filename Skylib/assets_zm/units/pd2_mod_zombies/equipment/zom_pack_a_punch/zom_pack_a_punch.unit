@@ -4,6 +4,7 @@
 	<network sync="spawn"/>
 	<extensions>
 		<extension name="damage" class="UnitDamage" />
+		<extension name="base" class="ZMPackAPunchBase" />
 		<extension name="unit_data" class="ScriptUnitData" />
 		<extension name="interaction" class="ZMPackAPunchExt" >
 			<var name="tweak_data" value="zm_pack_a_punch" />

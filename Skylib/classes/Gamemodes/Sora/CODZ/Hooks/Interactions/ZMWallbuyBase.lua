@@ -1,5 +1,6 @@
 ZMWallbuyBase = ZMWallbuyBase or class(UnitBase)
 ZMWallbuyBase.unit_list = {}
+ZMWallbuyBase.prop_list = {"units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy"}
 function ZMWallbuyBase:init(unit)
 	UnitBase.init(self, unit, false)
 
@@ -68,6 +69,11 @@ function ZMWallbuyBase:init(unit)
     end
 end
 
+--if you make a custom unit, post hook this and insert your unit.
+--only used for editor atm, but may be required in the future.
+function ZMWallbuyBase:fill_prop_list()
+    --table.insert(ZMWallbuyBase.prop_list, "units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy")
+end
 
 function ZMWallbuyBase:interacted(player)
     if player then

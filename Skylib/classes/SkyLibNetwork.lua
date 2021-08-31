@@ -132,6 +132,11 @@ function SkyLib.Network:_init_codz_network()
             ZMPathBase:sync_spawn(decode)
         end
 
+        if id == "ZMPaPData" then
+            local decode = LuaNetworking:StringToTable(data)
+            ZMPackAPunchBase:sync_spawn(decode)
+        end
+
         if id == "ZombieBloodEnded" then
             local unit_by_peer = managers.criminals:character_unit_by_peer_id(sender)
             if alive(unit_by_peer) then
