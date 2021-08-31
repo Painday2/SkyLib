@@ -24,7 +24,7 @@
 			<unit_data _prev_pos="-150 1700 -50" _prev_rot="4.3196e-005 6.16163e-006 -0.706959 -0.707255" continent="world" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="enable_interaction" name="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_quickrevive/zm_perk_machine_quickrevive" name_id="zm_perk_machine_quickrevive_001" position="-150 1700 -50" rotation="4.3196e-005 6.16163e-006 -0.706959 -0.707255" unit_id="100008"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="-150 0 -50" _prev_rot="-0.00228932 -0.00228932 -0.707103 -0.707103" continent="world" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="enable_interaction" name="units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch" name_id="zom_pack_a_punch_001" position="-150 0 -50" rotation="-0.00228932 -0.00228932 -0.707103 -0.707103" unit_id="100009"/>
+			<unit_data _prev_pos="-150 0 -50" _prev_rot="-0.00228932 -0.00228932 -0.707103 -0.707103" continent="world" cost="5000" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="enable_interaction" name="units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch" name_id="zom_pack_a_punch_001" position="-150 0 -50" rotation="-0.00228932 -0.00228932 -0.707103 -0.707103" unit_id="100009"/>
 		</table>
 		<table>
 			<unit_data _prev_pos="-150 2000 -50" _prev_rot="0 0 -0.707107 -0.707107" continent="world" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="show_safe" name="units/pd2_mod_zombies/equipment/weapon_buy_safe/weapon_buy_safe" name_id="weapon_buy_safe_001" position="-150 2000 -50" rotation="0 0 -0.707107 -0.707107" unit_id="100010"/>
