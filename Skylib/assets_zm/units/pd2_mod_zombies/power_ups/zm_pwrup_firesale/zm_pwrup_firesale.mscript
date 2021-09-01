@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<modelscript>
+    <import		file="zm_pwrup_firesale.glb" type="gltf" create_objects="true"/>
+	<animation	file="zm_pwrup_spin.animation"/>
+</modelscript>

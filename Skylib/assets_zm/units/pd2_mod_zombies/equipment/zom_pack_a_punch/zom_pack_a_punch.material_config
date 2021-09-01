@@ -16,7 +16,6 @@
         <variable				type="scalar" name="parallax_layers" value="0"/>
         <reflection_texture		file="units/payday2/cubemaps/cubemap_silver_df" type="cubemap"/>
 	</material>
-	<material name=
 	
 	<!--Machine Illumination-->
     <material name="mtl_pap_il" render_template="generic:DIFFUSE_TEXTURE:SELF_ILLUMINATION" version="2">

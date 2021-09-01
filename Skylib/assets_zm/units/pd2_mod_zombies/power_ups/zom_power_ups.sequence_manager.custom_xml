@@ -1,0 +1,1 @@
+<table>	<unit>		<sequence name="'startup'" startup="true" >			<animation_group enabled="true" from="0" to="1" name="'anim_group_spin'" speed="0.03" loop="true" />		</sequence>	</unit></table>

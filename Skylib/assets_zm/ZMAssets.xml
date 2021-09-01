@@ -53,53 +53,60 @@
 		<texture path="units/pd2_mod_zombies/characters/ene_acc_zombie_eyes/zombie_eyes_il"/>
 		<unit path="units/pd2_mod_zombies/characters/ene_acc_zombie_eyes/ene_acc_zombie_eyes"/>
 	</add>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_blood_money/zm_pwrup_blood_money"/>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_blood_money/zm_pwrup_blood_money_infinite"/>
-	<object path="units/pd2_mod_zombies/power_ups/zm_pwrup_blood_money/zm_pwrup_blood_money"/>
-	<model path="units/pd2_mod_zombies/power_ups/zm_pwrup_blood_money/zm_pwrup_blood_money"/>
-	<material_config path="units/pd2_mod_zombies/power_ups/zm_pwrup_blood_money/zm_pwrup_blood_money"/>
-	<texture path="units/pd2_mod_zombies/power_ups/zm_pwrup_blood_money/zm_pwrup_blood_money_df"/>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_double_points/zm_pwrup_double_points"/>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_double_points/zm_pwrup_double_points_infinite"/>
-	<object path="units/pd2_mod_zombies/power_ups/zm_pwrup_double_points/zm_pwrup_double_points"/>
-	<model path="units/pd2_mod_zombies/power_ups/zm_pwrup_double_points/zm_pwrup_double_points"/>
-	<material_config path="units/pd2_mod_zombies/power_ups/zm_pwrup_double_points/zm_pwrup_double_points"/>
-	<texture path="units/pd2_mod_zombies/power_ups/zm_pwrup_double_points/zm_pwrup_double_points_df"/>
-	<texture path="units/pd2_mod_zombies/power_ups/zm_pwrup_double_points/zm_pwrup_double_points_nm"/>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_firesale/zm_pwrup_firesale"/>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_firesale/zm_pwrup_firesale_infinite"/>
-	<object path="units/pd2_mod_zombies/power_ups/zm_pwrup_firesale/zm_pwrup_firesale"/>
-	<model path="units/pd2_mod_zombies/power_ups/zm_pwrup_firesale/zm_pwrup_firesale"/>
-	<material_config path="units/pd2_mod_zombies/power_ups/zm_pwrup_firesale/zm_pwrup_firesale"/>
-	<texture path="units/pd2_mod_zombies/power_ups/zm_pwrup_firesale/zm_pwrup_firesale_df"/>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill"/>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill_infinite"/>
-	<object path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill"/>
-	<model path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill"/>
-	<material_config path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill"/>
-	<texture path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill_df"/>
-	<texture path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill_nm"/>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo"/>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo_infinite"/>
-	<object path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo"/>
-	<model path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo"/>
-	<material_config path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo"/>
-	<texture path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo_df"/>
-	<texture path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo_nm"/>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke"/>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke_infinite"/>
-	<object path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke"/>
-	<model path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke"/>
-	<material_config path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke"/>
-	<texture path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke_df"/>
-	<texture path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke_nm"/>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood"/>
-	<unit load="true" path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood_infinite"/>
-	<object path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood"/>
-	<model path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood"/>
-	<material_config path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood"/>
-	<texture path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood_df"/>
-	<texture path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood_nm"/>
+	<add>
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_blood_money/zm_pwrup_blood_money"/>
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_blood_money/zm_pwrup_blood_money_infinite"/>
+		<object				path="units/pd2_mod_zombies/power_ups/zm_pwrup_blood_money/zm_pwrup_blood_money"/>
+		<model				path="units/pd2_mod_zombies/power_ups/zm_pwrup_blood_money/zm_pwrup_blood_money"/>
+		<material_config	path="units/pd2_mod_zombies/power_ups/zm_pwrup_blood_money/zm_pwrup_blood_money"/>
+		<texture			path="units/pd2_mod_zombies/power_ups/zm_pwrup_blood_money/zm_pwrup_blood_money_df"/> <!--Used By Other Powerups-->
+		
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_double_points/zm_pwrup_double_points"/>
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_double_points/zm_pwrup_double_points_infinite"/>
+		<object				path="units/pd2_mod_zombies/power_ups/zm_pwrup_double_points/zm_pwrup_double_points"/>
+		<model				path="units/pd2_mod_zombies/power_ups/zm_pwrup_double_points/zm_pwrup_double_points"/>
+		<material_config	path="units/pd2_mod_zombies/power_ups/zm_pwrup_double_points/zm_pwrup_double_points"/>
+		
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_firesale/zm_pwrup_firesale"/>
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_firesale/zm_pwrup_firesale_infinite"/>
+		<object				path="units/pd2_mod_zombies/power_ups/zm_pwrup_firesale/zm_pwrup_firesale"/>
+		<model				path="units/pd2_mod_zombies/power_ups/zm_pwrup_firesale/zm_pwrup_firesale"/>
+		<material_config	path="units/pd2_mod_zombies/power_ups/zm_pwrup_firesale/zm_pwrup_firesale"/>
+		
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill"/>
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill_infinite"/>
+		<object				path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill"/>
+		<model				path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill"/>
+		<material_config	path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill"/>
+		<texture			path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill_df"/>
+		<texture			path="units/pd2_mod_zombies/power_ups/zm_pwrup_instakill/zm_pwrup_instakill_nm"/>
+		
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo"/>
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo_infinite"/>
+		<object				path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo"/>
+		<model				path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo"/>
+		<material_config	path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo"/>
+		<texture			path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo_df"/>
+		<texture			path="units/pd2_mod_zombies/power_ups/zm_pwrup_max_ammo/zm_pwrup_max_ammo_nm"/>
+		
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke"/>
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke_infinite"/>
+		<object				path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke"/>
+		<model				path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke"/>
+		<material_config	path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke"/>
+		<texture			path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke_df"/>
+		<texture			path="units/pd2_mod_zombies/power_ups/zm_pwrup_nuke/zm_pwrup_nuke_nm"/>
+		
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood"/>
+		<unit load="true"	path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood_infinite"/>
+		<object				path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood"/>
+		<model				path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood"/>
+		<material_config	path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood"/>
+		<texture			path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood_df"/>
+		<texture			path="units/pd2_mod_zombies/power_ups/zm_pwrup_zombie_blood/zm_pwrup_zombie_blood_nm"/>
+		
+		<sequence_manager	path="units/pd2_mod_zombies/power_ups/zom_power_ups"/>
+	</add>
 	<add>
 		<texture path="units/pd2_mod_zombies/equipment/mystery_box/textures/zm_random_weapon_box_df"/>
 		<texture path="units/pd2_mod_zombies/equipment/mystery_box/textures/zm_random_weapon_box_nm"/>
