@@ -1,0 +1,15 @@
+<dynamic_object>
+    <diesel orientation_object="rp_contour_blocker" materials="units/pd2_mod_zombies/dev_tools/contour_blocker_4x4x4m/contour_blocker_4x4x4m" />
+    <sequence_manager file="units/pd2_mod_zombies/dev_tools/contour_blocker_4x4x4m/contour_blocker_4x4x4m" />
+    <bodies>
+    	<body name="editor" enabled="true" template="editor">
+    		<object name="rp_contour_blocker" />
+    		<object name="g_blocker" collision_type="box" />
+    	</body>
+    </bodies>
+	<graphics>
+		<graphic_group name="blocker" culling_object="g_blocker" enabled="true">
+			<object name="g_blocker" enabled="true" shadow_caster="true"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

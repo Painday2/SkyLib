@@ -1,0 +1,5 @@
+<materials version="3">
+    <material name="owogum" render_template="generic:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/pd2_mod_zombies/props/owogum/owogum_sad"/>
+    </material>
+</materials>

@@ -1,0 +1,36 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_dah/props/dah_prop_gg_fountain/dah_prop_gg_fountain" orientation_object="rp_dah_prop_gg_fountain" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_dah_prop_gg_fountain" />
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_02" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_03" collision_type="convex" padding="-2.5" />
+			<object name="c_box_01" collision_type="box" padding="-2.5"/>
+			<object name="c_capsule_01" collision_type="capsule" padding="-2.5"/>
+			<object name="c_capsule_02" collision_type="capsule" padding="-2.5"/>
+			<object name="c_capsule_03" collision_type="capsule" padding="-2.5"/>
+			<object name="c_convex_04" collision_type="convex" padding="-2.5"/>			
+		</body>
+	</bodies>
+	<effects>
+		<effect_spawner name="water_splash" enabled="true" object="e_1" effect="effects/payday2/environment/water_splash_small_fountain"/>
+		<effect_spawner name="water_splash" enabled="true" object="e_2" effect="effects/payday2/environment/water_splash_small_fountain"/>
+		<effect_spawner name="water_splash" enabled="true" object="e_3" effect="effects/payday2/environment/water_splash_small_fountain"/>
+		<effect_spawner name="water_splash" enabled="true" object="e_4" effect="effects/payday2/environment/water_splash_small_fountain"/>
+    </effects>
+	<decal_surfaces>
+        <decal_mesh enabled="true" name="dm_marble" material="marble" />
+		<decal_mesh enabled="true" name="dm_metal" material="metal" />
+    </decal_surfaces>
+	<graphics>
+		<object name="g_logo" enabled="true" />		
+		<object name="g_fountain_marble_balck" enabled="true"/>
+		<object name="g_fountain_marble_white" enabled="true"/>		
+		<object name="g_logo_plus" enabled="true"/>
+		<object name="g_water_stream" enabled="true"/>
+		<object name="g_water_waves" enabled="true"/>
+		<object name="g_lamp_glow" enabled="true"/>
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

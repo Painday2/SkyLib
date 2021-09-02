@@ -1,0 +1,11 @@
+<unit type="zom" slot="1" >
+    <object file="units/pd2_mod_zombies/props/owogum/owogum" />
+    <extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+        <extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt" >
+			<var name="tweak_data" value="zm_pickup_gum" />
+			<var name="_interact_object" value="g_owogum"/>
+		</extension>
+    </extensions>
+</unit>

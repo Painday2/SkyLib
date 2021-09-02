@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel orientation_object="rp_res_ext_apartment_big_glass" 
+	materials="units/pd2_mod_zombies/props/shoot_at_trigger/shoot_at_shared" />
+
+	<sequence_manager file="units/pd2_mod_zombies/props/shoot_at_trigger/shoot_at_shared" />
+
+	<bodies>
+		<body name="body" template="static" enabled="true" >
+			<object name="c_box_collision" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+
+	<graphics>
+		<object enabled="false" name="g_invisible" />
+	</graphics>
+</dynamic_object>

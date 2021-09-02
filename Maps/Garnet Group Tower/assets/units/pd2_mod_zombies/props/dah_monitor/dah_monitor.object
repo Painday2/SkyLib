@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/pd2_mod_zombies/props/dah_monitor/dah_monitor" orientation_object="rp_computer_monitor_diamondheist" />
+  <sequence_manager file="units/pd2_mod_zombies/props/dah_monitor/dah_monitor" />
+  <bodies>
+    <body remove_ray_type="walk vis_graph" name="static_body" enabled="true" template="static" >
+      <object name="c_computer_monitor" collision_type="mesh_mopp" remove_ray_type="bullet"/>
+    </body>
+  </bodies>
+  
+  <decal_surfaces default_material="plastic">
+    <decal_mesh name="dm_computer_monitor_glass_breakable" enabled="true" material="glass_breakable" />
+    <decal_mesh name="dm_computer_monitor_plastic" enabled="true" material="plastic" />
+  </decal_surfaces>
+
+  <graphics>
+    <object name="g_computer_monitor" enabled="true"/>
+    <object enabled="true"  name="g_computer_monitor_display0"/>
+    <object enabled="false" name="g_computer_monitor_display1"/>
+    <object enabled="false" name="g_computer_monitor_display2"/>
+    <object enabled="false" name="g_computer_monitor_display3"/>
+    <object enabled="false" name="g_computer_monitor_display4"/>
+    <object enabled="false" name="g_computer_monitor_display5"/>
+    <object enabled="false" name="g_computer_monitor_display6"/>
+    <object enabled="false" name="g_computer_monitor_display7"/>
+    <object enabled="false" name="g_computer_monitor_displayoff"/>
+    <object enabled="false" name="g_computer_monitor_displaydesktop"/>
+  </graphics>
+</dynamic_object>	

@@ -1,0 +1,17 @@
+<unit type="tag" slot="1">
+	<object file="units/pd2_dlc_tag/architecture/tag_int/tag_int_elevator/tag_int_elevator" />
+	<network sync="spawn"/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+        	<var name="tweak_data" value="press_take_elevator" />
+        	<var name="_interact_object" value="interaction"/>
+        </extension>
+	</extensions>
+	<sounds>
+		<default_soundsource source="rp_tag_int_elevator"/>
+		<soundsource name="snd_01" source="sound_source_01" />
+		<soundsource name="snd_02" source="sound_source_02" />
+	</sounds>
+</unit>

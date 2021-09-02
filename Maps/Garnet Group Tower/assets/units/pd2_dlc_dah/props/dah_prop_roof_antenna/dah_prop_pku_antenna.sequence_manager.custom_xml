@@ -1,0 +1,38 @@
+<table>
+	<unit>
+		<variables>
+            <var_open value="0"/>
+            <var_int value="0"/>
+        </variables>
+        <filter name="'filter_close'">
+            <check value="vars.var_open == 0"/>
+        </filter>
+        <filter name="'filter_open'">
+            <check value="vars.var_open == 1"/>
+        </filter>
+		<sequence editable_state="true" name="'state_hide'" triggable="true">
+			<body enabled="false" name="'body_static'"/>
+			<object enabled="false" name="'g_box'"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_show'" triggable="true">
+			<body enabled="true" name="'body_static'"/>
+			<object enabled="true" name="'g_box'"/>
+		</sequence>
+		<sequence name="'interact'" triggable="true">
+			<run_sequence filter="'filter_close'" name="'state_hide'"/>
+			<run_sequence filter="'filter_open'" name="'state_show'"/>
+		</sequence>
+		<sequence editable_state="true" name="'disable_interact'" triggable="true">
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="true" name="'enable_interact'" triggable="true">
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence editable_state="true" name="'interact_pickup'" triggable="true">
+            <function extension="'interaction'" function="'set_tweak_data'" param1="'zm_pickup_antenna_part'"/>
+        </sequence>
+        <sequence editable_state="true" name="'interact_place'" triggable="true">
+            <function extension="'interaction'" function="'set_tweak_data'" param1="'zm_place_antenna_part'"/>
+        </sequence>
+	</unit>
+</table>

@@ -9,6 +9,23 @@
 		<texture path="units/pd2_mod_zombies/guis/power_ups/power_zombie_blood"/>
 		<texture path="units/pd2_mod_zombies/guis/power_ups/power_fire_sale"/>
 	</add>
+	<add path="units/pd2_mod_zombies/props/shoot_at_trigger/shoot_at_5x5" type="unit">
+		<cooked_physics force="true" path="units/pd2_mod_zombies/props/shoot_at_trigger/shoot_at_5x5" unload="true"/>
+		<material_config force="true" path="units/pd2_mod_zombies/props/shoot_at_trigger/shoot_at_shared" unload="true"/>
+		<model force="true" path="units/pd2_mod_zombies/props/shoot_at_trigger/shoot_at_5x5" unload="true"/>
+		<object force="true" path="units/pd2_mod_zombies/props/shoot_at_trigger/shoot_at_5x5" unload="true"/>
+		<sequence_manager force="true" path="units/pd2_mod_zombies/props/shoot_at_trigger/shoot_at_shared" unload="true"/>
+		<unit force="true" path="units/pd2_mod_zombies/props/shoot_at_trigger/shoot_at_5x5" unload="true"/>
+	</add>
+	<add name="units/pd2_mod_zombies/props/zm_shovel/shovel">
+		<texture path="units/pd2_mod_zombies/props/zm_shovel/combat_df"/>
+		<texture path="units/pd2_mod_zombies/props/zm_shovel/combat_nm"/>
+		<cooked_physics path="units/pd2_mod_zombies/props/zm_shovel/shovel"/>
+		<material_config path="units/pd2_mod_zombies/props/zm_shovel/shovel"/>
+		<model path="units/pd2_mod_zombies/props/zm_shovel/shovel"/>
+		<object path="units/pd2_mod_zombies/props/zm_shovel/shovel"/>
+		<unit path="units/pd2_mod_zombies/props/zm_shovel/shovel"/>
+	</add>
 	<add>
 		<unit load="true"	path="units/pd2_mod_zombies/equipment/weapon_buy_safe/weapon_buy_safe"/>
 		<object				path="units/pd2_mod_zombies/equipment/weapon_buy_safe/weapon_buy_safe"/>

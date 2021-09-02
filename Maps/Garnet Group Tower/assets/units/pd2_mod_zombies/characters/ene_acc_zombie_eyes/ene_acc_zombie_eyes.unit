@@ -1,0 +1,9 @@
+<unit type="gen" slot="30">
+	<object file="units/pd2_mod_zombies/characters/ene_acc_zombie_eyes/ene_acc_zombie_eyes" />
+	<dependencies>
+		<depends_on effect="units/pd2_mod_zombies/effects/zm_enemy_effects/zm_eyes" />
+	</dependencies>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+    </extensions>
+</unit>

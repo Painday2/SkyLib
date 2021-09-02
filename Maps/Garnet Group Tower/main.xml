@@ -1,0 +1,163 @@
+<table global_key="zm_dah" name="Garnet Group Tower">
+	<level ai_group_type="America" briefing_dialog="" id="zm_dah_elevator" intro_event="" max_bags="54" orig_id="zm_dah_elevator" team_ai_off="true">
+		<add file="levels/zm_dah_elevator/add.xml"/>
+		<include directory="levels/zm_dah_elevator">
+			<file file="world.world" type="binary"/>
+			<file file="continents.continents" type="binary"/>
+			<file file="mission.mission" type="binary"/>
+			<file file="nav_manager_data.nav_data" type="binary"/>
+			<file file="world_sounds.world_sounds" type="binary"/>
+			<file file="world_cameras.world_cameras" type="binary"/>
+			<file file="editor_only/editor_only.continent" type="binary"/>
+			<file file="editor_only/editor_only.mission" type="binary"/>
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+			<file file="cover_data.cover_data" type="binary"/>
+			<file file="environments/default.environment" type="custom_xml"/>
+		</include>
+		<hooks directory="hooks">
+            <hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
+        </hooks>
+		<packages>
+			<value_node value="packages/narr_hvh"/>
+			<value_node value="levels/narratives/bain/hvh/world_sounds"/>
+			<value_node value="packages/ZMAssets"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<level ai_group_type="zombie" gamemode_type="3arc_zm" id="zm_dah" load_screen="units/pd2_mod_zombies/guis/crimenet/map_icon_zm_dah" max_bags="0" music="no_music" quest_zm_002="true" quest_zm_002_icon="units/pd2_mod_zombies/guis/crimenet/zm_ee_done" team_ai_off="true">
+		<add file="levels/zm_dah/add.xml"/>
+		<assets>
+			<asset name="perk_mechanics"/>
+			<asset name="perk_mechanics2"/>
+		</assets>
+		<hooks directory="hooks">
+            <hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
+        </hooks>
+		<include directory="levels/zm_dah">
+			<file file="world.world" type="binary"/>
+			<file file="continents.continents" type="binary"/>
+			<file file="mission.mission" type="binary"/>
+			<file file="nav_manager_data.nav_data" type="binary"/>
+			<file file="world_sounds.world_sounds" type="binary"/>
+			<file file="world_cameras.world_cameras" type="binary"/>
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+			<file file="bdrop/bdrop.continent" type="binary"/>
+			<file file="bdrop/bdrop.mission" type="binary"/>
+			<file file="editor_only/editor_only.continent" type="binary"/>
+			<file file="editor_only/editor_only.mission" type="binary"/>
+			<file file="cover_data.cover_data" type="binary"/>
+			<file file="environments/dah_special.environment" type="custom_xml"/>
+			<file file="environments/default.environment" type="custom_xml"/>
+		</include>
+		<packages>
+			<value_node value="packages/narr_hvh"/>
+			<value_node value="levels/narratives/bain/hvh/world_sounds"/>
+			<value_node value="packages/ZMAssets"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+		<sounds directory="assets">
+			<sounds directory="units/pd2_mod_zombies/sounds">
+				<sound id="skydive" path="skydive.ogg"/>
+				<stop id="skydive_stop" path="skydive.ogg"/>
+			</sounds>
+		</sounds>
+	</level>
+	<instance id="zm_gameplay_controller">
+		<add file="levels/zm_gameplay_controller/add.xml"/>
+		<include directory="levels/zm_gameplay_controller">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
+	<instance id="zm_dah_elevator" orig_id="zm_dah_elevator">
+		<add file="levels/zm_dah_elevator/add.xml"/>
+		<include directory="levels/zm_dah_elevator">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages>
+			<value_node value="packages/narr_hvh"/>
+			<value_node value="levels/narratives/bain/hvh/world_sounds"/>
+			<value_node value="packages/ZMAssets"/>
+		</packages>
+		<script_data_mods/>
+	</instance>
+	<AssetUpdates id="29593" provider="modworkshop" use_local_dir="true" version="1.3"/>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<addfiles directory="assets">
+		<texture path="units/pd2_mod_zombies/guis/crimenet/map_icon_zm_dah"/>
+		<texture path="units/pd2_mod_zombies/guis/crimenet/zm_ee_done"/>
+	</addfiles>
+	<contact assets_gui="guis/dlcs/the_bomb/guis/preload_contact_the_butcher" hidden="false" id="zombies_mode" name_id="zombies_mode_name" package="packages/contact_the_butcher"/>
+	<narrative contact="zombies_mode" icon="units/pd2_mod_zombies/guis/crimenet/map_icon_zm_dah" id="zm_instances" quest_zm_002="true" quest_zm_002_icon="units/pd2_mod_zombies/guis/crimenet/zm_ee_done">
+		<chain>
+			<table level_id="zm_dah" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="nothing"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank2"/>
+		</crimenet_videos>
+		<debrief_event/>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="25000"/>
+			<value_node value="30000"/>
+			<value_node value="35000"/>
+			<value_node value="40000"/>
+			<value_node value="45000"/>
+			<value_node value="50000"/>
+			<value_node value="60000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="25000"/>
+			<value_node value="30000"/>
+			<value_node value="35000"/>
+			<value_node value="40000"/>
+			<value_node value="45000"/>
+			<value_node value="50000"/>
+			<value_node value="60000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="300000"/>
+			<value_node value="300000"/>
+			<value_node value="300000"/>
+			<value_node value="500000"/>
+			<value_node value="700000"/>
+			<value_node value="900000"/>
+			<value_node value="1e+006"/>
+		</payout>
+	</narrative>
+</table>

@@ -1,6 +1,0 @@
-<unit type="com" slot="1" >
-    <object file="units/payday2/props/com_prop_election_trashbin/com_prop_election_trashbin" />
-    <extensions>
-        <extension class="ScriptUnitData" name="unit_data" />
-    </extensions>
-</unit>

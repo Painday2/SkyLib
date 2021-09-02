@@ -122,10 +122,19 @@ function SkyLib.CODZ:_init_hooks()
     local mod_path = SkyLib.ModPath
 
     self._hooks = {
-
-        "classes/Gamemodes/Sora/CODZ/Hooks/ElementWeaponSwitch",
-        "classes/Gamemodes/Sora/CODZ/Hooks/ElementWave",
-
+        --Elements
+        --"classes/Gamemodes/Sora/CODZ/Elements/ElementAnnouncerGift",
+        "classes/Gamemodes/Sora/CODZ/Elements/ElementCheckSecret",
+        "classes/Gamemodes/Sora/CODZ/Elements/ElementDynamicEnvironment",
+        --"classes/Gamemodes/Sora/CODZ/Elements/ElementPlayVideo",
+        "classes/Gamemodes/Sora/CODZ/Elements/ElementPointChecker",
+        "classes/Gamemodes/Sora/CODZ/Elements/ElementReviveInstigator",
+        "classes/Gamemodes/Sora/CODZ/Elements/ElementSoraCinematicCamera",
+        "classes/Gamemodes/Sora/CODZ/Elements/ElementSpawnEnemyDummy",
+        "classes/Gamemodes/Sora/CODZ/Elements/ElementSpawnSafeEnemyDummy",
+        "classes/Gamemodes/Sora/CODZ/Elements/ElementWave",
+        "classes/Gamemodes/Sora/CODZ/Elements/ElementWeaponSwitch",
+        --General hooks
         "classes/Gamemodes/Sora/CODZ/Hooks/InteractionTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/InteractionExt",
         "classes/Gamemodes/Sora/CODZ/Hooks/EquipmentsTweakData",
@@ -167,6 +176,15 @@ function SkyLib.CODZ:_init_hooks()
     }
 
     self._elements = {
+        "AnnouncerGift",
+        "CheckSecret",
+        "DynamicEnvironment",
+        "PlayVideo",
+        "PointChecker",
+        "ReviveInstigator",
+        "SoraCinematicCamera",
+        "SpawnEnemyDummy",
+        "SpawnSafeEnemyDummy",
         "Wave",
         "WeaponSwitch"
     }

@@ -1,0 +1,76 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_tag/architecture/tag_int/tag_int_elevator/tag_int_elevator" orientation_object="rp_tag_int_elevator" />
+	<sequence_manager file="units/pd2_dlc_tag/architecture/tag_int/tag_int_elevator/tag_int_elevator" />
+	
+	<animations>
+		<animation_group name="anim_elevator" enabled="false">
+			<object name="a_elevator" />
+		</animation_group>
+		<animation_group name="anim_door_left" enabled="false">
+			<object name="a_door_01_inner" />
+			<object name="a_door_02_outer" />
+		</animation_group>
+		<animation_group name="anim_door_right" enabled="false">
+			<object name="a_door_03_inner" />
+			<object name="a_door_04_outer" />
+		</animation_group>
+	</animations>
+
+	<bodies>
+		<body name="body_static" enabled="true" template="animated">
+			<object name="a_elevator" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_01" enabled="true" template="animated" remove_ray_type="mover walk">
+			<object name="a_door_01_inner" />
+			<object name="c_box_door_01" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_02" enabled="true" template="animated" remove_ray_type="mover walk">
+			<object name="a_door_02_outer" />
+			<object name="c_box_door_02" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_03" enabled="true" template="animated" remove_ray_type="mover walk">
+			<object name="a_door_03_inner" />
+			<object name="c_box_door_03" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_04" enabled="true" template="animated" remove_ray_type="mover walk">
+			<object name="a_door_04_outer" />
+			<object name="c_box_door_04" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_door_01" enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_door_02" enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_door_03" enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_door_04" enabled="true" material="metal" />
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+		<decal_mesh name="dm_rubber" enabled="true" material="rubber" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_button_glow" enabled="false" />
+		<object name="g_darkness" enabled="true" />
+		<object name="g_spotlight_glow" enabled="true" />
+		<object name="g_door_01_inner" enabled="true" />
+		<object name="g_door_02_outer" enabled="true" />
+		<object name="g_door_03_inner" enabled="true" />
+		<object name="g_door_04_outer" enabled="true" />
+		<object name="g_elevator_box" enabled="true" />
+		<object name="g_elevator_doors_frame" enabled="true" />
+
+		<lod_object name="lod_outline">
+			<object name="g_outline_lod0" enabled="true"  max_distance="500" />
+			<object name="g_outline_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+	<lights>
+		<light name="ls_light" enabled="true" editable="true" type="omni|specular" multiplier="0.7" far_range="300" falloff="4" />
+	</lights>
+</dynamic_object>
