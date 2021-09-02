@@ -15,12 +15,12 @@ function CopDamage:damage_bullet(attack_data, ...)
 
     if attack_data.attacker_unit == managers.player:player_unit() and not attack_data.knock_down or attack_data.stagger then
         local peer_id = SkyLib.Network:_my_peer_id()
-        local hit_points = SkyLib.CODZ._economy.on_hit
+        local hit_points = SkyLib.CODZ:_is_event_active("double_points") and SkyLib.CODZ._economy.on_hit * 2 or SkyLib.CODZ._economy.on_hit
 
         SkyLib.CODZ:_money_change(hit_points, peer_id)
     end
 
-    CopDmg_damage_bullet_oworiginal(self, attack_data, ...) 
+    CopDmg_damage_bullet_oworiginal(self, attack_data, ...)
 end
 
 Hooks:PreHook(CopDamage, "damage_explosion", "zm_instakill_explosion", function(self, attack_data)
@@ -34,7 +34,7 @@ Hooks:PreHook(CopDamage, "damage_explosion", "zm_instakill_explosion", function(
 
     if attack_data.attacker_unit == managers.player:player_unit() then
         local peer_id = SkyLib.Network:_my_peer_id()
-        local hit_points = SkyLib.CODZ._level.active_events.double_points and 20 or 10
+        local hit_points = SkyLib.CODZ:_is_event_active("double_points") and SkyLib.CODZ._economy.on_hit * 2 or SkyLib.CODZ._economy.on_hit
 
         SkyLib.CODZ:_money_change(hit_points, peer_id)
     end
@@ -51,7 +51,7 @@ Hooks:PreHook(CopDamage, "damage_fire", "zm_instakill_fire", function(self, atta
 
     if attack_data.attacker_unit == managers.player:player_unit() then
         local peer_id = SkyLib.Network:_my_peer_id()
-        local hit_points = SkyLib.CODZ._level.active_events.double_points and 20 or 10
+        local hit_points = SkyLib.CODZ:_is_event_active("double_points") and SkyLib.CODZ._economy.on_hit * 2 or SkyLib.CODZ._economy.on_hit
 
         SkyLib.CODZ:_add_money_to(hit_points, peer_id)
     end
@@ -68,7 +68,7 @@ Hooks:PreHook(CopDamage, "damage_tase", "zm_instakill_tase", function(self, atta
 
     if attack_data.attacker_unit == managers.player:player_unit() then
         local peer_id = SkyLib.Network:_my_peer_id()
-        local hit_points = SkyLib.CODZ._level.active_events.double_points and 20 or 10
+        local hit_points = SkyLib.CODZ:_is_event_active("double_points") and SkyLib.CODZ._economy.on_hit * 2 or SkyLib.CODZ._economy.on_hit
 
         SkyLib.CODZ:_add_money_to(hit_points, peer_id)
     end
@@ -90,7 +90,7 @@ Hooks:PreHook(CopDamage, "damage_simple", "zm_instakill_simple", function(self, 
 
     if attack_data.attacker_unit == managers.player:player_unit() then
         local peer_id = SkyLib.Network:_my_peer_id()
-        local hit_points = SkyLib.CODZ._level.active_events.double_points and 20 or 10
+        local hit_points = SkyLib.CODZ:_is_event_active("double_points") and SkyLib.CODZ._economy.on_hit * 2 or SkyLib.CODZ._economy.on_hit
 
         SkyLib.CODZ:_add_money_to(hit_points, peer_id)
     end
@@ -111,7 +111,7 @@ Hooks:PreHook(CopDamage, "damage_melee", "zm_instakill_melee", function(self, at
 
     if attack_data.attacker_unit == managers.player:player_unit() and not attack_data.knock_down then
         local peer_id = SkyLib.Network:_my_peer_id()
-        local hit_points = SkyLib.CODZ._level.active_events.double_points and 20 or 10
+        local hit_points = SkyLib.CODZ:_is_event_active("double_points") and SkyLib.CODZ._economy.on_hit * 2 or SkyLib.CODZ._economy.on_hit
 
         SkyLib.CODZ:_add_money_to(hit_points, peer_id)
     end

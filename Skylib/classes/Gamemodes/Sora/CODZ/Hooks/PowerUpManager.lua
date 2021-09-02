@@ -159,7 +159,7 @@ function SkyLib.CODZ.PowerUpManager:execute_kaboom()
         color = Color(0.65, 1, 1, 1),
         timer = TimerManager:main()
     }
-    
+
     self._source = SoundDevice:create_source("announcer_nuke")
     self._source:post_event("zm_pwrup_nuke")
 

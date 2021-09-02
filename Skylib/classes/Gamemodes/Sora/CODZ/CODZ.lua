@@ -123,7 +123,7 @@ function SkyLib.CODZ:_init_hooks()
 
     self._hooks = {
         --Elements
-        --"classes/Gamemodes/Sora/CODZ/Elements/ElementAnnouncerGift",
+        "classes/Gamemodes/Sora/CODZ/Elements/ElementAnnouncerGift",
         "classes/Gamemodes/Sora/CODZ/Elements/ElementCheckSecret",
         "classes/Gamemodes/Sora/CODZ/Elements/ElementDynamicEnvironment",
         --"classes/Gamemodes/Sora/CODZ/Elements/ElementPlayVideo",
@@ -417,7 +417,9 @@ function SkyLib.CODZ:_set_special_wave(status)
 end
 
 function SkyLib.CODZ:_setup_event_state(event, state)
+    log(event, tostring(state))
     self._level.active_events[event] = state
+    log(tostring(self._level.active_events[event]))
 end
 
 function SkyLib.CODZ:_is_event_active(event)
