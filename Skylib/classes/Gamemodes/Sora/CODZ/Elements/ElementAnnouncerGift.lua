@@ -51,7 +51,6 @@ function ElementAnnouncerGift:on_executed(instigator)
     end
 
     if self._values.gift_id == "kaboom" then
-        log("kaboom")
         SkyLib.CODZ.PowerUpManager:execute_kaboom()
     end
 	

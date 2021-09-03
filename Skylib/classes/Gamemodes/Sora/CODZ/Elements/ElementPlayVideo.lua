@@ -2,6 +2,7 @@ core:import("CoreMissionScriptElement")
 ElementPlayVideo = ElementPlayVideo or class(CoreMissionScriptElement.MissionScriptElement)
 
 function ElementPlayVideo:init(...)
+	log("EPV INITaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
 	ElementPlayVideo.super.init(self, ...)
 end
 function ElementPlayVideo:client_on_executed(...)
@@ -16,7 +17,7 @@ function ElementPlayVideo:on_executed(instigator)
 	end
 
 	if instigator == managers.player:player_unit() then
-		managers.wdu:_play_teleporter_transition()
+		SkyLib.Video:_play_movie(self._values.movie, self._values.width, self._values.height)
 	end
 
 	ElementPlayVideo.super.on_executed(self, instigator)

@@ -9,6 +9,7 @@
         <class file="SkyLibTweakData.lua"/>
         <class file="SkyLibSound.lua"/>
         <class file="SkyLibNetwork.lua"/>
+        <class file="SkyLibVideo.lua"/>
         <class file="Gamemodes/Sora/CODZ/CODZ.lua"/>
         <class file="Gamemodes/Sora/CODZ/CODZ_WeaponHelper.lua"/>
         <class file="Gamemodes/Sora/Survival/Survival.lua"/>
