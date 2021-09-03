@@ -34,28 +34,22 @@ end
 
 Hooks:PreHook(PlayerDamage, "on_downed", "zm_remove_perks_on_down", function(self)
 	local perk_noloss = managers.player:has_special_equipment("perk_tombstone")
-	if not perk_noloss and managers.player:has_special_equipment("perk_juggernog") then
-        managers.player:remove_special("perk_juggernog")
-    end
-    if not perk_noloss and managers.player:has_special_equipment("perk_speedcola") then
-        managers.player:remove_special("perk_speedcola")
-    end
-    if not perk_noloss and managers.player:has_special_equipment("perk_doubletap") then
-        managers.player:remove_special("perk_doubletap")
+	local perks = {"perk_juggernog", "perk_speedcola", "perk_doubletap", "perk_deadshot", "perk_staminup", "perk_flopper","perk_cherry","perk_vulture","perk_widows","perk_armor"}
+	--go through the list and remove them if tombstone isn't owned
+	for i, v in ipairs(perks) do
+		if not perk_noloss and managers.player:has_special_equipment(v) then
+			managers.player:remove_special(v)
+		end
 	end
-	if not perk_noloss and managers.player:has_special_equipment("perk_deadshot") then
-        managers.player:remove_special("perk_deadshot")
-	end
-	if not perk_noloss and managers.player:has_special_equipment("perk_staminup") then
-        managers.player:remove_special("perk_staminup")
-	end
+	--tombstone prevents perk loss on down, so it will always be removed on down
 	if perk_noloss then
         managers.player:remove_special("perk_tombstone")
     end
+	--Quick revive has it's own function for solo downs, so if not solo then remove it
     if not SkyLib.Network:_is_solo() and managers.player:has_special_equipment("perk_quickrevive") then
         managers.player:remove_special("perk_quickrevive")
 	end
-	
+
 	local points_to_remove = SkyLib.CODZ:points_round(0 - SkyLib.CODZ:_get_own_money() / 4)
 	SkyLib.CODZ:_money_change(math.floor(points_to_remove), SkyLib.Network:_my_peer_id())
 end)
@@ -105,7 +99,7 @@ function PlayerDamage:damage_fall(data)
 		if self._unit:movement():current_state_name() == "jerry1" then
 			self._revives = Application:digest_value(1, true)
         end
-        
+
         if SkyLib.Network:_is_solo() and managers.player:has_special_equipment("perk_quickrevive") then
             self:_chk_cheat_death()
         end
