@@ -1,12 +1,12 @@
 function PlayerDamage:_raw_max_health()
 	local base_max_health = self._HEALTH_INIT + managers.player:health_skill_addend()
 	local mul = managers.player:health_skill_multiplier()
-	
+
     local juggernog_mul = managers.player:has_special_equipment("perk_juggernog") and 2 or 1
 
 	return (base_max_health * mul) * juggernog_mul
 end
-
+--revives the player if solo and have quick revive
 function PlayerDamage:_chk_cheat_death(is_tazed)
     if Application:digest_value(self._revives, false) > 1 and not self._check_berserker_done and managers.player:has_special_equipment("perk_quickrevive") then
         if SkyLib.Network:_is_solo() then
@@ -18,7 +18,7 @@ function PlayerDamage:_chk_cheat_death(is_tazed)
             DelayedCalls:Add( "ZmRemoveQuickReviveIn", 6.5, function()
                 managers.player:remove_special("perk_quickrevive")
 			end)
-			
+
             return
         end
 	end
@@ -32,11 +32,10 @@ function PlayerDamage:_chk_cheat_death(is_tazed)
 	end
 end
 
-Hooks:PreHook(PlayerDamage, "on_downed", "zm_remove_perks_on_down", function(self)
+SkyHook:Pre(PlayerDamage, "on_downed", function(self)
 	local perk_noloss = managers.player:has_special_equipment("perk_tombstone")
-	local perks = {"perk_juggernog", "perk_speedcola", "perk_doubletap", "perk_deadshot", "perk_staminup", "perk_flopper","perk_cherry","perk_vulture","perk_widows","perk_armor"}
 	--go through the list and remove them if tombstone isn't owned
-	for i, v in ipairs(perks) do
+	for i, v in ipairs(SkyLib.CODZ._perks) do
 		if not perk_noloss and managers.player:has_special_equipment(v) then
 			managers.player:remove_special(v)
 		end

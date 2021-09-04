@@ -1,4 +1,4 @@
-Hooks:PostHook(GroupAITweakData, "_init_unit_categories", "zm_allow_clk_dozers", function(self, difficulty_index)
+SkyHook:Post(GroupAITweakData, "_init_unit_categories", function(self, difficulty_index)
     self.special_unit_spawn_limits = {
         shield = 4,
         medic = 3,
@@ -8,7 +8,7 @@ Hooks:PostHook(GroupAITweakData, "_init_unit_categories", "zm_allow_clk_dozers",
     }
 end)
 
-Hooks:PostHook(GroupAITweakData, "_init_task_data", "zm_init_task_data", function(self)
+SkyHook:Post(GroupAITweakData, "_init_task_data", function(self)
     self.besiege.assault.force = {
         56,
         64,

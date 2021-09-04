@@ -1,4 +1,6 @@
-Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "zm_new_nade_amount", function(self, tweak_data)
+--Sets the max amounts of grenades, and sets the raygun projectiles
+SkyHook:Post(BlackMarketTweakData, "_init_projectiles", function(self, tweak_data)
+    SkyLib:log("ZM BMTD projectiles INIT")
     self.projectiles.frag.max_amount = 4
     self.projectiles.frag.no_cheat_count = true
     self.projectiles.concussion.max_amount = 4
@@ -29,14 +31,14 @@ Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", "zm_new_nade_amount", 
 
     self.projectiles.rocket_frag.time_cheat = 0
     self.projectiles.launcher_frag_arbiter.time_cheat = 0
-    
+
     self.projectiles.raygun_blast = deep_clone(self.projectiles.ecp_arrow_exp)
 	self.projectiles.raygun_blast.unit = "units/mods/weapons/wpn_prj_raygun_blast/wpn_prj_raygun_blast"
 	self.projectiles.raygun_blast.local_unit = "units/mods/weapons/wpn_prj_raygun_blast/wpn_prj_raygun_blast_local"
     self.projectiles.raygun_blast.weapon_id = "raygun_primary"
     self.projectiles.raygun_blast.physic_effect = Idstring("physic_effects/anti_gravitate")
 	self.projectiles.raygun_blast.adjust_z = 0
-	
+
     self.projectiles.raygun_blast_pap = deep_clone(self.projectiles.ecp_arrow_exp)
 	self.projectiles.raygun_blast_pap.unit = "units/mods/weapons/wpn_prj_raygun_blast_pap/wpn_prj_raygun_blast_pap"
 	self.projectiles.raygun_blast_pap.local_unit = "units/mods/weapons/wpn_prj_raygun_blast_pap/wpn_prj_raygun_blast_pap_local"

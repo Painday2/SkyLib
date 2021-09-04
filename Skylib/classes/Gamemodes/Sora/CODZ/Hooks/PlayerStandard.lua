@@ -1,4 +1,5 @@
---[[Hooks:PostHook(PlayerStandard, "update", "zm_ba_postupdate_god", function(self, t, dt)
+--TODO: create a way to use this, maybe update the checksecret element for this.
+--[[SkyHook:Post(PlayerStandard, "update", function(self, t, dt)
 	if not self._god then
 		SkyLib:wait(3, function()
 			if Network:is_server() then
@@ -19,8 +20,8 @@
 	end
 end)]]--
 
-
-Hooks:PostHook(PlayerStandard, "_start_action_equip_weapon", "zm_weapon_name_on_switch", function(self, t)
+--Set the weapon name in bottom right
+SkyHook:Post(PlayerStandard, "_start_action_equip_weapon", function(self, t)
 	local weapon = self._ext_inventory:equipped_unit():base()._name_id
 	local weapon_name_id = managers.localization:text(tweak_data.weapon[weapon].name_id)
 

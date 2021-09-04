@@ -69,7 +69,7 @@ function NewRaycastWeaponBase:_update_rof_on_perk()
 	end
 end
 
-Hooks:PostHook(NewRaycastWeaponBase, "init", "Waffe_AddBulletTrail", function(self)
+SkyHook:Post(NewRaycastWeaponBase, "init", function(self)
 	local allowed_weapons = {
 		"wunderwaffe_primary",
 		"wunderwaffe_secondary",
@@ -95,7 +95,7 @@ Hooks:PostHook(NewRaycastWeaponBase, "init", "Waffe_AddBulletTrail", function(se
 	end
 end)
 
-Hooks:PostHook(NewRaycastWeaponBase, "fire", "Waffe_FireBulletTrail", function(self, from_pos, direction)
+SkyHook:Post(NewRaycastWeaponBase, "fire", function(self, from_pos, direction)
 	local allowed_weapons = {
 		"wunderwaffe_primary",
 		"wunderwaffe_secondary",

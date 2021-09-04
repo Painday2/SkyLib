@@ -660,8 +660,9 @@ function UseInteractionExt:sync_interacted(peer, player, status, skip_alive_chec
 
 	return player
 end
-
-Hooks:PostHook(ReviveInteractionExt, "interact", "zm_post_interact_revive", function(self, reviving_unit)
+--Give points to the reviving player
+SkyHook:Post(ReviveInteractionExt, "interact", function(self, reviving_unit)
+	SkyLib:log("ReviveInterext interact")
 	local helped_id = managers.criminals:character_peer_id_by_unit(self._unit)
 	local helper_id = managers.criminals:character_peer_id_by_unit(reviving_unit)
 

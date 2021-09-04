@@ -1,4 +1,5 @@
-Hooks:PostHook(TimeSpeedEffectTweakData, "_init_base_effects", "zm_post_no_slowmo_shit", function(self)
+SkyHook:Post(TimeSpeedEffectTweakData, "_init_base_effects", function(self)
+	SkyLib:log("ZM TimeSpeedEffect base effects INIT")
 	self.downed = {
 		speed = 1,
 		fade_in = 0,

@@ -54,7 +54,7 @@ function PowerUps:_pickup(unit)
                 end
             else
                 local available_selections = {}
-    
+
                 for i, weapon in pairs(inventory:available_selections()) do
                     if inventory:is_equipped(i) then
                         table.insert(available_selections, 1, weapon)
@@ -62,18 +62,18 @@ function PowerUps:_pickup(unit)
                         table.insert(available_selections, weapon)
                     end
                 end
-    
+
                 local success, add_amount = nil
-    
+
                 for _, weapon in ipairs(available_selections) do
                     if not self._weapon_category or self._weapon_category == weapon.unit:base():weapon_tweak_data().categories[1] then
                         success, add_amount = weapon.unit:base():add_ammo(1, self._ammo_count)
                         picked_up = success or picked_up
-    
+
                         if self._ammo_count then
                             self._ammo_count = math.max(math.floor(self._ammo_count - add_amount), 0)
                         end
-    
+
                         if picked_up and tweak_data.achievement.pickup_sticks and self._weapon_category == tweak_data.achievement.pickup_sticks.weapon_category then
                             managers.achievment:award_progress(tweak_data.achievement.pickup_sticks.stat)
                         end
@@ -88,7 +88,7 @@ function PowerUps:_pickup(unit)
                 if Network:is_client() then
                     managers.network:session():send_to_host("sync_pickup", self._unit)
                 end
-    
+
                 unit:sound():play(self._pickup_event or "pickup_ammo", nil, true)
 
                 self:consume()
@@ -153,7 +153,7 @@ end
 function PowerUps:sync_net_event(event, peer)
 end
 
-Hooks:PostHook(AmmoClip, "consume", "post_init_consume_zm", function(self)
+SkyHook:Post(AmmoClip, "consume", function(self)
     if self._power_up_id then
         SkyLib.Sound:_destroy_source("zm_pwrup_float_idle" .. self._power_up_id)
     end

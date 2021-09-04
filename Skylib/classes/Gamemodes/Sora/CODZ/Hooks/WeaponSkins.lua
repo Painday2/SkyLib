@@ -1,4 +1,5 @@
-Hooks:PostHook(BlackMarketTweakData, "_init_weapon_skins", "zm_init_new_weapon_camos", function(self)
+SkyHook:Post(BlackMarketTweakData, "_init_weapon_skins", function(self)
+	SkyLib:log("ZM BMTD weapon skins (hooks) INIT")
     self.weapon_skins.pap1 = {
         name_id = "none",
 		desc_id = "none",

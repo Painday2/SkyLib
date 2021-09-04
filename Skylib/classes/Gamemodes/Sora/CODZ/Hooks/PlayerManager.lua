@@ -10,12 +10,12 @@ SkyHook:Post(PlayerManager, "update", function(self, t, dt)
     end
 end)
 
-Hooks:PostHook(PlayerManager, "update", "zm_upd_perk", function(self, t, dt)
+SkyHook:Post(PlayerManager, "update", function(self, t, dt)
 	if not self._show_point_list then
 		DelayedCalls:Add( "ZmShowPointsDelay", 2, function()
 			SkyLib.CODZ:_update_hud_element()
 		end)
-		
+
 		self._show_point_list = true
 	end
 
@@ -33,7 +33,7 @@ Hooks:PostHook(PlayerManager, "update", "zm_upd_perk", function(self, t, dt)
     end
 
 	local GCS = PlayerManager.get_current_state
-	
+
 	if not self._raygun_unlocked then
 		if GCS and type(GCS) == "function" then
 			local current_state = self:get_current_state()
@@ -50,7 +50,7 @@ Hooks:PostHook(PlayerManager, "update", "zm_upd_perk", function(self, t, dt)
 			end
 		end
     end
-	
+
 	if GCS and type(GCS) == "function" then
 		local current_state = self:get_current_state()
 		if current_state then
@@ -65,7 +65,7 @@ Hooks:PostHook(PlayerManager, "update", "zm_upd_perk", function(self, t, dt)
 				end
 
 				managers.hud._hud_codz.weapon_name_bottom_right:set_text(tostring(weapon_name_id))
-				
+
 				current_weapon:_update_rof_on_perk()
 			end
 		end
@@ -76,14 +76,10 @@ end)
 
 function PlayerManager:_count_nb_perks()
 	local count_perks = 0
+	for i, v in ipairs(SkyLib.CODZ._perks) do
+		if self:has_special_equipment(v) then count_perks = count_perks + 1 end
+	end
 
-	if self:has_special_equipment("perk_quickrevive") then count_perks = count_perks + 1 end
-    if self:has_special_equipment("perk_juggernog") then count_perks = count_perks + 1 end
-    if self:has_special_equipment("perk_speedcola") then count_perks = count_perks + 1 end
-    if self:has_special_equipment("perk_doubletap") then count_perks = count_perks + 1 end
-	if self:has_special_equipment("perk_deadshot") then count_perks = count_perks + 1 end
-	if self:has_special_equipment("perk_staminup") then count_perks = count_perks + 1 end
-	
 	return count_perks
 end
 
@@ -91,7 +87,7 @@ function PlayerManager:_update_cops_alive(change)
     self.totalCopAlive = self.totalCopAlive + change
 end
 
-Hooks:PostHook(PlayerManager, "_internal_load", "pm_post_internal_load", function(self)
+SkyHook:Post(PlayerManager, "_internal_load", function(self)
 	local player = self:player_unit()
 
 	if not player then

@@ -24,6 +24,7 @@
         <hook file="EquipmentsTweakdata.lua" source_file="lib/tweak_data/equipmentstweakdata"/>
         <hook file="HUDIconsTweakdata.lua" source_file="lib/tweak_data/hudiconstweakdata"/>
         <hook file="WeaponFactoryTweakData.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+        <hook file="UpgradesTweakData.lua" source_file="lib/tweak_data/upgradestweakdata"/>
     </Hooks>
     <Hooks>
         <hook file="classes/Gamemodes/Sora/CODZ/Hooks/LoadSounds.lua" source_file="lib/setups/gamesetup"/>

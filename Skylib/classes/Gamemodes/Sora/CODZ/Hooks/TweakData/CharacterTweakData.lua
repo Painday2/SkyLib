@@ -60,7 +60,8 @@ function CharacterTweakData:_multiply_by_wave_nb(wave)
 	self.shadow_spooc.HEALTH_INIT = self.shadow_spooc.HEALTH_INIT * base + (wave / divider)
 end
 
-Hooks:PostHook(CharacterTweakData, "_init_fbi", "zm_disable_surrenders", function(self, presets)
+SkyHook:Post(CharacterTweakData, "_init_fbi", function(self, presets)
+	SkyLib:log("ZM CTD fbi INIT")
 	self.fbi.surrender = nil
 	self.fbi.rescue_hostages = false
 	self.fbi.allowed_poses = {crouch = false, stand = true}
@@ -74,7 +75,8 @@ Hooks:PostHook(CharacterTweakData, "_init_fbi", "zm_disable_surrenders", functio
 	self.fbi.weapon.is_smg.focus_delay = 1
 end)
 
-Hooks:PostHook(CharacterTweakData, "_init_swat", "zm_disable_surrenders_2", function(self, presets)
+SkyHook:Post(CharacterTweakData, "_init_swat", function(self, presets)
+	SkyLib:log("ZM CTD swat INIT")
 	self.swat.surrender = nil
 	self.swat.rescue_hostages = false
 	self.swat.allowed_poses = {crouch = false, stand = true}
@@ -89,7 +91,8 @@ Hooks:PostHook(CharacterTweakData, "_init_swat", "zm_disable_surrenders_2", func
 	self.swat.weapon.is_shotgun_pump.focus_delay = 1
 end)
 
-Hooks:PostHook(CharacterTweakData, "_init_heavy_swat", "zm_disable_surrenders_3", function(self, presets)
+SkyHook:Post(CharacterTweakData, "_init_heavy_swat", function(self, presets)
+	SkyLib:log("ZM CTD heavyswat INIT")
 	self.heavy_swat.surrender = nil
 	self.heavy_swat.rescue_hostages = false
 	self.heavy_swat.allowed_poses = {crouch = false, stand = true}
@@ -104,7 +107,8 @@ Hooks:PostHook(CharacterTweakData, "_init_heavy_swat", "zm_disable_surrenders_3"
 	self.heavy_swat.weapon.is_shotgun_pump.focus_delay = 1
 end)
 
-Hooks:PostHook(CharacterTweakData, "_init_fbi_swat", "zm_disable_surrenders_4", function(self, presets)
+SkyHook:Post(CharacterTweakData, "_init_fbi_swat", function(self, presets)
+	SkyLib:log("ZM CTD fbiswat INIT")
 	self.fbi_swat.surrender = nil
 	self.fbi_swat.rescue_hostages = false
 	self.fbi_swat.allowed_poses = {crouch = false, stand = true}
@@ -119,7 +123,8 @@ Hooks:PostHook(CharacterTweakData, "_init_fbi_swat", "zm_disable_surrenders_4", 
 	self.fbi_swat.weapon.is_shotgun_pump.focus_delay = 1
 end)
 
-Hooks:PostHook(CharacterTweakData, "_init_fbi_heavy_swat", "zm_disable_surrenders_5", function(self, presets)
+SkyHook:Post(CharacterTweakData, "_init_fbi_heavy_swat", function(self, presets)
+	SkyLib:log("ZM CTD fbiheavyswat INIT")
 	self.fbi_heavy_swat.surrender = nil
 	self.fbi_heavy_swat.rescue_hostages = false
 	self.fbi_heavy_swat.allowed_poses = {crouch = false, stand = true}
@@ -134,7 +139,8 @@ Hooks:PostHook(CharacterTweakData, "_init_fbi_heavy_swat", "zm_disable_surrender
 	self.fbi_heavy_swat.weapon.is_shotgun_pump.focus_delay = 1
 end)
 
-Hooks:PostHook(CharacterTweakData, "_init_city_swat", "zm_disable_surrenders_6", function(self, presets)
+SkyHook:Post(CharacterTweakData, "_init_city_swat", function(self, presets)
+	SkyLib:log("ZM CTD cityswat INIT")
 	self.city_swat.surrender = nil
 	self.city_swat.rescue_hostages = false
 	self.city_swat.allowed_poses = {crouch = false, stand = true}
@@ -149,7 +155,8 @@ Hooks:PostHook(CharacterTweakData, "_init_city_swat", "zm_disable_surrenders_6",
 	self.city_swat.weapon.is_shotgun_pump.focus_delay = 1
 end)
 
-Hooks:PostHook(CharacterTweakData, "_init_medic", "zm_medic_tweak", function(self, presets)
+SkyHook:Post(CharacterTweakData, "_init_medic", function(self, presets)
+	SkyLib:log("ZM CTD medic INIT")
 	self.medic.rescue_hostages = false
 	self.medic.suppression = nil
 	self.medic.allowed_poses = {crouch = false, stand = true}
@@ -162,7 +169,8 @@ Hooks:PostHook(CharacterTweakData, "_init_medic", "zm_medic_tweak", function(sel
 	self.medic.weapon.is_shotgun_pump.focus_delay = 1
 end)
 
-Hooks:PostHook(CharacterTweakData, "_init_taser", "zm_taser_tweak", function(self, presets)
+SkyHook:Post(CharacterTweakData, "_init_taser", function(self, presets)
+	SkyLib:log("ZM CTD taser INIT")
 	self.taser.dodge = nil
 	self.taser.no_retreat = true
 	self.taser.no_arrest = true
@@ -171,12 +179,14 @@ Hooks:PostHook(CharacterTweakData, "_init_taser", "zm_taser_tweak", function(sel
 	self.taser.weapon.is_rifle.focus_delay = 1
 end)
 
-Hooks:PostHook(CharacterTweakData, "_init_spooc", "zm_cloaker_tweak", function(self, presets)
+SkyHook:Post(CharacterTweakData, "_init_spooc", function(self, presets)
+	SkyLib:log("ZM CTD spooc INIT")
 	self.spooc.allowed_poses = {crouch = false, stand = true}
 	self.spooc.weapon.is_smg.focus_delay = 1
 end)
 
-Hooks:PostHook(CharacterTweakData, "_init_tank", "zm_bulldozer_tweak", function(self, presets)
+SkyHook:Post(CharacterTweakData, "_init_tank", function(self, presets)
+	SkyLib:log("ZM CTD tank INIT")
 	self.tank.weapon.is_shotgun_mag.focus_delay = 1
 	self.tank.weapon.is_rifle.focus_delay = 1
 	self.tank.weapon.is_lmg.focus_delay = 1

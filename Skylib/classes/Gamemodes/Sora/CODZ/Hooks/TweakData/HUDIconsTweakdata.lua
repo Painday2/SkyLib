@@ -1,5 +1,5 @@
-Hooks:PostHook(HudIconsTweakData, "init", "init_zm_icons_gui", function(self)
-
+SkyHook:Post(HudIconsTweakData, "init", function(self)
+	SkyLib:log("ZM HudIconstweakdata INIT")
 	--PERK ICONS
 	self.perk_deadshot = {
         texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",

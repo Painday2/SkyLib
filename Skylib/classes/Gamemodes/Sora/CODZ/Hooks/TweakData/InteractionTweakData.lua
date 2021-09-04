@@ -1,7 +1,6 @@
-Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", function(self, tweak_data)
+SkyHook:Post(InteractionTweakData, "init", function(self, tweak_data)
 
 	self.pick_lock_hard_no_skill.timer = 7
-	
 
 	self.zm_call_elevator = {
 		zm_interaction = true,
@@ -11,7 +10,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		interact_distance = 125,
 		timer = 0.5
 	}
-	
+
 	self.zm_unlock_elevator = {
 		zm_interaction = true,
 		zm_elevator = true,
@@ -20,7 +19,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		interact_distance = 125,
 		timer = 0.5
 	}
-	
+
 	self.zm_free_points_25 = {
 		zm_interaction = true,
 		points_cost = -25,
@@ -30,7 +29,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		interact_distance = 75,
 		axis = "y"
 	}
-	
+
 	self.zm_free_points_1000 = {
 		zm_interaction = true,
 		points_cost = -1000,
@@ -38,7 +37,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		start_active = false,
 		axis = "y"
 	}
-	
+
 	self.zm_trap_sentrygun = {
 		zm_interaction = true,
 		zm_trap = true,
@@ -48,9 +47,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		sound_done = "zm_gen_ching",
 		timer = 0.5
 	}
-	
-	
-	
+
     self.zm_wall_buy_ray = {
 		zm_interaction = true,
 		weapon = "Commando 101",
@@ -63,7 +60,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		axis = "y",
 		timer = 0.5
 	}
-	
+
     self.zm_wall_buy_m14 = {
 		zm_interaction = true,
 		weapon = "M308 Rifle",
@@ -76,7 +73,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		axis = "y",
 		timer = 0.5
 	}
-	
+
 	self.zm_wall_buy_raygun = {
 		zm_interaction = true,
 		weapon = "Raygun",
@@ -167,7 +164,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		axis = "y",
 		timer = 0.5
 	}
-	
+
 	self.zm_wall_buy_mp9 = {
 		zm_interaction = true,
 		weapon = "MP9 Submachine Gun",
@@ -193,7 +190,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		axis = "y",
 		timer = 0.5
 	}
-	
+
 	self.zm_wall_buy_fal = {
 		zm_interaction = true,
 		weapon = "Falcon",
@@ -206,7 +203,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		axis = "y",
 		timer = 0.5
 	}
-	
+
 	self.zm_wall_buy_mosin = {
 		zm_interaction = true,
 		weapon = "Nagant",
@@ -245,7 +242,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		axis = "y",
 		timer = 0.5,
 	}
-	
+
 	self.zm_wall_buy_box_ray = {
         zm_interaction = true,
         box_weapon = "Commando 101",
@@ -258,7 +255,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5
     }
-	
+
 	self.zm_wall_buy_box_deamon = {
         zm_interaction = true,
         box_weapon = "Breaker 12G",
@@ -272,7 +269,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5
     }
-    
+
     self.zm_wall_buy_box_m14 = {
         zm_interaction = true,
         box_weapon = "M308 Rifle",
@@ -285,7 +282,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5
     }
-    
+
     self.zm_wall_buy_box_raygun = {
         zm_interaction = true,
         box_weapon = "Raygun",
@@ -376,7 +373,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5
     }
-    
+
     self.zm_wall_buy_box_mp9 = {
         zm_interaction = true,
         box_weapon = "MP9 Submachine Gun",
@@ -402,7 +399,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5
     }
-    
+
     self.zm_wall_buy_box_fal = {
         zm_interaction = true,
         box_weapon = "Falcon",
@@ -415,7 +412,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5
     }
-    
+
     self.zm_wall_buy_box_mosin = {
         zm_interaction = true,
         box_weapon = "Nagant",
@@ -454,7 +451,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_1911 = {
         zm_interaction = true,
         box_weapon = "Colt 1911",
@@ -467,7 +464,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_amcar = {
         zm_interaction = true,
         box_weapon = "Amcar",
@@ -480,7 +477,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_aug = {
         zm_interaction = true,
         box_weapon = "UAR",
@@ -493,7 +490,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_breech = {
         zm_interaction = true,
         box_weapon = "Parabellum",
@@ -506,7 +503,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_deagle = {
         zm_interaction = true,
         box_weapon = "Deagle",
@@ -519,7 +516,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_flint = {
         zm_interaction = true,
         box_weapon = "AK17",
@@ -532,7 +529,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_g3 = {
         zm_interaction = true,
         box_weapon = "Gewehr 3",
@@ -545,7 +542,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_g22c = {
         zm_interaction = true,
         box_weapon = "Chimano Custom",
@@ -558,7 +555,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_hk21 = {
         zm_interaction = true,
         box_weapon = "Brenner 21",
@@ -571,7 +568,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_judge = {
         zm_interaction = true,
         box_weapon = "Judge",
@@ -584,7 +581,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_m16 = {
         zm_interaction = true,
         box_weapon = "AMR-16",
@@ -597,7 +594,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_m95 = {
         zm_interaction = true,
         box_weapon = "Thanatos .50 cal",
@@ -623,7 +620,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_p90 = {
         zm_interaction = true,
         box_weapon = "Kobus 90",
@@ -636,7 +633,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_packrat = {
         zm_interaction = true,
         box_weapon = "Contractor",
@@ -649,7 +646,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_par = {
         zm_interaction = true,
         box_weapon = "KSP 58",
@@ -662,7 +659,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_rage = {
         zm_interaction = true,
         box_weapon = "Bronco .44",
@@ -675,7 +672,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_rpg7 = {
         zm_interaction = true,
         box_weapon = "HRL-7",
@@ -688,7 +685,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_scar = {
         zm_interaction = true,
         box_weapon = "Eagle Heavy",
@@ -714,7 +711,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_thompson = {
         zm_interaction = true,
         box_weapon = "Chicago Typewriter",
@@ -727,7 +724,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
         axis = "y",
         timer = 0.5,
     }
-    
+
     self.zm_wall_buy_box_wunderwaffe = {
         zm_interaction = true,
         box_weapon = "wunderwaffe DG-2",
@@ -777,7 +774,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		axis = "y",
 		timer = 4,
 	}
-	
+
 	self.zm_open_path_1500 = {
 		zm_interaction = true,
 		path = true,
@@ -787,7 +784,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		sound_done = "zm_gen_door_bought1",
 		timer = 1.5,
 	}
-	
+
 	self.zm_open_path_1250 = {
 		zm_interaction = true,
 		path = true,
@@ -797,7 +794,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		sound_done = "zm_gen_door_bought2",
 		timer = 1.5,
 	}
-	
+
 	self.zm_open_path_750 = {
 		zm_interaction = true,
 		path = true,
@@ -825,7 +822,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
         --TODO: fix this by rotating the interact point 180 in model
-		--axis = "y", 
+		--axis = "y",
 		timer = 0.5
 	}
 
@@ -836,7 +833,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		sound_done = "zm_gen_magic_interact",
 		interact_distance = 250
 	}
-	
+
 	self.zm_keycard_place = {
 		text_id = "zm_place_keycard",
 		sound_done = "pick_up_key_card",
@@ -1079,7 +1076,6 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		sound_done = "zm_perk_bought",
 		special_equipment_block = "perk_armor"
 	}
-
 end)
 --hooks gets set too late, need to reinit
 tweak_data.interaction:init(tweak_data)

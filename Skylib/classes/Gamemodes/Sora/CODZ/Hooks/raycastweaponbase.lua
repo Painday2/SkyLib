@@ -14,8 +14,8 @@ function RaycastWeaponBase:start_shooting_allowed()
 	return self._next_fire_allowed <= self._unit:timer():time()
 end
 
-Hooks:PostHook(RaycastWeaponBase, "fire", "zm_pap_sound_click", function(self)
-	if string.find(self._name_id, "_upg_") then
+SkyHook:Post(RaycastWeaponBase, "fire", function(self)
+	if self.pap_level and self.pap_level > 1 then
 		self._sound_fire:post_event("zm_pew_global")
 	end
 end)

@@ -1,8 +1,7 @@
-Hooks:PostHook(HudIconsTweakData, "init", "init_zm_icons_gui", function(self)
-
+SkyHook:Post(HudIconsTweakData, "init", function(self)
 	--PERK ICONS
 	self.perk_deadshot = {
-        texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
+		texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
 		texture_rect = {
 			0,
 			0,
@@ -11,7 +10,7 @@ Hooks:PostHook(HudIconsTweakData, "init", "init_zm_icons_gui", function(self)
 		}
 	}
 	self.perk_speedcola = {
-        texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
+		texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
 		texture_rect = {
 			128,
 			0,
@@ -19,8 +18,8 @@ Hooks:PostHook(HudIconsTweakData, "init", "init_zm_icons_gui", function(self)
 			128
 		}
 	}
-    self.perk_juggernog = {
-        texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
+	self.perk_juggernog = {
+		texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
 		texture_rect = {
 			256,
 			0,
@@ -29,7 +28,7 @@ Hooks:PostHook(HudIconsTweakData, "init", "init_zm_icons_gui", function(self)
 		}
 	}
 	self.perk_staminup = {
-        texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
+		texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
 		texture_rect = {
 			384,
 			0,
@@ -38,7 +37,7 @@ Hooks:PostHook(HudIconsTweakData, "init", "init_zm_icons_gui", function(self)
 		}
 	}
 	self.perk_doubletap = {
-        texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
+		texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
 		texture_rect = {
 			0,
 			128,
@@ -47,7 +46,52 @@ Hooks:PostHook(HudIconsTweakData, "init", "init_zm_icons_gui", function(self)
 		}
 	}
 	self.perk_quickrevive = {
-        texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
+		texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
+		texture_rect = {
+			128,
+			128,
+			128,
+			128
+		}
+	}
+	self.perk_flopper = {
+		texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
+		texture_rect = {
+			128,
+			128,
+			128,
+			128
+		}
+	}
+	self.perk_cherry = {
+		texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
+		texture_rect = {
+			128,
+			128,
+			128,
+			128
+		}
+	}
+	self.perk_vulture = {
+		texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
+		texture_rect = {
+			128,
+			128,
+			128,
+			128
+		}
+	}
+	self.perk_widows = {
+		texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
+		texture_rect = {
+			128,
+			128,
+			128,
+			128
+		}
+	}
+	self.perk_armor = {
+		texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
 		texture_rect = {
 			128,
 			128,
@@ -58,21 +102,21 @@ Hooks:PostHook(HudIconsTweakData, "init", "init_zm_icons_gui", function(self)
 
 	--Junk
 	self.zm_power_on = {
-        texture = "perks/power",
+		texture = "perks/power",
 		texture_rect = {
 			0,
 			0,
 			128,
 			128
 		}
-    }
+	}
 	self.perk_god = {
-        texture = "units/pd2_mod_zombies/guis/perks/god_strength",
+		texture = "units/pd2_mod_zombies/guis/perks/god_strength",
 		texture_rect = {
 			0,
 			0,
 			128,
 			128
 		}
-    }
+	}
 end)

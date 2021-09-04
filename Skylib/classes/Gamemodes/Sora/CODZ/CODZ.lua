@@ -105,6 +105,19 @@ function SkyLib.CODZ:init(custom_rules)
         mystery_box = { }
     }
 
+    self._perks = {
+        "perk_juggernog",
+        "perk_speedcola",
+        "perk_doubletap",
+        "perk_deadshot",
+        "perk_staminup",
+        "perk_flopper",
+        "perk_cherry",
+        "perk_vulture",
+        "perk_widows",
+        "perk_armor"
+    }
+
 
     self:_init_hooks()
     SkyLib.Sound:init()
@@ -134,45 +147,50 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Elements/ElementSpawnSafeEnemyDummy",
         "classes/Gamemodes/Sora/CODZ/Elements/ElementWave",
         "classes/Gamemodes/Sora/CODZ/Elements/ElementWeaponSwitch",
-        --General hooks
-        "classes/Gamemodes/Sora/CODZ/Hooks/InteractionTweakData",
-        "classes/Gamemodes/Sora/CODZ/Hooks/InteractionExt",
-        "classes/Gamemodes/Sora/CODZ/Hooks/EquipmentsTweakData",
-        "classes/Gamemodes/Sora/CODZ/Hooks/ElementSpawnEnemyDummy",
-        "classes/Gamemodes/Sora/CODZ/Hooks/IngameWaitingForPlayersState",
-        "classes/Gamemodes/Sora/CODZ/Hooks/HUDManager",
-        "classes/Gamemodes/Sora/CODZ/Hooks/HUDManagerPD2",
-        "classes/Gamemodes/Sora/CODZ/Hooks/HUDMissionBriefing",
-        "classes/Gamemodes/Sora/CODZ/Hooks/HUDIconsTweakData",
-        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerManager",
-        "classes/Gamemodes/Sora/CODZ/Hooks/CopDamage",
-        "classes/Gamemodes/Sora/CODZ/Hooks/CoreUnit",
-        "classes/Gamemodes/Sora/CODZ/Hooks/CharacterTweakData",
-        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerDamage",
-        "classes/Gamemodes/Sora/CODZ/Hooks/PowerUps",
-        "classes/Gamemodes/Sora/CODZ/Hooks/PowerUpManager",
-        "classes/Gamemodes/Sora/CODZ/Hooks/TweakData",
-        "classes/Gamemodes/Sora/CODZ/Hooks/NewRaycastWeaponBase",
-        "classes/Gamemodes/Sora/CODZ/Hooks/RaycastWeaponBase",
-        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerTased",
-        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerTweakData",
-        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerMovement",
-        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerStandard",
-        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerInventory",
-        "classes/Gamemodes/Sora/CODZ/Hooks/ProjectilesTweakData",
-        "classes/Gamemodes/Sora/CODZ/Hooks/TimeSpeedEffectTweakData",
-        --"classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
-        "classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBesiege",
-        "classes/Gamemodes/Sora/CODZ/Hooks/GroupAITweakData",
-        "classes/Gamemodes/Sora/CODZ/Hooks/EnemyManager",
 
+        --Tweakdata hooks
+        "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/CharacterTweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/EquipmentsTweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/GroupAITweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/HUDIconsTweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/InteractionTweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/PlayerTweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/ProjectilesTweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/TimeSpeedEffectTweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/TweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/UpgradesTweakData",
+
+        --Interactions bases/ext
+        "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/InteractionExt",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMMoneyExt",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPerkExt",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPackAPunchBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMTradePointBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMPathBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/MisterySafeBase",
-        "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMWallbuyBase"
+        "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMWallbuyBase",
+
+        --General hooks
+        "classes/Gamemodes/Sora/CODZ/Hooks/CopDamage",
+        "classes/Gamemodes/Sora/CODZ/Hooks/CoreUnit",
+        "classes/Gamemodes/Sora/CODZ/Hooks/ElementSpawnEnemyDummy",
+        "classes/Gamemodes/Sora/CODZ/Hooks/EnemyManager",
+        --"classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
+        "classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBesiege",
+        "classes/Gamemodes/Sora/CODZ/Hooks/HUDManager",
+        "classes/Gamemodes/Sora/CODZ/Hooks/HUDManagerPD2",
+        "classes/Gamemodes/Sora/CODZ/Hooks/HUDMissionBriefing",
+        "classes/Gamemodes/Sora/CODZ/Hooks/IngameWaitingForPlayersState",
+        "classes/Gamemodes/Sora/CODZ/Hooks/NewRaycastWeaponBase",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerDamage",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerInventory",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerManager",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerMovement",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerStandard",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PlayerTased",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PowerUpManager",
+        "classes/Gamemodes/Sora/CODZ/Hooks/PowerUps",
+        "classes/Gamemodes/Sora/CODZ/Hooks/RaycastWeaponBase",
     }
 
     self._elements = {
