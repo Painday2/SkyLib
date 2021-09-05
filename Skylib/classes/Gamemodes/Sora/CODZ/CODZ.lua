@@ -191,6 +191,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/PowerUpManager",
         "classes/Gamemodes/Sora/CODZ/Hooks/PowerUps",
         "classes/Gamemodes/Sora/CODZ/Hooks/RaycastWeaponBase",
+        "classes/Gamemodes/Sora/CODZ/CODZ_PerkManager",
     }
 
     self._elements = {

@@ -53,6 +53,13 @@ SkyHook:Pre(PlayerDamage, "on_downed", function(self)
 	SkyLib.CODZ:_money_change(math.floor(points_to_remove), SkyLib.Network:_my_peer_id())
 end)
 
+SkyHook:Pre(PlayerDamage, "damage_explosion", function(self)
+	--Flopper prevents all explosive damage.
+    if managers.player:has_special_equipment("perk_flopper") then
+        return
+	end
+end)
+
 function PlayerDamage:damage_fall(data)
 	local damage_info = {result = {
 		variant = "fall",
@@ -73,6 +80,18 @@ function PlayerDamage:damage_fall(data)
 
 	local height_limit = 300
 	local death_limit = 631
+
+	local has_flopper = managers.player:has_special_equipment("perk_flopper")
+	if has_flopper then
+		height_limit = 200
+
+		if data.height < height_limit then
+			return
+		end
+
+		SkyLib.CODZ.PerkManager:do_flopper_explosion()
+		return
+	end
 
 	if data.height < height_limit then
 		return
