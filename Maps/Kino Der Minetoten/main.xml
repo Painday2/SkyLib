@@ -1,0 +1,153 @@
+<table global_key="zm_kino_mc" name="zm_kino">
+	<level ai_group_type="zombie" briefing_dialog="" gamemode_type="3arc_zm" id="zm_kinolvl" intro_event="" max_bags="0" music="no_music" player_style="generic" team_ai_off="true">
+		<add file="levels/zm_kinolvl/add.xml"/>
+		<assets>
+			<asset name="perk_mechanics"/>
+		</assets>
+		<hooks directory="hooks">
+			<hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
+		</hooks>
+		<include directory="levels/zm_kinolvl">
+			<file file="world.world" type="binary"/>
+			<file file="continents.continents" type="binary"/>
+			<file file="mission.mission" type="binary"/>
+			<file file="nav_manager_data.nav_data" type="binary"/>
+			<file file="world_sounds.world_sounds" type="binary"/>
+			<file file="world_cameras.world_cameras" type="binary"/>
+			<file file="editor_only/editor_only.continent" type="binary"/>
+			<file file="editor_only/editor_only.mission" type="binary"/>
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+			<file file="cover_data.cover_data" type="binary"/>
+			<file file="environments/hox-default.environment" type="custom_xml"/>
+			<file file="environments/hox-special.environment" type="custom_xml"/>
+		</include>
+		<outro_event>
+			<value_node value=""/>
+		</outro_event>
+		<packages>
+			<value_node value="packages/narr_hvh"/>
+			<value_node value="packages/ZMAssets"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<level ai_group_type="zombie" id="zm_kino_gameplay_controller" max_bags="54">
+		<add file="levels/zm_kino_gameplay_controller/add.xml"/>
+		<assets>
+			<asset name="perk_mechanics"/>
+		</assets>
+		<hooks directory="hooks">
+			<hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
+		</hooks>
+		<include directory="levels/zm_kino_gameplay_controller">
+			<file file="world.world" type="binary"/>
+			<file file="continents.continents" type="binary"/>
+			<file file="mission.mission" type="binary"/>
+			<file file="nav_manager_data.nav_data" type="binary"/>
+			<file file="world_sounds.world_sounds" type="binary"/>
+			<file file="world_cameras.world_cameras" type="binary"/>
+			<file file="editor_only/editor_only.continent" type="binary"/>
+			<file file="editor_only/editor_only.mission" type="binary"/>
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+			<file file="cover_data.cover_data" type="binary"/>
+			<file file="environments/default.environment" type="custom_xml"/>
+		</include>
+		<packages/>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<AddFiles directory="assets">
+		<texture load="true" path="guis/zm_kino_ach_icon"/>
+		<texture load="true" path="guis/zm_kino_icon"/>
+	</AddFiles>
+	<AddFiles file="dynamic_manager.xml"/>
+	<Achievements icon="guis/zm_kino_ach_icon" id="zm_kino_ach">
+		<achievement id="zm_kino_ach_kill" rank="1"/>
+		<achievement id="zm_kino_ach_buy" rank="3"/>
+		<achievement id="zm_kino_ach_r15" rank="2"/>
+		<achievement id="zm_kino_ach_perks" rank="2"/>
+		<achievement id="zm_kino_ach_r30" rank="3"/>
+		<achievement id="zm_kino_ach_complete" rank="4"/>
+		<achievement id="zm_kino_ach_pap" rank="1"/>
+		<achievement id="zm_kino_ach_welcome" rank="1"/>
+	</Achievements>
+	<AssetUpdates id="27127" provider="modworkshop" use_local_dir="true" version="1.91"/>
+	<Localization default="english.txt" directory="loc"/>
+	<contact assets_gui="guis/dlcs/the_bomb/guis/preload_contact_the_butcher" hidden="false" id="zombies_mode" name_id="zombies_mode_name" package="packages/contact_the_butcher"/>
+	<instance id="zm_kino_gameplay_controller">
+		<add file="levels/zm_kino_gameplay_controller/add.xml"/>
+		<include directory="levels/zm_kino_gameplay_controller">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
+	<narrative briefing_event="" contact="zombies_mode" icon="guis/zm_kino_icon" id="zm_kino">
+		<chain>
+			<table level_id="zm_kinolvl" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="nothing"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank2"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value=""/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="6000"/>
+			<value_node value="12000"/>
+			<value_node value="30000"/>
+			<value_node value="50000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+		</payout>
+	</narrative>
+</table>

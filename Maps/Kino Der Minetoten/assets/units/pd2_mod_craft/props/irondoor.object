@@ -1,0 +1,20 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_craft/material_masterkino" orientation_object="rp_root" />
+	<sequence_manager file="units/pd2_mod_craft/props/irondoor" />
+	
+	<bodies>
+		<body name="door_closed" enabled="true" template="static">
+			<object collision_type="mesh_mopp" name="door_closed" />
+		</body>
+		<body name="door_open" enabled="true" template="static">
+			<object collision_type="mesh_mopp" name="door_open" />
+		</body>
+	</bodies>
+	
+	<graphics>
+		<graphic_group name="g_all" enabled="true">
+			<object	name="door_open"			enabled="true" shadow_caster="true"/>
+			<object	name="door_closed"			enabled="true" shadow_caster="true"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

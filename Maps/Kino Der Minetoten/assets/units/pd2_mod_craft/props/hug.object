@@ -1,0 +1,9 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_craft/material_masterkino" orientation_object="rp_root" />
+	
+	<graphics>
+		<graphic_group name="g_all" enabled="true">
+			<object	name="Plane"			enabled="true" shadow_caster="false"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>
