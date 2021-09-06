@@ -66,8 +66,27 @@
 		<unit path="units/dev_tools/editable_text_short/editable_text_short" unload="true"/>
 	</add>
 	<add from_db="true" path="units/payday2/architecture/mkp/mkp_ext_wall_8m_a" type="unit">
-		<unit path="units/payday2/architecture/mkp/mkp_ext_wall_8m_a" unload="true"/>
-		<object path="units/payday2/architecture/mkp/mkp_ext_wall_8m_a" unload="true"/>
 		<material_config path="units/payday2/architecture/mkp/mkp" unload="true"/>
+		<object path="units/payday2/architecture/mkp/mkp_ext_wall_8m_a" unload="true"/>
+		<unit path="units/payday2/architecture/mkp/mkp_ext_wall_8m_a" unload="true"/>
 	</add>
+	<add from_db="true" path="movies/the_end" type="movie"/>
+	<add from_db="true" path="movies/raid_anim_bg" type="movie"/>
+	<add from_db="true" path="movies/cn_branchbank2" type="movie"/>
+	<add from_db="true" path="movies/cn_bigoil2" type="movie"/>
+	<add from_db="true" path="movies/alesso_payday" type="movie"/>
+	<add from_db="true" path="movies/cn_bigoil1" type="movie"/>
+	<add from_db="true" path="movies/intro_trailer" type="movie"/>
+	<add from_db="true" path="movies/contact_the_butcher1" type="movie"/>
+	<add from_db="true" path="movies/join_community" type="movie"/>
+	<add from_db="true" path="movies/menu" type="movie"/>
+	<add from_db="true" path="movies/tutorials/gage_assignment" type="movie"/>
+	<add from_db="true" path="movies/cn_big3" type="movie"/>
+	<add from_db="true" path="units/pd2_dlc2/props/gen_prop_security_console/gen_prop_security_button" type="unit">
+		<unit path="units/pd2_dlc2/props/gen_prop_security_console/gen_prop_security_button" unload="true"/>
+		<object path="units/pd2_dlc2/props/gen_prop_security_console/gen_prop_security_button" unload="true"/>
+		<material_config path="units/pd2_dlc2/props/gen_prop_security_console/gen_prop_security_button" unload="true"/>
+		<sequence_manager path="units/pd2_dlc2/props/gen_prop_security_console/gen_prop_security_button" unload="true"/>
+	</add>
+	<movie path="movies/ascension"/>
 </table>

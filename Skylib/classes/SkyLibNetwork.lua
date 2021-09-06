@@ -117,6 +117,20 @@ function SkyLib.Network:_init_codz_network()
             end
         end
 
+        if id == "ZMSendEffect" then
+            local decode = LuaNetworking:StringToTable(data)
+            PrintTable(decode)
+            --networking does not like numbers. i complain
+            local pos = Vector3(tonumber(decode.x), tonumber(decode.y), tonumber(decode.z))
+            --networking doesn't like long string, i complain.
+            if decode.effect == "1" then
+                decode.effect = "effects/particles/explosions/electric_grenade"
+            else
+                decode.effect = "effects/particles/explosions/explosion_grenade_launcher"
+            end
+            SkyLib.CODZ.PerkManager:do_effect(pos, decode.range, decode.effect, decode.sound_event)
+        end
+
         if id == "ZMWallBuyData" then
             local decode = LuaNetworking:StringToTable(data)
             ZMWallbuyBase:sync_spawn(decode)

@@ -27,9 +27,17 @@ function SkyLib.CODZ.PerkManager:do_flopper_explosion()
         damage = damage,
         no_raycast_check_characters = false
     })
-    --i'd like to use the sync_explosion_to_client, but clients cannot sync back to host so it creates a bad situation :(
-    --managers.network:session():send_to_peers_synched("sync_explosion_to_client", player_unit, pos, rot:z(), damage, range, 5)
     managers.network:session():send_to_peers_synched("element_explode_on_client", pos, rot:z(), damage, range, 5)
+
+    local data = {
+        range = tostring(range),
+        x = tostring(pos.x),
+        y = tostring(pos.y),
+        z = tostring(pos.z),
+        effect_index = "0",
+        sound_event = "trip_mine_explode"
+    }
+    SkyLib.Network:_send("ZMSendEffect", data)
 end
 
 function SkyLib.CODZ.PerkManager:do_cherry_tase()
@@ -58,15 +66,27 @@ function SkyLib.CODZ.PerkManager:do_cherry_tase()
 		alert_radius = 0,
 		user = player_unit,
 	})
+    local data = {
+        range = tostring(range),
+        x = tostring(pos.x),
+        y = tostring(pos.y),
+        z = tostring(pos.z),
+        effect_index = "1",
+        sound_event = "tasered_shock"
+    }
+    SkyLib.Network:_send("ZMSendEffect", data)
+end
+
+function SkyLib.CODZ.PerkManager:do_effect(pos, range, effect, sound_event)
+    local normal = math.UP
+
+    managers.explosion:play_sound_and_effects(pos, normal, range, {effect = effect, sound_event = sound_event})
 end
 
 SkyHook:Post(PlayerStandard, "_start_action_reload", function (self, t)
     local weapon = self._equipped_unit:base()
-    log("hewoo")
 	if weapon and weapon:can_reload() then
-        log("hewo2")
 	    if managers.player:has_special_equipment("perk_cherry") then
-            log("hewo3")
 		    SkyLib.CODZ.PerkManager:do_cherry_tase()
 	    end
     end
