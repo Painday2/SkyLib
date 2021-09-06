@@ -98,6 +98,19 @@ end
 
 function ZMWallbuyBase:spawn_weapon()
     self._weapon_id = self._unit:unit_data().weapon_id or "amcar"
+    --if nades, then spawn nade unit
+    if self._weapon_id == "nades" then
+        local unit_name = "units/pd2_dlc_drm/weapons/smoke_grenade_tear_gas/smoke_grenade_tear_gas"
+        if not managers.dyn_resource:is_resource_ready(Idstring("unit"), unit_name, managers.dyn_resource.DYN_RESOURCES_PACKAGE) then
+            managers.dyn_resource:load(Idstring("unit"), Idstring(unit_name), DynamicResourceManager.DYN_RESOURCES_PACKAGE, false)
+        end
+        --spawn and position unit
+        self._nade_unit = World:spawn_unit(Idstring(unit_name), self._unit:position(), self._unit:rotation())
+        self._unit:link(Idstring("sp_weapon"), self._nade_unit, self._nade_unit:orientation_object():name())
+        self._nade_unit:set_rotation(self._nade_unit:rotation() * Rotation(40, 0, 90))
+        return
+    end
+
     local factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(self._weapon_id) or managers.weapon_factory:get_factory_id_by_weapon_id("amcar")
     local blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
     local cosmetics =  {id = "nil", quality = 1, bonus = 0}
@@ -109,7 +122,7 @@ function ZMWallbuyBase:spawn_weapon()
 
     self._weapon_unit = World:spawn_unit(Idstring(unit_name), self._unit:position(), Rotation())
     self._parts = managers.weapon_factory:assemble_from_blueprint(factory_id, self._weapon_unit, blueprint, true, true, callback(self, self, "_assemble_completed"))
-    
+
     --if akimbo, spawn a second weapon
     if self._weapon_unit:base().AKIMBO and not self._second_unit then
 		self._second_unit = World:spawn_unit(Idstring(unit_name), self._weapon_unit:position(), self._weapon_unit:rotation())
@@ -140,6 +153,11 @@ function ZMWallbuyBase:despawn_weapon()
 		self._second_unit:base():set_slot(self._second_unit, 0)
         World:delete_unit(self._second_unit)
         self._second_unit = nil
+	end
+    if alive(self._nade_unit) then
+		self._nade_unit:set_slot(self._nade_unit, 0)
+        World:delete_unit(self._nade_unit)
+        self._nade_unit = nil
 	end
 end
 
@@ -217,20 +235,20 @@ function ZMWallbuyInteractionExt:interact(player)
 			self._unit:unit_data().cost = self._tweak_data.points_cost or 0
 		end
 
-		local amount_to_deduct = 0 - self._unit:unit_data().cost 
+		local amount_to_deduct = 0 - self._unit:unit_data().cost
 
-		if self._tweak_data.wallbuy and not self._tweak_data.grenade_spot then
+		if self._tweak_data.wallbuy and not self._unit:base()._weapon_id == "nades" then
 			local weapon_id = self._unit:base()._weapon_id or "amcar"
 			local current_state = managers.player:get_current_state()
 			if current_state then
 				local current_weapon = current_state:get_equipped_weapon()
-				
+
 				if current_weapon.name_id == weapon_id then
 					amount_to_deduct = math.round(amount_to_deduct / 2, 50)
 				end
 			end
 		end
-		
+
 		local peer_id = 1
 
 		if managers and managers.network then
@@ -241,7 +259,14 @@ function ZMWallbuyInteractionExt:interact(player)
 		if peer_id == SkyLib.Network:_my_peer_id() then
 			SkyLib.CODZ:_money_change(amount_to_deduct, peer_id)
 		end
-        
+
+        if self._unit:base()._weapon_id == "nades" then
+            if player == managers.player:player_unit() then
+                managers.player:add_grenade_amount(10, true)
+            end
+            return
+        end
+
         self._unit:base():interacted(player)
 	end
 
@@ -270,15 +295,17 @@ function ZMWallbuyInteractionExt:selected(player, locator, hand_id)
 		text = "Hold " .. managers.localization:btn_macro("interact") .. " to buy"
 
 		if self._tweak_data.wallbuy then
-			if self._tweak_data.grenade_spot then
+            local weapon_id = self._unit:base()._weapon_id or "amcar"
+            local nade_spot = weapon_id == "nades" and true or false
+			if nade_spot then
 				text = "Hold " .. managers.localization:btn_macro("interact") .. " to refill your throwables"
 			end
-            
-			local weapon_id = self._unit:base()._weapon_id or "amcar"
-			local item = self._tweak_data.weapon or managers.localization:text(tostring(tweak_data.weapon[weapon_id].name_id))
+
+			local item
 			local own_weapon = false
 
-			if not self._tweak_data.grenade_spot then
+			if not nade_spot then
+                item = managers.localization:text(tostring(tweak_data.weapon[weapon_id].name_id))
 				local current_state = managers.player:get_current_state()
 				if current_state then
 					local current_weapon = current_state:get_equipped_weapon()
@@ -292,19 +319,19 @@ function ZMWallbuyInteractionExt:selected(player, locator, hand_id)
 			end
 
 			if current_money >= cost then
-				if not self._tweak_data.grenade_spot then text = text .. " the " .. item end
+				if not nade_spot then text = text .. " the " .. item end
 				text = text .. " [Cost : " .. cost .. "]"
 			else
 				local points_needed = cost - current_money
-				
-				if not self._tweak_data.grenade_spot then 
-					text = "You need " .. points_needed .. " more points to buy the " .. item 
+
+				if not nade_spot then
+					text = "You need " .. points_needed .. " more points to buy the " .. item
 				else
-					text = "You need " .. points_needed .. " more points to refill your throwables" 
+					text = "You need " .. points_needed .. " more points to refill your throwables"
 				end
 
 				if own_weapon then
-					if not self._tweak_data.grenade_spot then text = "You need " .. points_needed .. " more points to refill the ammo of the " .. item end
+					if not nade_spot then text = "You need " .. points_needed .. " more points to refill the ammo of the " .. item end
 				end
 			end
 		end

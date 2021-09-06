@@ -1,8 +1,7 @@
 EditWallBuy = EditWallBuy or class(EditUnit)
 
 local Utils = SkyLib.Utils
---local amounts = {"0", "500", "1000", "1500", "2000", "2500", "3000", "3500", "4500", "5000"}
-local amounts = {0, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4500, 5000}
+local amounts = {0, 250, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3250, 3500, 3750, 4000, 4250, 4500, 4750, 5000}
 --idk what this does tbh.
 function EditWallBuy:editable(unit)
     local weapons = table.contains(ZMWallbuyBase.prop_list, unit:unit_data().name)
@@ -29,6 +28,7 @@ end
 function EditWallBuy:set_menu_unit(unit)
     local weaponid = self._menu:GetItem("WeaponId")
     local weaponids = SkyLib.CODZ.WeaponHelper:map_weapon_ids()
+    table.insert(weaponids, "nades")
     local selectedItem = Utils:index_from_value(weaponids, unit:unit_data().weapon_id) or 1
 
     weaponid:SetVisible(weaponids and table.contains(ZMWallbuyBase.prop_list, unit:unit_data().name))
