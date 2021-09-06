@@ -4,9 +4,22 @@ local Utils = SkyLib.Utils
 
 function SkyLib.CODZ.PerkManager:init()
     SkyLib:log("[CODZ.PerkManager] Initd")
+    self.flopper_cooldown = 1
+    self.cherry_cooldown = 1
+end
+
+function SkyLib.CODZ.PerkManager:update(t, dt)
+    self.flopper_cooldown = self.flopper_cooldown - dt
+    self.cherry_cooldown = self.cherry_cooldown - dt
 end
 
 function SkyLib.CODZ.PerkManager:do_flopper_explosion()
+    if self.flopper_cooldown > 0 then
+        return
+    end
+
+    self.flopper_cooldown = 30
+
     local player_unit = managers.player:player_unit()
 
 	if not alive(player_unit) then
@@ -41,31 +54,38 @@ function SkyLib.CODZ.PerkManager:do_flopper_explosion()
 end
 
 function SkyLib.CODZ.PerkManager:do_cherry_tase()
+    --If cooldown isn't done, don't execute
+    if self.cherry_cooldown > 0 then
+        return
+    end
+    --Set player's cooldown on using the tase effect
+    self.cherry_cooldown = 30
+
     local player_unit = managers.player:player_unit()
 
-	if not alive(player_unit) then
-		return
-	end
+    if not alive(player_unit) then
+        return
+    end
 
-	local pos = player_unit:position()
-	local normal = math.UP
-	local range = 500
+    local pos = player_unit:position()
+    local normal = math.UP
+    local range = 500
 
 
-	managers.explosion:play_sound_and_effects(pos, normal, range, {effect = "effects/particles/explosions/electric_grenade", sound_event = "tasered_shock"})
+    managers.explosion:play_sound_and_effects(pos, normal, range, {effect = "effects/particles/explosions/electric_grenade", sound_event = "tasered_shock"})
 
-	managers.explosion:detect_and_tase({
-		player_damage = 0,
-		tase_strength = "heavy",
-		hit_pos = pos,
-		range = range,
-		collision_slotmask = managers.slot:get_mask("explosion_targets"),
-		curve_pow = 5,
-		damage = 2500,
-		ignore_unit = player_unit,
-		alert_radius = 0,
-		user = player_unit,
-	})
+    managers.explosion:detect_and_tase({
+        player_damage = 0,
+        tase_strength = "heavy",
+        hit_pos = pos,
+        range = range,
+        collision_slotmask = managers.slot:get_mask("explosion_targets"),
+        curve_pow = 5,
+        damage = 2500,
+        ignore_unit = player_unit,
+        alert_radius = 0,
+        user = player_unit,
+    })
     local data = {
         range = tostring(range),
         x = tostring(pos.x),
@@ -90,4 +110,8 @@ SkyHook:Post(PlayerStandard, "_start_action_reload", function (self, t)
 		    SkyLib.CODZ.PerkManager:do_cherry_tase()
 	    end
     end
+end)
+
+SkyHook:Post(PlayerManager, "update", function(self, t, dt)
+    SkyLib.CODZ.PerkManager:update(t, dt)
 end)
