@@ -36,7 +36,7 @@ function CopDamage:zm_instakill_check(attack_data)
         local peer_id = SkyLib.Network:_my_peer_id()
         local hit_points = SkyLib.CODZ:_is_event_active("double_points") and SkyLib.CODZ._economy.on_hit * 2 or SkyLib.CODZ._economy.on_hit
 
-        SkyLib.CODZ:_add_money_to(hit_points, peer_id)
+        SkyLib.CODZ:_money_change(hit_points, peer_id)
     end
 end
 --All of the below prehooks are for instakill checks

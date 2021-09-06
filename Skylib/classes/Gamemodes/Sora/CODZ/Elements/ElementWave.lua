@@ -94,7 +94,7 @@ function ElementWaveOperator:on_executed(instigator)
     if not self._values.enabled then
 		return
     end
-    
+
     for _, id in ipairs(self._values.elements) do
 		local element = self:get_mission_element(id)
 

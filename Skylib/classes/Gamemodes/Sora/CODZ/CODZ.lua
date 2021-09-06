@@ -87,7 +87,7 @@ function SkyLib.CODZ:init(custom_rules)
             firesale = false,
             zombie_blood = false
         },
-        power_up_chance = 99,
+        power_up_chance = 5,
         power_up_table = {
             "zm_pwrup_max_ammo",
             "zm_pwrup_double_points",
@@ -205,6 +205,8 @@ function SkyLib.CODZ:_init_hooks()
         "SpawnEnemyDummy",
         "SpawnSafeEnemyDummy",
         "Wave",
+        "WaveTrigger",
+        "WaveOperator",
         "WeaponSwitch"
     }
 
