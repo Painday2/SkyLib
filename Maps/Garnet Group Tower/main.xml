@@ -1,23 +1,9 @@
 <table global_key="zm_dah" name="Garnet Group Tower">
-	<level ai_group_type="America" briefing_dialog="" id="zm_dah_elevator" intro_event="" max_bags="54" orig_id="zm_dah_elevator" team_ai_off="true">
-		<add file="levels/zm_dah_elevator/add.xml"/>
-		<include directory="levels/zm_dah_elevator">
-			<file file="world.world" type="binary"/>
-			<file file="continents.continents" type="binary"/>
-			<file file="mission.mission" type="binary"/>
-			<file file="nav_manager_data.nav_data" type="binary"/>
-			<file file="world_sounds.world_sounds" type="binary"/>
-			<file file="world_cameras.world_cameras" type="binary"/>
-			<file file="editor_only/editor_only.continent" type="binary"/>
-			<file file="editor_only/editor_only.mission" type="binary"/>
-			<file file="world/world.continent" type="binary"/>
-			<file file="world/world.mission" type="binary"/>
-			<file file="cover_data.cover_data" type="binary"/>
-			<file file="environments/default.environment" type="custom_xml"/>
-		</include>
+	<level ai_group_type="America" briefing_dialog="" id="zm_gameplay_controller" intro_event="" max_bags="54" orig_id="zm_gameplay_controller" team_ai_off="true">
+		<add file="levels/zm_gameplay_controller/add.xml"/>
 		<hooks directory="hooks">
-            <hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
-        </hooks>
+			<hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
+		</hooks>
 		<packages>
 			<value_node value="packages/narr_hvh"/>
 			<value_node value="levels/narratives/bain/hvh/world_sounds"/>
@@ -36,25 +22,12 @@
 			<asset name="perk_mechanics2"/>
 		</assets>
 		<hooks directory="hooks">
-            <hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
-        </hooks>
-		<include directory="levels/zm_dah">
-			<file file="world.world" type="binary"/>
-			<file file="continents.continents" type="binary"/>
-			<file file="mission.mission" type="binary"/>
-			<file file="nav_manager_data.nav_data" type="binary"/>
-			<file file="world_sounds.world_sounds" type="binary"/>
-			<file file="world_cameras.world_cameras" type="binary"/>
-			<file file="world/world.continent" type="binary"/>
-			<file file="world/world.mission" type="binary"/>
-			<file file="bdrop/bdrop.continent" type="binary"/>
-			<file file="bdrop/bdrop.mission" type="binary"/>
-			<file file="editor_only/editor_only.continent" type="binary"/>
-			<file file="editor_only/editor_only.mission" type="binary"/>
-			<file file="cover_data.cover_data" type="binary"/>
-			<file file="environments/dah_special.environment" type="custom_xml"/>
-			<file file="environments/default.environment" type="custom_xml"/>
-		</include>
+			<hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
+			<hook file="playerparachuting.lua" source_file="lib/units/beings/player/states/playerparachuting"/>
+			<hook file="playerfreefall.lua" source_file="lib/units/beings/player/states/playerfreefall"/>
+			<hook file="ingameparachute.lua" source_file="lib/states/ingameparachuting"/>
+			<hook file="HuskPlayerMovement.lua" source_file="lib/units/beings/player/huskplayermovement"/>
+		</hooks>
 		<packages>
 			<value_node value="packages/narr_hvh"/>
 			<value_node value="levels/narratives/bain/hvh/world_sounds"/>
@@ -94,18 +67,19 @@
 		</packages>
 		<script_data_mods/>
 	</instance>
+	<AddFiles directory="assets">
+		<texture path="units/pd2_mod_zombies/guis/crimenet/map_icon_zm_dah"/>
+		<texture path="units/pd2_mod_zombies/guis/crimenet/zm_ee_done"/>
+	</AddFiles>
 	<AssetUpdates id="29593" provider="modworkshop" use_local_dir="true" version="1.3"/>
 	<Localization default="english.txt" directory="loc">
 		<loc file="english.txt" language="english"/>
 	</Localization>
-	<addfiles directory="assets">
-		<texture path="units/pd2_mod_zombies/guis/crimenet/map_icon_zm_dah"/>
-		<texture path="units/pd2_mod_zombies/guis/crimenet/zm_ee_done"/>
-	</addfiles>
 	<contact assets_gui="guis/dlcs/the_bomb/guis/preload_contact_the_butcher" hidden="false" id="zombies_mode" name_id="zombies_mode_name" package="packages/contact_the_butcher"/>
 	<narrative contact="zombies_mode" icon="units/pd2_mod_zombies/guis/crimenet/map_icon_zm_dah" id="zm_instances" quest_zm_002="true" quest_zm_002_icon="units/pd2_mod_zombies/guis/crimenet/zm_ee_done">
 		<chain>
 			<table level_id="zm_dah" type="d" type_id="heist_type_assault"/>
+			<table level_id="zm_gameplay_controller" type="d" type_id="heist_type_assault"/>
 		</chain>
 		<contract_cost>
 			<value_node value="0"/>
