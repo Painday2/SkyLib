@@ -236,16 +236,16 @@
 			</unit_data>
 		</table>
 		<table>
-			<unit_data _prev_pos="-971.302 -832.568 150" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="visibility_show" name="units/pd2_mod_zombies/equipment/perk_machines/zm_perk_machine_juggernog/zm_perk_machine_juggernog" name_id="zm_perk_machine_juggernog_001" position="-971.302 -832.568 150" rotation="0 0 1 4.37114e-008" unit_id="100083"/>
+			<unit_data _prev_pos="-971.302 -832.568 150" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="visibility_show" name="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_juggernog/zm_perk_machine_juggernog" name_id="zm_perk_machine_juggernog_001" position="-971.302 -832.568 150" rotation="0 0 1 4.37114e-008" unit_id="100083"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="3020 545.696 450" _prev_rot="0 0 1 4.37114e-008" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="" name="units/pd2_mod_zombies/equipment/perk_machines/zm_perk_machine_speedcola/zm_perk_machine_speedcola" name_id="zm_perk_machine_speedcola_001" position="3070 545.696 450" rotation="0 0 1 4.37114e-008" unit_id="100084"/>
+			<unit_data _prev_pos="3020 545.696 450" _prev_rot="0 0 1 4.37114e-008" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="" name="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_speedcola/zm_perk_machine_speedcola" name_id="zm_perk_machine_speedcola_001" position="3070 545.696 450" rotation="0 0 1 4.37114e-008" unit_id="100084"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="1254.23 -3735.75 350" _prev_rot="0 0 0.707107 -0.707107" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/pd2_mod_zombies/equipment/perk_machines/zm_perk_machine_quickrevive/zm_perk_machine_quickrevive" name_id="zm_perk_machine_quickrevive_001" position="1274.23 -3735.75 350" rotation="0 0 0.707107 -0.707107" unit_id="100085"/>
+			<unit_data _prev_pos="1254.23 -3735.75 350" _prev_rot="0 0 0.707107 -0.707107" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_quickrevive/zm_perk_machine_quickrevive" name_id="zm_perk_machine_quickrevive_001" position="1274.23 -3735.75 350" rotation="0 0 0.707107 -0.707107" unit_id="100085"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="-4024.92 -389.718 150" _prev_rot="0 0 0.707107 -0.707107" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="" name="units/pd2_mod_zombies/equipment/perk_machines/zm_perk_machine_doubletap/zm_perk_machine_doubletap" name_id="zm_perk_machine_doubletap_001" position="-4050 -380 150" rotation="0 0 -0.707107 -0.707107" unit_id="100086"/>
+			<unit_data _prev_pos="-4024.92 -389.718 150" _prev_rot="0 0 0.707107 -0.707107" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="" name="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_doubletap/zm_perk_machine_doubletap" name_id="zm_perk_machine_doubletap_001" position="-4050 -380 150" rotation="0 0 -0.707107 -0.707107" unit_id="100086"/>
 		</table>
 		<table>
 			<unit_data _prev_pos="-3790.55 2065 270" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="set_cost_1250" name="units/pd2_mod_zombies/props/zm_buy_marker/zm_buy_marker_double" name_id="zm_buy_fence" position="-3790.55 2065 270" rotation="-0 0 -0 -1" unit_id="100087"/>

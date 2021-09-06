@@ -454,7 +454,7 @@
 			<unit_data _prev_pos="1350 1100 825" _prev_rot="0 0 0 -1" continent="world" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/world/props/apartment/vent_tunnel/vent_tunnel_straight_x3" name_id="vent_tunnel_straight_x3_002" position="1350 1100 830" rotation="-0 0 -0 -1" unit_id="100178"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="0 775 125" _prev_rot="0 0 0 -1" continent="world" cost="500" disable_on_ai_graph="false" cost="500" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalMosin" position="0 775 125" rotation="-0 0 -0 -1" unit_id="100184" weapon_id="mosin"/>
+			<unit_data _prev_pos="0 775 125" _prev_rot="0 0 0 -1" continent="world" cost="500" disable_on_ai_graph="false" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalMosin" position="0 775 125" rotation="-0 0 -0 -1" unit_id="100184" weapon_id="mosin"/>
 		</table>
 		<table>
 			<unit_data _prev_pos="2000 1000 0" _prev_rot="0 0 1 4.37114e-008" continent="world" disable_on_ai_graph="true" local_pos="0 0 0" local_rot="0 0 -0.707107 0.707107" mesh_variation="anim_close_door" name="units/pd2_mod_zombies/equipment/zom_security_door/zom_security_door" name_id="zom_security_door_001" position="2000 1200 0" rotation="0 0 1 4.37114e-008" unit_id="100185"/>
@@ -533,7 +533,7 @@
 			<unit_data _prev_pos="2400 1200 400" _prev_rot="0 0 1 4.37114e-008" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/pd2_mod_zombies/architecture/zom_dah_tiles/wall/zom_dah_wall_4m" name_id="zom_dah_wall_4m_029" position="2400 1225 400" rotation="0 0 1 4.37114e-008" unit_id="100335"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="825 2225 525" _prev_rot="0 0 0 -1" continent="world"  cost="1250" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalTec9" position="825 2225 525" rotation="-0 0 -0 -1" unit_id="100337" weapon_id="tec9"/>
+			<unit_data _prev_pos="825 2225 525" _prev_rot="0 0 0 -1" continent="world" cost="1250" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalTec9" position="825 2225 525" rotation="-0 0 -0 -1" unit_id="100337" weapon_id="tec9"/>
 		</table>
 		<table>
 			<unit_data _prev_pos="1125 3575 3975" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/editable_text_long/editable_text_long" name_id="editable_text_long_002" position="1125 3575 4000" rotation="0 0 0 -1" unit_id="100339">
@@ -1566,31 +1566,31 @@
 			<unit_data _prev_pos="1605.1 730.1 399.9" _prev_rot="0 0 0.707107 -0.707107" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/pd2_mod_zombies/architecture/zom_dah_tiles/wall/zom_dah_rail_2m" name_id="zom_dah_rail_2m_004" position="1600.1 730.1 399.9" rotation="0 0 0.707107 -0.707107" unit_id="100614"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="2000 1600 125" _prev_rot="0 0 0 -1" continent="world" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decal57" position="2000 1600 125" rotation="-0 0 -0 -1" unit_id="100615"  cost="850" weapon_id="lemming"/>
+			<unit_data _prev_pos="2000 1600 125" _prev_rot="0 0 0 -1" continent="world" cost="850" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decal57" position="2000 1600 125" rotation="-0 0 -0 -1" unit_id="100615" weapon_id="lemming"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="5200 2075 125" _prev_rot="0 0 1 -4.37114e-008" continent="world" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalM37" position="5200 2075 125" rotation="0 0 1 4.37114e-008" unit_id="100616"  cost="1350" weapon_id="m37"/>
+			<unit_data _prev_pos="5200 2075 125" _prev_rot="0 0 1 -4.37114e-008" continent="world" cost="1350" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalM37" position="5200 2075 125" rotation="0 0 1 4.37114e-008" unit_id="100616" weapon_id="m37"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="4825 925 125" _prev_rot="0 0 1 -4.37114e-008" continent="world" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalMP40" position="4825 925 125" rotation="0 0 1 4.37114e-008" unit_id="100617" cost="1350" weapon_id="erma"/>
+			<unit_data _prev_pos="4825 925 125" _prev_rot="0 0 1 -4.37114e-008" continent="world" cost="1350" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalMP40" position="4825 925 125" rotation="0 0 1 4.37114e-008" unit_id="100617" weapon_id="erma"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="6425 1225 525" _prev_rot="0 0 1 -4.37114e-008" continent="world" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalAK47" position="6425 1225 525" rotation="0 0 1 4.37114e-008" unit_id="100618" cost="1800" weapon_id="ak74"/>
+			<unit_data _prev_pos="6425 1225 525" _prev_rot="0 0 1 -4.37114e-008" continent="world" cost="1800" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalAK47" position="6425 1225 525" rotation="0 0 1 4.37114e-008" unit_id="100618" weapon_id="ak74"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="2000 1600 525" _prev_rot="0 0 0 -1" continent="world" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalJackal" position="2000 1600 525" rotation="-0 0 -0 -1" unit_id="100619" cost="1400" weapon_id="schakal"/>
+			<unit_data _prev_pos="2000 1600 525" _prev_rot="0 0 0 -1" continent="world" cost="1400" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalJackal" position="2000 1600 525" rotation="-0 0 -0 -1" unit_id="100619" weapon_id="schakal"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="2425 783 525" _prev_rot="0 0 0 -1" continent="world" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalM14" position="2425 783 525" rotation="-0 0 -0 -1" unit_id="100620" cost="1350" weapon_id="new_m14"/>
+			<unit_data _prev_pos="2425 783 525" _prev_rot="0 0 0 -1" continent="world" cost="1350" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalM14" position="2425 783 525" rotation="-0 0 -0 -1" unit_id="100620" weapon_id="new_m14"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="394 2400 525" _prev_rot="0 0 0.707107 -0.707107" continent="world" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalGarand" position="394 2400 525" rotation="0 0 0.707107 -0.707107" unit_id="100621" cost="1350" weapon_id="ching"/>
+			<unit_data _prev_pos="394 2400 525" _prev_rot="0 0 0.707107 -0.707107" continent="world" cost="1350" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalGarand" position="394 2400 525" rotation="0 0 0.707107 -0.707107" unit_id="100621" weapon_id="ching"/>
 		</table>
 		<table>
 			<unit_data _prev_pos="5800 2025 125" _prev_rot="0 0 0 -1" continent="world" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalNades" position="5800 2025 125" rotation="0 0 -0.707107 -0.707107" unit_id="100622" weapon_id="nades"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="5224 600 525" _prev_rot="0 0 1 4.37114e-008" continent="world" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalFal" position="5218 600 525" rotation="0 0 1 4.37114e-008" unit_id="100623" cost="1600" weapon_id="fal"/>
+			<unit_data _prev_pos="5224 600 525" _prev_rot="0 0 1 4.37114e-008" continent="world" cost="1600" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalFal" position="5218 600 525" rotation="0 0 1 4.37114e-008" unit_id="100623" weapon_id="fal"/>
 		</table>
 		<table>
 			<unit_data _prev_pos="2425 2400 0" _prev_rot="0 0 0 -1" continent="world" local_pos="400 400 0" local_rot="0 0 0 1" name="units/pd2_mod_zombies/architecture/zom_dah_tiles/floor/zom_dah_floor_parquet_4x4m" name_id="zom_dah_floor_parquet_4x4m_036" position="2400 2400 0" rotation="0 0 0 -1" unit_id="100509"/>
@@ -3172,7 +3172,7 @@
 			<unit_data _prev_pos="3300 2100 315" _prev_rot="0 0 -0.382683 -0.92388" continent="world" local_pos="0 275 40" local_rot="0 0 0.382683 0.92388" mesh_variation="state_unlit" name="units/pd2_dlc_chill/props/chl_prop_kitchen_lamp_ceiling/chl_prop_kitchen_lamp_ceiling" name_id="chl_prop_kitchen_lamp_ceiling_021" position="3300 2100 315" rotation="0 0 -0.382683 -0.92388" unit_id="100983"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="5625 2800 525" _prev_rot="0 0 0.707107 -0.707107" continent="world" cost="0" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalNades001" position="5625 2800 525" rotation="0 0 0.707107 -0.707107" unit_id="100984" weapon_id=""/>
+			<unit_data _prev_pos="5625 2800 525" _prev_rot="0 0 0.707107 -0.707107" continent="world" cost="0" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="startup" name="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" name_id="decalNades001" position="5625 2800 525" rotation="0 0 0.707107 -0.707107" unit_id="100984" weapon_id="nades"/>
 		</table>
 		<table>
 			<unit_data _prev_pos="2775 1375 275" _prev_rot="0 0 0 -1" continent="world" local_pos="0 275 0" local_rot="0 0 0 1" name="core/units/light_omni/light_omni" name_id="light_omni_061" only_visible_in_editor="true" position="2575 1375 275" rotation="0 0 0 -1" unit_id="100985">
