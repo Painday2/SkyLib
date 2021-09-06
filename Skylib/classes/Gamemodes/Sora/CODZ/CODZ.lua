@@ -115,7 +115,8 @@ function SkyLib.CODZ:init(custom_rules)
         "perk_cherry",
         "perk_vulture",
         "perk_widows",
-        "perk_armor"
+        "perk_armor",
+        "perk_tombstone"
     }
 
 

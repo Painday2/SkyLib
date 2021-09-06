@@ -1,11 +1,12 @@
 SkyHook:Post(EquipmentsTweakData, "init", function(self)
 	--these will always be there but gamemode loading is too late for it to work and a reinit doesn't help.
 	--i could probably find a way, but i'm lazy and this isn't too bad so...
-    local perks = {"perk_juggernog", "perk_speedcola", "perk_doubletap", "perk_deadshot", "perk_staminup", "perk_flopper","perk_cherry","perk_vulture","perk_widows","perk_armor", "perk_god"}
+    local perks = {"perk_juggernog", "perk_speedcola", "perk_doubletap", "perk_deadshot", "perk_staminup", "perk_flopper","perk_cherry","perk_vulture","perk_widows","perk_armor", "perk_god", "perk_tombstone"}
 	for i, v in ipairs(perks) do
 		self.specials[v] = {
 			sync_possession = true,
 			transfer_quantity = 0,
+			avoid_tranfer = true,
 			icon = v,
 			text_id = "hud_" .. v
 		}

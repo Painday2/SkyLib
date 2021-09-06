@@ -67,10 +67,19 @@ function SkyLib.CODZ.PerkManager:do_cherry_tase()
         return
     end
 
+    local current_weapon = managers.player:get_current_state():get_equipped_weapon()
+    local max_clip, ammo_left_in_clip = current_weapon._unit:base():ammo_info()
+    --log(tostring(max_clip), " ", tostring(ammo_left_in_clip))
     local pos = player_unit:position()
     local normal = math.UP
-    local range = 500
+    local range = 100
 
+    --math shit, someone else wants to do smarter math you're welcome to.
+    if ammo_left_in_clip == 0 then
+        range = 750
+    else
+        range = math.clamp(math.floor(max_clip * 2 / ammo_left_in_clip * 75), 100, 500)
+    end
 
     managers.explosion:play_sound_and_effects(pos, normal, range, {effect = "effects/particles/explosions/electric_grenade", sound_event = "tasered_shock"})
 

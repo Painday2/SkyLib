@@ -100,6 +100,16 @@ SkyHook:Post(HudIconsTweakData, "init", function(self)
 		}
 	}
 
+	self.perk_tombstone = {
+		texture = "units/pd2_mod_zombies/guis/perks/perk_sheet",
+		texture_rect = {
+			128,
+			128,
+			128,
+			128
+		}
+	}
+
 	--Junk
 	self.zm_power_on = {
 		texture = "perks/power",
