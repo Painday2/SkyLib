@@ -28,6 +28,9 @@ function ElementWave:on_executed(instigator)
     if self._values.increase_kill then
         SkyLib.CODZ:_increase_wave_kills()
         SkyLib.CODZ:check_contours()
+        local current_zombies_spawned = SkyLib.CODZ._level.zombies.currently_spawned
+        local current_zombies_killed = SkyLib.CODZ._level.zombies.killed
+        log("killed: " .. tostring(current_zombies_killed) .. " Spawned: " .. tostring(current_zombies_spawned))
         return
     end
 
@@ -142,6 +145,7 @@ function ElementWaveTrigger:client_on_executed(...)
 end
 
 function ElementWaveTrigger:on_executed(instigator)
+    log("exec")
     if not self._values.enabled then
 		return
     end
@@ -154,6 +158,7 @@ function ElementWaveTrigger:on_executed(instigator)
     local current_zombies_spawned = codz._level.zombies.currently_spawned
     local current_zombies_killed = codz._level.zombies.killed
     local max_zombies_spawns = is_special_wave and codz._level.zombies.max_special_wave_total_spawns or codz._level.zombies.max_spawns
+    log("Trigger: killed: " .. tostring(current_zombies_killed) .. " Spawned: " .. tostring(current_zombies_spawned))
 
     local is_first = current_zombies_killed == 1 and true or false
     local is_last = current_zombies_killed == max_zombies_spawns and true or false

@@ -173,7 +173,6 @@ function SkyLib.CODZ:_init_hooks()
         --General hooks
         "classes/Gamemodes/Sora/CODZ/Hooks/CopDamage",
         "classes/Gamemodes/Sora/CODZ/Hooks/CoreUnit",
-        "classes/Gamemodes/Sora/CODZ/Hooks/ElementSpawnEnemyDummy",
         "classes/Gamemodes/Sora/CODZ/Hooks/EnemyManager",
         --"classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBesiege",
@@ -275,6 +274,7 @@ function SkyLib.CODZ:start_new_wave(t, was_special_wave, fuck)
         end
         SkyLib.CODZ:_reset_wave_kills()
         SkyLib.CODZ:_respawn_players()
+        log("start new wave")
         self._level.zombies.currently_spawned = 0
         self:_multiply_zombies_by_wave()
     end)
