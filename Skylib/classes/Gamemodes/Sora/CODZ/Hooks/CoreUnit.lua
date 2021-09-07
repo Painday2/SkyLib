@@ -3,19 +3,10 @@ function safe_spawn_unit(unit_name, ...)
     local arg = {...}
     local pos = arg[1]
 
-    local function vector_to_string(vec)
-        local dataString = "x:{1}|y:{2}|z:{3}"
-        dataString = dataString:gsub("{1}", math.round_with_precision(vec.x, 4))
-        dataString = dataString:gsub("{2}", math.round_with_precision(vec.y, 4))
-        dataString = dataString:gsub("{3}", math.round_with_precision(vec.z, 4))
-
-        return dataString
-    end
-
     if SkyLib and SkyLib.CODZ then
         if unit_name == Idstring("units/pd2_dlc_hvh/characters/ene_spook_hvh_1/ene_spook_hvh_1") or unit_name == Idstring("units/pd2_dlc_hvh/characters/ene_bulldozer_hvh_1/ene_bulldozer_hvh_1") or unit_name == Idstring("units/pd2_dlc_hvh/characters/ene_bulldozer_hvh_2/ene_bulldozer_hvh_2") or unit_name == Idstring("units/pd2_dlc_hvh/characters/ene_bulldozer_hvh_3/ene_bulldozer_hvh_3") or unit_name == Idstring("units/pd2_dlc_help/characters/ene_zeal_bulldozer_halloween/ene_zeal_bulldozer_halloween") or unit_name == Idstring("units/pd2_mod_zombies/characters/ene_shadow_cloaker_1/ene_shadow_cloaker_1") then
             if Network:is_server() and not SkyLib.Network:_is_solo() then
-                LuaNetworking:SendToPeers("SpecialWave_SpawnPosition", vector_to_string(pos))
+                LuaNetworking:SendToPeers("SpecialWave_SpawnPosition", math.vector_to_string(pos))
             end
 
             if pos then
@@ -27,7 +18,7 @@ function safe_spawn_unit(unit_name, ...)
 
             if unit_name == Idstring("units/pd2_mod_zombies/characters/ene_shadow_cloaker_1/ene_shadow_cloaker_1") then
                 if Network:is_server() and not SkyLib.Network:_is_solo() then
-                    LuaNetworking:SendToPeers("SpecialWave_PlayShadowSpook", vector_to_string(pos))
+                    LuaNetworking:SendToPeers("SpecialWave_PlayShadowSpook", math.vector_to_string(pos))
                 end
                 SkyLib.Sound:play({
                     name = "zm_ene_shadow_scream_01",

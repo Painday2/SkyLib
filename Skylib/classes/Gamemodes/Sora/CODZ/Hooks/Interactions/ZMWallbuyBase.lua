@@ -99,15 +99,15 @@ end
 function ZMWallbuyBase:spawn_weapon()
     self._weapon_id = self._unit:unit_data().weapon_id or "amcar"
     --if nades, then spawn nade unit
-    if self._weapon_id == "nades" then
+    if Network:is_server() and self._weapon_id == "nades" then
         local unit_name = "units/pd2_dlc_drm/weapons/smoke_grenade_tear_gas/smoke_grenade_tear_gas"
         if not managers.dyn_resource:is_resource_ready(Idstring("unit"), unit_name, managers.dyn_resource.DYN_RESOURCES_PACKAGE) then
             managers.dyn_resource:load(Idstring("unit"), Idstring(unit_name), DynamicResourceManager.DYN_RESOURCES_PACKAGE, false)
         end
         --spawn and position unit
-        self._nade_unit = World:spawn_unit(Idstring(unit_name), self._unit:position(), self._unit:rotation())
-        self._unit:link(Idstring("sp_weapon"), self._nade_unit, self._nade_unit:orientation_object():name())
-        self._nade_unit:set_rotation(self._nade_unit:rotation() * Rotation(40, 0, 90))
+            self._nade_unit = World:spawn_unit(Idstring(unit_name), self._unit:position(), self._unit:rotation())
+            self._unit:link(Idstring("sp_weapon"), self._nade_unit, self._nade_unit:orientation_object():name())
+            self._nade_unit:set_rotation(self._nade_unit:rotation() * Rotation(40, 0, 90))
         return
     end
 
@@ -216,7 +216,7 @@ end)
 SkyHook:Post(CriminalsManager, "add_character", function(self, _, peer_id)
     --ran per player, make sure it only runs once
     self.wallbuy_sync_setup = self.wallbuy_sync_setup or nil
-    if Network:is_server() and not self.wallbuy_sync_setup then
+    if Network:is_server() and not SkyLib.Network:_is_solo() and not self.wallbuy_sync_setup then
         for _, unit in ipairs(ZMWallbuyBase.unit_list) do
             unit:base():sync_data(unit)
             self.wallbuy_sync_setup = true

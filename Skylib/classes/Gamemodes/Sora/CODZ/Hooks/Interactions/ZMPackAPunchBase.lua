@@ -51,11 +51,11 @@ SkyHook:Post(WorldDefinition, "assign_unit_data", function(self, unit, data)
 	end
 end)
 
---Hook to send pap data on spawn, due to unit networking not being setup til around then. 
+--Hook to send pap data on spawn, due to unit networking not being setup til around then.
 SkyHook:Post(CriminalsManager, "add_character", function(self, _, peer_id)
     --ran per player, make sure it only runs once
     self.pap_sync_setup = self.pap_sync_setup or nil
-    if Network:is_server() and not self.pap_sync_setup then
+    if Network:is_server() and not SkyLib.Network:_is_solo() and not self.pap_sync_setup then
         for _, unit in ipairs(ZMPackAPunchBase.unit_list) do
             unit:base():sync_data(unit)
             self.pap_sync_setup = true

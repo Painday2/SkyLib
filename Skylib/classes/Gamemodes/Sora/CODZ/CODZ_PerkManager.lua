@@ -14,10 +14,11 @@ function SkyLib.CODZ.PerkManager:update(t, dt)
 end
 
 function SkyLib.CODZ.PerkManager:do_flopper_explosion()
+    --if cooldown isn't done, don't execute
     if self.flopper_cooldown > 0 then
         return
     end
-
+    --Set player's cooldown on using the flopper effect
     self.flopper_cooldown = 30
 
     local player_unit = managers.player:player_unit()
@@ -30,6 +31,7 @@ function SkyLib.CODZ.PerkManager:do_flopper_explosion()
     local rot = player_unit:rotation()
     local damage = 5000
     local range = 250
+
     managers.explosion:spawn_sound_and_effects(pos, rot:z(), range, "effects/particles/explosions/explosion_grenade_launcher", "trip_mine_explode")
     managers.explosion:detect_and_give_dmg({
         curve_pow = 5,
@@ -41,16 +43,16 @@ function SkyLib.CODZ.PerkManager:do_flopper_explosion()
         no_raycast_check_characters = false
     })
     managers.network:session():send_to_peers_synched("element_explode_on_client", pos, rot:z(), damage, range, 5)
-
-    local data = {
-        range = tostring(range),
-        x = tostring(pos.x),
-        y = tostring(pos.y),
-        z = tostring(pos.z),
-        effect_index = "0",
-        sound_event = "trip_mine_explode"
-    }
-    SkyLib.Network:_send("ZMSendEffect", data)
+    --send effect data for other players to see.
+    if not SkyLib.Network:_is_solo() then
+        local data = {
+            range = tostring(range),
+            pos = math.vector_to_string(pos),
+            effect_index = "0",
+            sound_event = "trip_mine_explode"
+        }
+        SkyLib.Network:_send("ZMSendEffect", data)
+    end
 end
 
 function SkyLib.CODZ.PerkManager:do_cherry_tase()
@@ -89,17 +91,18 @@ function SkyLib.CODZ.PerkManager:do_cherry_tase()
         alert_radius = 0,
         user = player_unit,
     })
-    local data = {
-        range = tostring(range),
-        x = tostring(pos.x),
-        y = tostring(pos.y),
-        z = tostring(pos.z),
-        effect_index = "1",
-        sound_event = "tasered_shock"
-    }
-    SkyLib.Network:_send("ZMSendEffect", data)
+    --send explosion data to other players
+    if not SkyLib.Network:_is_solo() then
+        local data = {
+            range = tostring(range),
+            pos = math.vector_to_string(pos),
+            effect_index = "1",
+            sound_event = "tasered_shock"
+        }
+        SkyLib.Network:_send("ZMSendEffect", data)
+    end
 end
-
+--receieve explosion data and spawn the effect
 function SkyLib.CODZ.PerkManager:do_effect(pos, range, effect, sound_event)
     local normal = math.UP
 
@@ -114,7 +117,7 @@ SkyHook:Post(PlayerStandard, "_start_action_reload", function (self, t)
 	    end
     end
 end)
-
+--idk if this is the intended way to do an update, but it works and 
 SkyHook:Post(PlayerManager, "update", function(self, t, dt)
     SkyLib.CODZ.PerkManager:update(t, dt)
 end)

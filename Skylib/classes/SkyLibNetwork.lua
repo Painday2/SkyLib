@@ -121,7 +121,7 @@ function SkyLib.Network:_init_codz_network()
             local decode = LuaNetworking:StringToTable(data)
             PrintTable(decode)
             --networking does not like numbers. i complain
-            local pos = Vector3(tonumber(decode.x), tonumber(decode.y), tonumber(decode.z))
+            local pos = math.string_to_vector(decode.pos)
             --networking doesn't like long string, i complain.
             if decode.effect == "1" then
                 decode.effect = "effects/particles/explosions/electric_grenade"

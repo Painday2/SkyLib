@@ -54,7 +54,7 @@ end)
 SkyHook:Post(CriminalsManager, "add_character", function(self, _, peer_id)
     --ran per player, make sure it only runs once
     self.path_sync_setup = self.path_sync_setup or nil
-    if Network:is_server() and not self.path_sync_setup then
+    if Network:is_server() and not SkyLib.Network:_is_solo() and not self.path_sync_setup then
         for _, unit in ipairs(ZMPathBase.unit_list) do
             unit:base():sync_data(unit)
             self.path_sync_setup = true
