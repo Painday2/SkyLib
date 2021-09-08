@@ -2,7 +2,7 @@
 	<Localization default="english.txt" directory="loc">
 		<loc file="english.txt" language="english"/>
 	</Localization>
-	<level ai_group_type="Zombie" briefing_dialog="" id="despacito2_theheist" intro_event="" max_bags="54" music="no_music" orig_id="despacito2_theheist" player_style="generic" team_ai_off="true">
+	<level ai_group_type="Zombie" briefing_dialog="" id="despacito2_theheist" intro_event="" max_bags="54" music="no_music" player_style="generic" team_ai_off="true">
 		<add file="levels/despacito2_theheist/add.xml"/>
 		<assets>
 			<asset name="ammo_bag"/>
@@ -28,7 +28,10 @@
 			</mod>
 		</script_data_mods>
 	</level>
-	<narrative contact="custom" id="despacito2_theheist">
+	<AddFiles directory="assets">
+		<texture load="true" path="despacito"/>
+	</AddFiles>
+	<narrative contact="custom" id="despacito2_theheist" icon="despacito">
 		<chain>
 			<table level_id="despacito2_theheist" type="d" type_id="heist_type_assault"/>
 		</chain>
