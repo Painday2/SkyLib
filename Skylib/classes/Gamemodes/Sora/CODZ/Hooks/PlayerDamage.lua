@@ -1,3 +1,4 @@
+--set health to 200% if juggernog is bought.
 function PlayerDamage:_raw_max_health()
 	local base_max_health = self._HEALTH_INIT + managers.player:health_skill_addend()
 	local mul = managers.player:health_skill_multiplier()
@@ -6,6 +7,16 @@ function PlayerDamage:_raw_max_health()
 
 	return (base_max_health * mul) * juggernog_mul
 end
+--set armor to 200% if armor perk is bought
+function PlayerDamage:_raw_max_armor()
+	local base_max_armor = self._ARMOR_INIT + managers.player:body_armor_value("armor") + managers.player:body_armor_skill_addend()
+	local mul = managers.player:body_armor_skill_multiplier()
+
+	local armor_mul = managers.player:has_special_equipment("perk_armor") and 2 or 1
+
+	return (base_max_armor * mul) * armor_mul
+end
+
 --revives the player if solo and have quick revive
 function PlayerDamage:_chk_cheat_death(is_tazed)
     if Application:digest_value(self._revives, false) > 1 and not self._check_berserker_done and managers.player:has_special_equipment("perk_quickrevive") then

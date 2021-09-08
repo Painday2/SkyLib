@@ -10,5 +10,6 @@
 			<var name="tweak_data" value="zm_pack_a_punch" />
 			<var name="_interact_object" value="a_buy"/>
 		</extension>
+		<extension name="waypoint" class="WaypointExt" />
 	</extensions>
 </unit>
