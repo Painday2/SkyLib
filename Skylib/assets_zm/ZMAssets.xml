@@ -126,24 +126,6 @@
 		<sequence_manager	path="units/pd2_mod_zombies/power_ups/zom_power_ups"/>
 	</add>
 	<add>
-		<texture path="units/pd2_mod_zombies/equipment/mystery_box/textures/zm_random_weapon_box_df"/>
-		<texture path="units/pd2_mod_zombies/equipment/mystery_box/textures/zm_random_weapon_box_nm"/>
-		<texture path="units/pd2_mod_zombies/equipment/mystery_box/textures/zm_random_weapon_box2_df"/>
-		<texture path="units/pd2_mod_zombies/equipment/mystery_box/textures/zm_random_weapon_box2_nm"/>
-		<texture path="units/pd2_mod_zombies/equipment/mystery_box/textures/zm_random_weapon_box_metal_df"/>
-		<texture path="units/pd2_mod_zombies/equipment/mystery_box/textures/zm_random_weapon_box_metal_nm"/>
-		<texture path="units/pd2_mod_zombies/equipment/mystery_box/textures/zm_random_weapon_box_rope_df"/>
-		<texture path="units/pd2_mod_zombies/equipment/mystery_box/textures/zm_random_weapon_box_rope_nm"/>
-		<texture path="units/pd2_mod_zombies/equipment/mystery_box/textures/zm_random_weapon_box_glow"/>
-		<texture path="units/pd2_mod_zombies/equipment/mystery_box/textures/zm_random_weapon_box_il"/>
-		<effect path="units/pd2_mod_zombies/effects/zm_mystery_box/zm_mysterybox_glow"/>
-		<material_config path="units/pd2_mod_zombies/equipment/mystery_box/zm_random_weapon_box"/>
-		<model path="units/pd2_mod_zombies/equipment/mystery_box/zm_random_weapon_box"/>
-		<object path="units/pd2_mod_zombies/equipment/mystery_box/zm_random_weapon_box"/>
-		<sequence_manager path="units/pd2_mod_zombies/equipment/mystery_box/zm_random_weapon_box"/>
-		<unit path="units/pd2_mod_zombies/equipment/mystery_box/zm_random_weapon_box"/>
-	</add>
-	<add>
 		<texture path="units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch_df"/>
 		<texture path="units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch_gsma"/>
 		<texture path="units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch_dnm"/>
