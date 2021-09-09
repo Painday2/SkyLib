@@ -70,7 +70,6 @@ SkyHook:Post(PlayerManager, "update", function(self, t, dt)
 				local weapon = current_weapon.name_id
 				local weapon_name_id = managers.localization:text(tweak_data.weapon[weapon].name_id)
 
-				if weapon == "nothing2_primary" then
 					weapon_name_id = ""
 				end
 
@@ -106,7 +105,7 @@ SkyHook:Post(PlayerManager, "_internal_load", function(self)
 		return
 	end
 
-	--player:inventory():set_melee_weapon("zdann")
+	player:inventory():set_melee_weapon("zdann")
 end)
 
 function PlayerManager:add_grenade_amount(amount, sync)

@@ -117,7 +117,7 @@ SkyHook:Post(PlayerStandard, "_start_action_reload", function (self, t)
 	    end
     end
 end)
---idk if this is the intended way to do an update, but it works and 
+--idk if this is the intended way to do an update, but it works
 SkyHook:Post(PlayerManager, "update", function(self, t, dt)
     SkyLib.CODZ.PerkManager:update(t, dt)
 end)

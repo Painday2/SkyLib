@@ -156,6 +156,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/GroupAITweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/HUDIconsTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/InteractionTweakData",
+        "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/MeleeWeaponsTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/PlayerTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/ProjectilesTweakData",
         "classes/Gamemodes/Sora/CODZ/Hooks/TweakData/TimeSpeedEffectTweakData",
@@ -173,6 +174,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/Interactions/ZMWallbuyBase",
 
         --General hooks
+        "classes/Gamemodes/Sora/CODZ/Hooks/BlackMarketManager",
         "classes/Gamemodes/Sora/CODZ/Hooks/CopDamage",
         "classes/Gamemodes/Sora/CODZ/Hooks/CoreUnit",
         "classes/Gamemodes/Sora/CODZ/Hooks/EnemyManager",
