@@ -69,7 +69,8 @@ SkyHook:Post(PlayerManager, "update", function(self, t, dt)
 			if current_weapon then
 				local weapon = current_weapon.name_id
 				local weapon_name_id = managers.localization:text(tweak_data.weapon[weapon].name_id)
-
+				
+				if weapon == "nothing2_primary" then
 					weapon_name_id = ""
 				end
 

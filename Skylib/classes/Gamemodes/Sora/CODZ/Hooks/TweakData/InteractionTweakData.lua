@@ -1012,7 +1012,7 @@ SkyHook:Post(InteractionTweakData, "init", function(self, tweak_data)
 		special_equipment_block = "perk_staminup"
 	}
 
-    self.perk_flopper = {
+    self.zm_perk_flopper = {
 		zm_interaction = true,
 		points_cost = 2500,
 		perk = "PhD Flopper",
@@ -1025,7 +1025,7 @@ SkyHook:Post(InteractionTweakData, "init", function(self, tweak_data)
 		special_equipment_block = "perk_flopper"
 	}
 
-    self.perk_cherry = {
+    self.zm_perk_cherry = {
 		zm_interaction = true,
 		points_cost = 2000,
 		perk = "Electric Cherry",
@@ -1038,7 +1038,7 @@ SkyHook:Post(InteractionTweakData, "init", function(self, tweak_data)
 		special_equipment_block = "perk_cherry"
 	}
 
-    self.perk_vulture = {
+    self.zm_perk_vulture = {
 		zm_interaction = true,
 		points_cost = 3000,
 		perk = "Vulture Aid",
@@ -1051,7 +1051,7 @@ SkyHook:Post(InteractionTweakData, "init", function(self, tweak_data)
 		special_equipment_block = "perk_vulture"
 	}
 
-    self.perk_widows = {
+    self.zm_perk_widows = {
 		zm_interaction = true,
 		points_cost = 2000,
 		perk = "Widow's Wine",
@@ -1064,7 +1064,7 @@ SkyHook:Post(InteractionTweakData, "init", function(self, tweak_data)
 		special_equipment_block = "perk_widows"
 	}
 
-    self.perk_armor = {
+    self.zm_perk_armor = {
 		zm_interaction = true,
 		points_cost = 2500,
 		perk = "Unnamed Armor Perk",

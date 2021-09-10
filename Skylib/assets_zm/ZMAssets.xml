@@ -182,6 +182,21 @@
 		<sequence_manager force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_deadshot/zm_perk_machine_deadshot"/>
 		<unit force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_deadshot/zm_perk_machine_deadshot"/>
 	</add>
+
+	<add>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_cherry/textures/vending_body_df"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_cherry/textures/vending_body_nm"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_cherry/textures/vending_body_gsma"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_cherry/textures/glass_df"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_cherry/textures/vending_blood_df"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_cherry/textures/vending_blood_nm"/>
+		<material_config force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_cherry/zm_perk_machine_cherry"/>
+		<model force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_cherry/zm_perk_machine_cherry"/>
+		<object force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_cherry/zm_perk_machine_cherry"/>
+		<sequence_manager force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_cherry/zm_perk_machine_cherry"/>
+		<unit force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_cherry/zm_perk_machine_cherry"/>
+	</add>
+
 	<add path="units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch" type="unit">
 		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch_df"/>
 		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch_gsma"/>
@@ -584,5 +599,21 @@
 		<object path="units/pd2_mod_zombies/props/zm_tradepoint_dummy/zm_tradepoint_dummy"/>
 		<sequence_manager path="units/pd2_mod_zombies/props/zm_tradepoint_dummy/zm_tradepoint_dummy"/>
 		<unit path="units/pd2_mod_zombies/props/zm_tradepoint_dummy/zm_tradepoint_dummy"/>
+	</add>
+	<add>
+		<texture path="units/pd2_mod_zombies/weapons/wpn_fps_mel_zdann/combat_df"/>
+		<texture path="units/pd2_mod_zombies/weapons/wpn_fps_mel_zdann/combat_nm"/>
+		<texture path="guis/dlcs/kurumi/textures/pd2/blackmarket/icons/melee_weapons/zdann"/>
+		<cooked_physics path="units/pd2_mod_zombies/weapons/wpn_fps_mel_zdann/wpn_fps_mel_zdann"/>
+		<model path="units/pd2_mod_zombies/weapons/wpn_fps_mel_zdann/wpn_fps_mel_zdann"/>
+		<object path="units/pd2_mod_zombies/weapons/wpn_fps_mel_zdann/wpn_fps_mel_zdann"/>
+		<unit path="units/pd2_mod_zombies/weapons/wpn_fps_mel_zdann/wpn_fps_mel_zdann"/>
+		<material_config path="units/pd2_mod_zombies/weapons/wpn_fps_mel_zdann/wpn_fps_mel_zdann"/>
+		<material_config path="units/pd2_mod_zombies/weapons/wpn_fps_mel_zdann/wpn_fps_mel_zdann_thq"/>
+		<cooked_physics path="units/pd2_mod_zombies/weapons/wpn_third_mel_zdann/wpn_third_mel_zdann"/>
+		<model path="units/pd2_mod_zombies/weapons/wpn_third_mel_zdann/wpn_third_mel_zdann"/>
+		<object path="units/pd2_mod_zombies/weapons/wpn_third_mel_zdann/wpn_third_mel_zdann"/>
+		<unit path="units/pd2_mod_zombies/weapons/wpn_third_mel_zdann/wpn_third_mel_zdann"/>
+		<material_config path="units/pd2_mod_zombies/weapons/wpn_third_mel_zdann/wpn_third_mel_zdann"/>
 	</add>
 </table>
