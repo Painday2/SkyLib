@@ -197,6 +197,18 @@
 		<unit force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_cherry/zm_perk_machine_cherry"/>
 	</add>
 
+	<add>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/textures/vending_nuke_df"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/textures/vending_nuke_nm"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/textures/vending_nuke_gsma"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/textures/glass_df"/>
+		<material_config force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/zm_perk_machine_flopper"/>
+		<model force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/zm_perk_machine_flopper"/>
+		<object force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/zm_perk_machine_flopper"/>
+		<sequence_manager force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/zm_perk_machine_flopper"/>
+		<unit force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/zm_perk_machine_flopper"/>
+	</add>
+
 	<add path="units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch" type="unit">
 		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch_df"/>
 		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch_gsma"/>
