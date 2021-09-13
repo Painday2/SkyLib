@@ -21,7 +21,7 @@
 		<sequence editable_state="true" name="'visibility_show'" triggable="true">
 			<interaction  enabled="true"/>
 			<body enabled="true" name="'body_static'"/>
-			<object  name="'logo_il'" enabled="true"/>
+			<object  name="'g_sign_on'" enabled="true"/>
 			<graphic_group name="'group_perk'" visibility="true"/>
 		</sequence>
 		
@@ -29,15 +29,15 @@
 		<sequence editable_state="true" name="'enable_interaction'" triggable="true">
 			<set_variables var_powered="1"/>
 			<interaction enabled="true"/>
-			<object name="'logo_il'" enabled="true"/>
-			<object name="'logo'" enabled="false"/>
+			<object name="'g_sign_on'" enabled="true"/>
+			<object name="'g_sign_off'" enabled="false"/>
 		</sequence>
 		
 		<sequence editable_state="true" name="'disable_interaction'" triggable="true">
 			<set_variables var_powered="0"/>
 			<interaction enabled="false"/>
-			<object name="'logo_il'" enabled="false"/>
-			<object name="'logo'" enabled="true"/>
+			<object name="'g_sign_on'" enabled="false"/>
+			<object name="'g_sign_off'" enabled="true"/>
 		</sequence>
 		
 		<!--AUDIO-->
@@ -47,7 +47,7 @@
 		</sequence>
 		
 		<sequence editable_state="true" name="'sound_jingle_full'" triggable="true">
-			<sound filter="'filter_powered'" action="'play'" event="'zm_perk_song_staminup'" object="'logo'"/>
+			<sound filter="'filter_powered'" action="'play'" event="'zm_perk_song_staminup'" object="'body'"/>
 		</sequence>
 		
 		<sequence editable_state="false" name="'interact'" triggable="false"/>
