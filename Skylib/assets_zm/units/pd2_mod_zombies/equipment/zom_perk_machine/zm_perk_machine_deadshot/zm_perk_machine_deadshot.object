@@ -11,7 +11,7 @@
 	</decal_surfaces>
 	<graphics>
 		<!--Normal Graphics-->
-		<graphic_group name="group_deadshot" culling_object="co_culling" enabled="true">
+		<graphic_group name="group_deadshot" enabled="true">
 			<object name="g_deadshot" enabled="true" shadow_caster="true" />
 			<object name="g_glass" enabled="true" shadow_caster="true" />
 			<object name="g_deadshot_logo" enabled="true" shadow_caster="true" />

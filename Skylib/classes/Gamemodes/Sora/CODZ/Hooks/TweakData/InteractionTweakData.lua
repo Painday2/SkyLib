@@ -1076,6 +1076,19 @@ SkyHook:Post(InteractionTweakData, "init", function(self, tweak_data)
 		sound_done = "zm_perk_bought",
 		special_equipment_block = "perk_armor"
 	}
+
+    self.zm_perk_tombstone = {
+		zm_interaction = true,
+		points_cost = 2500,
+		perk = "Tombstone",
+		is_perk_interaction = true,
+		action_text_id = "zm_buy_perk",
+		start_active = false,
+		axis = "z",
+		timer = 0.5,
+		sound_done = "zm_perk_bought",
+		special_equipment_block = "perk_tombstone"
+	}
 end)
 --hooks gets set too late, need to reinit
 tweak_data.interaction:init(tweak_data)

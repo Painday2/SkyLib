@@ -11,7 +11,7 @@
 	</decal_surfaces>
 	<graphics>
 		<!--Normal Graphics-->
-		<graphic_group name="group_flopper" culling_object="co_culling" enabled="true">
+		<graphic_group name="group_flopper" enabled="true">
 			<object name="g_body" enabled="true" shadow_caster="true" />
 			<object name="g_glass" enabled="true" shadow_caster="true" />
 			<object name="g_body_2" enabled="true" shadow_caster="true" />
