@@ -139,6 +139,24 @@
 		<unit path="units/pd2_mod_zombies/equipment/zom_pack_a_punch/zom_pack_a_punch"/>
 	</add>
 	<add>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/textures/vending_wunderfizz_body_df"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/textures/vending_wunderfizz_body_nm"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/textures/vending_wunderfizz_body_gsma"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/textures/vending_wunderfizz_crystal_df"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/textures/vending_wunderfizz_crystal_nm"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/textures/vending_wunderfizz_rock_df"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/textures/vending_wunderfizz_rock_nm"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/textures/vending_wunderfizz_science_df"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/textures/vending_wunderfizz_science_nm"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/textures/vending_wunderfizz_science_gsma"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/textures/glass_df"/>
+		<material_config force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/zm_perk_machine_wunderfizz"/>
+		<model force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/zm_perk_machine_wunderfizz"/>
+		<object force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/zm_perk_machine_wunderfizz"/>
+		<sequence_manager force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/zm_perk_machine_wunderfizz"/>
+		<unit force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_wunderfizz/zm_perk_machine_wunderfizz"/>
+	</add>
+	<add>
 		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_staminup/textures/vending_marathon_df"/>
 		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_staminup/textures/vending_marathon_nm"/>
 		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_staminup/textures/vending_marathon_gsma"/>
