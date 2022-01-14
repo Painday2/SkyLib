@@ -92,6 +92,8 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, instigator, 
                 self._change_stats_of(nil, weapon_id, {damage_mul = damage_mul})
                 --first pap generates attachments, otherwise use same blueprint
                 if i == 1 then
+                    --Give pap'd weapons more ammo, i'm too lazy to make it scale with paps
+                    self._change_stats_of(nil, weapon_id, {total_clips = tweak_data.weapon[weapon_id].NR_CLIPS_MAX * 3.25})
                     blueprint = tweak_data.weapon.factory:_assemble_random_blueprint(factory_id, primary_category)
                     break
                 else
@@ -260,7 +262,7 @@ function SkyLib.CODZ.WeaponHelper:map_pap_parts()
                 table.insert(self.parts, v)
             end
         end
-        local removethese = {"standard", "nil", "vanllia", "legend", "legendary"}
+        local removethese = {"standard", "nil", "vanllia", "legend", "legendary", "singlefire", "autofire"}
         for _, v in pairs(removethese) do
             self.parts = Utils:remove_from_table_with_ending(self.parts, v)
         end
