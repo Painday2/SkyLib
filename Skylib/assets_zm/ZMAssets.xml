@@ -211,6 +211,20 @@
 		<unit force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_cherry/zm_perk_machine_cherry"/>
 	</add>
 
+	<add unload_on_restart="true">
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_armor/textures/vending_body_df"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_armor/textures/vending_body_nm"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_armor/textures/vending_body_gsma"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_armor/textures/glass_df"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_armor/textures/vending_blood_df"/>
+		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_armor/textures/vending_blood_nm"/>
+		<material_config force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_armor/zm_perk_machine_armor"/>
+		<model force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_armor/zm_perk_machine_armor"/>
+		<object force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_armor/zm_perk_machine_armor"/>
+		<sequence_manager force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_armor/zm_perk_machine_armor"/>
+		<unit force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_armor/zm_perk_machine_armor"/>
+	</add>
+
 	<add>
 		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_tombstone/textures/vending_tombstone_df"/>
 		<texture force="true" path="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_tombstone/textures/vending_tombstone_nm"/>
