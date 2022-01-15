@@ -7,7 +7,7 @@
 			<var name="_special_equipment" value="perk_staminup" />
 			<var name="_remove_on_interact" value="false" />
 			<var name="tweak_data" value="zm_perk_stamin" />
-			<var name="_interact_object" value="a_perkbuy"/>
+			<var name="_interact_object" value="interact"/>
 		</extension>
 	</extensions>
 </unit>

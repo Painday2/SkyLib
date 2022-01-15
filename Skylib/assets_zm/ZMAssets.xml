@@ -624,8 +624,36 @@
 		<unit path="units/pd2_mod_zombies/props/zm_buy_marker/zm_buy_marker_double"/>
 	</add>
 	<add path="units/pd2_mod_zombies/props/zom_mysterybox_marker/zom_mysterybox_marker" type="unit"/>
-	<add path="units/pd2_mod_zombies/props/zom_teleporter/zom_teleporter_main" type="unit"/>
-	<add path="units/pd2_mod_zombies/props/zom_teleporter/zom_teleporter_pad" type="unit"/>
+
+	<add>
+		<material_config path="units/pd2_mod_zombies/props/zom_teleporter/zom_teleporter_off"/>
+		<material_config path="units/pd2_mod_zombies/props/zom_teleporter/zom_teleporter_on"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/glass_op"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/global_grey_51"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/lightning_chamber_main_df"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/lightning_chamber_main_nm"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/lightning_chamber_glass_df"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/tele_glow_df"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/tele_glow_off_df"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/tele_glow_nm"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/tele_glow2_df"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/teleporter_main_2_df"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/teleporter_main_2_nm"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/teleporter_main_df"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/teleporter_main_nm"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/vacuum_tube_df"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/vacuum_tube_op"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/vacuum_tube_il"/>
+		<!--<object path="units/pd2_mod_zombies/props/zom_teleporter/zom_teleporter_main"/>
+		<unit path="units/pd2_mod_zombies/props/zom_teleporter/zom_teleporter_main"/>-->
+		<sequence_manager path="units/pd2_mod_zombies/props/zom_teleporter/zom_teleporter_seq"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/tesla_df"/>
+		<texture path="units/pd2_mod_zombies/props/zom_teleporter/tesla_nm"/>
+		<model path="units/pd2_mod_zombies/props/zom_teleporter/zom_teleporter_pad"/>
+		<object path="units/pd2_mod_zombies/props/zom_teleporter/zom_teleporter_pad"/>
+		<unit path="units/pd2_mod_zombies/props/zom_teleporter/zom_teleporter_pad"/>
+	</add>
+	
 	<add path="units/pd2_mod_zombies/weapons/wpn_fps_ass_nothing2/wpn_fps_ass_nothing2" type="unit">
 		<model path="units/pd2_mod_zombies/weapons/wpn_fps_ass_nothing2/wpn_fps_ass_nothing2"/>
 		<object path="units/pd2_mod_zombies/weapons/wpn_fps_ass_nothing2/wpn_fps_ass_nothing2"/>
