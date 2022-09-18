@@ -12,12 +12,12 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 	local text = ""
 	local icon = ""
 	local current_money = SkyLib.CODZ:_get_own_money()
-	local cost = self._tweak_data.points_cost or 0
+	local cost = tonumber(self._tweak_data.points_cost) or 0
 
 	--Is a Zombie Mode Interaction?
 	if self._tweak_data.zm_interaction then
 		if self._unit:unit_data() and self._unit:unit_data().cost then
-			cost = self._unit:unit_data().cost
+			cost = tonumber(self._unit:unit_data().cost)
 		end
 		text = "Hold " .. managers.localization:btn_macro("interact") .. " to buy"
 
@@ -373,7 +373,7 @@ function BaseInteractionExt:can_interact(player)
 		local cost = self._tweak_data.points_cost or 0
 
 		if self._unit:unit_data() and self._unit:unit_data().cost then
-			cost = self._unit:unit_data().cost
+			cost = tonumber(self._unit:unit_data().cost)
 		end
 
 		if self.tweak_data == "zm_mystery_box" and SkyLib.CODZ:_is_event_active("firesale") then
@@ -514,7 +514,7 @@ function BaseInteractionExt:interact(player)
 		local cost = self._tweak_data.points_cost or 0
 		--compatibility with interaction elements
 		if self._unit:unit_data() and self._unit:unit_data().cost then
-			cost = self._unit:unit_data().cost
+			cost = tonumber(self._unit:unit_data().cost)
 		end
 
 		local amount_to_deduct = 0 - cost or 0
