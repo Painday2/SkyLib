@@ -1,6 +1,0 @@
-{	
-	"heist_despacito2_theheist_name" : "SkyLib ZM Test Map",
-	"heist_despacito2_theheist_brief" : "A test map for the features in the Zombies mode of SkyLib",
-	"heist_despacito2_theheist_name" : "SkyLib ZM Test Map",
-	"heist_despacito2_theheist_brief" : "A test map for the features in the Zombies mode of SkyLib",
-}

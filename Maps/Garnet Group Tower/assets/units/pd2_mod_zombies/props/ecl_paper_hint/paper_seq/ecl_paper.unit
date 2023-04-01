@@ -1,7 +1,0 @@
-<unit type="hsp" slot="1" >
-    <object file="units/pd2_mod_zombies/props/ecl_paper_hint/paper_seq/ecl_paper" />
-    <extensions>
-        <extension name="unit_data" class="ScriptUnitData" />
-        <extension name="damage" class="UnitDamage" />
-    </extensions>
-</unit>
