@@ -1,5 +1,5 @@
 <mod name="Skylib_CODZ_Sounds" min_lib_ver="3.0">
-    <Sounds directory="assets_zm">
+    <Sounds directory="SkyLib-zm-assets">
 		<Sounds directory="units/pd2_mod_zombies/Sounds">
 			<sound id="raygun_fire" path="raygun_fire.ogg" prefix="regular"/>
 			<sound id="raygun_out" path="off_open.ogg" prefix="first"/>

@@ -1,4 +1,4 @@
-<table directory="assets_zm">
+<table directory="SkyLib-zm-assets">
 	<movie path="units/pd2_mod_zombies/movies/ascension"/>
 	<add>
 		<texture path="units/pd2_mod_zombies/guis/hud/bloodtrail"/>
