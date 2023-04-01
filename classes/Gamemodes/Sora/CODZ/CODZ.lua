@@ -193,6 +193,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/PowerUpManager",
         "classes/Gamemodes/Sora/CODZ/Hooks/PowerUps",
         "classes/Gamemodes/Sora/CODZ/Hooks/RaycastWeaponBase",
+        "classes/Gamemodes/Sora/CODZ/Hooks/StatisticsManager",
         "classes/Gamemodes/Sora/CODZ/CODZ_PerkManager",
     }
 
@@ -343,6 +344,20 @@ function SkyLib.CODZ:_money_change(amount, peer_id)
     end
 
     self:_update_hud_element()
+end
+
+function SkyLib.CODZ:_get_points_amount(category, unit)
+    local double_point_effect = SkyLib.CODZ:_is_event_active("double_points") and 2 or 1
+
+    if not unit then
+        return self._economy[category]
+    end
+
+    if not self._economy[category][unit] then
+        return self._economy["default"] * double_point_effect
+    end
+
+    return self._economy[category][unit]
 end
 
 function SkyLib.CODZ:_has_enough_money(amount, peer_id)

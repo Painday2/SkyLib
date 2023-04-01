@@ -1,4 +1,5 @@
 {
+    "zombies_mode_name": "Zombies Mode",
     "failed_summary_name" : "You died. No one survived. The entire world is full of zombies and humanity has come to a bitter end.",
     "hud_custody_in" : "Dead in",
     "menu_resume_game" : "RESUME CARNAGE",
@@ -6,7 +7,7 @@
     "menu_restart_game" : "RESTART CARNAGE"
     "hud_assault_zombie" : "Zombie Assault In Progress",
     "zm_buy_weapon" : "Buying...",
-	"zm_hack" : "Hacking...",
+    "zm_hack" : "Hacking...",
 	"zm_power" : "Restarting...",
 	"zm_activate_song_invisible" : "",
 	"zm_use_teleporter" : "Using teleporter...",
