@@ -22,7 +22,7 @@ function safe_spawn_unit(unit_name, ...)
                 end
                 SkyLib.Sound:play({
                     name = "zm_ene_shadow_scream_01",
-                    custom_package = "assets_zm",
+                    custom_package = "SkyLib-zm-assets",
                     custom_dir = "units/pd2_mod_zombies/sounds/zm_enemy/shadow",
                     file_name = "zm_ene_shadow_scream_01.ogg",
                     is_loop = false,
@@ -35,7 +35,7 @@ function safe_spawn_unit(unit_name, ...)
             SkyLib.Sound:play({
                 name = "zm_enemy_spawn_electrical",
                 file_name = "zm_enemy_spawn_electrical.ogg",
-                custom_package = "assets_zm",
+                custom_package = "SkyLib-zm-assets",
                 custom_dir = "units/pd2_mod_zombies/sounds/zm_enemy/spawning",
                 is_loop = false,
                 is_relative = false

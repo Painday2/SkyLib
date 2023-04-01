@@ -164,7 +164,7 @@ function SkyLib.Network:_init_codz_network()
             SkyLib.Sound:play({
                 name = "play_shadow_spook",
                 custom_dir = "units/pd2_mod_zombies/sounds/zm_enemy/shadow",
-                custom_package = "assets_zm",
+                custom_package = "SkyLib-zm-assets",
                 file_name = "zm_ene_shadow_scream_01.ogg",
                 is_loop = false,
                 is_relative = false,
@@ -188,7 +188,7 @@ function SkyLib.Network:_init_codz_network()
                     name = "zm_enemy_spawn_electrical",
                     file_name = "zm_enemy_spawn_electrical.ogg",
                     custom_dir = "units/pd2_mod_zombies/sounds/zm_enemy/spawning",
-                    custom_package = "assets_zm",
+                    custom_package = "SkyLib-zm-assets",
                     is_loop = false,
                     is_relative = false
                 })

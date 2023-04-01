@@ -18,7 +18,7 @@ function ElementPointChecker:on_executed(instigator)
 	SkyLib.Sound:Play({
 		name = self._editor_name .. "_" .. self._id,
 		custom_dir = "sound",
-		custom_package = "assets_zm",
+		custom_package = "SkyLib-zm-assets",
 		file_name = "cashin.ogg",
 		sound_type = "sfx",
 		is_3d = true,

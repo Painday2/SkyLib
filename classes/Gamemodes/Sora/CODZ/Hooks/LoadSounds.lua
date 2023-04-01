@@ -7,6 +7,6 @@ if BeardLib then
         return
     elseif current_level._mod and current_level._mod.global then
         SkyLib:log("Loading Sounds: CODZ General")
-        ModCore:new("mods/SkyLib/assets_zm/ZMSounds.xml", true, true)
+        ModCore:new("mods/SkyLib/SkyLib-zm-assets/ZMSounds.xml", true, true)
     end
 end

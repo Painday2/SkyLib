@@ -122,7 +122,7 @@ end
 		SkyLib.Sound:play({
 			name = "zm_pwrup_float_spawn",
 			file_name = "zm_pwrup_float_spawn.ogg",
-			custom_package = "assets_zm",
+			custom_package = "SkyLib-zm-assets",
 			custom_dir = "units/pd2_mod_zombies/sounds/zm_power_ups",
 			sound_type = "sfx",
 			is_relative = false,

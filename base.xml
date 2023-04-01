@@ -54,5 +54,5 @@
         <texture path="ui/survival/menu_cat_pistol"/>
         <texture path="ui/survival/menu_cat_snp"/>
     </AddFiles>
-    <Package file="assets_zm/ZMAssets.xml" id="packages/ZMAssets"/>
+    <Package file="SkyLib-zm-assets/ZMAssets.xml" id="packages/ZMAssets"/>
 </mod>

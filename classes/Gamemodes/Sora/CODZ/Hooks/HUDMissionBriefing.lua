@@ -21,7 +21,7 @@ end)
         name = "pregame_music",
         file_name = "zm_gen_pregame.ogg",
         sound_type = "music",
-        custom_package = "assets_zm",
+        custom_package = "SkyLib-zm-assets",
         custom_dir = "units/pd2_mod_zombies/sounds/zm_generic",
         is_relative = false,
         is_loop = false,
