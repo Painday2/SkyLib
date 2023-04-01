@@ -2,7 +2,7 @@ SkyLib.CODZ = SkyLib.CODZ or class()
 SkyLib.CODZ.INITIALIZED = false
 
 function SkyLib.CODZ:init(custom_rules)
-    self._starting_money = custom_rules and custom_rules.mod_start_money or 1000000
+    self._starting_money = custom_rules and custom_rules.mod_start_money or 500
     self._pregame_music = custom_rules and custom_rules.mod_pregame_music or nil
     self._gameover_music = custom_rules and custom_rules.mod_gameover_music or nil
     self._victory_music = custom_rules and custom_rules.mod_victory_music or nil
