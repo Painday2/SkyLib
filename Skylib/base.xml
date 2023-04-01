@@ -1,6 +1,11 @@
 <mod name="SkyLib" global_key="SkyLib" color="Color(0.63, 0.58, 0.95)" priority="999">
 
-    <AssetUpdates id="23809" version="prealpha" provider="modworkshop" use_local_dir="true" use_local_path="true"/>
+    <AssetUpdates id="Painday2/Skylib" provider="github" release="true" version="alpha"/>
+    <AssetUpdates id="Painday2/Skylib" provider="github" branch="zm-assets">
+        <folder_name>
+            <value_node "zm_assets"/>
+        </folder_name>
+    </AssetUpdates>
 
     <Classes directory="classes">
         <class file="Utils/SkyHook.lua"/>
