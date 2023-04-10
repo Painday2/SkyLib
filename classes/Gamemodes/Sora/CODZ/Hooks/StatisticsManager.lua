@@ -58,7 +58,7 @@ function StatisticsManager:send_zm_stats()
 		return
 	end
 
-    SkyLib.Network:_send("ZMStatsEndGame", data)
+    SkyLib.Network:_send("ZMStatsEndGame", tbl)
 end
 
 Hooks:PostHook(StatisticsManager, "revived", "zm_count_revives", function(self, data)
