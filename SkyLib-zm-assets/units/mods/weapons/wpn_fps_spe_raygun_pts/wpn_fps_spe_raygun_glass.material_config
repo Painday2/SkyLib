@@ -1,9 +1,0 @@
-<materials version="3" group="weapon_breech">
-	<material name="mtr_body" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP" version="2">
-        <variable value="1.6999999284744 1 1" type="vector3" name="fresnel_settings"/>
-        <opacity_texture file="units/payday2/glass/glass_clear_vehicle_dark_op"/>
-        <diffuse_texture file="units/payday2/glass/glass_clear_vehicle_dark_b_df"/>
-        <reflection_texture type="cube" global_texture="current_global_texture"/>
-        <bump_normal_texture file="units/pd2_dlc_red/architecture/textures/red_int_blank_nm"/>
-	</material>
-</materials>

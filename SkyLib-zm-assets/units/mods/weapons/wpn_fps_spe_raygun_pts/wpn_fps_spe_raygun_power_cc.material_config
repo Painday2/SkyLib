@@ -1,8 +1,0 @@
-<materials version="3" group="weapon_breech">
-	<material name="mtr_body" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_UVANIM" version="2">
-        <diffuse_texture file="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/power_pap_df"/>
-		<variable value="0.05 0.1 0" type="vector3" name="uv_speed"/>
-		<self_illumination_texture file="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/power_pap_il"/>
-		<variable type="scalar" name="il_multiplier" value="inside of borg queen"/>
-	</material>
-</materials>
