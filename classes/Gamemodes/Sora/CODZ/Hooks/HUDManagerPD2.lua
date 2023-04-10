@@ -458,6 +458,8 @@ function HUDCODZ:_set_gift_visible(gift, visible)
 end
 
 function HUDManager:init_ending_screen()
+    managers.hud:hide_panels("points_panel", "codz_wave_panel", "assault_panel", "custody_panel", "hostages_panel", "gift_panel", "heist_timer_panel", "teammates_panel")
+
     local hud = managers.hud:script(PlayerBase.PLAYER_INFO_HUD_PD2)
     local panel = hud.panel
     local default_font = "fonts/escom_outline"
@@ -541,7 +543,7 @@ function HUDManager:_init_result_table(panel)
                 local avatar = texture or "guis/textures/pd2/none_icon"
                 all_panels[id]:child("steam_avatar"):set_image(avatar)
             end)
-            SkyLib:wait(1, "table_steam_avatar_try_again_" .. id, function()
+            SkyLib:wait(1, function()
                 Steam:friend_avatar(2, player_data.steam_id, function (texture)
                     local avatar = texture or "guis/textures/pd2/none_icon"
                     all_panels[id]:child("steam_avatar"):set_image(avatar)
@@ -557,7 +559,7 @@ function HUDManager:_init_result_table(panel)
             managers.hud:make_fine_text(player_name)
             player_name:set_world_center_y(all_panels[id]:world_center_y())
             player_name:set_left(avatar:right() + 20)
-            player_name:set_text(player_data.player_name)
+            player_name:set_text(player_data.name)
 
             local total_score = all_panels[id]:text({
                 name = "total_score",
@@ -570,7 +572,7 @@ function HUDManager:_init_result_table(panel)
             managers.hud:make_fine_text(total_score)
             total_score:set_world_center_y(all_panels[id]:world_center_y())
             total_score:set_left(player_name:right())
-            total_score:set_text(tostring(player_data.total_score))
+            total_score:set_text(tostring(player_data.codz_score))
 
             local total_score_header = all_panels[id]:text({
                 font = "fonts/escom_outline",

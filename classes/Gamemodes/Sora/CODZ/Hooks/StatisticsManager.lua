@@ -1,6 +1,6 @@
---[[Hooks:PostHook(StatisticsManager, "init", "zm_init_vars_stats", function(self)
+Hooks:PostHook(StatisticsManager, "init", "zm_init_vars_stats", function(self)
     self._session_player_revives = 0
-end)]]
+end)
 
 Hooks:PostHook(StatisticsManager, "killed", "zm_init_add_zmpoints", function(self, data)
 
@@ -32,7 +32,7 @@ Hooks:PostHook(StatisticsManager, "killed", "zm_init_add_zmpoints", function(sel
     end
 end)
 
---[[function StatisticsManager:send_zm_stats()
+function StatisticsManager:send_zm_stats()
 	local total_kills = self:session_total_kills()
     local total_specials_kills = self:session_total_specials_kills()
     local total_kills_combined = total_kills + total_specials_kills
@@ -43,10 +43,10 @@ end)
         kills = total_kills_combined,
         downs = downs,
         revives = revives,
-        total_score = managers.wdu.players[managers.wdu:_peer_id()].total_score
+        total_score = SkyLib.CODZ._players[SkyLib.Network:_my_peer_id()].codz_score
     }
 
-    local panel_endgame = managers.hud._zm_result_panel[managers.wdu:_peer_id()]
+    local panel_endgame = managers.hud._zm_result_panel[SkyLib.Network:_my_peer_id()]
     local kills_text = panel_endgame:child("total_kills")
     local downs_text = panel_endgame:child("total_downs")
     local revives_text = panel_endgame:child("total_revives")
@@ -58,7 +58,7 @@ end)
 		return
 	end
 
-    LuaNetworking:SendToPeers( "ZMStatsEndGame", LuaNetworking:TableToString(tbl) )
+    SkyLib.Network:_send("ZMStatsEndGame", data)
 end
 
 Hooks:PostHook(StatisticsManager, "revived", "zm_count_revives", function(self, data)
@@ -67,4 +67,4 @@ Hooks:PostHook(StatisticsManager, "revived", "zm_count_revives", function(self, 
     end
     
     self._session_player_revives = self._session_player_revives + 1
-end)]]
+end)

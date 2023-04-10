@@ -445,9 +445,9 @@ end
 
 function SkyLib.CODZ:create_good_end()
     managers.hud:init_ending_screen()
-    --self:wait(2, "zm_wait_init_score_good", function()
-        --managers.statistics:send_zm_stats()
-    --end)
+    SkyLib:wait(2, function()
+        managers.statistics:send_zm_stats()
+    end)
 end
 
 function SkyLib.CODZ:_increase_wave()
