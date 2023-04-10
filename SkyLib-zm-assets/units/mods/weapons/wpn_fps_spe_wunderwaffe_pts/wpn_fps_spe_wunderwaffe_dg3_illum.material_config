@@ -1,0 +1,20 @@
+<materials version="3" group="weapon_group">
+    <material name="mtr_body" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_UVANIM" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_spe_wunderwaffe_pts/textures/wunderwaffe_dg3_bulb_df"/>
+		<variable value="0 0 0" type="vector3" name="uv_speed"/>
+		<self_illumination_texture file="units/mods/weapons/wpn_fps_spe_wunderwaffe_pts/textures/wunderwaffe_dg3_bulb_il"/>
+		<variable type="scalar" name="il_multiplier" value="reddot"/>
+    </material>
+    <material name="mtr_bolt" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_UVANIM" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_spe_wunderwaffe_pts/textures/wunderwaffe_dg3_bulb_df"/>
+		<variable value="0 0 0" type="vector3" name="uv_speed"/>
+		<self_illumination_texture file="units/mods/weapons/wpn_fps_spe_wunderwaffe_pts/textures/wunderwaffe_dg3_bulb_il"/>
+		<variable type="scalar" name="il_multiplier" value="reddot"/>
+    </material>
+    <material name="mtr_upper" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_UVANIM" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_spe_wunderwaffe_pts/textures/wunderwaffe_dg3_bulb_df"/>
+		<variable value="0 0 0" type="vector3" name="uv_speed"/>
+		<self_illumination_texture file="units/mods/weapons/wpn_fps_spe_wunderwaffe_pts/textures/wunderwaffe_dg3_bulb_il"/>
+		<variable type="scalar" name="il_multiplier" value="reddot"/>
+    </material>
+</materials>

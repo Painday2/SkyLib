@@ -1,0 +1,6 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_body" orientation_object="rp_wpn_fps_pis_breech_body" />
+	<graphics>
+		<object name="g_base" enabled="true" />
+	</graphics>
+</dynamic_object>

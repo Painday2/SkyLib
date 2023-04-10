@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+	<object file="units/pd2_dlc_fi7/weapons/wpn_fps_pis_lemming/wpn_fps_pis_lemming" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_lemming"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="lemming_upg_secondary" />
+		</extension>
+	</extensions>
+</unit>

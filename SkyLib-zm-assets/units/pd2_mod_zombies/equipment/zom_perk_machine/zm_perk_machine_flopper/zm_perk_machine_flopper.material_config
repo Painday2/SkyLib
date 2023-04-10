@@ -1,0 +1,24 @@
+<materials version="3">
+	<!--Machine-->
+	<material name="mtl_body" render_template="generic:ALPHA_MASKED:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:GSMA_TEXTURE" version="2">
+        <diffuse_texture        file="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/textures/vending_nuke_df"/>
+        <bump_normal_texture    file="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/textures/vending_nuke_nm"/>
+        <material_texture       file="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/textures/vending_nuke_gsma"/>
+        <reflection_texture     file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+        <variable value="0.5" type="scalar" name="alpha_ref"/>
+    </material>
+	<material name="mtl_body_2" render_template="generic:ALPHA_MASKED:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:GSMA_TEXTURE" version="2">
+        <diffuse_texture        file="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/textures/vending_nuke_df"/>
+        <bump_normal_texture    file="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/textures/vending_nuke_nm"/>
+        <material_texture       file="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/textures/vending_nuke_gsma"/>
+        <reflection_texture     file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+        <variable value="0.5" type="scalar" name="alpha_ref"/>
+    </material>
+	<material name="mtl_glass" render_template="decal:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_TEXTURE:SIMPLE_TINT" version="2">
+        <diffuse_texture        file="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_flopper/textures/glass_df"/>
+        <bump_normal_texture    file="units/pd2_dlc2/csgo_textures/csgo_blank_nm"/>
+        <material_texture       file="units/pd2_dlc_uno/architecture/tiling_textures/dirt_ground_01/uno_dirt_ground_01_gsma"/>
+        <reflection_texture     file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+        <variable value="0.5" type="scalar" name="alpha_ref"/>
+    </material>
+</materials>

@@ -1,0 +1,32 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_zombies/props/zom_teleporter/zom_teleporter_off" orientation_object="rp_cone" />
+	<sequence_manager file="units/pd2_mod_zombies/props/zom_teleporter/zom_teleporter_seq" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_cone" />
+			<object name="co_culling" />
+			<object name="g_tele_ring_a" />
+			<object name="g_tele_ring_b" />
+			<object name="g_tele_ring_c" />
+			<object name="g_tele_base" />
+			<object name="g_tele_portal" />
+			<object name="c_convex_001" collision_type="convex" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<graphic_group name="teleporter_pad" culling_object="co_culling" enabled="true">
+			<object name="g_tele_ring_a" enabled="true" shadow_caster="true"/>
+			<object name="g_tele_ring_b" enabled="true" shadow_caster="true"/>
+			<object name="g_tele_ring_c" enabled="true" shadow_caster="true"/>
+			<object name="g_tele_base" enabled="true" shadow_caster="true"/>
+			<object name="g_tele_portal" enabled="true" shadow_caster="true"/>
+		</graphic_group>
+	</graphics>
+    <decal_surfaces>
+			<object name="g_tele_ring_a" enabled="true" material="glass"/>
+			<object name="g_tele_ring_b" enabled="true" material="glass"/>
+			<object name="g_tele_ring_c" enabled="true" material="glass"/>
+			<object name="g_tele_base" enabled="true" material="metal"/>
+			<object name="g_tele_portal" enabled="true" material="metal"/>
+    </decal_surfaces>
+</dynamic_object>

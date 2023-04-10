@@ -71,9 +71,9 @@ function SkyLib.CODZ.WeaponHelper:_perform_weapon_switch(weapon_id, instigator, 
     }
 
     if weapon_id then
-        --log(tostring(weapon_id))
-        factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(tostring(weapon_id)) or managers.weapon_factory:get_factory_id_by_weapon_id("amcar")
-        --log(tostring(factory_id))
+        log(tostring(weapon_id))
+        factory_id = managers.weapon_factory:get_factory_id_by_weapon_id(tostring(weapon_id)) --or managers.weapon_factory:get_factory_id_by_weapon_id("amcar")
+        log(tostring(factory_id))
         blueprint = managers.weapon_factory:get_default_blueprint_by_factory_id(factory_id)
         current_index_equipped = managers.player:player_unit():inventory():equipped_selection()
     elseif pap then

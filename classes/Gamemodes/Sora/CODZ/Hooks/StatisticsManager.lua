@@ -31,8 +31,8 @@ Hooks:PostHook(StatisticsManager, "killed", "zm_init_add_zmpoints", function(sel
         end
     end
 end)
---[[
-function StatisticsManager:send_zm_stats()
+
+--[[function StatisticsManager:send_zm_stats()
 	local total_kills = self:session_total_kills()
     local total_specials_kills = self:session_total_specials_kills()
     local total_kills_combined = total_kills + total_specials_kills

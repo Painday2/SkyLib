@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<unit type="gen" slot="13">
+	<network sync="spawn" />
+	<object file="units/mods/weapons/wpn_prj_raygun_blast/wpn_prj_raygun_blast" />
+	<dependencies>
+		<depends_on bnk="soundbanks/regular_weapon_sfx" />
+	</dependencies>
+	<extensions>
+		<extension name="base" class="ArrowBase" >
+			<var name="_tweak_projectile_entry" value="raygun_blast" />
+		</extension>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" >
+			<var name="_skip_give_body_collision_damage" value="true" />
+		</extension>
+		<extension name="pickup" class="AmmoClip" >
+			<var name="_weapon_category" value="crossbow" />
+			<var name="_ammo_count" value="1" />
+			<var name="_pickup_event" value="wp_arrow_pick_up" />
+		</extension>
+	</extensions>
+	<sounds>
+		<default_soundsource source="rp_wpn_prj_ecp_arrow_exp" />
+		<soundsource name="snd" source="rp_wpn_prj_ecp_arrow_exp" />
+	</sounds>
+</unit>

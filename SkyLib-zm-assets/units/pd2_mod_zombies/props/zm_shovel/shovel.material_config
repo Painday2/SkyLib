@@ -1,0 +1,9 @@
+<materials version="3">  
+    <material name="mtr_crate_sculpture" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_mod_zombies/props/zm_shovel/combat_df"/>
+        <bump_normal_texture file="units/pd2_mod_zombies/props/zm_shovel/combat_nm"/>
+        <variable value="0.75000005960464 0 13.699999809265" type="vector3" name="environment_settings"/>
+    </material>
+
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

@@ -1,0 +1,13 @@
+<unit type="zom" slot="1">
+	<object file="units/pd2_mod_zombies/equipment/zom_perk_machine/zm_perk_machine_tombstone/zm_perk_machine_tombstone" />
+	<extensions>
+		<extension name="damage" class="UnitDamage" />
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="interaction" class="ZMPerkExt" >
+			<var name="_special_equipment" value="perk_tombstone" />
+			<var name="_remove_on_interact" value="false" />
+			<var name="tweak_data" value="zm_perk_tombstone" />
+			<var name="_interact_object" value="interact"/>
+		</extension>
+	</extensions>
+</unit>

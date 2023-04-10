@@ -177,7 +177,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/CopDamage",
         "classes/Gamemodes/Sora/CODZ/Hooks/CoreUnit",
         "classes/Gamemodes/Sora/CODZ/Hooks/EnemyManager",
-        --"classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
+        "classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBesiege",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDManager",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDManagerPD2",
@@ -441,6 +441,13 @@ function SkyLib.CODZ:check_contours()
 			self:_create_last_enemies_outline()
 		end
 	end
+end
+
+function SkyLib.CODZ:create_good_end()
+    managers.hud:init_ending_screen()
+    --self:wait(2, "zm_wait_init_score_good", function()
+        --managers.statistics:send_zm_stats()
+    --end)
 end
 
 function SkyLib.CODZ:_increase_wave()

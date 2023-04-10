@@ -83,7 +83,6 @@ function WeaponFactoryTweakData:_assemble_random_blueprint(factory_id, weapon_ca
 	return blueprint
 end
 
-
 --[[function WeaponFactoryTweakData:_init_pap_parts()
     self.pap_parts = {
         assault_rifle = {

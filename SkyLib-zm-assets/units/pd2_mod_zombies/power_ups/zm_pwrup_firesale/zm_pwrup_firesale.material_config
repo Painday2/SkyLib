@@ -1,0 +1,6 @@
+<materials version="3">
+    <material name="mat_sale" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture	file="units/pd2_mod_zombies/power_ups/zm_pwrup_blood_money/zm_pwrup_blood_money_df"/>
+        <reflection_texture	file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>
+</materials>

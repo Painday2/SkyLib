@@ -1,0 +1,17 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_spe_wunderwaffe_pts/wpn_fps_spe_wunderwaffe_dg3_mag" orientation_object="rp_wpn_fps_ass_m14_m_standard"/>
+    <animations>
+		<animation_group name="reload">
+		  <object name="mag_align_reload" enabled="false" />
+		</animation_group>    
+		<animation_group name="reload_not_empty">
+		  <object name="mag_align_reload_tactical" enabled="false" />
+		</animation_group>
+	</animations>
+	<graphics>
+        <object enabled="false" name="g_mag" />
+        <object enabled="true" name="g_bullet_1" />
+        <object enabled="true" name="g_bullet_2" />
+        <object enabled="true" name="g_bullet_3" />
+    </graphics>
+</dynamic_object>

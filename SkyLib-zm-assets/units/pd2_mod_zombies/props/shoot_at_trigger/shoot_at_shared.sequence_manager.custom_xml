@@ -1,0 +1,16 @@
+<table>
+	<unit>
+		<sequence name=" 'shooted_at' " triggable="true">
+			<body enabled="false" name=" 'body' "/>
+		</sequence>
+		<body name="'body'">
+			<endurance bullet="1">
+				<run_sequence name="'shooted_at'"/>
+			</endurance>
+		</body>
+		<sequence name=" 'reset' " editable_state="false" triggable="true">
+			<body enabled="true" name=" 'body' "/>
+			<set_damage bullet="0"/>
+		</sequence>
+	</unit>
+</table>

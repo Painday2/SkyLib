@@ -1,0 +1,15 @@
+<ugcitem>
+	<param key="type" value="weapon_skin"/>
+	<param key="name" value="New Skin 1"/>
+	<node name="data">
+		<param key="name_id" value="bm_wskn_flint_new_skin_1"/>
+		<param key="weapon_id" value="flint"/>
+		<param key="pattern_gradient_name" value="patgra_pap_3_yellow.tga"/>
+		<param key="base_gradient_name" value="base_pack-a-punch.tga"/>
+		<param key="id" value="n_flint_new_skin_1"/>
+		<param key="reserve_quality" value="true"/>
+		<param key="pattern_name" value="i_mtl_p7_zm_ctl_packapunch_crystal_e.tga"/>
+		<param key="pattern_tweak" value="Vector3(1, 0, 0)"/>
+	</node>
+	<param key="timestamp" value="2020334190642"/>
+</ugcitem>

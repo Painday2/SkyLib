@@ -1,0 +1,14 @@
+<materials version="3">
+    <material unique="true" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" name="glow1" version="2">
+        <diffuse_texture file="units/pd2_mod_zombies/characters/ene_acc_zombie_eyes/zombie_eyes_il"/>
+        <variable type="scalar" name="intensity" value="streetlight"/>
+    </material>
+    <material unique="true" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" name="mat_flare" version="2">
+        <diffuse_texture file="units/pd2_mod_zombies/characters/ene_acc_zombie_eyes/zombie_eyes_il"/>
+        <variable type="scalar" name="intensity" value="streetlight"/>
+    </material>
+    <material unique="true" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" name="mtr_mask" version="2">
+        <diffuse_texture file="units/pd2_mod_zombies/characters/ene_acc_zombie_eyes/zombie_eyes_il"/>
+        <variable type="scalar" name="intensity" value="streetlight"/>
+    </material>
+</materials>

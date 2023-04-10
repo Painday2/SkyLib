@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+	<object file="units/payday2/weapons/wpn_fps_smg_p90/wpn_fps_smg_p90" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_p90"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="p90_upg_primary" />
+		</extension>
+	</extensions>
+</unit>

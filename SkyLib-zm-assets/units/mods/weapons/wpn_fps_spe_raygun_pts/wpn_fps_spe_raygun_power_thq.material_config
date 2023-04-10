@@ -1,0 +1,8 @@
+<materials version="3" group="weapon_breech">
+	<material name="mtr_body" render_template="generic:DIFFUSE_TEXTURE:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/power_df"/>
+        <self_illumination_texture file="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/power_il"/>
+        <variable type="scalar" name="il_multiplier" value="inside of borg queen"/>
+        <variable type="scalar" name="il_bloom" value="0"/>
+	</material>
+</materials>

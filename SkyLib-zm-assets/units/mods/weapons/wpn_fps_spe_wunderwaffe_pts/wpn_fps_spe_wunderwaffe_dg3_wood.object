@@ -1,0 +1,6 @@
+<dynamic_object>
+    <diesel orientation_object="rp_wpn_fps_snp_mosin_body_standard" materials="units/mods/weapons/wpn_fps_spe_wunderwaffe_pts/wpn_fps_spe_wunderwaffe_dg3_wood" />
+	<graphics>
+        <object enabled="true" name="g_body" />
+    </graphics>
+</dynamic_object>

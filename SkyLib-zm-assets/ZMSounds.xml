@@ -1,0 +1,521 @@
+<mod name="Skylib_CODZ_Sounds" min_lib_ver="3.0">
+    <Sounds directory="SkyLib-zm-assets">
+		<Sounds directory="units/pd2_mod_zombies/Sounds">
+			<sound id="raygun_fire" path="raygun_fire.ogg" prefix="regular"/>
+			<sound id="raygun_out" path="off_open.ogg" prefix="first"/>
+			<sound id="raygun_out" path="off_open.ogg" prefix="third"/>
+			<sound id="raygun_eject" path="eject_battery.ogg" prefix="first"/>
+			<sound id="raygun_eject" path="eject_battery.ogg" prefix="third"/>
+			<sound id="raygun_in" path="on_close.ogg" prefix="first"/>
+			<sound id="raygun_in" path="on_close.ogg" prefix="third"/>
+			<sound id="wunderwaffe_fire" path="wunder_fire.ogg" prefix="regular"/>
+			<sound id="lakner_mag_out" path="wunder_clip_out.ogg" prefix="first"/>
+			<sound id="lakner_mag_out" path="wunder_clip_out.ogg" prefix="rb6"/>
+			<sound id="lakner_mag_out" path="wunder_clip_out.ogg" prefix="grass"/>
+			<sound id="lakner_clip_contact_02" path="wunder_clip_contact.ogg" prefix="first"/>
+			<sound id="lakner_clip_contact_02" path="wunder_clip_contact.ogg" prefix="rb6"/>
+			<sound id="lakner_clip_contact_02" path="wunder_clip_contact.ogg" prefix="grass"/>
+			<sound id="lakner_mag_in" path="wunder_clip_in.ogg" prefix="grass"/>
+			<sound id="lakner_mag_in" path="wunder_clip_in.ogg" prefix="rb6"/>
+			<sound id="lakner_mag_in" path="wunder_clip_in.ogg" prefix="first"/>
+			<sound id="wunderwaffe_hit" path="gottem.ogg"/>
+			<sound id="wunderwaffe_spree" path="spree.ogg"/>
+			<sound id="wunderwaffe_spree2" path="spree2.ogg"/>
+			<Sounds directory="zm_generic">
+				<sound id="zm_gen_wave_new" path="zm_gen_wave_new.ogg"/>
+				<sound id="zm_gen_wave_new_special" path="zm_gen_wave_new_special.ogg"/>
+				<sound id="zm_gen_wave_end" path="zm_gen_wave_end.ogg"/>
+				<sound id="zm_gen_wave_end_special" path="zm_gen_wave_end_special.ogg"/>
+				<sound id="zm_gen_pregame" path="zm_gen_pregame.ogg"/>
+				<sound id="zm_gen_game_lost" path="zm_gen_game_lost.ogg"/>
+				<sound id="zm_gen_game_won" path="zm_gen_game_won.ogg"/>
+				<sound id="zm_gen_door_bought1" path="zm_gen_door_bought1.ogg"/>
+				<sound id="zm_gen_door_bought2" path="zm_gen_door_bought2.ogg"/>
+				<sound id="zm_gen_door_bought3" path="zm_gen_door_bought3.ogg"/>
+				<sound id="zm_gen_magic_interact" path="zm_gen_magic_interact.ogg"/>
+				<sound id="zm_gen_magic_loop" path="zm_gen_magic_loop.ogg" volume="0.25"/>
+				<sound id="zm_gen_electricity_short" path="zm_gen_electricity_short.ogg"/>
+				<sound id="zm_gen_ching" path="zm_gen_ching.ogg"/>
+			</Sounds>
+			<Sounds directory="zm_power_ups">
+				<sound id="zm_pwrup_float_spawn" path="zm_pwrup_float_spawn.ogg"/>
+				<sound id="zm_pwrup_float_idle" path="zm_pwrup_float_idle.ogg"/>
+				<sound id="zm_pwrup_float_collect" path="zm_pwrup_float_collect.ogg"/>
+				<sound id="zm_pwrup_blood_money" path="zm_pwrup_blood_money.ogg"/>
+				<sound id="zm_pwrup_double_points" path="zm_pwrup_double_points.ogg"/>
+				<sound id="zm_pwrup_firesale" path="zm_pwrup_firesale.ogg"/>
+				<sound id="zm_pwrup_firesale_song" path="zm_pwrup_firesale_song.ogg"/>
+				<sound id="zm_pwrup_instakill" path="zm_pwrup_instakill.ogg"/>
+				<sound id="zm_pwrup_max_ammo" path="zm_pwrup_max_ammo.ogg"/>
+				<sound id="zm_pwrup_nuke" path="zm_pwrup_nuke.ogg"/>
+				<sound id="zm_pwrup_zombie_blood" path="zm_pwrup_zombie_blood.ogg"/>
+				<sound id="zm_pwrup_zombie_blood_ambiance" path="zm_pwrup_zombie_blood_ambiance.ogg"/>
+			</Sounds>
+			<Sounds directory="zm_perks">
+				<sound id="zm_perk_bought" path="zm_perk_bought.ogg"/>
+				<sound id="zm_pack_hum" loop="true" path="zm_pack_hum.ogg" relative="false"/>
+				<sound id="zm_perk_song_deadshot" path="zm_perk_song_deadshot.ogg"/>
+				<sound id="zm_perk_song_deadshot_sting" path="zm_perk_song_deadshot_sting.ogg"/>
+				<sound id="zm_perk_song_doubletap_sting" path="zm_perk_song_doubletap_sting.ogg"/>
+				<sound id="zm_perk_song_doubletap" path="zm_perk_song_doubletap.ogg"/>
+				<sound id="zm_perk_song_pap" path="zm_perk_song_pack_a_punch.ogg"/>
+				<sound id="zm_perk_song_pap_sting" path="zm_perk_song_pack_a_punch_sting.ogg"/>
+				<sound id="zm_perk_song_staminup" path="zm_perk_song_staminup.ogg"/>
+				<sound id="zm_perk_song_staminup_sting" path="zm_perk_song_staminup_sting.ogg"/>
+				<sound id="zm_perk_song_speedcola" path="zm_perk_song_speedcola.ogg"/>
+				<sound id="zm_perk_song_speedcola_sting" path="zm_perk_song_speedcola_sting.ogg"/>
+				<sound id="zm_perk_song_quickrevive" path="zm_perk_song_quickrevive.ogg"/>
+				<sound id="zm_perk_song_quickrevive_sting" path="zm_perk_song_quickrevive_sting.ogg"/>
+				<sound id="zm_perk_song_juggernog" path="zm_perk_song_juggernog.ogg"/>
+				<sound id="zm_perk_song_juggernog_sting" path="zm_perk_song_juggernog_sting.ogg"/>
+			</Sounds>
+			<Sounds directory="zm_mystery_box">
+				<sound id="zm_box_giggle" path="zm_box_giggle.ogg"/>
+				<sound id="zm_box_bye" path="zm_box_bye.ogg"/>
+				<sound id="zm_box_left" path="zm_box_left.ogg"/>
+				<sound id="zm_box_picking" path="zm_box_picking.ogg"/>
+				<sound id="zm_box_shutting" path="zm_box_shutting.ogg"/>
+				<sound id="zm_box_moving" path="zm_box_moving.ogg"/>
+			</Sounds>
+			<Sounds directory="zm_announcer">
+				<sound id="zm_sam_laugh" path="demon_sam_laugh.ogg"/>
+				<sound id="zm_announcer_wunder" path="LIGHTNING_IS_POWER.ogg"/>
+				<sound id="zm_announcer_roach" path="demon_sam_present.ogg"/>
+			</Sounds>
+			<Sounds directory="zm_weapons">
+				<Sounds directory="upg" prefix="regular" use_fix="true">
+					<sound id="zm_pew_global" path="upg_pew_generic.ogg" use_fix="true"/>
+					<sound id="zm_pew_global_npc" path="upg_pew_generic_npc.ogg" use_fix="true"/>
+					<sound id="zm_pew_m1911" path="upg_pew_pis2.ogg" prefix="regular" use_fix="true"/>
+					<sound id="zm_pew_smg" path="upg_pew_smg.ogg" prefix="regular" use_fix="true"/>
+					<sound id="zm_pew_cobra" path="upg_pew_smg2.ogg" prefix="regular" use_fix="true"/>
+					<sound id="zm_pew_rifle" path="upg_pew_dmr.ogg" prefix="regular" use_fix="true"/>
+					<sound id="zm_pew_shta" path="upg_pew_shot_auto.ogg" prefix="regular" use_fix="true"/>
+					<sound id="zm_pew_shts" path="upg_pew_shot_semi.ogg" prefix="regular" use_fix="true"/>
+					<sound id="zm_pew_snp_b" path="upg_pew_snp.ogg" prefix="regular" use_fix="true"/>
+					<sound id="zm_pew_snp_e" path="upg_pew_snp2.ogg" prefix="regular" use_fix="true"/>
+					<sound id="zm_pew_lmg" path="upg_pew_lmg.ogg" prefix="regular" use_fix="true"/>
+				</Sounds>
+			</Sounds>
+			<Sounds directory="zm_enemy">
+				<Sounds directory="spawning">
+					<sound id="zm_enemy_spawn_electrical" path="zm_enemy_spawn_electrical.ogg"/>
+				</Sounds>
+				<Sounds directory="shadow">
+					<sound id="zm_ene_shadow_scream_01" path="zm_ene_shadow_scream_01.ogg"/>
+				</Sounds>
+				<Sounds directory="taunt">
+					<sound id="z1n_g90" path="taunt_00.ogg"/>
+					<sound id="z2n_g90" path="taunt_01.ogg"/>
+					<sound id="z3n_g90" path="taunt_02.ogg"/>
+					<sound id="z4n_g90" path="taunt_03.ogg"/>
+					<sound id="z5n_g90" path="taunt_04.ogg"/>
+					<sound id="z1n_lk3a" path="taunt_00.ogg"/>
+					<sound id="z2n_lk3a" path="taunt_01.ogg"/>
+					<sound id="z3n_lk3a" path="taunt_02.ogg"/>
+					<sound id="z4n_lk3a" path="taunt_03.ogg"/>
+					<sound id="z5n_lk3a" path="taunt_04.ogg"/>
+					<sound id="z1n_lk3b" path="taunt_05.ogg"/>
+					<sound id="z2n_lk3b" path="taunt_06.ogg"/>
+					<sound id="z3n_lk3b" path="taunt_07.ogg"/>
+					<sound id="z4n_lk3b" path="taunt_08.ogg"/>
+					<sound id="z5n_lk3b" path="taunt_09.ogg"/>
+				</Sounds>
+				<Sounds directory="command">
+					<sound id="z1n_hlp" path="help_00.ogg"/>
+					<sound id="z2n_hlp" path="help_01.ogg"/>
+					<sound id="z3n_hlp" path="help_02.ogg"/>
+					<sound id="z4n_hlp" path="help_03.ogg"/>
+					<sound id="z5n_hlp" path="help_04.ogg"/>
+					<sound id="z1n_rdy" path="ready_00.ogg"/>
+					<sound id="z2n_rdy" path="ready_01.ogg"/>
+					<sound id="z3n_rdy" path="ready_02.ogg"/>
+					<sound id="z4n_rdy" path="ready_03.ogg"/>
+					<sound id="z5n_rdy" path="ready_04.ogg"/>
+					<sound id="z1n_mov" path="move_00.ogg"/>
+					<sound id="z2n_mov" path="move_01.ogg"/>
+					<sound id="z3n_mov" path="move_02.ogg"/>
+					<sound id="z4n_mov" path="move_03.ogg"/>
+					<sound id="z5n_mov" path="move_04.ogg"/>
+				</Sounds>
+				<Sounds directory="hurt">
+					<sound id="electrocute_00" path="electrocute_00.ogg"/>
+					<sound id="electrocute_01" path="electrocute_01.ogg"/>
+					<sound id="electrocute_02" path="electrocute_02.ogg"/>
+					<sound id="z1n_burnhurt" path="burn_00.ogg"/>
+					<sound id="z2n_burnhurt" path="burn_01.ogg"/>
+					<sound id="z3n_burnhurt" path="burn_02.ogg"/>
+					<sound id="z4n_burnhurt" path="burn_03.ogg"/>
+					<sound id="z5n_burnhurt" path="burn_04.ogg"/>
+					<sound id="z1n_burndeath" path="immolate_00.ogg"/>
+					<sound id="z2n_burndeath" path="immolate_01.ogg"/>
+					<sound id="z3n_burndeath" path="immolate_02.ogg"/>
+					<sound id="z4n_burndeath" path="immolate_03.ogg"/>
+					<sound id="z5n_burndeath" path="immolate_04.ogg"/>
+					<sound id="z1n_x01a_any_3p" path="hurt_00.ogg"/>
+					<sound id="z2n_x01a_any_3p" path="hurt_01.ogg"/>
+					<sound id="z3n_x01a_any_3p" path="hurt_02.ogg"/>
+					<sound id="z4n_x01a_any_3p" path="hurt_03.ogg"/>
+					<sound id="z5n_x01a_any_3p" path="hurt_04.ogg"/>
+					<sound id="z1n_x02a_any_3p" path="death_00.ogg"/>
+					<sound id="z2n_x02a_any_3p" path="death_01.ogg"/>
+					<sound id="z3n_x02a_any_3p" path="death_02.ogg"/>
+					<sound id="z4n_x02a_any_3p" path="death_03.ogg"/>
+					<sound id="z5n_x02a_any_3p" path="death_04.ogg"/>
+					<sound id="shd_x02a_any_3p_01" path="death_03.ogg"/>
+				</Sounds>
+				<Sounds directory="cloaker">
+					<sound id="cloaker_taunt_after_assault" path="clk_killcontrol.ogg"/>
+					<sound id="cloaker_taunt_during_assault" path="clk_killassault.ogg"/>
+					<sound id="clk_x02a_any_3p" path="clk_death.ogg"/>
+				</Sounds>
+				<Sounds directory="taser">
+					<sound id="tsr_c01" path="tsr_spot.ogg"/>
+					<sound id="tsr_entrance" path="tsr_spawn.ogg"/>
+					<sound id="tsr_elite" path="tsr_spawnelite.ogg"/>
+					<sound id="tsr_g90" path="tsr_taunt.ogg"/>
+					<sound id="tsr_post_tasing_taunt" path="tsr_killtaunt.ogg"/>
+					<sound id="tsr_tasered" path="tsr_stun.ogg"/>
+					<sound id="tsr_x01a_any_3p" path="tsr_hurt.ogg"/>
+					<sound id="tsr_x02a_any_3p" path="tsr_death.ogg"/>
+					<sound id="tsr_burnhurt" path="tsr_burn.ogg"/>
+					<sound id="tsr_burndeath" path="tsr_immolate.ogg"/>
+				</Sounds>
+				<Sounds directory="bulldozer">
+					<sound id="bdz_c01" path="bdz_spot.ogg"/>
+					<sound id="bdz_entrance" path="bdz_spawn.ogg"/>
+					<sound id="bdz_entrance_elite" path="bdz_spawnelite.ogg"/>
+					<sound id="bdz_g90" path="bdz_taunt.ogg"/>
+					<sound id="bdz_post_kill_taunt" path="bdz_killtaunt.ogg"/>
+					<sound id="bdz_visor_lost" path="bdz_visorbreak.ogg"/>
+					<sound id="bdz_heal" path="bdz_heal.ogg"/>
+					<sound id="bdz_x02a_any_3p" path="bdz_death.ogg"/>
+				</Sounds>
+				<Sounds directory="medic">
+					<sound id="mdc_c01" path="mdc_spot.ogg"/>
+					<sound id="mdc_entrance" path="mdc_spawn.ogg"/>
+					<sound id="mdc_g90" path="mdc_taunt.ogg"/>
+					<sound id="mdc_heal" path="mdc_heal.ogg"/>
+					<sound id="mdc_x01a_any_3p" path="mdc_hurt.ogg"/>
+					<sound id="mdc_x02a_any_3p" path="mdc_death.ogg"/>
+					<sound id="mdc_burnhurt" path="mdc_burn.ogg"/>
+					<sound id="mdc_burndeath" path="mdc_immolate.ogg"/>
+					<sound id="clk_burnhurt" path="mdc_burn.ogg"/>
+					<sound id="clk_burndeath" path="mdc_immolate.ogg"/>
+				</Sounds>
+			</Sounds>
+			<Sounds directory="zm_enemy" prefix="grass">
+				<Sounds directory="spawning">
+					<sound id="zm_enemy_spawn_electrical" path="zm_enemy_spawn_electrical.ogg"/>
+				</Sounds>
+				<Sounds directory="shadow">
+					<sound id="zm_ene_shadow_scream_01" path="zm_ene_shadow_scream_01.ogg"/>
+				</Sounds>
+				<Sounds directory="taunt">
+					<sound id="z1n_g90" path="taunt_00.ogg"/>
+					<sound id="z2n_g90" path="taunt_01.ogg"/>
+					<sound id="z3n_g90" path="taunt_02.ogg"/>
+					<sound id="z4n_g90" path="taunt_03.ogg"/>
+					<sound id="z5n_g90" path="taunt_04.ogg"/>
+					<sound id="z1n_lk3a" path="taunt_00.ogg"/>
+					<sound id="z2n_lk3a" path="taunt_01.ogg"/>
+					<sound id="z3n_lk3a" path="taunt_02.ogg"/>
+					<sound id="z4n_lk3a" path="taunt_03.ogg"/>
+					<sound id="z5n_lk3a" path="taunt_04.ogg"/>
+					<sound id="z1n_lk3b" path="taunt_05.ogg"/>
+					<sound id="z2n_lk3b" path="taunt_06.ogg"/>
+					<sound id="z3n_lk3b" path="taunt_07.ogg"/>
+					<sound id="z4n_lk3b" path="taunt_08.ogg"/>
+					<sound id="z5n_lk3b" path="taunt_09.ogg"/>
+				</Sounds>
+				<Sounds directory="command">
+					<sound id="z1n_hlp" path="help_00.ogg"/>
+					<sound id="z2n_hlp" path="help_01.ogg"/>
+					<sound id="z3n_hlp" path="help_02.ogg"/>
+					<sound id="z4n_hlp" path="help_03.ogg"/>
+					<sound id="z5n_hlp" path="help_04.ogg"/>
+					<sound id="z1n_rdy" path="ready_00.ogg"/>
+					<sound id="z2n_rdy" path="ready_01.ogg"/>
+					<sound id="z3n_rdy" path="ready_02.ogg"/>
+					<sound id="z4n_rdy" path="ready_03.ogg"/>
+					<sound id="z5n_rdy" path="ready_04.ogg"/>
+					<sound id="z1n_mov" path="move_00.ogg"/>
+					<sound id="z2n_mov" path="move_01.ogg"/>
+					<sound id="z3n_mov" path="move_02.ogg"/>
+					<sound id="z4n_mov" path="move_03.ogg"/>
+					<sound id="z5n_mov" path="move_04.ogg"/>
+				</Sounds>
+				<Sounds directory="hurt">
+					<sound id="z1n_burnhurt" path="burn_00.ogg"/>
+					<sound id="z2n_burnhurt" path="burn_01.ogg"/>
+					<sound id="z3n_burnhurt" path="burn_02.ogg"/>
+					<sound id="z4n_burnhurt" path="burn_03.ogg"/>
+					<sound id="z5n_burnhurt" path="burn_04.ogg"/>
+					<sound id="z1n_burndeath" path="immolate_00.ogg"/>
+					<sound id="z2n_burndeath" path="immolate_01.ogg"/>
+					<sound id="z3n_burndeath" path="immolate_02.ogg"/>
+					<sound id="z4n_burndeath" path="immolate_03.ogg"/>
+					<sound id="z5n_burndeath" path="immolate_04.ogg"/>
+					<sound id="z1n_x01a_any_3p" path="hurt_00.ogg"/>
+					<sound id="z2n_x01a_any_3p" path="hurt_01.ogg"/>
+					<sound id="z3n_x01a_any_3p" path="hurt_02.ogg"/>
+					<sound id="z4n_x01a_any_3p" path="hurt_03.ogg"/>
+					<sound id="z5n_x01a_any_3p" path="hurt_04.ogg"/>
+					<sound id="z1n_x02a_any_3p" path="death_00.ogg"/>
+					<sound id="z2n_x02a_any_3p" path="death_01.ogg"/>
+					<sound id="z3n_x02a_any_3p" path="death_02.ogg"/>
+					<sound id="z4n_x02a_any_3p" path="death_03.ogg"/>
+					<sound id="z5n_x02a_any_3p" path="death_04.ogg"/>
+					<sound id="shd_x02a_any_3p_01" path="death_03.ogg"/>
+				</Sounds>
+				<Sounds directory="cloaker">
+					<sound id="cloaker_taunt_after_assault" path="clk_killcontrol.ogg"/>
+					<sound id="cloaker_taunt_during_assault" path="clk_killassault.ogg"/>
+					<sound id="clk_x02a_any_3p" path="clk_death.ogg"/>
+				</Sounds>
+				<Sounds directory="taser">
+					<sound id="tsr_c01" path="tsr_spot.ogg"/>
+					<sound id="tsr_entrance" path="tsr_spawn.ogg"/>
+					<sound id="tsr_elite" path="tsr_spawnelite.ogg"/>
+					<sound id="tsr_g90" path="tsr_taunt.ogg"/>
+					<sound id="tsr_post_tasing_taunt" path="tsr_killtaunt.ogg"/>
+					<sound id="tsr_tasered" path="tsr_stun.ogg"/>
+					<sound id="tsr_x01a_any_3p" path="tsr_hurt.ogg"/>
+					<sound id="tsr_x02a_any_3p" path="tsr_death.ogg"/>
+					<sound id="tsr_burnhurt" path="tsr_burn.ogg"/>
+					<sound id="tsr_burndeath" path="tsr_immolate.ogg"/>
+				</Sounds>
+				<Sounds directory="bulldozer">
+					<sound id="bdz_c01" path="bdz_spot.ogg"/>
+					<sound id="bdz_entrance" path="bdz_spawn.ogg"/>
+					<sound id="bdz_entrance_elite" path="bdz_spawnelite.ogg"/>
+					<sound id="bdz_g90" path="bdz_taunt.ogg"/>
+					<sound id="bdz_post_kill_taunt" path="bdz_killtaunt.ogg"/>
+					<sound id="bdz_visor_lost" path="bdz_visorbreak.ogg"/>
+					<sound id="bdz_heal" path="bdz_heal.ogg"/>
+					<sound id="bdz_x02a_any_3p" path="bdz_death.ogg"/>
+				</Sounds>
+				<Sounds directory="medic">
+					<sound id="mdc_c01" path="mdc_spot.ogg"/>
+					<sound id="mdc_entrance" path="mdc_spawn.ogg"/>
+					<sound id="mdc_g90" path="mdc_taunt.ogg"/>
+					<sound id="mdc_heal" path="mdc_heal.ogg"/>
+					<sound id="mdc_x01a_any_3p" path="mdc_hurt.ogg"/>
+					<sound id="mdc_x02a_any_3p" path="mdc_death.ogg"/>
+					<sound id="mdc_burnhurt" path="mdc_burn.ogg"/>
+					<sound id="mdc_burndeath" path="mdc_immolate.ogg"/>
+					<sound id="clk_burnhurt" path="mdc_burn.ogg"/>
+					<sound id="clk_burndeath" path="mdc_immolate.ogg"/>
+				</Sounds>
+			</Sounds>
+			<Sounds directory="zm_enemy" prefix="stone">
+				<Sounds directory="spawning">
+					<sound id="zm_enemy_spawn_electrical" path="zm_enemy_spawn_electrical.ogg"/>
+				</Sounds>
+				<Sounds directory="shadow">
+					<sound id="zm_ene_shadow_scream_01" path="zm_ene_shadow_scream_01.ogg"/>
+				</Sounds>
+				<Sounds directory="taunt">
+					<sound id="z1n_g90" path="taunt_00.ogg"/>
+					<sound id="z2n_g90" path="taunt_01.ogg"/>
+					<sound id="z3n_g90" path="taunt_02.ogg"/>
+					<sound id="z4n_g90" path="taunt_03.ogg"/>
+					<sound id="z5n_g90" path="taunt_04.ogg"/>
+					<sound id="z1n_lk3a" path="taunt_00.ogg"/>
+					<sound id="z2n_lk3a" path="taunt_01.ogg"/>
+					<sound id="z3n_lk3a" path="taunt_02.ogg"/>
+					<sound id="z4n_lk3a" path="taunt_03.ogg"/>
+					<sound id="z5n_lk3a" path="taunt_04.ogg"/>
+					<sound id="z1n_lk3b" path="taunt_05.ogg"/>
+					<sound id="z2n_lk3b" path="taunt_06.ogg"/>
+					<sound id="z3n_lk3b" path="taunt_07.ogg"/>
+					<sound id="z4n_lk3b" path="taunt_08.ogg"/>
+					<sound id="z5n_lk3b" path="taunt_09.ogg"/>
+				</Sounds>
+				<Sounds directory="command">
+					<sound id="z1n_hlp" path="help_00.ogg"/>
+					<sound id="z2n_hlp" path="help_01.ogg"/>
+					<sound id="z3n_hlp" path="help_02.ogg"/>
+					<sound id="z4n_hlp" path="help_03.ogg"/>
+					<sound id="z5n_hlp" path="help_04.ogg"/>
+					<sound id="z1n_rdy" path="ready_00.ogg"/>
+					<sound id="z2n_rdy" path="ready_01.ogg"/>
+					<sound id="z3n_rdy" path="ready_02.ogg"/>
+					<sound id="z4n_rdy" path="ready_03.ogg"/>
+					<sound id="z5n_rdy" path="ready_04.ogg"/>
+					<sound id="z1n_mov" path="move_00.ogg"/>
+					<sound id="z2n_mov" path="move_01.ogg"/>
+					<sound id="z3n_mov" path="move_02.ogg"/>
+					<sound id="z4n_mov" path="move_03.ogg"/>
+					<sound id="z5n_mov" path="move_04.ogg"/>
+				</Sounds>
+				<Sounds directory="hurt">
+					<sound id="z1n_burnhurt" path="burn_00.ogg"/>
+					<sound id="z2n_burnhurt" path="burn_01.ogg"/>
+					<sound id="z3n_burnhurt" path="burn_02.ogg"/>
+					<sound id="z4n_burnhurt" path="burn_03.ogg"/>
+					<sound id="z5n_burnhurt" path="burn_04.ogg"/>
+					<sound id="z1n_burndeath" path="immolate_00.ogg"/>
+					<sound id="z2n_burndeath" path="immolate_01.ogg"/>
+					<sound id="z3n_burndeath" path="immolate_02.ogg"/>
+					<sound id="z4n_burndeath" path="immolate_03.ogg"/>
+					<sound id="z5n_burndeath" path="immolate_04.ogg"/>
+					<sound id="z1n_x01a_any_3p" path="hurt_00.ogg"/>
+					<sound id="z2n_x01a_any_3p" path="hurt_01.ogg"/>
+					<sound id="z3n_x01a_any_3p" path="hurt_02.ogg"/>
+					<sound id="z4n_x01a_any_3p" path="hurt_03.ogg"/>
+					<sound id="z5n_x01a_any_3p" path="hurt_04.ogg"/>
+					<sound id="z1n_x02a_any_3p" path="death_00.ogg"/>
+					<sound id="z2n_x02a_any_3p" path="death_01.ogg"/>
+					<sound id="z3n_x02a_any_3p" path="death_02.ogg"/>
+					<sound id="z4n_x02a_any_3p" path="death_03.ogg"/>
+					<sound id="z5n_x02a_any_3p" path="death_04.ogg"/>
+					<sound id="shd_x02a_any_3p_01" path="death_03.ogg"/>
+				</Sounds>
+				<Sounds directory="cloaker">
+					<sound id="cloaker_taunt_after_assault" path="clk_killcontrol.ogg"/>
+					<sound id="cloaker_taunt_during_assault" path="clk_killassault.ogg"/>
+					<sound id="clk_x02a_any_3p" path="clk_death.ogg"/>
+				</Sounds>
+				<Sounds directory="taser">
+					<sound id="tsr_c01" path="tsr_spot.ogg"/>
+					<sound id="tsr_entrance" path="tsr_spawn.ogg"/>
+					<sound id="tsr_elite" path="tsr_spawnelite.ogg"/>
+					<sound id="tsr_g90" path="tsr_taunt.ogg"/>
+					<sound id="tsr_post_tasing_taunt" path="tsr_killtaunt.ogg"/>
+					<sound id="tsr_tasered" path="tsr_stun.ogg"/>
+					<sound id="tsr_x01a_any_3p" path="tsr_hurt.ogg"/>
+					<sound id="tsr_x02a_any_3p" path="tsr_death.ogg"/>
+					<sound id="tsr_burnhurt" path="tsr_burn.ogg"/>
+					<sound id="tsr_burndeath" path="tsr_immolate.ogg"/>
+				</Sounds>
+				<Sounds directory="bulldozer">
+					<sound id="bdz_c01" path="bdz_spot.ogg"/>
+					<sound id="bdz_entrance" path="bdz_spawn.ogg"/>
+					<sound id="bdz_entrance_elite" path="bdz_spawnelite.ogg"/>
+					<sound id="bdz_g90" path="bdz_taunt.ogg"/>
+					<sound id="bdz_post_kill_taunt" path="bdz_killtaunt.ogg"/>
+					<sound id="bdz_visor_lost" path="bdz_visorbreak.ogg"/>
+					<sound id="bdz_heal" path="bdz_heal.ogg"/>
+					<sound id="bdz_x02a_any_3p" path="bdz_death.ogg"/>
+				</Sounds>
+				<Sounds directory="medic">
+					<sound id="mdc_c01" path="mdc_spot.ogg"/>
+					<sound id="mdc_entrance" path="mdc_spawn.ogg"/>
+					<sound id="mdc_g90" path="mdc_taunt.ogg"/>
+					<sound id="mdc_heal" path="mdc_heal.ogg"/>
+					<sound id="mdc_x01a_any_3p" path="mdc_hurt.ogg"/>
+					<sound id="mdc_x02a_any_3p" path="mdc_death.ogg"/>
+					<sound id="mdc_burnhurt" path="mdc_burn.ogg"/>
+					<sound id="mdc_burndeath" path="mdc_immolate.ogg"/>
+					<sound id="clk_burnhurt" path="mdc_burn.ogg"/>
+					<sound id="clk_burndeath" path="mdc_immolate.ogg"/>
+				</Sounds>
+			</Sounds>
+			<Sounds directory="zm_enemy" prefix="no_material">
+				<Sounds directory="spawning">
+					<sound id="zm_enemy_spawn_electrical" path="zm_enemy_spawn_electrical.ogg"/>
+				</Sounds>
+				<Sounds directory="shadow">
+					<sound id="zm_ene_shadow_scream_01" path="zm_ene_shadow_scream_01.ogg"/>
+				</Sounds>
+				<Sounds directory="taunt">
+					<sound id="z1n_g90" path="taunt_00.ogg"/>
+					<sound id="z2n_g90" path="taunt_01.ogg"/>
+					<sound id="z3n_g90" path="taunt_02.ogg"/>
+					<sound id="z4n_g90" path="taunt_03.ogg"/>
+					<sound id="z5n_g90" path="taunt_04.ogg"/>
+					<sound id="z1n_lk3a" path="taunt_00.ogg"/>
+					<sound id="z2n_lk3a" path="taunt_01.ogg"/>
+					<sound id="z3n_lk3a" path="taunt_02.ogg"/>
+					<sound id="z4n_lk3a" path="taunt_03.ogg"/>
+					<sound id="z5n_lk3a" path="taunt_04.ogg"/>
+					<sound id="z1n_lk3b" path="taunt_05.ogg"/>
+					<sound id="z2n_lk3b" path="taunt_06.ogg"/>
+					<sound id="z3n_lk3b" path="taunt_07.ogg"/>
+					<sound id="z4n_lk3b" path="taunt_08.ogg"/>
+					<sound id="z5n_lk3b" path="taunt_09.ogg"/>
+				</Sounds>
+				<Sounds directory="command">
+					<sound id="z1n_hlp" path="help_00.ogg"/>
+					<sound id="z2n_hlp" path="help_01.ogg"/>
+					<sound id="z3n_hlp" path="help_02.ogg"/>
+					<sound id="z4n_hlp" path="help_03.ogg"/>
+					<sound id="z5n_hlp" path="help_04.ogg"/>
+					<sound id="z1n_rdy" path="ready_00.ogg"/>
+					<sound id="z2n_rdy" path="ready_01.ogg"/>
+					<sound id="z3n_rdy" path="ready_02.ogg"/>
+					<sound id="z4n_rdy" path="ready_03.ogg"/>
+					<sound id="z5n_rdy" path="ready_04.ogg"/>
+					<sound id="z1n_mov" path="move_00.ogg"/>
+					<sound id="z2n_mov" path="move_01.ogg"/>
+					<sound id="z3n_mov" path="move_02.ogg"/>
+					<sound id="z4n_mov" path="move_03.ogg"/>
+					<sound id="z5n_mov" path="move_04.ogg"/>
+				</Sounds>
+				<Sounds directory="hurt">
+					<sound id="z1n_burnhurt" path="burn_00.ogg"/>
+					<sound id="z2n_burnhurt" path="burn_01.ogg"/>
+					<sound id="z3n_burnhurt" path="burn_02.ogg"/>
+					<sound id="z4n_burnhurt" path="burn_03.ogg"/>
+					<sound id="z5n_burnhurt" path="burn_04.ogg"/>
+					<sound id="z1n_burndeath" path="immolate_00.ogg"/>
+					<sound id="z2n_burndeath" path="immolate_01.ogg"/>
+					<sound id="z3n_burndeath" path="immolate_02.ogg"/>
+					<sound id="z4n_burndeath" path="immolate_03.ogg"/>
+					<sound id="z5n_burndeath" path="immolate_04.ogg"/>
+					<sound id="z1n_x01a_any_3p" path="hurt_00.ogg"/>
+					<sound id="z2n_x01a_any_3p" path="hurt_01.ogg"/>
+					<sound id="z3n_x01a_any_3p" path="hurt_02.ogg"/>
+					<sound id="z4n_x01a_any_3p" path="hurt_03.ogg"/>
+					<sound id="z5n_x01a_any_3p" path="hurt_04.ogg"/>
+					<sound id="z1n_x02a_any_3p" path="death_00.ogg"/>
+					<sound id="z2n_x02a_any_3p" path="death_01.ogg"/>
+					<sound id="z3n_x02a_any_3p" path="death_02.ogg"/>
+					<sound id="z4n_x02a_any_3p" path="death_03.ogg"/>
+					<sound id="z5n_x02a_any_3p" path="death_04.ogg"/>
+					<sound id="shd_x02a_any_3p_01" path="death_03.ogg"/>
+				</Sounds>
+				<Sounds directory="cloaker">
+					<sound id="cloaker_taunt_after_assault" path="clk_killcontrol.ogg"/>
+					<sound id="cloaker_taunt_during_assault" path="clk_killassault.ogg"/>
+					<sound id="clk_x02a_any_3p" path="clk_death.ogg"/>
+				</Sounds>
+				<Sounds directory="taser">
+					<sound id="tsr_c01" path="tsr_spot.ogg"/>
+					<sound id="tsr_entrance" path="tsr_spawn.ogg"/>
+					<sound id="tsr_elite" path="tsr_spawnelite.ogg"/>
+					<sound id="tsr_g90" path="tsr_taunt.ogg"/>
+					<sound id="tsr_post_tasing_taunt" path="tsr_killtaunt.ogg"/>
+					<sound id="tsr_tasered" path="tsr_stun.ogg"/>
+					<sound id="tsr_x01a_any_3p" path="tsr_hurt.ogg"/>
+					<sound id="tsr_x02a_any_3p" path="tsr_death.ogg"/>
+					<sound id="tsr_burnhurt" path="tsr_burn.ogg"/>
+					<sound id="tsr_burndeath" path="tsr_immolate.ogg"/>
+				</Sounds>
+				<Sounds directory="bulldozer">
+					<sound id="bdz_c01" path="bdz_spot.ogg"/>
+					<sound id="bdz_entrance" path="bdz_spawn.ogg"/>
+					<sound id="bdz_entrance_elite" path="bdz_spawnelite.ogg"/>
+					<sound id="bdz_g90" path="bdz_taunt.ogg"/>
+					<sound id="bdz_post_kill_taunt" path="bdz_killtaunt.ogg"/>
+					<sound id="bdz_visor_lost" path="bdz_visorbreak.ogg"/>
+					<sound id="bdz_heal" path="bdz_heal.ogg"/>
+					<sound id="bdz_x02a_any_3p" path="bdz_death.ogg"/>
+				</Sounds>
+				<Sounds directory="medic">
+					<sound id="mdc_c01" path="mdc_spot.ogg"/>
+					<sound id="mdc_entrance" path="mdc_spawn.ogg"/>
+					<sound id="mdc_g90" path="mdc_taunt.ogg"/>
+					<sound id="mdc_heal" path="mdc_heal.ogg"/>
+					<sound id="mdc_x01a_any_3p" path="mdc_hurt.ogg"/>
+					<sound id="mdc_x02a_any_3p" path="mdc_death.ogg"/>
+					<sound id="mdc_burnhurt" path="mdc_burn.ogg"/>
+					<sound id="mdc_burndeath" path="mdc_immolate.ogg"/>
+					<sound id="clk_burnhurt" path="mdc_burn.ogg"/>
+					<sound id="clk_burndeath" path="mdc_immolate.ogg"/>
+				</Sounds>
+			</Sounds>
+		</Sounds>
+	</Sounds>
+</mod>

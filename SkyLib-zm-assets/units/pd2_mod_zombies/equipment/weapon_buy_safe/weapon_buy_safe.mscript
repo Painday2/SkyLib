@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<modelscript>
+    <import		file="weapon_buy_safe.glb" type="gltf" create_objects="true"/>
+	<animation	file="weapon_buy_safe.animation"/>
+</modelscript>

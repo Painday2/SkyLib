@@ -1,0 +1,19 @@
+<unit type="gen" slot="1">
+	<network sync="spawn"/>
+	<object file="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" />
+	<dependencies>
+		<depends_on sequence_manager="units/pd2_mod_zombies/props/zm_wallbuy_dummy/zm_wallbuy_dummy" />
+	</dependencies>
+	<extensions>
+		<extension class="ScriptUnitData" name="unit_data" />
+		<extension class="wallbuy" name="wallbuy"/>
+		<extension name="base" class="ZMWallbuyBase" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="sync_unit_data" class="SyncUnitData" />
+		<extension name="interaction" class="ZMWallbuyInteractionExt">
+			<var name="tweak_data" value="zm_wallbuy" />
+			<var name="_interact_object" value="interact"/>
+			<var name="drop_in_sync_tweak_data" value="true" />
+		</extension>
+	</extensions>
+</unit>
