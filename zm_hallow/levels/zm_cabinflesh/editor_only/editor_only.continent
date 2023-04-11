@@ -1,0 +1,1319 @@
+<table>
+	<editor_groups/>
+	<statics>
+		<table>
+			<unit_data _prev_pos="-7400 600.003 3500" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-7368.74 4948.19 3300" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_64x3m" name_id="dev_nav_blocker_64x3m_001" only_exists_in_editor="true" position="-7400 600.007 3500" rotation="0 0 2.68221e-007 -1" unit_id="200000"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7400 -7000 3500" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-13883.2 1033.91 3300" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_64x3m" name_id="dev_nav_blocker_64x3m_004" only_exists_in_editor="true" position="-7400.01 -7000 3500" rotation="0 0 2.68221e-007 -1" unit_id="200003"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11400 -200 3500" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-10114.6 7964.83 3300" local_rot="0 0 -0.870356 -0.492424" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_024" only_exists_in_editor="true" position="-11400 -199.994 3500" rotation="0 0 1 2.38419e-007" unit_id="200004"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11400 400 3500" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-9600.33 8273.85 3300" local_rot="0 0 -0.870356 -0.492424" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_025" only_exists_in_editor="true" position="-11400 400.007 3500" rotation="0 0 1 2.38419e-007" unit_id="200005"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11135.9 1084.66 3650" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_001" only_exists_in_editor="true" position="-11135.9 1084.66 3650" rotation="0 0 0.707107 -0.707107" unit_id="200006"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11248.3 931.769 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_002" only_exists_in_editor="true" position="-11248.3 931.769 3650" rotation="0 0 0 -1" unit_id="200007"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11117.2 715.273 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_003" only_exists_in_editor="true" position="-11117.2 715.273 3650" rotation="0 0 0 -1" unit_id="200008"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11099.4 886.64 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_004" only_exists_in_editor="true" position="-11099.4 886.64 3650" rotation="0 0 0 -1" unit_id="200009"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11273.6 1147.87 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_005" only_exists_in_editor="true" position="-11273.6 1147.87 3650" rotation="0 0 0 -1" unit_id="200010"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11106 1308.99 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_006" only_exists_in_editor="true" position="-11106 1308.99 3650" rotation="0 0 0 -1" unit_id="200011"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11139.4 1467.43 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_007" only_exists_in_editor="true" position="-11139.4 1467.43 3650" rotation="0 0 0 -1" unit_id="200012"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11265.5 1533.9 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_008" only_exists_in_editor="true" position="-11265.5 1533.9 3650" rotation="0 0 0 -1" unit_id="200013"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11141.8 1764.4 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_009" only_exists_in_editor="true" position="-11141.8 1764.4 3650" rotation="0 0 0 -1" unit_id="200014"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10926.8 1450.47 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_010" only_exists_in_editor="true" position="-10926.8 1450.47 3650" rotation="0 0 0 -1" unit_id="200015"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10684 1499.06 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_011" only_exists_in_editor="true" position="-10684 1499.06 3650" rotation="0 0 0 -1" unit_id="200016"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10326.1 1591.65 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_012" only_exists_in_editor="true" position="-10326.1 1591.65 3650" rotation="0 0 0 -1" unit_id="200017"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10133.7 1596.4 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_013" only_exists_in_editor="true" position="-10133.7 1596.4 3650" rotation="0 0 0 -1" unit_id="200018"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10019.3 1572.14 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_014" only_exists_in_editor="true" position="-10019.3 1572.14 3650" rotation="0 0 0 -1" unit_id="200019"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9883.19 1596.99 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_015" only_exists_in_editor="true" position="-9883.19 1596.99 3650" rotation="0 0 0 -1" unit_id="200020"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9469.61 1576.41 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_016" only_exists_in_editor="true" position="-9469.61 1576.41 3650" rotation="0 0 0 -1" unit_id="200021"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9281.27 1546.35 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_017" only_exists_in_editor="true" position="-9281.27 1546.35 3650" rotation="0 0 0 -1" unit_id="200022"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9128.37 1565.04 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_018" only_exists_in_editor="true" position="-9128.37 1565.04 3650" rotation="0 0 0 -1" unit_id="200023"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8731.97 1558.94 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_019" only_exists_in_editor="true" position="-8731.97 1558.94 3650" rotation="0 0 0 -1" unit_id="200024"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8565.29 1539.63 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_020" only_exists_in_editor="true" position="-8565.29 1539.63 3650" rotation="0 0 0 -1" unit_id="200025"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8435.45 1579.94 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_021" only_exists_in_editor="true" position="-8435.45 1579.94 3650" rotation="0 0 0 -1" unit_id="200026"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8339.52 1531.03 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_022" only_exists_in_editor="true" position="-8339.52 1531.03 3650" rotation="0 0 0 -1" unit_id="200027"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11261.6 -666.431 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_023" only_exists_in_editor="true" position="-11261.6 -666.431 3650" rotation="0 0 0 -1" unit_id="200028"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11147 -695.749 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_024" only_exists_in_editor="true" position="-11147 -695.749 3650" rotation="0 0 0 -1" unit_id="200029"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11107.2 -804.487 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_025" only_exists_in_editor="true" position="-11107.2 -804.487 3650" rotation="0 0 0 -1" unit_id="200030"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11152.9 -1033.86 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_026" only_exists_in_editor="true" position="-11152.9 -1033.86 3650" rotation="0 0 0 -1" unit_id="200031"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11134.4 -1230.19 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_027" only_exists_in_editor="true" position="-11134.4 -1230.19 3650" rotation="0 0 0 -1" unit_id="200032"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11105.1 -1377.88 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_028" only_exists_in_editor="true" position="-11105.1 -1377.88 3650" rotation="0 0 0 -1" unit_id="200033"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10933 -1469.22 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_029" only_exists_in_editor="true" position="-10933 -1469.22 3650" rotation="0 0 0 -1" unit_id="200034"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10735.5 -1505.53 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_030" only_exists_in_editor="true" position="-10735.5 -1505.53 3650" rotation="0 0 0 -1" unit_id="200035"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10312.4 -1513.72 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_031" only_exists_in_editor="true" position="-10312.4 -1513.72 3650" rotation="0 0 0 -1" unit_id="200036"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10187.8 -1537.56 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_032" only_exists_in_editor="true" position="-10187.8 -1537.56 3650" rotation="0 0 0 -1" unit_id="200037"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10038.7 -1564.43 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_033" only_exists_in_editor="true" position="-10038.7 -1564.43 3650" rotation="0 0 0 -1" unit_id="200038"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9889.96 -1526.75 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_034" only_exists_in_editor="true" position="-9889.96 -1526.75 3650" rotation="0 0 0 -1" unit_id="200039"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9483.4 -1524.27 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_035" only_exists_in_editor="true" position="-9483.4 -1524.27 3650" rotation="0 0 0 -1" unit_id="200040"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9333.78 -1539.91 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_036" only_exists_in_editor="true" position="-9333.78 -1539.91 3650" rotation="0 0 0 -1" unit_id="200041"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9211.85 -1591.28 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_037" only_exists_in_editor="true" position="-9211.85 -1591.28 3650" rotation="0 0 0 -1" unit_id="200042"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9056.45 -1528.54 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_038" only_exists_in_editor="true" position="-9056.45 -1528.54 3650" rotation="0 0 0 -1" unit_id="200043"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8720.62 -1534.13 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_039" only_exists_in_editor="true" position="-8720.62 -1534.13 3650" rotation="0 0 0 -1" unit_id="200044"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8570.31 -1558.68 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_040" only_exists_in_editor="true" position="-8570.31 -1558.68 3650" rotation="0 0 0 -1" unit_id="200045"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8340.74 -1565.06 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_041" only_exists_in_editor="true" position="-8340.74 -1565.06 3650" rotation="0 0 0 -1" unit_id="200046"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8454.78 -1603.9 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_042" only_exists_in_editor="true" position="-8454.78 -1603.9 3650" rotation="0 0 0 -1" unit_id="200047"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8641.13 -1628.57 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_043" only_exists_in_editor="true" position="-8641.13 -1628.57 3650" rotation="0 0 0 -1" unit_id="200048"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9384.25 -1654.36 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_044" only_exists_in_editor="true" position="-9384.25 -1654.36 3650" rotation="0 0 0 -1" unit_id="200049"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10147 -1638.85 3650" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_045" only_exists_in_editor="true" position="-10147 -1638.85 3650" rotation="0 0 0 -1" unit_id="200050"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10574.2 -857.912 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_046" only_exists_in_editor="true" position="-10574.2 -857.912 3500" rotation="0 0 0 -1" unit_id="200051"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10472.7 -949.719 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_047" only_exists_in_editor="true" position="-10472.7 -949.719 3500" rotation="0 0 0 -1" unit_id="200052"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10351.6 -1055.04 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_048" only_exists_in_editor="true" position="-10351.6 -1055.04 3500" rotation="0 0 0 -1" unit_id="200053"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8883.7 -1054.74 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_049" only_exists_in_editor="true" position="-8883.7 -1054.74 3500" rotation="0 0 0 -1" unit_id="200054"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9025.51 -1067.29 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_050" only_exists_in_editor="true" position="-9025.51 -1067.29 3500" rotation="0 0 0 -1" unit_id="200055"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9159.29 -1053.19 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_051" only_exists_in_editor="true" position="-9159.29 -1053.19 3500" rotation="0 0 0 -1" unit_id="200056"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10654.9 -401.405 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_052" only_exists_in_editor="true" position="-10654.9 -401.405 3500" rotation="0 0 0 -1" unit_id="200057"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10547 -416.644 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_053" only_exists_in_editor="true" position="-10547 -416.644 3500" rotation="0 0 0 -1" unit_id="200058"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10443.5 -422.749 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_054" only_exists_in_editor="true" position="-10443.5 -422.749 3500" rotation="0 0 0 -1" unit_id="200059"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10332.1 -428.42 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_055" only_exists_in_editor="true" position="-10332.1 -428.42 3500" rotation="0 0 0 -1" unit_id="200060"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10283.4 425.056 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_056" only_exists_in_editor="true" position="-10283.4 425.056 3500" rotation="0 0 0 -1" unit_id="200061"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10372.4 422.882 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_057" only_exists_in_editor="true" position="-10372.4 422.882 3500" rotation="0 0 0 -1" unit_id="200062"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10505.6 413.083 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_058" only_exists_in_editor="true" position="-10505.6 413.083 3500" rotation="0 0 0 -1" unit_id="200063"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10602.1 426.061 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_059" only_exists_in_editor="true" position="-10602.1 426.061 3500" rotation="0 0 0 -1" unit_id="200064"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10247 1054.4 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_060" only_exists_in_editor="true" position="-10247 1054.4 3500" rotation="0 0 0 -1" unit_id="200065"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10362.7 1065.02 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_061" only_exists_in_editor="true" position="-10362.7 1065.02 3500" rotation="0 0 0 -1" unit_id="200066"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10491.1 1038.24 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_062" only_exists_in_editor="true" position="-10491.1 1038.24 3500" rotation="0 0 0 -1" unit_id="200067"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10549.9 941.52 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_063" only_exists_in_editor="true" position="-10549.9 941.52 3500" rotation="0 0 0 -1" unit_id="200068"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9347.26 1038.11 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_064" only_exists_in_editor="true" position="-9347.26 1038.11 3500" rotation="0 0 0 -1" unit_id="200069"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9241.71 1070.59 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_065" only_exists_in_editor="true" position="-9241.71 1070.59 3500" rotation="0 0 0 -1" unit_id="200070"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9113.21 1073.84 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_066" only_exists_in_editor="true" position="-9113.21 1073.84 3500" rotation="0 0 0 -1" unit_id="200071"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8937.15 1111.19 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_067" only_exists_in_editor="true" position="-8937.15 1111.19 3500" rotation="0 0 0 -1" unit_id="200072"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9004.35 705.129 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_068" only_exists_in_editor="true" position="-9004.35 705.129 3500" rotation="0 0 0 -1" unit_id="200073"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9208.58 683.27 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_069" only_exists_in_editor="true" position="-9208.58 683.27 3500" rotation="0 0 0 -1" unit_id="200074"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10415.8 759.059 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_070" only_exists_in_editor="true" position="-10415.8 759.059 3500" rotation="0 0 0 -1" unit_id="200075"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10239.2 767.321 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_071" only_exists_in_editor="true" position="-10239.2 767.321 3500" rotation="0 0 0 -1" unit_id="200076"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8986.11 -701.604 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_072" only_exists_in_editor="true" position="-8986.11 -701.604 3500" rotation="0 0 0 -1" unit_id="200077"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9093.96 -699.24 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_073" only_exists_in_editor="true" position="-9093.96 -699.24 3500" rotation="0 0 0 -1" unit_id="200078"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10158.9 -655.034 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_074" only_exists_in_editor="true" position="-10158.9 -655.034 3500" rotation="0 0 0 -1" unit_id="200079"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10473.7 -596.828 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_075" only_exists_in_editor="true" position="-10473.7 -596.828 3500" rotation="0 0 0 -1" unit_id="200080"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9821.5 -87.262 3549.81" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_076" only_exists_in_editor="true" position="-9821.5 -87.262 3549.81" rotation="0 0 0 -1" unit_id="200081"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9785.44 24.8702 3547.51" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_077" only_exists_in_editor="true" position="-9785.44 24.8702 3547.51" rotation="0 0 0 -1" unit_id="200082"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9396.18 126.956 3564.1" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_078" only_exists_in_editor="true" position="-9396.18 126.956 3564.1" rotation="0 0 0 -1" unit_id="200083"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9263.39 -111.052 3579.94" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_079" only_exists_in_editor="true" position="-9263.39 -111.052 3579.94" rotation="0 0 0 -1" unit_id="200084"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9052.58 146.919 3581.36" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_080" only_exists_in_editor="true" position="-9052.58 146.919 3581.36" rotation="0 0 0 -1" unit_id="200085"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9018.09 -52.1448 3590.59" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_081" only_exists_in_editor="true" position="-9018.09 -52.1448 3590.59" rotation="0 0 0 -1" unit_id="200086"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9107.67 -120.162 3588.44" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_082" only_exists_in_editor="true" position="-9107.67 -120.162 3588.44" rotation="0 0 0 -1" unit_id="200087"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8610.47 69.4325 3607.41" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_083" only_exists_in_editor="true" position="-8610.47 69.4325 3607.41" rotation="0 0 0 -1" unit_id="200088"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8639.08 -36.3753 3609.86" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_084" only_exists_in_editor="true" position="-8639.08 -36.3753 3609.86" rotation="0 0 0 -1" unit_id="200089"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8849.53 71.3749 3594.82" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_085" only_exists_in_editor="true" position="-8849.53 71.3749 3594.82" rotation="0 0 0 -1" unit_id="200090"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8868.35 -121.494 3601.03" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_086" only_exists_in_editor="true" position="-8868.35 -121.494 3601.03" rotation="0 0 0 -1" unit_id="200091"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9506.67 -107.439 3567.06" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_087" only_exists_in_editor="true" position="-9506.67 -107.439 3567.06" rotation="0 0 0 -1" unit_id="200092"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9938.41 195.83 3533.11" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_088" only_exists_in_editor="true" position="-9938.41 195.83 3533.11" rotation="0 0 0 -1" unit_id="200093"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10465 114.7 3549.51" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_089" only_exists_in_editor="true" position="-10465 114.7 3549.51" rotation="0 0 0 -1" unit_id="200094"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10612.2 -144.351 3557.36" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_090" only_exists_in_editor="true" position="-10612.2 -144.351 3557.36" rotation="0 0 0 -1" unit_id="200095"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10697.1 177.651 3567.11" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_091" only_exists_in_editor="true" position="-10697.1 177.651 3567.11" rotation="0 0 0 -1" unit_id="200096"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10944.7 -163.108 3581.37" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_092" only_exists_in_editor="true" position="-10944.7 -163.108 3581.37" rotation="0 0 0 -1" unit_id="200097"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11141.8 111.022 3598.76" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_093" only_exists_in_editor="true" position="-11141.8 111.022 3598.76" rotation="0 0 0 -1" unit_id="200098"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10833.1 -22.6961 3574.79" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_094" only_exists_in_editor="true" position="-10833.1 -22.6961 3574.79" rotation="0 0 0 -1" unit_id="200099"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10202.6 -61.2838 3565.3" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_095" only_exists_in_editor="true" position="-10202.6 -61.2838 3565.3" rotation="0 0 0 -1" unit_id="200100"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10178.3 108.62 3566.02" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_096" only_exists_in_editor="true" position="-10178.3 108.62 3566.02" rotation="0 0 0 -1" unit_id="200101"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10067.2 -47.1128 3560.13" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_097" only_exists_in_editor="true" position="-10067.2 -47.1128 3560.13" rotation="0 0 0 -1" unit_id="200102"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9908.2 924.727 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_098" only_exists_in_editor="true" position="-9908.2 924.727 3500" rotation="0 0 0 -1" unit_id="200103"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9684.89 531.875 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_099" only_exists_in_editor="true" position="-9684.89 531.875 3500" rotation="0 0 0 -1" unit_id="200104"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8421.01 734.25 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_100" only_exists_in_editor="true" position="-8421.01 734.25 3500" rotation="0 0 0 -1" unit_id="200105"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7979.67 997.604 3525" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_101" only_exists_in_editor="true" position="-7979.67 997.604 3525" rotation="0 0 0 -1" unit_id="200106"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7720.72 735.279 3525" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_102" only_exists_in_editor="true" position="-7720.72 735.279 3525" rotation="0 0 0 -1" unit_id="200107"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7282.53 236.214 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_103" only_exists_in_editor="true" position="-7282.53 236.214 3500" rotation="0 0 0 -1" unit_id="200108"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7572.63 176.238 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_104" only_exists_in_editor="true" position="-7572.63 176.238 3500" rotation="0 0 0 -1" unit_id="200109"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7274.67 -241.554 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_105" only_exists_in_editor="true" position="-7274.67 -241.554 3500" rotation="0 0 0 -1" unit_id="200110"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7556.62 -191.168 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_106" only_exists_in_editor="true" position="-7556.62 -191.168 3500" rotation="0 0 0 -1" unit_id="200111"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7587.02 -618.442 3525" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_107" only_exists_in_editor="true" position="-7587.02 -618.442 3525" rotation="0 0 0 -1" unit_id="200112"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7933.64 -813.16 3525" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_108" only_exists_in_editor="true" position="-7933.64 -813.16 3525" rotation="0 0 0 -1" unit_id="200113"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8409.27 -1021.83 3500" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_109" only_exists_in_editor="true" position="-8409.27 -1021.83 3500" rotation="0 0 0 -1" unit_id="200114"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10150 200 3500" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-9127.96 7099.38 3300" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1m" name_id="dev_nav_blocker_1x1m_001" only_exists_in_editor="true" position="-10150 200.005 3500" rotation="0 0 2.68221e-007 -1" unit_id="200115"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10150 200 3600" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-9127.96 7099.38 3400" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1m" name_id="dev_nav_blocker_1x1m_002" only_exists_in_editor="true" position="-10150 200.005 3600" rotation="0 0 2.68221e-007 -1" unit_id="200116"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10150 -300 3500" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-9556.55 6841.86 3300" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1m" name_id="dev_nav_blocker_1x1m_003" only_exists_in_editor="true" position="-10150 -299.995 3500" rotation="0 0 2.68221e-007 -1" unit_id="200117"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10150 -300 3600" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-9556.55 6841.86 3400" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1m" name_id="dev_nav_blocker_1x1m_004" only_exists_in_editor="true" position="-10150 -299.995 3600" rotation="0 0 2.68221e-007 -1" unit_id="200118"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8025 500 3500" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-7776.36 5432.41 3300" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_001" only_exists_in_editor="true" position="-8025 500.005 3500" rotation="0 0 0.707107 -0.707107" unit_id="200119"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7825 400 3500" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-7759.07 5209.48 3300" local_rot="0 0 -0.992546 -0.12187" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_002" only_exists_in_editor="true" position="-7825 400.004 3500" rotation="0 0 0.92388 -0.382683" unit_id="200120"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7683.58 258.579 3500" _prev_rot="0 0 1 8.9407e-008" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-7807.45 5015.42 3300" local_rot="-0 0 -0.870355 -0.492424" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_003" only_exists_in_editor="true" position="-7683.58 258.584 3500" rotation="0 0 1 3.57628e-007" unit_id="200121"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7683.58 158.579 3500" _prev_rot="0 0 1 8.9407e-008" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-7893.17 4963.92 3300" local_rot="-0 0 -0.870355 -0.492424" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_004" only_exists_in_editor="true" position="-7683.58 158.584 3500" rotation="0 0 1 3.57628e-007" unit_id="200122"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7683.58 -41.4214 3500" _prev_rot="0 0 0.923879 0.382684" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8064.6 4860.91 3300" local_rot="-0 0 -0.615661 -0.788011" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_005" only_exists_in_editor="true" position="-7683.58 -41.417 3500" rotation="0 0 0.923879 0.382684" unit_id="200123"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7825 -182.843 3500" _prev_rot="0 0 0.92388 0.382683" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8258.66 4909.29 3300" local_rot="-0 0 -0.615662 -0.788011" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_006" only_exists_in_editor="true" position="-7825 -182.838 3500" rotation="0 0 0.92388 0.382683" unit_id="200124"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7966.42 -324.264 3500" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8452.72 4957.67 3300" local_rot="0 0 0.267238 0.96363" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_007" only_exists_in_editor="true" position="-7966.42 -324.26 3500" rotation="0 0 -0.707107 -0.707107" unit_id="200125"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8066.42 -424.264 3500" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8589.94 4991.89 3300" local_rot="0 0 0.267238 0.96363" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_008" only_exists_in_editor="true" position="-8066.42 -424.259 3500" rotation="0 0 -0.707107 -0.707107" unit_id="200126"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8066.42 -224.264 3500" _prev_rot="0 0 1 1.49012e-007" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8418.51 5094.89 3300" local_rot="-0 0 -0.870355 -0.492424" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_009" only_exists_in_editor="true" position="-8066.42 -224.26 3500" rotation="0 0 1 3.8743e-007" unit_id="200127"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8527.4 -266.641 3600" _prev_rot="1.4122e-007 -1.49012e-008 0.227136 -0.973863" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8692.25 5468.21 3400" local_rot="-1.15574e-007 8.25094e-008 -0.677242 0.73576" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_010" only_exists_in_editor="true" position="-8527.4 -266.637 3600" rotation="1.4122e-007 -1.49012e-008 0.227136 -0.973863" unit_id="200128"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8438.92 -87.277 3600" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8492.94 5484.74 3400" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_011" only_exists_in_editor="true" position="-8438.92 -87.272 3600" rotation="0 0 0.707107 -0.707107" unit_id="200129"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8922.81 283.773 3578.97" _prev_rot="-0.00758043 0.0312044 0.755463 -0.654404" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8424.11 6090.62 3378.97" local_rot="-0.00876812 -0.0308917 -0.979765 0.197556" mesh_variation="" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_012" only_exists_in_editor="true" position="-8922.81 283.778 3578.97" rotation="-0.00758043 0.0312044 0.755463 -0.654404" unit_id="200130"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8725.16 255.46 3590.38" _prev_rot="-0.00758043 0.0312044 0.755463 -0.654404" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8346.58 5906.62 3390.38" local_rot="-0.00876812 -0.0308917 -0.979765 0.197556" mesh_variation="" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_013" only_exists_in_editor="true" position="-8725.16 255.465 3590.38" rotation="-0.00758043 0.0312044 0.755463 -0.654404" unit_id="200131"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8527.5 227.147 3601.79" _prev_rot="-0.00758043 0.0312044 0.755463 -0.654404" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8269.05 5722.61 3401.79" local_rot="-0.00876812 -0.0308917 -0.979765 0.197556" mesh_variation="" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_014" only_exists_in_editor="true" position="-8527.5 227.151 3601.79" rotation="-0.00758043 0.0312044 0.755463 -0.654404" unit_id="200132"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10014 -319 3500" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-9502.79 6715.5 3300" local_rot="0 0 0.267238 0.96363" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_015" only_exists_in_editor="true" position="-10014 -318.995 3500" rotation="0 0 -0.707107 -0.707107" unit_id="200133"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10014 279 3500" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8990.2 7023.5 3300" local_rot="0 0 0.267238 0.96363" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_017" only_exists_in_editor="true" position="-10014 279.006 3500" rotation="0 0 -0.707107 -0.707107" unit_id="200134"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10014 -280 3500" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-9469.36 6735.59 3300" local_rot="0 0 0.267238 0.96363" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_016" only_exists_in_editor="true" position="-10014 -279.994 3500" rotation="0 0 -0.707107 -0.707107" unit_id="200135"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10014 240 3500" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-9023.63 7003.41 3300" local_rot="0 0 0.267238 0.96363" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_018" only_exists_in_editor="true" position="-10014 240.006 3500" rotation="0 0 -0.707107 -0.707107" unit_id="200136"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8800 400 3500" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8261.23 6045.21 3300" local_rot="0 0 -0.96363 0.267238" mesh_variation="" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_019" only_exists_in_editor="true" position="-8800 400.005 3500" rotation="0 0 0.707107 -0.707107" unit_id="200137"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7825 500 3500" _prev_rot="0 0 1 -0" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-7673.35 5260.98 3300" local_rot="0 0 -0.870356 -0.492424" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_021" only_exists_in_editor="true" position="-7825 500.004 3500" rotation="0 0 1 2.68221e-007" unit_id="200138"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8800 360 3500" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8295.52 6024.61 3300" local_rot="0 0 -0.96363 0.267238" mesh_variation="" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_020" only_exists_in_editor="true" position="-8800 360.005 3500" rotation="0 0 0.707107 -0.707107" unit_id="200139"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8425 500 3500" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-7982.37 5775.28 3300" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_023" only_exists_in_editor="true" position="-8425 500.005 3500" rotation="0 0 0.707107 -0.707107" unit_id="200140"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8225 500 3500" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-7879.37 5603.85 3300" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_022" only_exists_in_editor="true" position="-8225 500.005 3500" rotation="0 0 0.707107 -0.707107" unit_id="200141"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-12500 -3300 3500" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-13338.4 7311.1 3300" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_64x3m" name_id="dev_nav_blocker_64x3m_005" only_exists_in_editor="true" position="-12500 -3299.99 3500" rotation="0 0 2.68221e-007 -1" unit_id="200142"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-12800 -3000 3600" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-13235.7 7722.76 3400" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_64x3m" name_id="dev_nav_blocker_64x3m_007" only_exists_in_editor="true" position="-12800 -2999.99 3600" rotation="0 0 0.707107 -0.707107" unit_id="200144"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10125 -300 3500" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="25 -500 0" local_rot="-0 0 -0.707107 0.707107" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_16x3m" name_id="dev_nav_splitter_16x3m_001" only_exists_in_editor="true" position="-10125 -300 3500" rotation="0 0 0.707107 -0.707107" unit_id="200145"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10125 300 3500" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_16x3m" name_id="dev_nav_splitter_16x3m_002" only_exists_in_editor="true" position="-10125 300 3500" rotation="0 0 0.707107 -0.707107" unit_id="200146"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11725 -300 3500" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-1575 -500 0" local_rot="-0 0 -0.707107 0.707107" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_16x3m" name_id="dev_nav_splitter_16x3m_003" only_exists_in_editor="true" position="-11725 -300 3500" rotation="0 0 0.707107 -0.707107" unit_id="200147"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11725 300 3500" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-1575 100 0" local_rot="-0 0 -0.707107 0.707107" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_16x3m" name_id="dev_nav_splitter_16x3m_004" only_exists_in_editor="true" position="-11725 300 3500" rotation="0 0 0.707107 -0.707107" unit_id="200148"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11000 1400 3600" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-850 1200 100" local_rot="-0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_16x3m" name_id="dev_nav_splitter_16x3m_005" only_exists_in_editor="true" position="-11000 1400 3600" rotation="0 0 -0 -1" unit_id="200149"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11000 -3000 3600" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-850 -3200 100" local_rot="-0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_16x3m" name_id="dev_nav_splitter_16x3m_006" only_exists_in_editor="true" position="-11000 -3000 3600" rotation="0 0 -0 -1" unit_id="200150"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10150 -200 3500" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 -400 0" local_rot="-0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_1x3m" name_id="dev_nav_splitter_1x3m_002" only_exists_in_editor="true" position="-10150 -200 3500" rotation="0 0 -0 -1" unit_id="200151"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10150 0 3500" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 -200 0" local_rot="-0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_1x3m" name_id="dev_nav_splitter_1x3m_003" only_exists_in_editor="true" position="-10150 0 3500" rotation="0 0 -0 -1" unit_id="200152"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10150 -100 3500" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 -300 0" local_rot="-0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_1x3m" name_id="dev_nav_splitter_1x3m_004" only_exists_in_editor="true" position="-10150 -100 3500" rotation="0 0 -0 -1" unit_id="200153"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-10150 100 3500" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 -100 0" local_rot="-0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_1x3m" name_id="dev_nav_splitter_1x3m_006" only_exists_in_editor="true" position="-10150 100 3500" rotation="0 0 -0 -1" unit_id="200154"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7100 -400 3500" _prev_rot="0 0 0 -1" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_8x3m" name_id="dev_nav_splitter_8x3m_001" only_exists_in_editor="true" position="-7157 -400 3500" rotation="0 0 0 -1" unit_id="200155"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7925 -300 3500" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="2225 -500 0" local_rot="-0 0 -0.707107 0.707107" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_8x3m" name_id="dev_nav_splitter_8x3m_002" only_exists_in_editor="true" position="-7925 -300 3500" rotation="0 0 0.707107 -0.707107" unit_id="200156"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7925 400 3500" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="2225 200 0" local_rot="-0 0 -0.707107 0.707107" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_8x3m" name_id="dev_nav_splitter_8x3m_003" only_exists_in_editor="true" position="-7925 400 3500" rotation="0 0 0.707107 -0.707107" unit_id="200157"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11312.1 599.48 3636" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-9384.07 8301.25 3436" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_026" only_exists_in_editor="true" position="-11312.1 599.486 3636" rotation="0 0 2.68221e-007 -1" unit_id="200158"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11278.8 -92.791 3603.16" _prev_rot="0.0364972 -0.00436867 0.998818 0.0318034" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-9960.31 7916.16 3403.16" local_rot="-0.0296143 0.0217744 -0.853666 -0.519522" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_030" only_exists_in_editor="true" position="-11278.8 -92.7852 3603.16" rotation="0.0364972 -0.00436868 0.998818 0.0318036" unit_id="200159"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11214.9 -67.8413 3598.79" _prev_rot="-0.0335342 -0.0150528 -0.839774 -0.54169" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-9906.01 7874.23 3398.79" local_rot="0.036599 -0.00341175 0.464161 0.884988" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_027" only_exists_in_editor="true" position="-11214.9 -67.835 3598.79" rotation="-0.0335342 -0.0150528 -0.839774 -0.54169" unit_id="200160"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11214.9 -67.8413 3598.79" _prev_rot="-0.0130684 -0.0343562 -0.210777 -0.976843" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-9906.01 7874.23 3398.79" local_rot="0.028292 0.0234669 -0.29757 0.953992" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_028" only_exists_in_editor="true" position="-11214.9 -67.835 3598.79" rotation="-0.0130684 -0.0343562 -0.210777 -0.976843" unit_id="200161"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11297.1 114.32 3606.79" _prev_rot="-0.0130684 -0.0343562 -0.210777 -0.976843" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-9792.2 8038.51 3406.79" local_rot="0.028292 0.0234669 -0.29757 0.953992" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_029" only_exists_in_editor="true" position="-11297.1 114.326 3606.79" rotation="-0.0130684 -0.0343562 -0.210777 -0.976843" unit_id="200162"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-12500 3000 3600" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-7938.23 10555.8 3400" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_64x3m" name_id="dev_nav_blocker_64x3m_008" only_exists_in_editor="true" position="-12500 3000.01 3600" rotation="0 0 0.707107 -0.707107" unit_id="200143"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-6400 400 3450" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-7025.14 3988.01 3250" local_rot="0 0 -0.870356 -0.492424" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_8x3m" name_id="dev_nav_blocker_8x3m_001" only_exists_in_editor="true" position="-6400 400.003 3450" rotation="0 0 1 2.38419e-007" unit_id="200164"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-5900 400 3450" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-6767.62 3559.43 3250" local_rot="0 0 -0.870356 -0.492424" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_8x3m" name_id="dev_nav_blocker_8x3m_002" only_exists_in_editor="true" position="-5900 400.003 3450" rotation="0 0 1 2.38419e-007" unit_id="200165"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7125 -400 3500" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-8084.28 4197.43 3300" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_001" only_exists_in_editor="true" position="-7125 -399.996 3500" rotation="0 0 2.68221e-007 -1" unit_id="200166"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7125 300 3500" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-7484.26 4557.95 3300" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_002" only_exists_in_editor="true" position="-7125 300.004 3500" rotation="0 0 2.68221e-007 -1" unit_id="200167"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-6000 -1200 3500" _prev_rot="-0 0 -0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/test/jocke/plane_black_temp" name_id="plane_black_temp_001" position="-6000 -1200 3500" rotation="-0 0 -0 -1" unit_id="200169"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-11000 0 5000" _prev_rot="-0 0 -0 -1" continent="editor_only" disable_on_ai_graph="true" hide_on_projection_light="true" local_pos="0 0 0" local_rot="0 0 0 1" name="units/test/jocke/plane_black_temp" name_id="plane_black_temp_002" position="-11000 0 5000" rotation="-0 0 -0 -1" unit_id="200001"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-7050 0 3505" _prev_rot="-0 0 -0 -1" continent="editor_only" disable_on_ai_graph="false" hide_on_projection_light="true" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="anim_door_open" name="units/pd2_dlc_des/architecture/des_int/des_int_blast_door_small/des_int_blast_door_small" name_id="editorBlastDoor" position="-7050 0 3505" rotation="-0 0 -0 -1" unit_id="200002"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-4400 -1900 1000" _prev_rot="-0 0 -0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="true" disable_shadows="false" hide_on_projection_light="true" local_pos="0 0 0" local_rot="0 0 0 1" name="units/test/jocke/plane_black_temp" name_id="plane_black_temp_004" position="-4400 -1900 1000" rotation="-0 0 -0 -1" unit_id="200163"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3300 -1900 1000" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="true" disable_shadows="false" hide_on_projection_light="true" local_pos="1100 0 0" local_rot="-0 0 0 1" name="units/test/jocke/plane_black_temp" name_id="plane_black_temp_003" position="-3300 -1900 1000" rotation="0 0 -0 -1" unit_id="200168"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3530.44 1702.1 100" _prev_rot="0 0 0.382683 -0.92388" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-4431.09 2198.95 -100" local_rot="0 0 -0.788011 0.615662" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1m" name_id="dev_nav_blocker_1x1m_005" only_exists_in_editor="true" position="-3530.44 1702.1 100" rotation="0 0 0.382683 -0.92388" unit_id="200170"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3800 400 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_2x3m" name_id="dev_nav_splitter_2x3m_004" only_exists_in_editor="true" position="-3700 400 100" rotation="0 0 0.707107 -0.707107" unit_id="200171"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3094.26 -311.596 28.7431" _prev_rot="0 0 1 -0" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-5932.52 787.94 -171.257" local_rot="0 0 -0.870356 -0.492424" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1x3m" name_id="dev_nav_blocker_1x1x3m_004" only_exists_in_editor="true" position="-3094.26 -311.594 28.7431" rotation="0 0 1 2.68221e-007" unit_id="200173"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3164.97 -240.885 28.7431" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-5908.33 884.969 -171.257" local_rot="0 0 -0.992546 -0.12187" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1x3m" name_id="dev_nav_blocker_1x1x3m_003" only_exists_in_editor="true" position="-3164.97 -240.883 28.7431" rotation="0 0 0.92388 -0.382683" unit_id="200174"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3235.68 -170.174 28.7431" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-5884.13 981.998 -171.257" local_rot="0 0 -0.992546 -0.12187" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1x3m" name_id="dev_nav_blocker_1x1x3m_002" only_exists_in_editor="true" position="-3235.68 -170.171 28.7431" rotation="0 0 0.92388 -0.382683" unit_id="200175"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3094.26 -386.596 28.7431" _prev_rot="0 0 1 -0" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-5996.81 749.312 -171.257" local_rot="0 0 -0.870356 -0.492424" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1x3m" name_id="dev_nav_blocker_1x1x3m_005" only_exists_in_editor="true" position="-3094.26 -386.594 28.7431" rotation="0 0 1 2.68221e-007" unit_id="200176"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3306.39 -99.4637 28.7431" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-5859.94 1079.03 -171.257" local_rot="0 0 -0.992546 -0.12187" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1x3m" name_id="dev_nav_blocker_1x1x3m_001" only_exists_in_editor="true" position="-3306.39 -99.4614 28.7431" rotation="0 0 0.92388 -0.382683" unit_id="200177"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2500 -100 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_2x3m" name_id="dev_nav_splitter_2x3m_006" only_exists_in_editor="true" position="-2500 700 100" rotation="0 0 0.707107 -0.707107" unit_id="200178"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3500 0 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="1000 300 -100" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_8x3m" name_id="dev_nav_splitter_8x3m_004" only_exists_in_editor="true" position="-3500 0 0" rotation="0 0 0.707107 -0.707107" unit_id="200179"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2700 0 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="1000 1100 -100" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_2x3m" name_id="dev_nav_splitter_2x3m_001" only_exists_in_editor="true" position="-2700 0 0" rotation="0 0 0.707107 -0.707107" unit_id="200180"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2700 900 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="100 1100 -100" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_2x3m" name_id="dev_nav_splitter_2x3m_002" only_exists_in_editor="true" position="-2700 900 0" rotation="0 0 0.707107 -0.707107" unit_id="200181"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3500 900 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="100 300 -100" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_8x3m" name_id="dev_nav_splitter_8x3m_006" only_exists_in_editor="true" position="-3500 900 0" rotation="0 0 0.707107 -0.707107" unit_id="200182"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3000 -1100 600" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-6559.77 301.086 400" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_8x3m" name_id="dev_nav_blocker_8x3m_003" only_exists_in_editor="true" position="-3000 -1100 600" rotation="0 0 0.707107 -0.707107" unit_id="200184"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3800 -1100 600" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-6971.79 986.82 400" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_8x3m" name_id="dev_nav_blocker_8x3m_004" only_exists_in_editor="true" position="-3800 -1100 600" rotation="0 0 0.707107 -0.707107" unit_id="200185"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3300 -850 600" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-6499.98 686.995 400" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_003" only_exists_in_editor="true" position="-3300 -849.998 600" rotation="0 0 0.707107 -0.707107" unit_id="200186"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2800 -850 600" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-6242.47 258.411 400" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_004" only_exists_in_editor="true" position="-2800 -849.999 600" rotation="0 0 0.707107 -0.707107" unit_id="200187"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3800 -850 600" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-6757.5 1115.58 400" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_005" only_exists_in_editor="true" position="-3800 -849.998 600" rotation="0 0 0.707107 -0.707107" unit_id="200188"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2300 -850 600" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-5984.95 -170.173 400" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_006" only_exists_in_editor="true" position="-2300 -849.999 600" rotation="0 0 0.707107 -0.707107" unit_id="200189"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3000 1900 600" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-3988.26 1846.2 400" local_rot="0 0 0.267238 0.96363" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_8x3m" name_id="dev_nav_blocker_8x3m_006" only_exists_in_editor="true" position="-3000 1900 600" rotation="0 0 -0.707107 -0.707107" unit_id="200190"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2200 1900 600" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-3576.23 1160.46 400" local_rot="0 0 0.267238 0.96363" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_8x3m" name_id="dev_nav_blocker_8x3m_007" only_exists_in_editor="true" position="-2200 1900 600" rotation="0 0 -0.707107 -0.707107" unit_id="200191"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3700 1650 600" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-4563.08 2317.46 400" local_rot="0 0 0.267238 0.96363" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_007" only_exists_in_editor="true" position="-3700 1650 600" rotation="0 0 -0.707107 -0.707107" unit_id="200192"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3200 1650 600" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-4305.56 1888.87 400" local_rot="0 0 0.267238 0.96363" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_008" only_exists_in_editor="true" position="-3200 1650 600" rotation="0 0 -0.707107 -0.707107" unit_id="200193"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2700 1650 600" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-4048.04 1460.29 400" local_rot="0 0 0.267238 0.96363" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_009" only_exists_in_editor="true" position="-2700 1650 600" rotation="0 0 -0.707107 -0.707107" unit_id="200194"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2200 1650 600" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-3790.52 1031.7 400" local_rot="0 0 0.267238 0.96363" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_010" only_exists_in_editor="true" position="-2200 1650 600" rotation="0 0 -0.707107 -0.707107" unit_id="200195"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2986.7 -379.626 100" _prev_rot="-0 0 -0 -1" continent="editor_only" local_pos="-100 -100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_110" only_exists_in_editor="true" position="-2986.7 -379.626 100" rotation="-0 0 -0 -1" unit_id="200196"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2786.7 -379.626 100" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="100 -100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_111" only_exists_in_editor="true" position="-2786.7 -379.626 100" rotation="0 0 0 -1" unit_id="200197"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2886.7 -279.626 100" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_112" only_exists_in_editor="true" position="-2886.7 -279.626 100" rotation="0 0 0 -1" unit_id="200198"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2686.7 -279.626 100" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="200 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_113" only_exists_in_editor="true" position="-2686.7 -279.626 100" rotation="0 0 0 -1" unit_id="200199"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2786.7 -179.626 100" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_114" only_exists_in_editor="true" position="-2786.7 -179.626 100" rotation="0 0 0 -1" unit_id="200200"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3086.7 -179.626 100" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="-200 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_115" only_exists_in_editor="true" position="-3086.7 -179.626 100" rotation="0 0 0 -1" unit_id="200201"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2986.7 -79.626 100" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="-100 200 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_116" only_exists_in_editor="true" position="-2986.7 -79.626 100" rotation="0 0 0 -1" unit_id="200202"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2700 -500 100" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_4x3m" name_id="dev_nav_splitter_4x3m_001" only_exists_in_editor="true" position="-2700 -500 100" rotation="0 0 -0.707107 -0.707107" unit_id="200203"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3200 -500 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_2x3m" name_id="dev_nav_splitter_2x3m_008" only_exists_in_editor="true" position="-3200 -500 100" rotation="0 0 1 -4.37114e-008" unit_id="200204"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2886.7 520.374 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_117" only_exists_in_editor="true" position="-2886.7 520.374 0" rotation="0 0 -1 4.37114e-008" unit_id="200205"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2986.7 420.374 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="1.74846e-005 200 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_118" only_exists_in_editor="true" position="-2986.7 420.374 0" rotation="0 0 -1 4.37114e-008" unit_id="200206"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3086.7 520.374 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_119" only_exists_in_editor="true" position="-3086.7 520.374 0" rotation="0 0 -1 4.37114e-008" unit_id="200207"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2986.7 620.374 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_120" only_exists_in_editor="true" position="-2986.7 620.374 0" rotation="0 0 -1 4.37114e-008" unit_id="200208"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2786.7 620.374 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="-100 -100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_121" only_exists_in_editor="true" position="-2786.7 620.374 0" rotation="0 0 -1 4.37114e-008" unit_id="200209"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3086.7 620.374 0" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="-200 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_122" only_exists_in_editor="true" position="-2686.7 420.374 0" rotation="0 0 -1 4.37114e-008" unit_id="200210"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2986.7 720.374 0" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="-100 200 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_123" only_exists_in_editor="true" position="-2786.7 320.374 0" rotation="0 0 -1 4.37114e-008" unit_id="200211"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2986.7 620.374 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_124" only_exists_in_editor="true" position="-3186.7 620.374 0" rotation="0 0 1 -4.37114e-008" unit_id="200212"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2986.7 420.374 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="1.74846e-005 200 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_125" only_exists_in_editor="true" position="-3186.7 420.374 0" rotation="0 0 1 -4.37114e-008" unit_id="200213"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3286.7 520.374 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_126" only_exists_in_editor="true" position="-3286.7 520.374 0" rotation="0 0 1 -4.37114e-008" unit_id="200214"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3286.7 520.374 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_127" only_exists_in_editor="true" position="-3386.7 320.374 0" rotation="0 0 1 -4.37114e-008" unit_id="200215"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3386.7 320.374 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_128" only_exists_in_editor="true" position="-3286.7 220.374 0" rotation="0 0 1 -4.37114e-008" unit_id="200216"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3286.7 220.374 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_129" only_exists_in_editor="true" position="-3186.7 120.374 0" rotation="0 0 1 -4.37114e-008" unit_id="200217"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3186.7 120.374 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_130" only_exists_in_editor="true" position="-2886.7 120.374 0" rotation="0 0 1 -4.37114e-008" unit_id="200218"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2886.7 520.374 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_131" only_exists_in_editor="true" position="-3086.7 1020.37 0" rotation="0 0 1 -4.37114e-008" unit_id="200219"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2986.7 1120.37 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_132" only_exists_in_editor="true" position="-2986.7 1120.37 0" rotation="0 0 1 -4.37114e-008" unit_id="200220"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2886.7 1020.37 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_133" only_exists_in_editor="true" position="-2886.7 1020.37 0" rotation="0 0 1 -4.37114e-008" unit_id="200221"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2386.7 1120.37 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_134" only_exists_in_editor="true" position="-2386.7 1120.37 100" rotation="0 0 0.707107 0.707107" unit_id="200222"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2286.7 1220.37 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_135" only_exists_in_editor="true" position="-2286.7 1220.37 100" rotation="0 0 0.707107 0.707107" unit_id="200223"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2386.7 1320.37 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_136" only_exists_in_editor="true" position="-2386.7 1320.37 100" rotation="0 0 1 -4.37114e-008" unit_id="200224"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2586.7 1420.37 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_137" only_exists_in_editor="true" position="-2586.7 1420.37 100" rotation="0 0 1 -4.37114e-008" unit_id="200225"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2386.7 820.374 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_138" only_exists_in_editor="true" position="-2386.7 820.374 100" rotation="0 0 0.707107 0.707107" unit_id="200226"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2386.7 620.374 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_139" only_exists_in_editor="true" position="-2386.7 620.374 100" rotation="0 0 0.707107 0.707107" unit_id="200227"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2286.7 520.374 100" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="200 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_140" only_exists_in_editor="true" position="-2371.7 493.374 100" rotation="0 0 -0.707107 -0.707107" unit_id="200228"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2371.7 293.374 100" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_141" only_exists_in_editor="true" position="-2371.7 293.374 100" rotation="0 0 -0.707107 -0.707107" unit_id="200229"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2386.7 420.374 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_142" only_exists_in_editor="true" position="-2386.7 420.374 100" rotation="0 0 0.707107 0.707107" unit_id="200230"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2386.7 120.374 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_143" only_exists_in_editor="true" position="-2386.7 120.374 100" rotation="0 0 0.707107 0.707107" unit_id="200231"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2386.7 -179.626 100" _prev_rot="0 0 -0.382683 -0.92388" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_144" only_exists_in_editor="true" position="-2386.7 -179.626 100" rotation="0 0 -0.707107 -0.707107" unit_id="200232"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2386.7 -579.626 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_145" only_exists_in_editor="true" position="-2386.7 -579.626 100" rotation="0 0 0 1" unit_id="200233"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2286.7 -379.626 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_146" only_exists_in_editor="true" position="-2286.7 -379.626 100" rotation="0 0 0.707107 0.707107" unit_id="200234"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2586.7 -579.626 100" _prev_rot="0 0 0.382683 -0.92388" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_147" only_exists_in_editor="true" position="-2586.7 -579.626 100" rotation="0 0 -2.98023e-008 -1" unit_id="200235"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2486.7 1520.37 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="-100 -100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_148" only_exists_in_editor="true" position="-2486.7 1520.37 100" rotation="0 0 1 -4.37114e-008" unit_id="200236"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2486.7 1520.37 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_149" only_exists_in_editor="true" position="-2286.7 1420.37 100" rotation="0 0 1 -4.37114e-008" unit_id="200237"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3586.7 1420.37 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_150" only_exists_in_editor="true" position="-3586.7 1420.37 100" rotation="0 0 1 -4.37114e-008" unit_id="200238"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2486.7 1520.37 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="-100 -100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_151" only_exists_in_editor="true" position="-3486.7 1520.37 100" rotation="0 0 1 -4.37114e-008" unit_id="200239"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3586.7 1420.37 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_152" only_exists_in_editor="true" position="-3686.7 1320.37 100" rotation="0 0 1 -4.37114e-008" unit_id="200240"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3686.7 1120.37 100" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_153" only_exists_in_editor="true" position="-3686.7 1120.37 100" rotation="0 0 0.707107 -0.707107" unit_id="200241"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3686.7 1120.37 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_154" only_exists_in_editor="true" position="-3686.7 1020.37 100" rotation="0 0 0.707107 -0.707107" unit_id="200242"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3686.7 820.374 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_155" only_exists_in_editor="true" position="-3586.7 920.374 100" rotation="0 0 0.707107 -0.707107" unit_id="200243"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3586.7 920.374 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_156" only_exists_in_editor="true" position="-3686.7 820.374 100" rotation="0 0 0.707107 -0.707107" unit_id="200244"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3686.7 820.374 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_157" only_exists_in_editor="true" position="-3586.7 720.374 100" rotation="0 0 0.707107 -0.707107" unit_id="200245"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3586.7 720.374 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_158" only_exists_in_editor="true" position="-3686.7 620.374 100" rotation="0 0 0.707107 -0.707107" unit_id="200246"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3686.7 620.374 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_159" only_exists_in_editor="true" position="-3586.7 520.374 100" rotation="0 0 0.707107 -0.707107" unit_id="200247"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3586.7 520.374 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_160" only_exists_in_editor="true" position="-3586.7 320.374 100" rotation="0 0 0.707107 -0.707107" unit_id="200248"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3586.7 320.374 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_161" only_exists_in_editor="true" position="-3686.7 120.374 100" rotation="0 0 0.707107 -0.707107" unit_id="200249"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3686.7 120.374 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_162" only_exists_in_editor="true" position="-3586.7 20.374 100" rotation="0 0 0.707107 -0.707107" unit_id="200250"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3586.7 20.374 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_163" only_exists_in_editor="true" position="-3686.7 -179.626 100" rotation="0 0 0.707107 -0.707107" unit_id="200251"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3686.7 -179.626 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_164" only_exists_in_editor="true" position="-3686.7 -379.626 100" rotation="0 0 0.707107 -0.707107" unit_id="200252"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3586.7 -579.626 100" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_165" only_exists_in_editor="true" position="-3586.7 -579.626 100" rotation="0 0 -1.49012e-007 -1" unit_id="200253"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3586.7 -579.626 100" _prev_rot="0 0 -1.49012e-007 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_166" only_exists_in_editor="true" position="-3486.7 -679.626 100" rotation="0 0 -1.49012e-007 -1" unit_id="200254"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3486.7 -679.626 100" _prev_rot="0 0 -1.49012e-007 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_167" only_exists_in_editor="true" position="-3286.7 -579.626 100" rotation="0 0 -1.49012e-007 -1" unit_id="200255"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3286.7 -579.626 100" _prev_rot="0 0 -1.49012e-007 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_168" only_exists_in_editor="true" position="-3086.7 -579.626 100" rotation="0 0 -1.49012e-007 -1" unit_id="200256"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3086.7 -579.626 100" _prev_rot="0 0 -1.49012e-007 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_169" only_exists_in_editor="true" position="-2986.7 -579.626 100" rotation="0 0 -1.49012e-007 -1" unit_id="200257"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2986.7 -579.626 100" _prev_rot="0 0 -1.49012e-007 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_170" only_exists_in_editor="true" position="-2786.7 -579.626 100" rotation="0 0 -1.49012e-007 -1" unit_id="200258"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2400 1700 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="-600 5.24537e-005 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_171" only_exists_in_editor="true" position="-2400 1700 600" rotation="0 0 1 -4.37114e-008" unit_id="200259"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2500 1700 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="-500 4.37114e-005 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_172" only_exists_in_editor="true" position="-2500 1700 600" rotation="0 0 1 -4.37114e-008" unit_id="200260"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2600 1700 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="-400 3.49691e-005 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_173" only_exists_in_editor="true" position="-2600 1700 600" rotation="0 0 1 -4.37114e-008" unit_id="200261"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3100 1700 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="100 -8.74228e-006 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_174" only_exists_in_editor="true" position="-3100 1700 600" rotation="0 0 1 -4.37114e-008" unit_id="200262"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3000 1700 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_175" only_exists_in_editor="true" position="-3000 1700 600" rotation="0 0 1 -4.37114e-008" unit_id="200263"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2900 1700 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="-100 8.74228e-006 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_176" only_exists_in_editor="true" position="-2900 1700 600" rotation="0 0 1 -4.37114e-008" unit_id="200264"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3600 1700 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="600 -5.24537e-005 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_177" only_exists_in_editor="true" position="-3600 1700 600" rotation="0 0 1 -4.37114e-008" unit_id="200265"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3500 1700 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="500 -4.37114e-005 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_178" only_exists_in_editor="true" position="-3500 1700 600" rotation="0 0 1 -4.37114e-008" unit_id="200266"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3400 1700 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="400 -3.49691e-005 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_179" only_exists_in_editor="true" position="-3400 1700 600" rotation="0 0 1 -4.37114e-008" unit_id="200267"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3000 -900 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_180" only_exists_in_editor="true" position="-3000 -900 600" rotation="0 0 -8.74228e-008 -1" unit_id="200268"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3100 -900 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="100 -1.74846e-005 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_181" only_exists_in_editor="true" position="-2900 -900 600" rotation="0 0 -8.74228e-008 -1" unit_id="200269"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3100 -900 600" _prev_rot="0 0 -8.74228e-008 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_182" only_exists_in_editor="true" position="-3100 -900 600" rotation="0 0 -8.74228e-008 -1" unit_id="200270"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2600 -900 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="-400 8.90307e-006 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_183" only_exists_in_editor="true" position="-3400 -900 600" rotation="0 0 -8.74228e-008 -1" unit_id="200271"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2500 -900 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="-500 2.63876e-005 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_184" only_exists_in_editor="true" position="-3500 -900 600" rotation="0 0 -8.74228e-008 -1" unit_id="200272"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2400 -900 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="-600 4.38722e-005 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_185" only_exists_in_editor="true" position="-3600 -900 600" rotation="0 0 -8.74228e-008 -1" unit_id="200273"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3400 -900 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="400 -8.90307e-006 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_186" only_exists_in_editor="true" position="-2600 -900 600" rotation="0 0 -8.74228e-008 -1" unit_id="200274"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3500 -900 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="500 -2.63876e-005 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_187" only_exists_in_editor="true" position="-2500 -900 600" rotation="0 0 -8.74228e-008 -1" unit_id="200275"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3600 -900 600" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="600 -4.38722e-005 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_188" only_exists_in_editor="true" position="-2400 -900 600" rotation="0 0 -8.74228e-008 -1" unit_id="200276"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3105 1599 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" disable_on_ai_graph="false" hide_on_projection_light="true" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="open_door" name="units/pd2_dlc_vit/architecture/vit_int/vit_int_gate_to_ww/vit_int_gate_to_ww" name_id="vit_int_gate_to_ww_001" position="-3105 1599 0" rotation="0 0 1 -4.37114e-008" unit_id="200172"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3000 3000 1000" _prev_rot="0 0 0 -1" continent="editor_only" disable_collision="false" disable_on_ai_graph="true" disable_shadows="false" hide_on_projection_light="true" local_pos="0 0 0" local_rot="0 0 0 1" name="units/test/jocke/plane_black_temp" name_id="plane_black_temp_005" position="-3000 3000 1000" rotation="0 0 0 -1" unit_id="200183"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2900 1600 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_2x3m" name_id="dev_nav_splitter_2x3m_003" only_exists_in_editor="true" position="-2900 1600 0" rotation="0 0 -0.707107 -0.707107" unit_id="200277"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3500 2400 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_8x3m" name_id="dev_nav_splitter_8x3m_005" only_exists_in_editor="true" position="-3500 2400 0" rotation="0 0 0.707107 -0.707107" unit_id="200278"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2400 2700 0" _prev_rot="0 0 1 -0" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_8x3m" name_id="dev_nav_splitter_8x3m_007" only_exists_in_editor="true" position="-2400 2700 0" rotation="0 0 -4.37114e-008 -1" unit_id="200279"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2986.7 2220.37 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="100 -100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_189" only_exists_in_editor="true" position="-3086.7 2220.37 0" rotation="0 0 1 -4.37114e-008" unit_id="200280"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2886.7 2120.37 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_190" only_exists_in_editor="true" position="-2986.7 2120.37 0" rotation="0 0 1 -4.37114e-008" unit_id="200281"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3086.7 2120.37 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="200 -1.74846e-005 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_191" only_exists_in_editor="true" position="-3186.7 2120.37 0" rotation="0 0 1 -4.37114e-008" unit_id="200282"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2986.7 1720.37 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_192" only_exists_in_editor="true" position="-2986.7 1720.37 0" rotation="0 0 1.06581e-014 1" unit_id="200283"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2886.7 1620.37 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_193" only_exists_in_editor="true" position="-3086.7 1820.37 0" rotation="0 0 1.06581e-014 1" unit_id="200284"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3086.7 1620.37 0" _prev_rot="0 0 1 -4.37114e-008" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_194" only_exists_in_editor="true" position="-2886.7 1820.37 0" rotation="0 0 1.06581e-014 1" unit_id="200285"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2886.7 2520.37 0" _prev_rot="0 0 -1.06581e-014 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_195" only_exists_in_editor="true" position="-2886.7 2520.37 0" rotation="0 0 0.382683 -0.92388" unit_id="200286"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2986.7 2620.37 0" _prev_rot="0 0 -1.06581e-014 -1" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_196" only_exists_in_editor="true" position="-2886.7 2661.79 0" rotation="0 0 0.382683 -0.92388" unit_id="200287"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2781.34 2472.99 0" _prev_rot="0 0 0.382683 -0.92388" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_197" only_exists_in_editor="true" position="-3064.89 2504.81 0" rotation="0 0 0.382683 -0.92388" unit_id="200288"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2462.44 2944.63 0" _prev_rot="0 0 0.92388 0.382683" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_198" only_exists_in_editor="true" position="-2462.44 2944.63 0" rotation="0 0 0.92388 0.382683" unit_id="200289"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2356.37 3179.39 0" _prev_rot="0 0 0.92388 0.382683" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_199" only_exists_in_editor="true" position="-2431.33 3139.79 0" rotation="0 0 0.92388 0.382683" unit_id="200290"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2533.15 3015.34 0" _prev_rot="0 0 0.92388 0.382683" continent="editor_only" local_pos="100 -1.14441e-005 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_200" only_exists_in_editor="true" position="-2533.15 3015.34 0" rotation="0 0 -0.92388 -0.382683" unit_id="200291"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2603.86 2803.21 0" _prev_rot="0 0 0.92388 0.382683" continent="editor_only" local_pos="2.28882e-005 200 0" local_rot="0 0 -2.98023e-008 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_201" only_exists_in_editor="true" position="-2603.86 2803.21 0" rotation="0 0 0.92388 0.382683" unit_id="200292"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2108.88 3156.77 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_202" only_exists_in_editor="true" position="-2108.88 3056.77 0" rotation="0 0 -0.707107 -0.707107" unit_id="200293"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2208.88 2956.77 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_203" only_exists_in_editor="true" position="-2208.88 2956.77 0" rotation="0 0 0.707107 0.707107" unit_id="200294"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2308.88 3156.77 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="0 200 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_204" only_exists_in_editor="true" position="-2308.88 3056.77 0" rotation="0 0 0.707107 0.707107" unit_id="200295"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2108.88 3156.77 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_205" only_exists_in_editor="true" position="-2108.88 3156.77 0" rotation="0 0 0.707107 0.707107" unit_id="200296"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1808.88 2956.77 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_206" only_exists_in_editor="true" position="-1908.88 2956.77 0" rotation="0 0 -0.707107 -0.707107" unit_id="200297"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1808.88 2956.77 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_207" only_exists_in_editor="true" position="-1808.88 3056.77 0" rotation="0 0 -0.707107 -0.707107" unit_id="200298"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2008.88 2856.77 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_208" only_exists_in_editor="true" position="-2044.88 2822.77 0" rotation="0 0 -0.707107 -0.707107" unit_id="200299"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1599 2895 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="true" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="open_door" name="units/pd2_dlc_vit/architecture/vit_int/vit_int_gate_to_ww/vit_int_gate_to_ww" name_id="vit_int_gate_to_ww_006" position="-1599 2895 0" rotation="0 0 0.707107 -0.707107" unit_id="200300"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2608.29 3068.95 0" _prev_rot="0 0 0.936672 0.350207" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2784.53 2112.49 -200" local_rot="-0 0 -0.642788 -0.766044" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_004" only_exists_in_editor="true" position="-2608.29 3068.95 0" rotation="0 0 0.936672 0.350207" unit_id="200301"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2477.08 3219.89 0" _prev_rot="0 0 0.936672 0.350207" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2587.57 2077.76 -200" local_rot="-0 0 -0.642788 -0.766044" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_005" only_exists_in_editor="true" position="-2477.08 3219.89 0" rotation="0 0 0.936672 0.350207" unit_id="200302"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2085.82 3303.05 0" _prev_rot="0 0 -0.777146 -0.62932" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2314.78 1785.21 -200" local_rot="0 0 0.366501 0.930418" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_006" only_exists_in_editor="true" position="-2085.82 3303.05 0" rotation="0 0 -0.777146 -0.62932" unit_id="200303"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2870.71 2767.06 0" _prev_rot="0 0 0.870356 0.492423" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-3178.46 2181.94 -200" local_rot="-0 0 -0.515038 -0.857167" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_003" only_exists_in_editor="true" position="-2870.71 2767.06 0" rotation="0 0 0.870356 0.492423" unit_id="200304"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3100 2700 0" _prev_rot="0 0 0.961262 0.275637" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-3354.03 2343.94 -200" local_rot="-0 0 -0.700909 -0.71325" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_002" only_exists_in_editor="true" position="-3100 2700 0" rotation="0 0 0.961262 0.275637" unit_id="200305"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3300 2400 0" _prev_rot="0 0 1 1.78814e-007" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-3714.19 2360.87 -200" local_rot="-0 0 -0.870355 -0.492424" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_001" only_exists_in_editor="true" position="-3300 2400 0" rotation="0 0 1 4.17233e-007" unit_id="200306"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2600 1300 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-4296.55 1194.31 -200" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_011" only_exists_in_editor="true" position="-2600 1300 0" rotation="0 0 0.707107 -0.707107" unit_id="200307"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3500 -475 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-6281.55 1051.57 -200" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_012" only_exists_in_editor="true" position="-3500 -474.998 0" rotation="0 0 0.707107 -0.707107" unit_id="200308"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2600 -475 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-5818.02 280.117 -200" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_013" only_exists_in_editor="true" position="-2600 -474.999 0" rotation="0 0 0.707107 -0.707107" unit_id="200309"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2275 250 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-5029.19 374.939 -200" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_014" only_exists_in_editor="true" position="-2275 250.001 0" rotation="0 0 0.707107 -0.707107" unit_id="200310"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3238 -708 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-6346.33 706.986 -200" local_rot="0 0 -0.96363 0.267238" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_015" only_exists_in_editor="true" position="-3238 -707.998 0" rotation="0 0 0.707107 -0.707107" unit_id="200311"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-700 2300 0" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_16x3m" name_id="dev_nav_splitter_16x3m_007" only_exists_in_editor="true" position="-700 2300 0" rotation="-0 0 -0 -1" unit_id="200312"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-700 2300 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_8x3m" name_id="dev_nav_splitter_8x3m_008" only_exists_in_editor="true" position="-700 2300 0" rotation="0 0 -0.707107 -0.707107" unit_id="200313"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-500 2100 0" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-200 -200 0" local_rot="0 0 -0.923879 -0.382684" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_4x3m" name_id="dev_nav_splitter_4x3m_003" only_exists_in_editor="true" position="-500 2100 0" rotation="0 0 0.92388 -0.382683" unit_id="200314"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-217.157 1817.16 0" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2626 -581.832 -200" local_rot="0 0 -0.992546 -0.12187" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_016" only_exists_in_editor="true" position="-217.158 1817.16 0" rotation="0 0 0.92388 -0.382683" unit_id="200315"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="100 2000 0" _prev_rot="0 0 0.0610485 -0.998135" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-564.31 -39.4578 0" local_rot="0 0 0.414693 0.909961" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_8x3m" name_id="dev_nav_splitter_8x3m_010" only_exists_in_editor="true" position="99.9999 2000 0" rotation="0 0 0.0610484 -0.998135" unit_id="200316"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="197.496 2794.04 0" _prev_rot="0 0 0.0610488 -0.998135" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-1575.09 -434.13 -200" local_rot="0 0 -0.544639 0.83867" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_017" only_exists_in_editor="true" position="197.495 2794.04 0" rotation="0 0 0.061049 -0.998135" unit_id="200317"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="87.8116 1900.75 0" _prev_rot="0 0 0.0610492 -0.998135" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-488.844 -105.062 0" local_rot="0 0 0.414693 0.909962" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_018" only_exists_in_editor="true" position="87.8115 1900.75 0" rotation="0 0 0.061049 -0.998135" unit_id="200318"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="365.366 1498.31 0" _prev_rot="0 0 0.469472 -0.882947" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2599.29 -1245.37 -200" local_rot="0 0 -0.843392 0.537299" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_019" only_exists_in_editor="true" position="365.365 1498.31 0" rotation="0 0 0.469472 -0.882947" unit_id="200319"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="448.27 1554.23 0" _prev_rot="0 0 0.469472 -0.882948" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_8x3m" name_id="dev_nav_splitter_8x3m_012" only_exists_in_editor="true" position="448.27 1554.23 0" rotation="0 0 0.469472 -0.882948" unit_id="200320"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="1111.5 2001.59 0" _prev_rot="0 0 0.469472 -0.882948" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-1783.61 -1625.73 -200" local_rot="0 0 -0.843392 0.537299" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_020" only_exists_in_editor="true" position="1111.5 2001.59 0" rotation="0 0 0.469472 -0.882947" unit_id="200321"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-42.2206 957.589 0" _prev_rot="0 0 0.39875 -0.91706" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_023" only_exists_in_editor="true" position="-42.221 957.589 0" rotation="0 0 0.398749 -0.91706" unit_id="200324"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="30.9148 1025.79 0" _prev_rot="0 0 0.814116 -0.580702" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-0.0012207 100.001 0" local_rot="0 0 -0.515038 0.857167" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_024" only_exists_in_editor="true" position="30.9143 1025.79 0" rotation="0 0 0.814116 -0.580703" unit_id="200325"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="125.466 993.232 0" _prev_rot="0 0 0.66262 -0.748956" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="88.2938 146.947 0" local_rot="0 0 -0.309016 0.951057" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_031" only_exists_in_editor="true" position="125.466 993.232 0" rotation="0 0 0.662619 -0.748956" unit_id="200326"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-241.947 968.057 0" _prev_rot="0 0 0.725374 -0.688355" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_032" only_exists_in_editor="true" position="-241.947 968.057 0" rotation="0 0 0.725374 -0.688355" unit_id="200322"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="323.977 1017.61 0" _prev_rot="0 0 0.275637 -0.961262" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-3032.65 -1457.47 -200" local_rot="0 0 -0.71325 0.700909" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_033" only_exists_in_editor="true" position="323.975 1017.61 0" rotation="0 0 0.275637 -0.961262" unit_id="200323"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="429.961 1187.21 0" _prev_rot="0 0 0.0261769 -0.999657" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2832.69 -1460.97 -200" local_rot="0 0 -0.515038 0.857167" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_007" only_exists_in_editor="true" position="429.959 1187.21 0" rotation="0 0 0.0261771 -0.999657" unit_id="200327"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="450.895 1586.67 0" _prev_rot="0 0 -0.688355 -0.725374" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2479.5 -1273.18 -200" local_rot="0 0 0.241922 0.970296" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_035" only_exists_in_editor="true" position="450.894 1586.67 0" rotation="0 0 -0.688355 -0.725374" unit_id="200328"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="251.169 1597.13 0" _prev_rot="0 0 -0.688355 -0.725374" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2573.4 -1096.59 -200" local_rot="0 0 0.241922 0.970296" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_022" only_exists_in_editor="true" position="251.168 1597.13 0" rotation="0 0 -0.688355 -0.725374" unit_id="200329"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="151.306 1602.37 0" _prev_rot="0 0 -0.0610487 -0.998135" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2620.34 -1008.29 -200" local_rot="0 0 -0.438371 0.898794" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_037" only_exists_in_editor="true" position="151.305 1602.37 0" rotation="0 0 -0.0610485 -0.998135" unit_id="200330"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="126.932 1800.88 0" _prev_rot="0 0 -0.0610486 -0.998135" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2462.74 -885.159 -200" local_rot="0 0 -0.438371 0.898794" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_026" only_exists_in_editor="true" position="126.931 1800.88 0" rotation="0 0 -0.0610484 -0.998135" unit_id="200331"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="114.745 1900.13 0" _prev_rot="0 0 -0.601815 -0.798635" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2383.94 -823.595 -200" local_rot="0 0 0.130526 0.991445" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_027" only_exists_in_editor="true" position="114.744 1900.13 0" rotation="0 0 -0.601815 -0.798636" unit_id="200332"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="18.619 1927.69 0" _prev_rot="0 0 0.909961 0.414693" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2409.83 -727.005 -200" local_rot="-0 0 -0.587785 -0.809017" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_039" only_exists_in_editor="true" position="18.6177 1927.69 0" rotation="0 0 0.909961 0.414693" unit_id="200333"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-132.323 1796.48 0" _prev_rot="0 0 0.976296 0.21644" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2600.04 -665.2 -200" local_rot="-0 0 -0.743144 -0.669131" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_040" only_exists_in_editor="true" position="-132.324 1796.48 0" rotation="0 0 0.976296 0.21644" unit_id="200334"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-216.847 1615.22 0" _prev_rot="0 0 0.878817 0.477159" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2798.94 -686.105 -200" local_rot="-0 0 -0.529919 -0.848048" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_041" only_exists_in_editor="true" position="-216.848 1615.22 0" rotation="0 0 0.878817 0.477159" unit_id="200335"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-384.581 1506.29 0" _prev_rot="0 0 0.990268 0.139173" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-2978.7 -598.431 -200" local_rot="-0 0 -0.793353 -0.608762" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_042" only_exists_in_editor="true" position="-384.583 1506.29 0" rotation="0 0 0.990268 0.139173" unit_id="200336"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-439.71 1314.04 0" _prev_rot="0 0 0.965926 -0.258819" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-335.159 -215.599 0" local_rot="0 0 -0.477159 0.878817" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_009" only_exists_in_editor="true" position="-439.71 1314.04 0" rotation="0 0 0.965926 -0.258818" unit_id="200337"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-400 1500 0" _prev_rot="0 0 -0.66262 -0.748956" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_16x3m" name_id="dev_nav_splitter_16x3m_008" only_exists_in_editor="true" position="-400 1500 0" rotation="0 0 -0.66262 -0.748956" unit_id="200338"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-400 1100 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-397.018 -48.7478 0" local_rot="0 0 0.0610485 0.998135" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_16x3m" name_id="dev_nav_splitter_16x3m_009" only_exists_in_editor="true" position="-400 1100 0" rotation="0 0 -0.707107 -0.707107" unit_id="200339"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-560.466 907.261 0" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-3582.76 -756.19 -200" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1x3m" name_id="dev_nav_blocker_1x1x3m_009" only_exists_in_editor="true" position="-560.468 907.262 0" rotation="0 0 2.68221e-007 -1" unit_id="200343"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-460.466 907.261 0" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-3531.25 -841.907 -200" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1x3m" name_id="dev_nav_blocker_1x1x3m_010" only_exists_in_editor="true" position="-460.468 907.261 0" rotation="0 0 2.68221e-007 -1" unit_id="200344"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-560.466 1007.26 0" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-3497.04 -704.687 -200" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1x3m" name_id="dev_nav_blocker_1x1x3m_011" only_exists_in_editor="true" position="-560.468 1007.26 0" rotation="0 0 2.68221e-007 -1" unit_id="200345"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-460.466 1007.26 0" _prev_rot="0 0 0 -1" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-3445.54 -790.404 -200" local_rot="0 0 -0.492424 0.870356" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1x3m" name_id="dev_nav_blocker_1x1x3m_012" only_exists_in_editor="true" position="-460.468 1007.26 0" rotation="0 0 2.68221e-007 -1" unit_id="200346"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="636.604 4367.75 200" _prev_rot="0 0 -0.492424 -0.870356" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_16x3m" name_id="dev_nav_blocker_16x3m_001" only_exists_in_editor="true" position="636.604 4367.75 200" rotation="0 0 -0.492424 -0.870356" unit_id="200347"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="369.873 3377.38 200" _prev_rot="0 0 0.0871562 -0.996195" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-986.29 -281.444 0" local_rot="0 0 -0.566407 0.824126" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_008" only_exists_in_editor="true" position="369.872 3377.38 200" rotation="0 0 0.0871564 -0.996195" unit_id="200348"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="529.088 3183.05 200" _prev_rot="0 0 0.207912 -0.978148" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-1070.86 -518.005 0" local_rot="0 0 -0.66262 0.748955" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_011" only_exists_in_editor="true" position="529.087 3183.05 200" rotation="0 0 0.207912 -0.978148" unit_id="200350"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="512.316 3195.64 200" _prev_rot="0 0 -0.309017 -0.951056" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-1068.71 -497.145 0" local_rot="0 0 -0.199368 0.979925" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_036" only_exists_in_editor="true" position="512.315 3195.64 200" rotation="0 0 -0.309017 -0.951056" unit_id="200349"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="478.478 3745.38 200" _prev_rot="0 0 0.760406 -0.649448" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-614.917 -185.003 0" local_rot="0 0 -0.981627 0.190809" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_038" only_exists_in_editor="true" position="478.478 3745.38 200" rotation="0 0 0.760406 -0.649448" unit_id="200351"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-625.138 4443.36 200" _prev_rot="0 0 -0.681998 -0.731354" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-585.034 1120.47 0" local_rot="0 0 0.233445 0.97237" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_012" only_exists_in_editor="true" position="-625.138 4443.36 200" rotation="0 0 -0.681998 -0.731354" unit_id="200352"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-969.297 4467.42 200" _prev_rot="0 0 0.894934 0.446198" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-741.665 1427.86 0" local_rot="-0 0 -0.559192 -0.829038" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_013" only_exists_in_editor="true" position="-969.297 4467.42 200" rotation="0 0 0.894934 0.446198" unit_id="200353"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-655.482 4009.42 200" _prev_rot="0 0 -0.587785 -0.809017" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-972.621 922.981 0" local_rot="0 0 0.113203 0.993572" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_014" only_exists_in_editor="true" position="-655.482 4009.42 200" rotation="0 0 -0.587785 -0.809017" unit_id="200354"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-940.004 4092.89 200" _prev_rot="0 0 -0.492423 -0.870356" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-1047.61 1209.85 0" local_rot="0 0 -9.23872e-007 1" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_015" only_exists_in_editor="true" position="-940.004 4092.89 200" rotation="0 0 -0.492423 -0.870356" unit_id="200355"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-465.271 3947.61 200" _prev_rot="0 0 -0.587785 -0.809017" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-927.637 728.104 0" local_rot="0 0 0.113203 0.993572" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_016" only_exists_in_editor="true" position="-465.271 3947.61 200" rotation="0 0 -0.587785 -0.809017" unit_id="200356"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-588.878 3567.19 200" _prev_rot="0 0 0.156435 -0.987688" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-1317.38 638.125 0" local_rot="0 0 -0.622515 0.782608" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_4x3m" name_id="dev_nav_blocker_4x3m_017" only_exists_in_editor="true" position="-588.878 3567.19 200" rotation="0 0 0.156435 -0.987688" unit_id="200357"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-40.1286 1897.99 193.93" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_floor_2x2m_a" name_id="mkp_int_floor_2x2m_a_001" position="-40.1286 1897.99 193.93" rotation="0 0 0.894934 -0.446198" unit_id="200358"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-160.492 1738.26 193.93" _prev_rot="0 0 0.894934 -0.446198" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_floor_2x2m_a" name_id="mkp_int_floor_2x2m_a_002" position="-160.492 1738.26 193.93" rotation="0 0 0.902585 -0.430511" unit_id="200359"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-276.396 1582.55 193.93" _prev_rot="0 0 0.93358 -0.358368" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_floor_2x2m_a" name_id="mkp_int_floor_2x2m_a_003" position="-276.396 1582.55 193.93" rotation="0 0 0.93358 -0.358368" unit_id="200360"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-100 1000 0" _prev_rot="0 0 1 -0" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-39.3278 140.081 0" local_rot="0 0 -0.688355 0.725374" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_16x3m" name_id="dev_nav_splitter_16x3m_010" only_exists_in_editor="true" position="-99.9999 1000 0" rotation="0 0 1 6.25849e-007" unit_id="200361"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="900 1200 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_16x3m" name_id="dev_nav_splitter_16x3m_011" only_exists_in_editor="true" position="900 1100 0" rotation="0 0 1 -0" unit_id="200362"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="900 1000 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_16x3m" name_id="dev_nav_splitter_16x3m_012" only_exists_in_editor="true" position="400 1100 0" rotation="0 0 0.707107 -0.707107" unit_id="200363"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="351.051 3624.83 200" _prev_rot="0 0 0.760406 -0.649448" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-783.878 -137.865 0" local_rot="0 0 -0.981627 0.190809" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x1x3m" name_id="dev_nav_blocker_1x1x3m_013" only_exists_in_editor="true" position="351.051 3624.83 200" rotation="0 0 0.760406 -0.649448" unit_id="200364"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1779.57 1863.24 0" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_209" only_exists_in_editor="true" position="-1779.57 1863.24 0" rotation="0 0 0.707107 -0.707107" unit_id="200365"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1779.57 1963.24 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_210" only_exists_in_editor="true" position="-1831.57 1932.24 0" rotation="0 0 0.707107 -0.707107" unit_id="200366"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1383.88 2906.77 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_211" only_exists_in_editor="true" position="-1358.88 2831.77 0" rotation="0 0 0.707107 -0.707107" unit_id="200411"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1258.88 2931.77 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_212" only_exists_in_editor="true" position="-1258.88 2931.77 0" rotation="0 0 0.707107 -0.707107" unit_id="200412"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1358.88 3031.77 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_213" only_exists_in_editor="true" position="-1358.88 3031.77 0" rotation="0 0 0.707107 -0.707107" unit_id="200413"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1258.88 3131.77 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_214" only_exists_in_editor="true" position="-1258.88 3131.77 0" rotation="0 0 0.707107 -0.707107" unit_id="200414"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1033.88 3156.77 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_215" only_exists_in_editor="true" position="-1033.88 3156.77 0" rotation="0 0 0.923879 -0.382684" unit_id="200415"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-933.88 3256.77 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_216" only_exists_in_editor="true" position="-892.459 3156.77 0" rotation="0 0 0.923879 -0.382684" unit_id="200416"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-933.88 3056.77 0" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_217" only_exists_in_editor="true" position="-1033.88 3015.35 0" rotation="0 0 0.923879 -0.382684" unit_id="200417"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1033.88 3156.77 0" _prev_rot="0 0 0.92388 -0.382684" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_218" only_exists_in_editor="true" position="-1086.91 2785.54 0" rotation="0 0 0.92388 -0.382683" unit_id="200418"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-892.459 3156.77 0" _prev_rot="0 0 0.92388 -0.382684" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_219" only_exists_in_editor="true" position="-945.492 2785.54 0" rotation="0 0 0.92388 -0.382684" unit_id="200419"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1033.88 3015.35 0" _prev_rot="0 0 0.92388 -0.382684" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_220" only_exists_in_editor="true" position="-1086.91 2644.12 0" rotation="0 0 0.92388 -0.382684" unit_id="200420"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1086.91 2785.54 0" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_221" only_exists_in_editor="true" position="-821.748 2767.86 0" rotation="0 0 0.92388 -0.382683" unit_id="200421"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-945.492 2785.54 0" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_222" only_exists_in_editor="true" position="-680.327 2767.86 0" rotation="0 0 0.92388 -0.382683" unit_id="200422"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1086.91 2644.12 0" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_223" only_exists_in_editor="true" position="-821.748 2626.44 0" rotation="0 0 0.92388 -0.382683" unit_id="200423"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-291.418 2697.15 0" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_224" only_exists_in_editor="true" position="-291.418 2697.15 0" rotation="0 0 0.92388 -0.382683" unit_id="200424"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-149.996 2697.15 0" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_225" only_exists_in_editor="true" position="-149.996 2697.15 0" rotation="0 0 0.92388 -0.382683" unit_id="200425"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-291.418 2555.73 0" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_226" only_exists_in_editor="true" position="-291.418 2555.73 0" rotation="0 0 0.92388 -0.382683" unit_id="200426"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-149.996 3015.35 0" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_227" only_exists_in_editor="true" position="-149.996 3015.35 0" rotation="0 0 0.92388 -0.382683" unit_id="200427"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-8.57507 3015.35 0" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_228" only_exists_in_editor="true" position="-8.57507 3015.35 0" rotation="0 0 0.92388 -0.382683" unit_id="200428"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-149.996 2873.93 0" _prev_rot="0 0 0.92388 -0.382683" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_229" only_exists_in_editor="true" position="-149.996 2873.93 0" rotation="0 0 0.92388 -0.382683" unit_id="200429"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-238.385 3280.51 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="0 -141.421 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_230" only_exists_in_editor="true" position="-238.385 3280.51 0" rotation="0 0 1 0" unit_id="200430"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-121.963 3205.51 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="-116.421 -66.4214 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_231" only_exists_in_editor="true" position="-121.963 3205.51 0" rotation="0 0 1 -0" unit_id="200431"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-238.385 3139.09 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_232" only_exists_in_editor="true" position="-238.385 3139.09 0" rotation="0 0 1 0" unit_id="200432"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-238.385 3139.09 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_233" only_exists_in_editor="true" position="-363.385 3364.09 0" rotation="0 0 1 -0" unit_id="200433"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-238.385 3280.51 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="0 -141.421 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_234" only_exists_in_editor="true" position="-363.385 3505.51 0" rotation="0 0 1 -0" unit_id="200434"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-121.963 3205.51 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="-116.421 -66.4214 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_235" only_exists_in_editor="true" position="-246.963 3430.51 0" rotation="0 0 1 -0" unit_id="200435"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-763.385 3214.09 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_236" only_exists_in_editor="true" position="-763.385 3264.09 0" rotation="0 0 1 -0" unit_id="200436"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-688.385 3355.51 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_237" only_exists_in_editor="true" position="-863.385 3305.51 0" rotation="0 0 1 -0" unit_id="200437"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-246.963 3430.51 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="-116.421 -66.4214 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_238" only_exists_in_editor="true" position="-571.963 3280.51 0" rotation="0 0 1 -0" unit_id="200438"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-863.385 3305.51 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_239" only_exists_in_editor="true" position="-838.385 2980.51 0" rotation="0 0 1 -0" unit_id="200439"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-132.319 2467.34 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_240" only_exists_in_editor="true" position="-57.3187 2517.34 0" rotation="0 0 1 -0" unit_id="200440"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-32.3187 2367.34 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_241" only_exists_in_editor="true" position="42.6813 2417.34 0" rotation="0 0 1 0" unit_id="200441"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-232.319 2367.34 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_242" only_exists_in_editor="true" position="-157.319 2417.34 0" rotation="0 0 1 0" unit_id="200442"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-57.3187 2517.34 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_243" only_exists_in_editor="true" position="-82.3187 2242.34 0" rotation="0 0 1 -0" unit_id="200443"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="42.6813 2417.34 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_244" only_exists_in_editor="true" position="17.6813 2142.34 0" rotation="0 0 1 -0" unit_id="200444"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-157.319 2417.34 0" _prev_rot="0 0 1 -0" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_245" only_exists_in_editor="true" position="-182.319 2142.34 0" rotation="0 0 1 -0" unit_id="200445"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-532.319 1842.34 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_246" only_exists_in_editor="true" position="-407.319 1767.34 0" rotation="0 0 -0.707107 -0.707107" unit_id="200446"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-632.319 1742.34 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_247" only_exists_in_editor="true" position="-507.319 1667.34 0" rotation="0 0 0.707107 0.707107" unit_id="200447"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-632.319 1942.34 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_248" only_exists_in_editor="true" position="-507.319 1867.34 0" rotation="0 0 0.707107 0.707107" unit_id="200448"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-857.319 1817.34 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_249" only_exists_in_editor="true" position="-857.319 1817.34 0" rotation="0 0 -0.382683 -0.92388" unit_id="200449"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-957.319 1717.34 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_250" only_exists_in_editor="true" position="-998.74 1817.34 0" rotation="0 0 -0.382683 -0.92388" unit_id="200450"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-957.319 1917.34 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_251" only_exists_in_editor="true" position="-857.319 1958.76 0" rotation="0 0 -0.382683 -0.92388" unit_id="200451"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1140.16 1994.12 0" _prev_rot="0 0 5.96046e-008 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_252" only_exists_in_editor="true" position="-1140.16 1994.12 0" rotation="0 0 5.96046e-008 -1" unit_id="200452"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1240.16 2094.12 0" _prev_rot="0 0 5.96046e-008 -1" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 3.55271e-015 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_253" only_exists_in_editor="true" position="-1240.16 2094.12 0" rotation="0 0 5.96046e-008 -1" unit_id="200453"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1140.16 2135.54 0" _prev_rot="0 0 -0.382683 -0.92388" continent="editor_only" local_pos="100 100 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_254" only_exists_in_editor="true" position="-1040.16 2094.12 0" rotation="0 0 5.96046e-008 -1" unit_id="200454"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1140.16 1994.12 0" _prev_rot="0 0 5.96046e-008 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_255" only_exists_in_editor="true" position="-1140.16 2269.12 0" rotation="0 0 5.96046e-008 -1" unit_id="200455"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1240.16 2094.12 0" _prev_rot="0 0 5.96046e-008 -1" continent="editor_only" local_pos="-100 100 0" local_rot="0 0 3.55271e-015 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_256" only_exists_in_editor="true" position="-1240.16 2369.12 0" rotation="0 0 5.96046e-008 -1" unit_id="200456"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1040.16 2094.12 0" _prev_rot="0 0 5.96046e-008 -1" continent="editor_only" local_pos="100 100 0" local_rot="0 0 3.55271e-015 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_257" only_exists_in_editor="true" position="-1040.16 2369.12 0" rotation="0 0 5.96046e-008 -1" unit_id="200457"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1140.16 1994.12 0" _prev_rot="0 0 5.96046e-008 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_258" only_exists_in_editor="true" position="-1215.16 1769.12 0" rotation="0 0 5.96046e-008 -1" unit_id="200458"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1315.16 1869.12 0" _prev_rot="0 0 5.96046e-008 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_259" only_exists_in_editor="true" position="-1315.16 1869.12 0" rotation="0 0 5.96046e-008 -1" unit_id="200459"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1600 2875 0" _prev_rot="0 0 0 -1" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_2x3m" name_id="dev_nav_splitter_2x3m_005" only_exists_in_editor="true" position="-1625 2900 0" rotation="0 0 0 -1" unit_id="200460"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-775 2925 0" _prev_rot="-0 0 -0 -1" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_021" only_exists_in_editor="true" position="-775 2900 0" rotation="-0 0 -0 -1" unit_id="200461"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-775 2900 0" _prev_rot="0 0 0 -1" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_025" only_exists_in_editor="true" position="-775 3075 0" rotation="0 0 0 -1" unit_id="200462"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-775 3075 0" _prev_rot="0 0 0 -1" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_028" only_exists_in_editor="true" position="-775 2975 0" rotation="0 0 0 -1" unit_id="200463"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-775 2975 0" _prev_rot="0 0 0 -1" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_1x3m" name_id="dev_nav_blocker_1x3m_029" only_exists_in_editor="true" position="-725 2900 0" rotation="0 0 0 -1" unit_id="200464"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="0 3400 200" _prev_rot="0 0 0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_4x3m" name_id="dev_nav_splitter_4x3m_002" only_exists_in_editor="true" position="0 3400 200" rotation="0 0 0.707107 -0.707107" unit_id="200340"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2900 1600 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_2x3m" name_id="dev_nav_splitter_2x3m_007" only_exists_in_editor="true" position="-2900 1700 0" rotation="0 0 -0.707107 -0.707107" unit_id="200341"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1725 2900 0" _prev_rot="0 0 0 -1" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_2x3m" name_id="dev_nav_splitter_2x3m_009" only_exists_in_editor="true" position="-1725 2900 0" rotation="0 0 0 -1" unit_id="200342"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-721.433 4169.76 200" _prev_rot="0 0 0 -1" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_260" only_exists_in_editor="true" position="-721.433 4169.76 200" rotation="0 0 1 4.37114e-008" unit_id="200367"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-721.433 4169.76 200" _prev_rot="0 0 1 4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_261" only_exists_in_editor="true" position="-560.433 4093.76 200" rotation="0 0 1 4.37114e-008" unit_id="200368"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-560.433 4093.76 200" _prev_rot="0 0 1 4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_262" only_exists_in_editor="true" position="-340.433 4032.76 200" rotation="0 0 1 4.37114e-008" unit_id="200369"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-340.433 4032.76 200" _prev_rot="0 0 1 4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_263" only_exists_in_editor="true" position="-164.433 3918.76 200" rotation="0 0 1 4.37114e-008" unit_id="200370"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-164.433 3918.76 200" _prev_rot="0 0 1 4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_264" only_exists_in_editor="true" position="28.5669 3827.76 200" rotation="0 0 1 4.37114e-008" unit_id="200371"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="28.5669 3827.76 200" _prev_rot="0 0 1 4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_265" only_exists_in_editor="true" position="206.567 3573.76 200" rotation="0 0 1 4.37114e-008" unit_id="200372"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="206.567 3573.76 200" _prev_rot="0 0 1 4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_266" only_exists_in_editor="true" position="232.567 3427.76 200" rotation="0 0 1 4.37114e-008" unit_id="200373"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="232.567 3427.76 200" _prev_rot="0 0 1 4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_267" only_exists_in_editor="true" position="270.567 3244.76 200" rotation="0 0 1 4.37114e-008" unit_id="200374"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="270.567 3244.76 200" _prev_rot="0 0 1 4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_268" only_exists_in_editor="true" position="319.567 3094.76 200" rotation="0 0 1 4.37114e-008" unit_id="200375"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="387.567 2932.76 200" _prev_rot="0 0 1 4.37114e-008" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/ai_coverpoint" name_id="ai_coverpoint_269" only_exists_in_editor="true" position="387.567 2932.76 200" rotation="0 0 1 4.37114e-008" unit_id="200376"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1600 2100 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_2x3m" name_id="dev_nav_splitter_2x3m_010" only_exists_in_editor="true" position="-1600 2100 0" rotation="0 0 -0.707107 -0.707107" unit_id="200377"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-1800 2100 0" _prev_rot="0 0 -0.707107 -0.707107" continent="editor_only" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_1x3m" name_id="dev_nav_splitter_1x3m_001" only_exists_in_editor="true" position="-1800 2100 0" rotation="0 0 -0.707107 -0.707107" unit_id="200378"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2672.26 2584.01 0" _prev_rot="0 0 0.382683 -0.92388" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_043" only_exists_in_editor="true" position="-2672.26 2584.01 0" rotation="0 0 0.382683 -0.92388" unit_id="200379"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2728.13 2528.15 0" _prev_rot="0 0 0.382683 -0.92388" continent="editor_only" delayed_load="false" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="-7.62939e-006 -79.0002 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_blocker/dev_nav_blocker_2x3m" name_id="dev_nav_blocker_2x3m_034" only_exists_in_editor="true" position="-2728.13 2528.15 0" rotation="0 0 0.382683 -0.92388" unit_id="200380"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2600 1600 100" _prev_rot="0 0 0 -1" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_4x3m" name_id="dev_nav_splitter_4x3m_004" only_exists_in_editor="true" position="-2600 1600 100" rotation="-0.707107 0 0 -0.707107" unit_id="200381"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-2600 1600 100" _prev_rot="-0.707107 0 0 -0.707107" continent="editor_only" disable_collision="false" disable_on_ai_graph="false" disable_shadows="false" hide_on_projection_light="false" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/level_tools/dev_nav_splitter/dev_nav_splitter_4x3m" name_id="dev_nav_splitter_4x3m_005" only_exists_in_editor="true" position="-3400 1600 100" rotation="-0.707107 0 0 -0.707107" unit_id="200382"/>
+		</table>
+	</statics>
+	<values>
+		<workviews/>
+	</values>
+</table>

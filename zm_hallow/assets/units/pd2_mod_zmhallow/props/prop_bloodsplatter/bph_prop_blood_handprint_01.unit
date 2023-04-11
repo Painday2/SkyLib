@@ -1,0 +1,6 @@
+<unit type="brush" slot="1">
+	<object file="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_01" />
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+    </extensions>
+</unit>

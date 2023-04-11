@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<modelscript>
+    <object3d name="rp_root" mode="add">
+        <parent root="true" />
+    </object3d>
+    <object3d name="a_culling" mode="add">
+        <parent name="rp_root" />
+        <position x="-2500" y="2500" z="0" />
+        <rotation w="1" x="0" y="0" z="0" />
+        <scale x="1" y="1" z="1" />
+    </object3d>
+	<import file="zmh_und_hallway_01.obj" type="obj" create_objects="true">
+        <rootpoint name="rp_root">
+            <default/>
+        </rootpoint>
+        <rootpoint name="a_culling">
+            <object name="co_culling" />
+        </rootpoint>
+    </import>
+</modelscript>

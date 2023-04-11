@@ -1,0 +1,54 @@
+# Blender MTL File: 'zmh_und_hallway_01.blend'
+# Material Count: 5
+
+newmtl None
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+
+newmtl mtl_bry_concrete_floor_01
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd C:\Program Files (x86)\Steam\steamapps\common\PAYDAY 2\assets\extract\units\pd2_dlc_berry\architecture\bry_mountain_interiors\bry_rock_interior_floor_01_df.texture.dds
+
+newmtl mtl_bry_rock1
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd C:\Program Files (x86)\Steam\steamapps\common\PAYDAY 2\assets\extract\units\pd2_dlc_berry\architecture\bry_mountain_interiors\bry_rock_interior_01_df.texture.dds
+
+newmtl mtl_des_concrete
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd C:\Program Files (x86)\Steam\steamapps\common\PAYDAY 2\assets\extract\units\pd2_dlc_des\tiling_textures\concrete_broken_rebar_01\des_concrete_broken_rebar_01_df.texture.dds
+
+newmtl mtl_lava_flowing
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd C:\Program Files (x86)\Steam\steamapps\common\PAYDAY 2\Maps\zm_hallow\assets\units\pd2_mod_zmhallow\nature\lava\lava_df.texture

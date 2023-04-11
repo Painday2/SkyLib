@@ -1,0 +1,14 @@
+<unit type="zmh" slot="1">
+	<object file="units/pd2_mod_zmhallow/pickups/zm_keycard_a/zm_keycard_a" />
+	<network sync="spawn" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="interaction" class="SpecialEquipmentInteractionExt" >
+			<var name="_special_equipment" value="bank_manager_key" />
+			<var name="_remove_on_interact" value="true" />
+			<var name="tweak_data" value="pickup_keycard" />
+			<var name="_global_event" value="keycard" />
+		</extension>
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

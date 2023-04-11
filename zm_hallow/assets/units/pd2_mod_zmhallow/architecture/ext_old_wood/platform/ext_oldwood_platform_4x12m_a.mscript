@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<modelscript>
+    <object3d name="rp_root" mode="add">
+        <parent root="true" />
+    </object3d>
+    <object3d name="a_box_001" mode="add">
+        <parent name="rp_root" />
+        <position x="0" y="0" z="100" />
+    </object3d>
+    <object3d name="a_box_002" mode="add">
+        <parent name="rp_root" />
+        <position x="0" y="50" z="0" />
+    </object3d>
+	<import file="ext_oldwood_platform_4x12m_a.obj" type="obj" create_objects="true">
+        <rootpoint name="rp_root">
+            <default/>
+        </rootpoint>
+        <rootpoint		name="a_box_001">
+            <object		name="c_box_001" />
+        </rootpoint>
+        <rootpoint		name="a_box_002">
+            <object		name="c_box_002" />
+        </rootpoint>
+    </import>
+</modelscript>

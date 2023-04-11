@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<modelscript>
+    <object3d name="spawn_glow_01" mode="add">
+        <parent name="Head" />
+        <position x="3.5" y="7" z="12" />
+        <rotation w="1" x="0" y="0" z="0" />
+    </object3d>
+    <object3d name="spawn_glow_02" mode="add">
+        <parent name="Head" />
+        <position x="-3.5" y="7" z="12" />
+        <rotation w="1" x="0" y="0" z="0" />
+    </object3d>
+	
+    <import file="ene_male_des_cyber.obj" type="obj" create_objects="true">
+	
+        <rootpoint name="root_point">
+            <default/>
+			<object name="co_culling" />
+        </rootpoint>
+		
+		<!-- <rootpoint name="anim_open_close"> -->
+			<!-- <object name="g_box_anim" /> -->
+			<!-- <object name="g_metal_anim" /> -->
+			<!-- <object name="g_glow01" /> -->
+			<!-- <object name="g_glow02" /> -->
+		<!-- </rootpoint> -->
+    </import>
+</modelscript>

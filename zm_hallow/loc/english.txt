@@ -1,0 +1,17 @@
+{
+	"zombies_mode_name":			"Zombies Mode",
+	"heist_zm_hallow_name":		"Facility-Z",
+	"heist_zm_hallow_brief":		"DEMO MAP",
+	"heist_zm_cabinflesh_name":		"Crash Zone",
+	"heist_zm_cabinflesh_brief":	"(DEMO FIRST ROOM)\n\n*TRAIN CRASHES*\n...",
+	
+	
+	"zm_perk_mechanics":"Perks",
+	
+	
+	
+	
+	
+	
+	"a":"a"
+}

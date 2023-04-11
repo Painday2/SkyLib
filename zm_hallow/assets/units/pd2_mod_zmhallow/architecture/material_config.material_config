@@ -1,0 +1,19 @@
+<materials version="3">
+	<!--Shadow Caster-->
+    <material name="shadow_caster" version="2" render_template="shadow_caster_only"/>
+	
+	<!--Mockup-->
+	<material name="mtl_temp" version="2" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT">
+        <diffuse_texture		file="units/pd2_dlc_des/test units/uv_wrapper/uv_wrapper_df"/>
+        <bump_normal_texture	file="units/pd2_dlc_des/test units/uv_wrapper/uv_wrapper_nm"/>
+        <material_texture		file="units/pd2_dlc_des/test units/uv_wrapper/uv_wrapper_gsma"/>
+        <variable				name="tint_color" type="vector3" value="0.75 0.75 0.75"/>
+	</material>
+	
+    <material name="mtl_oldwood" version="2" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP">
+        <diffuse_texture		file="units/pd2_dlc_uno/architecture/tiling_textures/old_wood/uno_old_wood_df"/>
+        <bump_normal_texture	file="units/pd2_dlc_uno/architecture/tiling_textures/old_wood/uno_old_wood_nm"/>
+        <material_texture		file="units/pd2_dlc_uno/architecture/tiling_textures/old_wood/uno_old_wood_gsma"/>
+        <reflection_texture		file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight" type="cubemap"/>
+    </material>
+</materials>

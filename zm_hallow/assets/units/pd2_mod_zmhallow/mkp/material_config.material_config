@@ -1,0 +1,61 @@
+<materials version="3">
+	<!--Shadow Caster-->
+    <material name="shadow_caster" version="2" render_template="shadow_caster_only"/>
+	
+	<!--Mockup-->
+	<material name="mtl_temp" version="2" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT">
+        <diffuse_texture		file="units/pd2_dlc_des/test units/uv_wrapper/uv_wrapper_df"/>
+        <bump_normal_texture	file="units/pd2_dlc_des/test units/uv_wrapper/uv_wrapper_nm"/>
+        <material_texture		file="units/pd2_dlc_des/test units/uv_wrapper/uv_wrapper_gsma"/>
+        <variable				name="tint_color" type="vector3" value="0.75 0.75 0.75"/>
+	</material>
+	
+    <material name="mtl_bry_concrete" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture		file="units/pd2_dlc_berry/architecture/bry_mountain_interiors/bry_concrete_interior_01_df"/>
+        <bump_normal_texture	file="units/pd2_dlc_berry/architecture/bry_mountain_interiors/bry_concrete_interior_01_nm"/>
+    </material>
+    <material name="mtl_des_concrete" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture		file="units/pd2_dlc_des/tiling_textures/concrete_broken_rebar_01/des_concrete_broken_rebar_01_df"/>
+        <bump_normal_texture	file="units/pd2_dlc_des/tiling_textures/concrete_broken_rebar_01/des_concrete_broken_rebar_01_nm"/>
+        <material_texture		file="units/pd2_dlc_des/tiling_textures/concrete_broken_rebar_01/des_concrete_broken_rebar_01_gsma"/>
+        <reflection_texture		file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material name="mtl_bry_concrete_floor_01" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GLOSS_CONTROL_VALUE:NORMALMAP" version="2">
+        <diffuse_texture		file="units/pd2_dlc_berry/architecture/bry_mountain_interiors/bry_rock_interior_floor_01_df"/>
+        <bump_normal_texture	file="units/pd2_dlc_berry/architecture/bry_mountain_interiors/bry_rock_interior_floor_01_nm"/>
+        <reflection_texture		type="cubemap" file="units/payday2/cubemaps/cubemap_steel"/>
+        <variable				value="0.0040000001899898" type="scalar" name="glossiness_control"/>
+    </material>
+	<material name="mtl_bry_cliff" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture		file="units/pd2_dlc_berry/nature/bry_terrain_rock/bry_terrain_rock_df"/>
+		<bump_normal_texture	file="units/pd2_dlc_berry/nature/bry_terrain_rock/bry_terrain_rock_nm"/>
+		<material_texture		file="units/pd2_dlc_des/tiling_textures/cliffwall_02/des_cliffwall_02_gsma" />
+		<reflection_texture		file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap" />
+	</material>
+	<material name="mtl_bry_rock1" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture		file="units/pd2_dlc_berry/architecture/bry_mountain_interiors/bry_rock_interior_01_df"/>
+        <bump_normal_texture	file="units/pd2_dlc_berry/architecture/bry_mountain_interiors/bry_rock_interior_01_nm"/>
+		<material_texture		file="units/pd2_dlc_des/tiling_textures/cliffwall_02/des_cliffwall_02_gsma" />
+		<reflection_texture		file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap" />
+	</material>
+    <material name="mtl_mul" render_template="effect:BLEND_MUL:DIFFUSE0_TEXTURE" version="2">
+        <variable value="streetlight" type="scalar" name="intensity"/>
+        <diffuse_texture file="units/payday2_cash/safes/cop/pattern_gradient/gradient_cop_blurred_df"/>
+    </material>
+    <material name="mtl_contour_blocker" render_template="generic:ALPHA_MASKED:CONTOUR:DIFFUSE_TEXTURE:OPACITY_TEXTURE" version="2">
+        <diffuse_texture file="units/white_df"/>
+        <variable value="0.0039215688593686 0.0039215688593686 0.0039215688593686" type="vector3" name="contour_color"/>
+        <variable value="1" type="scalar" name="contour_opacity"/>
+        <opacity_texture file="units/transparent_op"/>
+    </material>
+    <material name="mtl_lava_flowing" render_template="generic:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:NORMALMAP:NORMAL_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_UVANIM" version="2">
+        <diffuse_texture			file="units/pd2_mod_zmhallow/nature/lava/lava_df"/>
+        <self_illumination_texture	file="units/pd2_mod_zmhallow/nature/lava/lava_df"/>
+        <bump_normal_texture		file="core/textures/noise"/>
+        <variable					value="reddot" type="scalar" name="il_multiplier"/>
+        <variable					value="0 0.01 0" type="vector3" name="uv_speed"/>
+    </material>
+    <material name="mtl_cable" render_template="generic:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture			file="units/payday2/props/com_prop_basement_cables_ceiling_ladder/com_prop_basement_cables_ceiling_ladder_df"/>
+    </material>
+</materials>

@@ -1,0 +1,107 @@
+<table global_key="zm_testing" name="zm_hallow">
+	<contact assets_gui="guis/dlcs/the_bomb/guis/preload_contact_the_butcher" hidden="false" id="zombies_mode" name_id="zombies_mode_name" package="packages/contact_the_butcher"/>
+	<contact assets_gui="guis/dlcs/the_bomb/guis/preload_contact_the_butcher" hidden="false" id="zombies_mode" name_id="zombies_mode_name" package="packages/contact_the_butcher"/>
+	<Localization default="english.txt" directory="loc"/>
+	<instance id="zm_gameplay_controller">
+		<add file="levels/zm_gameplay_controller/add.xml"/>
+		<include directory="levels/zm_gameplay_controller">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
+	<level ai_group_type="zombie" gamemode_type="3arc_zm" id="zm_cabinflesh" intro_event="" load_screen="units/pd2_mod_zmhallow/gui/icons/zm_facility_load" max_bags="0" music="no_music" team_ai_off="true">
+		<add file="levels/zm_cabinflesh/add.xml"/>
+		<assets>
+			<asset name="perk_mechanics"/>
+		</assets>
+		<hooks directory="hooks">
+			<hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
+		</hooks>
+		<packages>
+			<value_node value="packages/narr_hvh"/>
+			<value_node value="levels/narratives/bain/hvh/world_sounds"/>
+			<value_node value="packages/ZMAssets"/>
+			<value_node value="levels/narratives/locke/vit/editor_only/editor_only"/>
+			<value_node value="levels/instances/unique/sub_sewer_sidespawn/world/world"/>
+			<value_node value="levels/instances/unique/dah/dah_security_room5/world"/>
+			<value_node value="levels/instances/unique/pbr/pbr_mountain_lock/world/world"/>
+			<value_node value="levels/instances/unique/chew/chew_train_car/world/world"/>
+			<value_node value="levels/narratives/h_alex_must_die/stage_3/world/world"/>
+			<value_node value="levels/narratives/bain/shadow_raid/world"/>
+			<value_node value="levels/instances/unique/pbr/pbr_mountain_shaft/world/world"/>
+			<value_node value="levels/narratives/pbr/berry/world"/>
+			<value_node value="levels/narratives/vlad/ukrainian_job/world"/>
+			<value_node value="levels/narratives/continental/fish/editor_only/editor_only"/>
+			<value_node value="levels/narratives/locke/vit/world/world"/>
+			<value_node value="levels/narratives/locke/des/world"/>
+			<value_node value="levels/narratives/locke/des/world/world"/>
+			<value_node value="levels/narratives/elephant/chew/collision/collision"/>
+			<value_node value="levels/narratives/vlad/cane/world/world"/>
+			<value_node value="levels/narratives/locke/des/art/art"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative contact="zombies_mode" icon="units/pd2_mod_zmhallow/gui/icons/zm_facility_icon" id="zm_hallow" quest_id="true">
+		<chain>
+			<table level_id="zm_cabinflesh" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="nothing"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank2"/>
+		</crimenet_videos>
+		<debrief_event/>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="6000"/>
+			<value_node value="12000"/>
+			<value_node value="30000"/>
+			<value_node value="50000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+		</payout>
+	</narrative>
+</table>

@@ -1,0 +1,25 @@
+ZM_Hallow Story:
+
+
+
+Intro:
+Train crashes into a Murkywater R&D facility and the group attempt to make their way into the facility to escape spawn room hoards.
+At the main blast door a keycard is required- the group take a keycard from a random Murkywater corpse.
+When using the keycard on the main blast door an Ai plays over the speakers announcing the name/rank of the corpse you took a keycard from and assumes its one of the players as all the cameras outside are failing.
+Once you all enter the airlock the door shuts and the Ai sees you in a camera- stating 'you are not the person who opened the blastdoor' and attempts to gas the group.
+The group must drop down a collapsed hole to escape the gas and continue as a normal map.
+
+
+Special Waves:
+The Ai has detected the group and activated a security measure to destroy the group.
+Robot versions of enemies (Bulldozer, Cloaker) spawn on special waves.
+
+
+EE-i: 'Unlocking PaP'
+After resetting power the Ai states you might be of use and requests you secure a 3 batteries from storage and recharge them.
+After recharging the Ai opens a secure room were you replace backup batteries.
+Pack a Punch is unlocked on the map.
+
+
+
+EE-ii: 'Unlocking Wonder Weapon'

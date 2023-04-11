@@ -1,0 +1,24 @@
+# Blender MTL File: 'ene_male_des_cyber.blend'
+# Material Count: 2
+
+newmtl mtr_body
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd ene_male_des_cyber_body_df.texture
+
+newmtl mtr_head
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd ene_male_des_cyber_head_df.texture

@@ -1,0 +1,6 @@
+<unit type="bph" slot="1">
+	<object file="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_footprint_03" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>

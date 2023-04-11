@@ -1,0 +1,5 @@
+<materials version="3">
+    <material name="mat_bry_keycard" render_template="generic:DIFFUSE_TEXTURE" unique="true" version="2">
+        <diffuse_texture file="units/pd2_dlc_berry/props/bry_prop_keycard/bry_prop_keycard_df"/>
+    </material>
+</materials>

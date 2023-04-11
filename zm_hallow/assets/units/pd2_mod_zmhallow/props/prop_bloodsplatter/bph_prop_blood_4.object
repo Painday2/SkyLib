@@ -1,0 +1,11 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gen_prop_blood_4" materials="units/pd2_mod_zmhallow/props/prop_bloodsplatter/zmh_blood" />
+    <bodies>
+        <body enabled="true" template="editor" name="static_body" >
+            <object collision_type="box" name="c_box_01" />
+        </body>
+    </bodies>
+    <graphics>
+        <object enabled="true" name="g_g" />
+    </graphics>
+</dynamic_object>

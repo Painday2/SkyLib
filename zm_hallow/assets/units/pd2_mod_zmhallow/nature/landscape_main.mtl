@@ -1,0 +1,54 @@
+# Blender MTL File: 'landscape_main.blend'
+# Material Count: 5
+
+newmtl None
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+
+newmtl mtl_grass
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd C:\\Program Files (x86)\\Steam\\steamapps\\common\\PAYDAY 2\\assets\\extract\\units\\pd2_dlc_sah\\tiling_textures\\sah_grass\\sah_ext_lawn_grass_df.texture.dds
+
+newmtl mtl_moonglow
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd C:\Program Files (x86)\Steam\steamapps\common\PAYDAY 2\assets\extract\units\pd2_indiana\architecture\mus_int_diamond_room\mus_int_diamond_room_godrays_df.texture.dds
+
+newmtl mtl_rockcliff
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd C:\Program Files (x86)\Steam\steamapps\common\PAYDAY 2\assets\extract\units\pd2_dlc_uno\architecture\tiling_textures\rockwall_01\uno_rockwall_01_df.texture.dds
+
+newmtl mtl_water
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+map_Kd C:\\Program Files (x86)\\Steam\\steamapps\\common\\PAYDAY 2\\assets\\extract\\units\\world\\water\\water_foam_df.texture.dds

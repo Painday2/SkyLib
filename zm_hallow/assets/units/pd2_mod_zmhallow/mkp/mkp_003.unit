@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<unit type="zhw" slot="1">
+	<object file="units/pd2_mod_zmhallow/mkp/mkp_003" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>

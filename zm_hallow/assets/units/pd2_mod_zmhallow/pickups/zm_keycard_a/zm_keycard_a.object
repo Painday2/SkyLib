@@ -1,0 +1,14 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_zmhallow/pickups/zm_keycard_a/zm_keycard_a" orientation_object="rp_bry_prop_keycard" />
+	<sequence_manager file="units/pd2_mod_zmhallow/pickups/zm_keycard_a/zm_keycard_a" />
+	<bodies>
+        <body name="static_body" template="editor" enabled="true">
+            <object name="rp_bry_prop_keycard"/>
+            <object name="c_keycard" collision_type="box" padding="-2.5" />
+        </body>
+    </bodies>
+	<graphics>
+		<object name="g_keycard" enabled="true" />
+	</graphics>
+</dynamic_object>
+ 

@@ -1,0 +1,28 @@
+<materials version="3">
+    <material name="mat_blood" render_template="decal:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_TEXTURE:OPACITY_TEXTURE_G" version="2" decal_material="wood">
+        <diffuse_texture file="units/pd2_dlc_bph/props/bph_prop_bloodsplatter/bph_blood_df"/>
+        <opacity_texture file="units/pd2_dlc_bph/props/bph_prop_bloodsplatter/bph_blood_op"/>
+        <bump_normal_texture file="units/pd2_dlc_bph/props/bph_prop_bloodsplatter/bph_blood_nm"/>
+    </material>
+    <material name="mat_gen_prop_blood_4" render_template="decal:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_TEXTURE:OPACITY_TEXTURE_G" version="2">
+        <diffuse_texture file="units/pd2_dlc_bph/props/bph_prop_bloodsplatter/bph_prop_blood_4_df"/>
+        <opacity_texture file="units/pd2_dlc_bph/props/bph_prop_bloodsplatter/bph_prop_blood_4_op"/>
+        <bump_normal_texture file="units/pd2_dlc_bph/props/bph_prop_bloodsplatter/bph_prop_blood_4_nm"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <variable value="1.2999999523163 0.12999999523163 0.61000001430511" type="vector3" name="fresnel_settings"/>
+    </material>
+    <material name="mat_gen_prop_blood_2" render_template="decal:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_TEXTURE:OPACITY_TEXTURE_G" version="2">
+        <diffuse_texture file="units/pd2_dlc_bph/props/bph_prop_bloodsplatter/bph_prop_blood_2_df"/>
+        <opacity_texture file="units/pd2_dlc_bph/props/bph_prop_bloodsplatter/bph_prop_blood_2_op"/>
+        <bump_normal_texture file="units/pd2_dlc_bph/props/bph_prop_bloodsplatter/bph_prop_blood_2_nm"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <variable value="1.2999999523163 0.12999999523163 0.61000001430511" type="vector3" name="fresnel_settings"/>
+    </material>
+    <material name="mat_gen_prop_blood_1" render_template="decal:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_TEXTURE:OPACITY_TEXTURE_G" version="2">
+        <diffuse_texture file="units/pd2_dlc_bph/props/bph_prop_bloodsplatter/bph_prop_blood_1_df"/>
+        <opacity_texture file="units/pd2_dlc_bph/props/bph_prop_bloodsplatter/bph_prop_blood_1_op"/>
+        <bump_normal_texture file="units/pd2_dlc_bph/props/bph_prop_bloodsplatter/bph_prop_blood_1_nm"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <variable value="1.2999999523163 0.12999999523163 0.61000001430511" type="vector3" name="fresnel_settings"/>
+    </material>
+</materials>

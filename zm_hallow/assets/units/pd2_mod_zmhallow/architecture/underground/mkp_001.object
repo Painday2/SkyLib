@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/pd2_mod_zmhallow/mkp/material_config" orientation_object="rp_root" />
+	
+	<bodies>
+		<body name="body_main" enabled="true" template="static">
+			<object name="rp_root"/>
+			<object name="g_g"						collision_type="mesh_mopp" />
+			<object name="g_concrete"				collision_type="mesh_mopp" />
+			<object name="g_bry_concrete_floor_01"	collision_type="mesh_mopp" />
+			<object name="g_bry_cliff"				collision_type="mesh_mopp" />
+		</body>
+	</bodies>
+	
+	<decal_surfaces default_material="stone" static="true">
+	</decal_surfaces>
+	
+	<graphics>
+		<graphic_group name="g_group" enabled="true" culling_object="co_culling">
+			<object name="g_g"							enabled="true" 	shadow_caster="true"/>
+			<object name="g_concrete"					enabled="true" 	shadow_caster="true"/>
+			<object name="g_bry_concrete_floor_01"		enabled="true" 	shadow_caster="true"/>
+			<object name="g_bry_cliff"					enabled="true" 	shadow_caster="true"/>
+			<object name="g_cable"						enabled="true" 	shadow_caster="true"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

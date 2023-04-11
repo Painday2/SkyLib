@@ -1,0 +1,128 @@
+<table directory="assets">
+	<add unload_on_restart="true">
+		<unit path="units/pd2_mod_zmhallow/nature/landscape_main"/>
+		<object path="units/pd2_mod_zmhallow/nature/landscape_main"/>
+		<model path="units/pd2_mod_zmhallow/nature/landscape_main"/>
+		<material_config path="units/pd2_mod_zmhallow/nature/landscape_main"/>
+		<material_config path="units/pd2_mod_zmhallow/architecture/material_config"/>
+		<unit path="units/pd2_mod_zmhallow/architecture/ext_old_wood/platform/ext_oldwood_platform_4x4m_a"/>
+		<object path="units/pd2_mod_zmhallow/architecture/ext_old_wood/platform/ext_oldwood_platform_4x4m_a"/>
+		<model path="units/pd2_mod_zmhallow/architecture/ext_old_wood/platform/ext_oldwood_platform_4x4m_a"/>
+		<unit path="units/pd2_mod_zmhallow/architecture/ext_old_wood/platform/ext_oldwood_platform_4x4m_b"/>
+		<object path="units/pd2_mod_zmhallow/architecture/ext_old_wood/platform/ext_oldwood_platform_4x4m_b"/>
+		<model path="units/pd2_mod_zmhallow/architecture/ext_old_wood/platform/ext_oldwood_platform_4x4m_b"/>
+		<unit path="units/pd2_mod_zmhallow/architecture/ext_old_wood/platform/ext_oldwood_platform_4x4m_c"/>
+		<object path="units/pd2_mod_zmhallow/architecture/ext_old_wood/platform/ext_oldwood_platform_4x4m_c"/>
+		<model path="units/pd2_mod_zmhallow/architecture/ext_old_wood/platform/ext_oldwood_platform_4x4m_c"/>
+		<unit path="units/pd2_mod_zmhallow/architecture/ext_old_wood/platform/ext_oldwood_platform_4x12m_a"/>
+		<object path="units/pd2_mod_zmhallow/architecture/ext_old_wood/platform/ext_oldwood_platform_4x12m_a"/>
+		<model path="units/pd2_mod_zmhallow/architecture/ext_old_wood/platform/ext_oldwood_platform_4x12m_a"/>
+		<unit path="units/pd2_mod_zmhallow/pickups/zm_keycard_a/zm_keycard_a"/>
+		<object path="units/pd2_mod_zmhallow/pickups/zm_keycard_a/zm_keycard_a"/>
+		<model path="units/pd2_mod_zmhallow/pickups/zm_keycard_a/zm_keycard_a"/>
+		<material_config path="units/pd2_mod_zmhallow/pickups/zm_keycard_a/zm_keycard_a"/>
+		<material_config path="units/pd2_mod_zmhallow/mkp/material_config"/>
+		<unit path="units/pd2_mod_zmhallow/mkp/mkp_001"/>
+		<object path="units/pd2_mod_zmhallow/mkp/mkp_001"/>
+		<model path="units/pd2_mod_zmhallow/mkp/mkp_001"/>
+		<unit path="units/pd2_mod_zmhallow/mkp/mkp_002"/>
+		<object path="units/pd2_mod_zmhallow/mkp/mkp_002"/>
+		<model path="units/pd2_mod_zmhallow/mkp/mkp_002"/>
+		<unit path="units/pd2_mod_zmhallow/mkp/mkp_003"/>
+		<object path="units/pd2_mod_zmhallow/mkp/mkp_003"/>
+		<model path="units/pd2_mod_zmhallow/mkp/mkp_003"/>
+		<material_config path="units/pd2_mod_zmhallow/architecture/underground/material_config"/>
+		<unit path="units/pd2_mod_zmhallow/architecture/underground/zmh_und_hallway_01"/>
+		<object path="units/pd2_mod_zmhallow/architecture/underground/zmh_und_hallway_01"/>
+		<model path="units/pd2_mod_zmhallow/architecture/underground/zmh_und_hallway_01"/>
+		<unit path="units/pd2_mod_zmhallow/architecture/underground/zmh_und_hangar"/>
+		<object path="units/pd2_mod_zmhallow/architecture/underground/zmh_und_hangar"/>
+		<model path="units/pd2_mod_zmhallow/architecture/underground/zmh_und_hangar"/>
+		<texture path="units/pd2_mod_zmhallow/nature/lava/lava_df"/>
+		<effect force="true" path="units/pd2_mod_zmhallow/effects/generic/ceiling_dust"/>
+		<effect force="true" path="units/pd2_mod_zmhallow/effects/generic/ceiling_waterdrop"/>
+		<effect force="true" path="units/pd2_mod_zmhallow/effects/generic/ceiling_waterdrop_ripple"/>
+		<material_config path="units/pd2_mod_zmhallow/nature/zmh_boulders/zmh_boulders"/>
+		<unit path="units/pd2_mod_zmhallow/nature/zmh_boulders/zmh_boulders_01"/>
+		<object path="units/pd2_mod_zmhallow/nature/zmh_boulders/zmh_boulders_01"/>
+		<model path="units/pd2_mod_zmhallow/nature/zmh_boulders/zmh_boulders_01"/>
+		<cooked_physics path="units/pd2_mod_zmhallow/nature/zmh_boulders/zmh_boulders_01"/>
+		<texture path="units/pd2_mod_zmhallow/nature/zmh_boulders/zmh_boulders_01_df"/>
+		<unit path="units/pd2_mod_zmhallow/nature/zmh_boulders/zmh_boulders_02"/>
+		<object path="units/pd2_mod_zmhallow/nature/zmh_boulders/zmh_boulders_02"/>
+		<model path="units/pd2_mod_zmhallow/nature/zmh_boulders/zmh_boulders_02"/>
+		<cooked_physics path="units/pd2_mod_zmhallow/nature/zmh_boulders/zmh_boulders_02"/>
+		<texture path="units/pd2_mod_zmhallow/nature/zmh_boulders/zmh_boulders_02_df"/>
+		<material_config path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/zmh_blood"/>
+		<unit path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_1"/>
+		<object path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_1"/>
+		<model path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_1"/>
+		<unit path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_2"/>
+		<object path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_2"/>
+		<model path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_2"/>
+		<unit path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_4"/>
+		<object path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_4"/>
+		<model path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_4"/>
+		<unit path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_splat_01"/>
+		<object path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_splat_01"/>
+		<model path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_splat_01"/>
+		<unit path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_smear_02"/>
+		<object path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_smear_02"/>
+		<model path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_smear_02"/>
+		<unit path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_11"/>
+		<object path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_11"/>
+		<model path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_11"/>
+		<unit path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_08"/>
+		<object path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_08"/>
+		<model path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_08"/>
+		<unit path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_06"/>
+		<object path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_06"/>
+		<model path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_06"/>
+		<unit path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_05"/>
+		<object path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_05"/>
+		<model path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_05"/>
+		<unit path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_02"/>
+		<object path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_02"/>
+		<model path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_02"/>
+		<unit path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_01"/>
+		<object path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_01"/>
+		<model path="units/pd2_mod_zmhallow/props/prop_bloodsplatter/bph_prop_blood_handprint_01"/>
+		<unit path="units/pd2_mod_zmhallow/occluders/occluder_plane_16x16"/>
+		<object path="units/pd2_mod_zmhallow/occluders/occluder_plane_16x16"/>
+		<model path="units/pd2_mod_zmhallow/occluders/occluder_plane_16x16"/>
+		<material_config path="units/pd2_mod_zmhallow/occluders/occluder_plane"/>
+		<sequence_manager path="units/pd2_mod_zmhallow/pickups/zm_keycard_a/zm_keycard_a"/>
+	</add>
+	<add unload_on_restart="true">
+		<unit path="units/pd2_mod_zmhallow/characters/ene_male_des_cyber/ene_male_des_cyber"/>
+		<unit path="units/pd2_mod_zmhallow/characters/ene_male_des_cyber/ene_male_des_cyber_husk"/>
+		<texture path="units/pd2_mod_zmhallow/characters/ene_male_des_cyber/ene_male_des_cyber_body_df"/>
+		<texture path="units/pd2_mod_zmhallow/characters/ene_male_des_cyber/ene_male_des_cyber_head_df"/>
+		<texture path="units/pd2_mod_zmhallow/characters/ene_male_des_cyber/ene_male_des_cyber_head_nm"/>
+		<material_config path="units/pd2_mod_zmhallow/characters/ene_male_des_cyber/ene_male_des_cyber"/>
+		<model path="units/pd2_mod_zmhallow/characters/ene_male_des_cyber/ene_male_des_cyber"/>
+		<object path="units/pd2_mod_zmhallow/characters/ene_male_des_cyber/ene_male_des_cyber"/>
+		<sequence_manager path="units/pd2_mod_zmhallow/characters/ene_male_des_cyber/ene_male_des_cyber"/>
+	</add>
+	<add>
+		<object path="units/dev_tools/mission_elements/point_interaction/interaction_dummy"/>
+		<sequence_manager path="units/dev_tools/mission_elements/point_interaction/interaction_dummy"/>
+		<unit path="units/dev_tools/mission_elements/point_interaction/interaction_dummy"/>
+	</add>
+	<add from_db="true" path="core/units/light_spot/light_spot" type="unit">
+		<material_config path="core/material_configs/hub_elements"/>
+		<object path="core/units/light_spot/light_spot"/>
+		<unit path="core/units/light_spot/light_spot"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/dev_collision_1m_2" type="unit">
+		<material_config path="core/material_configs/hub_elements"/>
+		<object path="units/dev_tools/level_tools/dev_collision_1m_2"/>
+		<unit path="units/dev_tools/level_tools/dev_collision_1m_2"/>
+	</add>
+	<add from_db="true" path="units/world/props/pipes/pipe_thick_straight" type="unit">
+		<unit path="units/world/props/pipes/pipe_thick_straight"/>
+		<object path="units/world/props/pipes/pipe_thick_straight"/>
+		<material_config path="units/world/props/pipes/pipes_set"/>
+	</add>
+	<sequence_manager path="units/pd2_mod_zombies/power_ups/zm_pwrup_seq"/>
+</table>
