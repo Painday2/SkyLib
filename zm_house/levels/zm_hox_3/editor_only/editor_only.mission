@@ -1,0 +1,11 @@
+<generic_scriptdata type="table">
+	<entry key="editor_only" type="table">
+		<entry key="activate_on_parsed" type="boolean" value="false"/>
+		<entry key="continent" type="string" value="editor_only"/>
+		<entry key="elements" type="table">
+		</entry>
+		<entry key="instances" type="table">
+		</entry>
+		<entry key="name" type="string" value="editor_only"/>
+	</entry>
+</generic_scriptdata>

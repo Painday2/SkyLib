@@ -1,0 +1,142 @@
+<table global_key="zm_house_hox" name="zm_house">
+	<instance id="zm_hox_estate_window">
+		<add file="levels/zm_hox_estate_window/add.xml"/>
+		<include directory="levels/zm_hox_estate_window">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
+	<instance id="zm_saw">
+		<add file="levels/zm_saw/add.xml"/>
+		<include directory="levels/zm_saw">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
+	<instance id="zm_hox_estate_outer_door">
+		<add file="levels/zm_hox_estate_outer_door/add.xml"/>
+		<include directory="levels/zm_hox_estate_outer_door">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
+	<instance id="zm_hox_estate_window_arched">
+		<add file="levels/zm_hox_estate_window_arched/add.xml"/>
+		<include directory="levels/zm_hox_estate_window_arched">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
+	<instance id="zm_gameplay_controller">
+		<add file="levels/zm_gameplay_controller/add.xml"/>
+		<include directory="levels/zm_gameplay_controller">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
+	<AddFiles directory="assets">
+		<texture load="true" path="guis/zm_house_icon"/>
+	</AddFiles>
+	<AssetUpdates id="27126" provider="modworkshop" use_local_dir="true" version="2.8"/>
+	<Localization default="english.txt" directory="loc"/>
+	<contact assets_gui="guis/dlcs/the_bomb/guis/preload_contact_the_butcher" hidden="false" id="zombies_mode" name_id="zombies_mode_name" package="packages/contact_the_butcher"/>
+	<level ai_group_type="zombie" briefing_dialog="" cube="cube_apply_heist_bank" gamemode_type="3arc_zm" id="zm_hox_3" intro_event="" max_bags="0" music="no_music" team_ai_off="true">
+		<add file="levels/zm_hox_3/add.xml"/>
+		<hooks directory="hooks">
+			<hook file="InteractionTweakData.lua" source_file="lib/tweak_data/interactiontweakdata"/>
+			<hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
+			<hook file="EquipmentsTweakdata.lua" source_file="lib/tweak_data/equipmentstweakdata"/>
+			<hook file="HUDIconsTweakdata.lua" source_file="lib/tweak_data/hudiconstweakdata"/>
+		</hooks>
+		<packages>
+			<value_node value="packages/narr_hvh"/>
+			<value_node value="levels/narratives/bain/hvh/world_sounds"/>
+			<value_node value="packages/narr_hox_3"/>
+			<value_node value="packages/job_hox"/>
+			<value_node value="levels/narratives/bain/revenge/world"/>
+			<value_node value="levels/narratives/bain/revenge/world_sounds"/>
+			<value_node value="levels/narratives/bain/revenge/world/world"/>
+			<value_node value="levels/narratives/bain/revenge/terrain02/terrain02"/>
+			<value_node value="levels/narratives/bain/revenge/terrain/terrain"/>
+			<value_node value="levels/narratives/bain/revenge/editor_only/editor_only"/>
+			<value_node value="levels/narratives/bain/revenge/lights/lights"/>
+			<value_node value="levels/narratives/bain/revenge/house_group/house_group"/>
+			<value_node value="levels/narratives/bain/revenge/mockup/mockup"/>
+			<value_node value="levels/narratives/bain/revenge/art/art"/>
+			<value_node value="packages/ZMAssets"/>
+			<value_node value="packages/narr_hvh"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative contact="zombies_mode" icon="guis/zm_house_icon" id="zm_house">
+		<chain>
+			<table level_id="zm_hox_3" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="nothing"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank2"/>
+		</crimenet_videos>
+		<debrief_event/>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="6000"/>
+			<value_node value="12000"/>
+			<value_node value="30000"/>
+			<value_node value="50000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+		</payout>
+	</narrative>
+</table>

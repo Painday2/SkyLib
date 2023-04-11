@@ -1,0 +1,6 @@
+<table>
+	<art file="art/art"/>
+	<editor_only file="editor_only/editor_only"/>
+	<effects file="effects/effects"/>
+	<world file="world/world"/>
+</table>

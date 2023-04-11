@@ -1,0 +1,15 @@
+<dynamic_object>
+    <diesel orientation_object="rp_str_prop_decal_graffiti_clans_heist" materials="units/weapon_walls/new/wpn_graffiti_ak47" />
+    <sequence_manager file="units/weapon_walls/new/wpn_graffiti" />
+
+	<bodies>
+		<body name="editor_body" enabled="true" template="editor">
+			<object name="rp_str_prop_decal_graffiti_clans_heist" />
+			<object name="c_box_00" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+	
+	<graphics>
+        <object enabled="true" name="g_g"/>
+    </graphics>
+</dynamic_object>

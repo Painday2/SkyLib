@@ -1,0 +1,18 @@
+<dynamic_object>
+    <diesel materials="units/pd2_mod_zombies/props/zmhouse_saw/zmhouse_saw" orientation_object="rp_root"/>
+    <sequence_manager file="units/pd2_mod_zombies/props/zmhouse_saw/zmhouse_saw" />
+    <bodies>
+        <body name="saw_body" enabled="true" template="static">
+            <object collision_type="mesh_mopp" name="g_body_lod0" />
+        </body>
+    </bodies>
+    <graphics>
+        <object enabled="true" name="g_body_lod0"/>
+        <object enabled="true" name="g_protection_lod0"/>
+        <object enabled="true" name="g_blade_lod0"/>
+        <object enabled="true" name="g_core_lod0"/>
+        <object enabled="true" name="g_handle_upper_lod0"/>
+        <object enabled="true" name="g_handle_lower_lod0"/>
+        <object enabled="true" name="'g_motor_lod0'"/>
+    </graphics>
+</dynamic_object>

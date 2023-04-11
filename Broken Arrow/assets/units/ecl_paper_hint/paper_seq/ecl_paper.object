@@ -1,0 +1,12 @@
+<dynamic_object>
+    <diesel orientation_object="rp_clipboard_paper" materials="units/ecl_paper_hint/paper_seq/ecl_paper_hint_1" />
+    <sequence_manager file="units/ecl_paper_hint/paper_seq/ecl_paper2" />
+    <bodies>
+        <body enabled="true" template="raycoll_static" name="body0" >
+            <object collision_type="box" name="c_box" />
+        </body>
+    </bodies>
+    <graphics>
+        <object enabled="true" name="g_clipboard" />
+    </graphics>
+</dynamic_object>

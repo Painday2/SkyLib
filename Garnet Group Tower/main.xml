@@ -27,6 +27,7 @@
 			<hook file="playerfreefall.lua" source_file="lib/units/beings/player/states/playerfreefall"/>
 			<hook file="ingameparachute.lua" source_file="lib/states/ingameparachuting"/>
 			<hook file="HuskPlayerMovement.lua" source_file="lib/units/beings/player/huskplayermovement"/>
+			<hook file="InteractionTweakData.lua" source_file="lib/tweak_data/interactiontweakdata"/>
 		</hooks>
 		<packages>
 			<value_node value="packages/narr_hvh"/>

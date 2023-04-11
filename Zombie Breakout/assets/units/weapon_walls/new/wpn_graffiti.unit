@@ -1,0 +1,7 @@
+<unit type="str" slot="1" >
+    <object file="units/weapon_walls/new/wpn_graffiti" />
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension name="damage" class="UnitDamage" />
+    </extensions>
+</unit>

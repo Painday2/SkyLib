@@ -1,0 +1,53 @@
+<table>
+	<editor_groups/>
+	<statics>
+		<table>
+			<unit_data _prev_pos="-4700.44 -5465.33 -0.0997506" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_031" position="-4700.44 -5465.33 -30.0998" rotation="0 0 0 -1" unit_id="400000"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-4700.44 -5465.33 -30.0998" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_032" position="-4700.44 -4724.33 -30.0998" rotation="0 0 0 -1" unit_id="400001"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-4700.44 -4724.33 -30.0998" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_033" position="-4700.44 -4043.33 -30.0998" rotation="0 0 0 -1" unit_id="400002"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-4700.44 -4043.33 -30.0998" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_034" position="-3125.44 -4043.33 -30.0998" rotation="0 0 0 -1" unit_id="400003"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3125.44 -5425.33 -30.0998" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_035" position="-901.444 -5425.33 -30.0998" rotation="0 0 0 -1" unit_id="400004"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-106.444 -5425.33 -30.0998" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_036" position="-132.444 -5425.33 -30.0998" rotation="0 0 0 -1" unit_id="400005"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="4687.56 -850.331 -188.1" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_038" position="4687.56 -944.331 -188.1" rotation="0 0 0 -1" unit_id="400007"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="4371.56 -346.331 -188.1" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_039" position="4492.96 -346.331 -188.1" rotation="0 0 0 -1" unit_id="400008"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="4357.56 -1710.33 -188.1" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_040" position="4685.26 -1710.33 -188.1" rotation="0 0 0 -1" unit_id="400009"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-3981.44 -4043.33 -30.0998" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_041" position="-3910.44 -4043.33 -30.0998" rotation="0 0 0 -1" unit_id="400010"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="992.556 94.6694 -30.0998" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_042" position="992.556 94.6694 -30.0998" rotation="0 0 0 -1" unit_id="400011"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="4585.26 -2247.33 -7.10001" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_037" position="4585.26 -2247.33 -62.1" rotation="0 0 0 -1" unit_id="400006"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="4145.26 -2247.33 -7.10001" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="540 -658 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_045" position="4145.26 -2247.33 -74.1" rotation="0 0 0 -1" unit_id="400012"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="3605.26 -2247.33 -7.10001" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_046" position="3605.26 -2247.33 -67.1" rotation="0 0 0 -1" unit_id="400013"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="3605.26 -1589.33 -7.10001" _prev_rot="0 0 0 -1" continent="below_fix" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/com_int_construction_floor/com_int_construction_concrete_floor_8x8m" name_id="com_int_construction_concrete_floor_8x8m_047" position="3605.26 -1589.33 -74.1" rotation="0 0 0 -1" unit_id="400014"/>
+		</table>
+	</statics>
+	<values>
+		<workviews/>
+	</values>
+</table>

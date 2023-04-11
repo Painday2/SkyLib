@@ -1,0 +1,597 @@
+<table>
+	<editor_groups>
+		<table continent="terrain02" name="Group02" reference="400002">
+			<units>
+				<value_node value="400002"/>
+				<value_node value="400003"/>
+				<value_node value="400006"/>
+				<value_node value="400011"/>
+				<value_node value="400016"/>
+				<value_node value="400017"/>
+				<value_node value="400018"/>
+				<value_node value="400020"/>
+				<value_node value="400022"/>
+				<value_node value="400026"/>
+				<value_node value="400028"/>
+				<value_node value="400029"/>
+				<value_node value="400032"/>
+				<value_node value="400035"/>
+				<value_node value="400038"/>
+				<value_node value="400039"/>
+				<value_node value="400041"/>
+				<value_node value="400043"/>
+				<value_node value="400051"/>
+				<value_node value="400053"/>
+				<value_node value="400058"/>
+				<value_node value="400065"/>
+				<value_node value="400068"/>
+				<value_node value="400069"/>
+				<value_node value="400070"/>
+				<value_node value="400074"/>
+				<value_node value="400075"/>
+				<value_node value="400079"/>
+				<value_node value="400080"/>
+				<value_node value="400081"/>
+				<value_node value="400082"/>
+				<value_node value="400083"/>
+				<value_node value="400084"/>
+				<value_node value="400085"/>
+				<value_node value="400086"/>
+				<value_node value="400088"/>
+				<value_node value="400089"/>
+				<value_node value="400091"/>
+				<value_node value="400092"/>
+				<value_node value="400095"/>
+				<value_node value="400096"/>
+				<value_node value="400100"/>
+				<value_node value="400101"/>
+				<value_node value="400106"/>
+				<value_node value="400107"/>
+				<value_node value="400108"/>
+				<value_node value="400110"/>
+				<value_node value="400112"/>
+				<value_node value="400113"/>
+				<value_node value="400116"/>
+				<value_node value="400117"/>
+				<value_node value="400121"/>
+				<value_node value="400122"/>
+				<value_node value="400129"/>
+				<value_node value="400132"/>
+				<value_node value="400134"/>
+				<value_node value="400143"/>
+				<value_node value="400146"/>
+				<value_node value="400148"/>
+				<value_node value="400149"/>
+				<value_node value="400152"/>
+				<value_node value="400158"/>
+				<value_node value="400160"/>
+				<value_node value="400162"/>
+				<value_node value="400163"/>
+				<value_node value="400164"/>
+				<value_node value="400165"/>
+				<value_node value="400166"/>
+				<value_node value="400167"/>
+				<value_node value="400168"/>
+				<value_node value="400169"/>
+				<value_node value="400170"/>
+				<value_node value="400171"/>
+				<value_node value="400172"/>
+				<value_node value="400173"/>
+				<value_node value="400174"/>
+				<value_node value="400175"/>
+				<value_node value="400176"/>
+				<value_node value="400177"/>
+				<value_node value="400178"/>
+				<value_node value="400179"/>
+				<value_node value="400180"/>
+				<value_node value="400181"/>
+				<value_node value="400182"/>
+				<value_node value="400185"/>
+				<value_node value="400186"/>
+				<value_node value="400187"/>
+				<value_node value="400188"/>
+				<value_node value="400190"/>
+				<value_node value="400191"/>
+				<value_node value="400194"/>
+				<value_node value="400196"/>
+				<value_node value="400197"/>
+				<value_node value="400198"/>
+				<value_node value="400202"/>
+				<value_node value="400203"/>
+				<value_node value="400205"/>
+				<value_node value="400208"/>
+				<value_node value="400209"/>
+				<value_node value="400210"/>
+				<value_node value="400211"/>
+				<value_node value="400212"/>
+				<value_node value="400214"/>
+				<value_node value="400215"/>
+				<value_node value="400216"/>
+				<value_node value="400217"/>
+				<value_node value="400219"/>
+				<value_node value="400220"/>
+				<value_node value="400221"/>
+				<value_node value="400223"/>
+				<value_node value="400224"/>
+				<value_node value="400225"/>
+				<value_node value="400226"/>
+				<value_node value="400227"/>
+				<value_node value="400229"/>
+				<value_node value="400230"/>
+				<value_node value="400231"/>
+				<value_node value="400234"/>
+				<value_node value="400237"/>
+				<value_node value="400000"/>
+				<value_node value="400033"/>
+				<value_node value="400034"/>
+				<value_node value="400036"/>
+				<value_node value="400040"/>
+				<value_node value="400044"/>
+				<value_node value="400045"/>
+				<value_node value="400046"/>
+				<value_node value="400047"/>
+				<value_node value="400048"/>
+				<value_node value="400050"/>
+				<value_node value="400052"/>
+				<value_node value="400054"/>
+				<value_node value="400055"/>
+				<value_node value="400056"/>
+				<value_node value="400057"/>
+				<value_node value="400059"/>
+				<value_node value="400049"/>
+				<value_node value="400013"/>
+				<value_node value="400001"/>
+				<value_node value="400004"/>
+				<value_node value="400025"/>
+				<value_node value="400060"/>
+				<value_node value="400062"/>
+			</units>
+		</table>
+	</editor_groups>
+	<statics>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_003" position="-6185.78 8314.21 36.902" rotation="0 0 -0.382683 -0.92388" unit_id="400002"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_004" position="-5850 8225 -220.643" rotation="0 0 1 -0" unit_id="400003"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_005" position="-5800 7725 -277.506" rotation="0 0 -0.382683 -0.92388" unit_id="400006"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_006" position="-4900 6750 -297.147" rotation="0 0 0.92388 0.382683" unit_id="400011"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_007" position="-3864.21 7015.69 417.409" rotation="0 0 0.92388 0.382683" unit_id="400016"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall" name_id="str_veg_forest_wall_004" position="-6782.6 1231.72 342" rotation="0 0 0.942641 0.333807" unit_id="400017"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_008" position="-3350 7650 436.576" rotation="0 0 0.923879 -0.382684" unit_id="400018"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_009" position="-5925 2150 426.522" rotation="0 0 1 -0" unit_id="400020"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall" name_id="str_veg_forest_wall_005" position="-7200 -456.594 473.799" rotation="-2.42144e-008 0.026177 0.999657 -9.23872e-007" unit_id="400022"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_010" position="-2253.98 7756.07 436.576" rotation="0 0 0.92388 -0.382683" unit_id="400026"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_011" position="-6400 -475 495.346" rotation="0 0 0.92388 -0.382683" unit_id="400028"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_012" position="-2308.58 6732.84 417.409" rotation="0 0 0.92388 0.382683" unit_id="400029"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_013" position="-5225 350 -75" rotation="0 0 1 -0" unit_id="400032"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_014" position="-6350 -2075 585.474" rotation="0 0 0.923879 -0.382684" unit_id="400035"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall" name_id="str_veg_forest_wall_008" position="-6946.34 -3159.84 394.08" rotation="0 0 1 -8.9407e-007" unit_id="400038"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_015" position="-1400 5450 -57.6436" rotation="0 0 0.92388 0.382683" unit_id="400039"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_016" position="-663.782 6552.51 144.845" rotation="0 0 -0.707107 -0.707107" unit_id="400041"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/architecture/ind/ind_stairs_100x200x125m_a" name_id="ind_stairs_100x200x125m_a_001" position="-3775 250 -150" rotation="0 0 1 -0" unit_id="400043"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall" name_id="str_veg_forest_wall_010" position="-8023.72 -5508.16 -175" rotation="0 0 0.97237 0.233445" unit_id="400051"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_017" position="736.217 7652.51 219.844" rotation="0 0 1 -0" unit_id="400053"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_018" position="449.39 5674.26 116.263" rotation="0 0 0.92388 0.382683" unit_id="400058"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_019" position="-3100.09 -1407.48 -80.6526" rotation="0 0 0.923879 -0.382684" unit_id="400065"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_020" position="-8375 -7175 -75" rotation="0 0 0.707107 -0.707107" unit_id="400068"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_021" position="927.208 5385.79 144.845" rotation="0 0 -0.382683 -0.92388" unit_id="400069"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_022" position="-3031 -2324 -63.2109" rotation="0 0 0.923879 -0.382684" unit_id="400070"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_023" position="-5950 -6150 -75" rotation="0 0 1 -0" unit_id="400074"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_024" position="2200 6800 194.845" rotation="0 0 -0.382683 -0.92388" unit_id="400075"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_025" position="-6675 -7100 -75" rotation="0 0 0.707107 -0.707107" unit_id="400079"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge" name_id="gen_equipment_shape_charge_001" position="0 9.53674e-007 7400" rotation="0.5 0.5 -0.5 -0.5" unit_id="400080"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge" name_id="gen_equipment_shape_charge_002" position="0 9.53674e-007 7400" rotation="0.707107 5.66244e-007 -5.06639e-007 -0.707107" unit_id="400081"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge" name_id="gen_equipment_shape_charge_003" position="0 9.53674e-007 7400" rotation="-6.55651e-007 0.707107 -0.707107 6.55651e-007" unit_id="400082"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge" name_id="gen_equipment_shape_charge_004" position="0 9.53674e-007 7400" rotation="-6.55651e-007 0.707107 -0.707107 6.55651e-007" unit_id="400083"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge" name_id="gen_equipment_shape_charge_005" position="0 9.53674e-007 7400" rotation="-6.55651e-007 0.707107 -0.707107 6.55651e-007" unit_id="400084"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge" name_id="gen_equipment_shape_charge_006" position="0 9.53674e-007 7400" rotation="0.5 -0.5 0.5 -0.5" unit_id="400085"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge" name_id="gen_equipment_shape_charge_007" position="0 9.53674e-007 7400" rotation="0.5 -0.5 0.5 -0.5" unit_id="400086"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_026" position="-6950 -8650 563.921" rotation="0 0 -0.707107 -0.707107" unit_id="400088"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_027" position="-1852 -2228 2.5" rotation="0 0 1 -0" unit_id="400089"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall" name_id="str_veg_forest_wall_013" position="-9242.54 -9254.35 -175" rotation="0 0 0.965926 -0.258819" unit_id="400091"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_028" position="-2400 -3550 460.494" rotation="0 0 0 -1" unit_id="400092"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_029" position="-3050 -5100 632.215" rotation="0 0 0 -1" unit_id="400095"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_001" position="-2350 -3825 814.193" rotation="0 0 -8.9407e-007 -1" unit_id="400096"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_002" position="-2350 -4225 814.193" rotation="0 0 -0.707107 -0.707106" unit_id="400100"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_003" position="-1950 -3825 814.193" rotation="0 0 -8.9407e-007 -1" unit_id="400101"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_030" position="3101.04 5693.93 291.263" rotation="0 0 0.92388 0.382683" unit_id="400106"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_004" position="-1175 -3225 814.193" rotation="0 0 0 -1" unit_id="400107"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_005" position="-2350 -4725 814.193" rotation="0 0 -0.707107 -0.707106" unit_id="400108"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_006" position="-1550 -3825 814.193" rotation="0 0 -8.9407e-007 -1" unit_id="400110"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_007" position="-1175 -3625 814.193" rotation="0 0 -0.707107 -0.707107" unit_id="400112"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_008" position="-775 -3225 814.193" rotation="0 0 0 -1" unit_id="400113"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_031" position="3950 6600 307.642" rotation="0 0 0.92388 0.382683" unit_id="400116"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_009" position="-1175 -4025 814.193" rotation="0 0 -0.707107 -0.707107" unit_id="400117"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_010" position="-375 -3225 814.193" rotation="0 0 0 -1" unit_id="400121"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_032" position="2700 2375 -23.6987" rotation="0 0 0.923879 -0.382684" unit_id="400122"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_011" position="25 -3225 814.193" rotation="0 0 0 -1" unit_id="400129"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall" name_id="str_veg_forest_wall_018" position="-3072.58 -7039.81 821.656" rotation="0 0 0.793353 -0.608762" unit_id="400132"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_012" position="425 -3225 814.193" rotation="0 0 0 -1" unit_id="400134"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_033" position="4475 4725 194.845" rotation="0 0 0 -1" unit_id="400143"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_034" position="3150 1200 2.5" rotation="0 0 1 -0" unit_id="400146"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_013" position="825 -3225 814.193" rotation="0 0 0 -1" unit_id="400148"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_035" position="1871 -1900 2.5" rotation="0 0 0.996195 -0.0871559" unit_id="400149"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_014" position="4834.86 4057.25 244.15" rotation="0 0 -0.430512 -0.902585" unit_id="400152"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_001" position="3962.65 1462.65 -53.5" rotation="0 0 0.707107 -0.707107" unit_id="400158"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_002" position="3962.48 1212.65 -58.497" rotation="0.0123407 -0.0123407 0.706999 -0.706999" unit_id="400160"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_015" position="5145.72 3805.52 244.15" rotation="0 0 0.942642 0.333806" unit_id="400162"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_036" position="1751.19 -3211.81 766.617" rotation="0 0 0.996195 -0.0871559" unit_id="400163"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_003" position="3962.65 962.653 -53.5" rotation="0 0 0.707107 -0.707107" unit_id="400164"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_004" position="3962.65 712.653 -53.5" rotation="-0.0123407 0.0123407 0.706999 -0.706999" unit_id="400165"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_005" position="2837.65 -1489.49 -53.5" rotation="0.00436327 -0.0075574 0.865992 -0.499981" unit_id="400166"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_006" position="2962.65 -1272.99 -59.5" rotation="0 0 0.866025 -0.5" unit_id="400167"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_007" position="2712.65 -1706 -53.5" rotation="0 0 0.866025 -0.5" unit_id="400168"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_008" position="3087.65 -1056.48 -63.5" rotation="0 0 0.866025 -0.5" unit_id="400169"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_009" position="2587.65 -1922.51 -53.5" rotation="0 0 0.870356 -0.492423" unit_id="400170"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_010" position="3212.65 -839.976 -63.5" rotation="-0.00436327 0.0075574 0.865992 -0.499981" unit_id="400171"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_011" position="2462.65 -2139.01 -6.5" rotation="0.00436327 -0.0075574 0.865992 -0.499981" unit_id="400172"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_012" position="3337.65 -623.469 -53.5" rotation="0.00436327 -0.0075574 0.865992 -0.499981" unit_id="400173"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_013" position="2337.65 -2355.52 -15.5" rotation="0 0 0.866025 -0.5" unit_id="400174"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_014" position="3462.65 -406.963 -42.5" rotation="0 0 0.866025 -0.5" unit_id="400175"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_015" position="2212.65 -2572.03 -6.5" rotation="0 0 0.866025 -0.5" unit_id="400176"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_016" position="3587.65 -190.457 -53.5" rotation="0 0 0.866025 -0.5" unit_id="400177"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_017" position="2433.32 -2709.82 -11.5" rotation="0 0 0.258819 -0.965926" unit_id="400178"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_018" position="3712.65 26.0498 -58.5" rotation="0 0 0.866025 -0.5" unit_id="400179"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_019" position="3837.65 242.556 -53.5" rotation="0 0 0.866025 -0.5" unit_id="400180"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_020" position="3962.65 462.653 -61.5" rotation="0 0 0.707107 -0.707107" unit_id="400181"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_016" position="5456.58 3553.79 244.15" rotation="0 0 0.942642 0.333806" unit_id="400182"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_037" position="4700 950 11.3384" rotation="0 0 0 -1" unit_id="400185"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_017" position="5767.44 3302.06 244.15" rotation="0 0 0.942642 0.333806" unit_id="400186"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_038" position="3600 -3000 -49.2216" rotation="0 0 0.923879 -0.382684" unit_id="400187"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_018" position="6078.29 3050.33 244.15" rotation="0 0 0.942642 0.333806" unit_id="400188"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_039" position="2500 -4300 781.069" rotation="0 0 0 -1" unit_id="400190"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_019" position="6389.15 2798.61 244.15" rotation="0 0 0.942642 0.333806" unit_id="400191"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_020" position="6700.01 2546.88 244.15" rotation="0 0 0.942642 0.333806" unit_id="400194"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_021" position="7010.87 2295.15 244.15" rotation="0 0 0.942642 0.333806" unit_id="400196"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_022" position="7262.6 2606.01 244.15" rotation="0 0 0.902585 -0.430512" unit_id="400197"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_023" position="7514.33 2916.87 244.15" rotation="0 0 0.902585 -0.430512" unit_id="400198"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_024" position="7679.89 2525.44 244.15" rotation="0 0 0.942642 0.333806" unit_id="400202"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_040" position="7500 2000 150" rotation="0 0 0 -1" unit_id="400203"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_025" position="7990.75 2273.71 244.15" rotation="0 0 0.942642 0.333806" unit_id="400205"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_026" position="8301.61 2021.99 244.15" rotation="0 0 0.942642 0.333806" unit_id="400208"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_027" position="8553.34 2332.85 244.15" rotation="0 0 0.902585 -0.430512" unit_id="400209"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_028" position="8805.06 2643.7 244.15" rotation="0 0 0.902585 -0.430512" unit_id="400210"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_041" position="4600 -6200 798.408" rotation="0 0 0 -1" unit_id="400211"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_029" position="5258.86 -5563.26 814.193" rotation="0 0 -0.233446 -0.97237" unit_id="400212"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_030" position="6033.4 -4495.22 814.193" rotation="0 0 -0.233446 -0.97237" unit_id="400214"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_031" position="5615.26 -5381.67 814.193" rotation="0 0 -0.233446 -0.97237" unit_id="400215"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_032" position="6389.8 -4313.62 814.193" rotation="0 0 -0.233446 -0.97237" unit_id="400216"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_033" position="5440.46 -5919.67 814.193" rotation="0 0 -0.852641 -0.522498" unit_id="400217"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_034" position="5971.66 -5200.07 814.193" rotation="0 0 -0.233446 -0.97237" unit_id="400219"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_035" position="6214.99 -4851.62 814.193" rotation="0 0 -0.85264 -0.522498" unit_id="400220"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_036" position="6746.2 -4132.03 814.193" rotation="0 0 -0.233446 -0.97237" unit_id="400221"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_042" position="7381.8 -3226.78 530.983" rotation="0 0 -0.382683 -0.92388" unit_id="400223"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_037" position="5622.05 -6276.07 814.193" rotation="0 0 -0.852641 -0.522498" unit_id="400224"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_043" position="5256.07 -6826.78 845.17" rotation="0 0 -0.382683 -0.92388" unit_id="400225"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_038" position="7102.6 -3950.43 814.193" rotation="0 0 -0.233446 -0.97237" unit_id="400226"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_039" position="6396.59 -5208.02 814.193" rotation="0 0 -0.85264 -0.522498" unit_id="400227"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_040" position="7459.01 -3768.83 814.193" rotation="0 0 -0.233446 -0.97237" unit_id="400229"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_041" position="7815.41 -3587.24 814.193" rotation="0 0 -0.233446 -0.97237" unit_id="400230"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/props/ind_ext_stone_wall/ind_ext_stone_wall_4x4" name_id="ind_ext_stone_wall_4x4_042" position="8171.81 -3405.64 814.193" rotation="0 0 -0.233446 -0.97237" unit_id="400231"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_044" position="10575 200 -45.355" rotation="0 0 0 -1" unit_id="400234"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall" name_id="str_veg_forest_wall_028" position="13355.2 3190.93 331.253" rotation="-0.0575469 0.0203784 0.333184 -0.940883" unit_id="400237"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_001" position="-1050 9200 185.38" rotation="0 0 -0.707107 -0.707107" unit_id="400000"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_002" position="-1213.17 -7538.04 821.656" rotation="0 0 0.793353 -0.608762" unit_id="400033"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_003" position="-4548.04 -7467.29 821.656" rotation="0 0 0.5 -0.866025" unit_id="400034"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_004" position="1394.83 -8236.85 821.656" rotation="0 0 0.793353 -0.608762" unit_id="400036"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_005" position="7412.62 -7588.3 750.656" rotation="0 0 0.492423 -0.870356" unit_id="400040"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_006" position="5536.95 -7997.52 821.656" rotation="0 0 0.573576 -0.819153" unit_id="400044"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_007" position="3589.46 -8487.2 821.656" rotation="0 0 0.477159 -0.878817" unit_id="400045"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_008" position="12917 -2856.62 122.643" rotation="-0.00375184 0.0437736 -0.206238 -0.977515" unit_id="400046"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_009" position="11968.5 1478.52 224.925" rotation="-0.0575469 0.0203784 0.333184 -0.940883" unit_id="400047"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_010" position="14354.6 4425.1 526.244" rotation="-0.0575469 0.0203784 0.333184 -0.940883" unit_id="400048"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_011" position="12089.8 -981.071 100.667" rotation="-0.00375184 0.0437736 -0.206238 -0.977515" unit_id="400050"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_012" position="10051.7 4915.22 393.234" rotation="0 0 -0.430511 -0.902585" unit_id="400052"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_013" position="8650.81 6176.75 276.234" rotation="0 0 -0.5 -0.866025" unit_id="400054"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_014" position="6658.95 7326.75 276.234" rotation="0 0 -0.5 -0.866025" unit_id="400055"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_015" position="4667.09 8476.74 276.234" rotation="0 0 -0.5 -0.866025" unit_id="400056"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_016" position="2876.24 9355.56 276.234" rotation="0 0 -0.608762 -0.793353" unit_id="400057"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_017" position="650 9150 185.38" rotation="0 0 -0.707107 -0.707107" unit_id="400059"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_018" position="-3851.03 8776.03 437.753" rotation="-0.0439602 0.029703 -0.687717 -0.724038" unit_id="400049"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_019" position="-8301.23 9041.34 141.481" rotation="-0.0439602 0.029703 -0.687717 -0.724038" unit_id="400013"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_020" position="-6304.28 8940.89 95.8738" rotation="-0.0439602 0.029703 -0.687717 -0.724038" unit_id="400001"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_021" position="-2050 8769.86 496.421" rotation="-0.0370071 0.0370071 -0.706138 -0.706138" unit_id="400004"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_022" position="-6331.04 -9184.15 -75" rotation="0 0 0.5 -0.866025" unit_id="400025"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_023" position="-8587.33 -10631.2 -175" rotation="0 0 0.965926 -0.258819" unit_id="400060"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_forest_wall/str_veg_forest_wall_bckdrop" name_id="str_veg_forest_wall_bckdrop_024" position="-9075.3 -7537.36 -175" rotation="0 0 0.991445 0.130526" unit_id="400062"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/pd2_mcmansion/nature/mcm_ext_landscape/mcm_water" name_id="mcm_water_001" position="-2250 0 0" rotation="0 0 -0.707107 -0.707107" unit_id="400037"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_046" position="-5700 -400 25.2738" rotation="0 0 0.707107 -0.707107" unit_id="400005"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/world/street/large_woodenfence/large_woodenfence_01_solid" name_id="large_woodenfence_01_solid_021" position="2668.24 -2795.32 -11.5" rotation="0 0 0.173648 -0.984808" unit_id="400007"/>
+		</table>
+		<table>
+			<unit_data continent="terrain02" name="units/payday2/vegetation/str_veg_park_tree_americanelm/str_veg_park_tree_americanelm_a" name_id="str_veg_park_tree_americanelm_a_052" position="5155.63 -1444.36 -69.2217" rotation="0 0 0.707106 -0.707107" unit_id="400008"/>
+		</table>
+	</statics>
+	<values>
+		<workviews/>
+	</values>
+</table>

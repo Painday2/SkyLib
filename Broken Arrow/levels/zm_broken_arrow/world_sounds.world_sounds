@@ -1,0 +1,66 @@
+<generic_scriptdata type="table">
+	<entry key="ambience_enabled" type="boolean" value="true"/>
+	<entry key="default_ambience" type="string" value="ambience_cft_outdoors_01"/>
+	<entry key="default_environment" type="string" value="acoustics_outdoor_medium"/>
+	<entry key="default_occasional" type="string" value="occasionals_halloween_2016"/>
+	<entry key="sound_area_emitters" type="table">
+	</entry>
+	<entry key="sound_emitters" type="table">
+		<entry index="1" type="table">
+			<entry key="emitter_event" type="string" value="emitter_fire_large"/>
+			<entry key="name" type="string" value="fire_bathroom"/>
+			<entry key="position" type="vector3" value="573.58 2489.25 130.15"/>
+			<entry key="rotation" type="quaternion" value="0 0 0 -1"/>
+		</entry>
+		<entry index="2" type="table">
+			<entry key="emitter_event" type="string" value="emitter_car_idle_03_gen_20"/>
+			<entry key="name" type="string" value="car_light_post"/>
+			<entry key="position" type="vector3" value="3023.92 -3607.96 125.539"/>
+			<entry key="rotation" type="quaternion" value="0 0 0 -1"/>
+		</entry>
+		<entry index="3" type="table">
+			<entry key="emitter_event" type="string" value=""/>
+			<entry key="name" type="string" value="car_fire_outside"/>
+			<entry key="position" type="vector3" value="2946 -4975.52 136.972"/>
+			<entry key="rotation" type="quaternion" value="0 0 0 -1"/>
+		</entry>
+		<entry index="4" type="table">
+			<entry key="emitter_event" type="string" value="emitter_fire_large"/>
+			<entry key="name" type="string" value="none"/>
+			<entry key="position" type="vector3" value="1846.65 -823.123 -19.7136"/>
+			<entry key="rotation" type="quaternion" value="0 0 0 -1"/>
+		</entry>
+		<entry index="5" type="table">
+			<entry key="emitter_event" type="string" value="emitter_fire_small"/>
+			<entry key="name" type="string" value="none"/>
+			<entry key="position" type="vector3" value="897.58 -403.143 131"/>
+			<entry key="rotation" type="quaternion" value="0 0 0 -1"/>
+		</entry>
+		<entry index="6" type="table">
+			<entry key="emitter_event" type="string" value="emitter_fire_large"/>
+			<entry key="name" type="string" value="none"/>
+			<entry key="position" type="vector3" value="-6179 6027.6 1.64101"/>
+			<entry key="rotation" type="quaternion" value="0 0 0 -1"/>
+		</entry>
+		<entry index="7" type="table">
+			<entry key="emitter_event" type="string" value="emitter_fire_small"/>
+			<entry key="name" type="string" value="none"/>
+			<entry key="position" type="vector3" value="1281.71 -3467.45 418.9"/>
+			<entry key="rotation" type="quaternion" value="0 0 0 -1"/>
+		</entry>
+		<entry index="8" type="table">
+			<entry key="emitter_event" type="string" value="emitter_fire_large"/>
+			<entry key="name" type="string" value="none"/>
+			<entry key="position" type="vector3" value="2931.62 -1555.51 246.156"/>
+			<entry key="rotation" type="quaternion" value="0 0 0 -1"/>
+		</entry>
+		<entry index="9" type="table">
+			<entry key="emitter_event" type="string" value="emitter_fire_large"/>
+			<entry key="name" type="string" value="none"/>
+			<entry key="position" type="vector3" value="807.71 -2808.45 418.9"/>
+			<entry key="rotation" type="quaternion" value="0 0 0 -1"/>
+		</entry>
+	</entry>
+	<entry key="sound_environments" type="table">
+	</entry>
+</generic_scriptdata>

@@ -1,0 +1,11 @@
+<generic_scriptdata type="table">
+	<entry key="dev_cupcake" type="table">
+		<entry key="activate_on_parsed" type="boolean" value="true"/>
+		<entry key="continent" type="string" value="dev_cupcake"/>
+		<entry key="elements" type="table">
+		</entry>
+		<entry key="instances" type="table">
+		</entry>
+		<entry key="name" type="string" value="dev_cupcake"/>
+	</entry>
+</generic_scriptdata>

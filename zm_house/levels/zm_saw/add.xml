@@ -1,0 +1,17 @@
+<table directory="assets" file="levels/zm_saw/add.xml">
+	<add unload_on_restart="true">
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/wpn_fps_saw_body_df"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/wpn_fps_saw_body_nm"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/wpn_fps_saw_protection_df"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/wpn_fps_saw_protection_nm"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/wpn_fps_saw_blade_df"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/wpn_fps_saw_blade_nm"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/speed_df"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/speed_nm"/>
+		<sequence_manager path="units/pd2_mod_zombies/props/zmhouse_saw/zmhouse_saw"/>
+		<material_config path="units/pd2_mod_zombies/props/zmhouse_saw/zmhouse_saw"/>
+		<model path="units/pd2_mod_zombies/props/zmhouse_saw/zmhouse_saw"/>
+		<object path="units/pd2_mod_zombies/props/zmhouse_saw/zmhouse_saw"/>
+		<unit path="units/pd2_mod_zombies/props/zmhouse_saw/zmhouse_saw"/>
+	</add>
+</table>

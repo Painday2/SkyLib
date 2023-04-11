@@ -1,0 +1,126 @@
+<table global_key="zm_hox" name="Hoxton Zombout">
+	<AddFiles directory="assets">
+		<texture load="true" path="guis/hoxton_zombout_load"/>
+		<texture load="true" path="guis/hoxton_zombout_icon"/>
+	</AddFiles>
+	<instance id="zm_gameplay_controller">
+		<add file="levels/zm_gameplay_controller/add.xml"/>
+		<include directory="levels/zm_gameplay_controller">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
+	<contact assets_gui="guis/mission_briefing/preload_contact_bain" desc_id="quest_test_d" id="test" package="packages/contact_bain"/>
+	<contact assets_gui="guis/dlcs/the_bomb/guis/preload_contact_the_butcher" hidden="false" id="zombies_mode" name_id="zombies_mode_name" package="packages/contact_the_butcher"/>
+	<AssetUpdates id="24715" provider="modworkshop" use_local_dir="true" version="1.4"/>
+	<Hooks directory="hooks">
+		<hook file="ContractBrokerHeistItem.lua" source_file="lib/managers/menu/items/contractbrokerheistitem"/>
+	</Hooks>
+	<Localization default="english.txt" directory="loc"/>
+	<level ai_group_type="zombie" gamemode_type="3arc_zm" id="hox_2_zombie" intro_event="" load_screen="guis/hoxton_zombout_load" max_bags="0" music="no_music" team_ai_off="true">
+		<add file="levels/hox_2_zombie/add.xml"/>
+		<hooks directory="hooks">
+			<hook file="gamesetup.lua" source_file="lib/setups/gamesetup"/>
+			<hook file="InteractionTweakData.lua" source_file="lib/tweak_data/interactiontweakdata"/>
+		</hooks>
+		<outro_event>
+			<value_node value=""/>
+		</outro_event>
+		<packages>
+			<value_node value="packages/narr_hox_2"/>
+			<value_node value="levels/narratives/dentist/hox/stage_2/world"/>
+			<value_node value="levels/narratives/dentist/hox/stage_2/world_sounds"/>
+			<value_node value="levels/narratives/dentist/hox/stage_2/effects/effects"/>
+			<value_node value="levels/narratives/dentist/hox/stage_2/world/world"/>
+			<value_node value="levels/narratives/dentist/hox/stage_2/art/art"/>
+			<value_node value="levels/narratives/dentist/hox/stage_2/editor_only/editor_only"/>
+			<value_node value="packages/narr_hvh"/>
+			<value_node value="levels/narratives/bain/hvh/world_sounds"/>
+			<value_node value="levels/instances/unique/unobtanium/world_sounds"/>
+			<value_node value="packages/dlcs/vit/job_vit"/>
+			<value_node value="packages/narr_hvh"/>
+			<value_node value="packages/ZMAssets"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+		<sounds directory="assets/sound">
+			<sounds directory="music">
+				<sound id="zm_wave_end" path="wave_end.ogg"/>
+				<sound id="zm_wave_new_1" path="wave_start.ogg"/>
+				<sound id="zm_wave_new_2" path="wave_start2.ogg"/>
+				<sound id="zm_wave_new_3" path="wave_start3.ogg"/>
+				<sound id="zm_special_wave_end" path="wave_end_special.ogg"/>
+				<sound id="zm_special_wave" path="wave_start_special.ogg"/>
+			</sounds>
+			<sound id="pregame" path="pregame.ogg"/>
+		</sounds>
+	</level>
+	<narrative briefing_event="" contact="zombies_mode" icon="guis/hoxton_zombout_icon" id="Hoxton Breakout Zombies" jc="60" load_screen="guis/dlcs/pic/textures/loading/job_breakout_02" region="street">
+		<chain>
+			<table dlc="" level_id="hox_2_zombie" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="62000"/>
+			<value_node value="124000"/>
+			<value_node value="310000"/>
+			<value_node value="620000"/>
+			<value_node value="800000"/>
+			<value_node value="800000"/>
+			<value_node value="800000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value=""/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_hox1"/>
+			<value_node value="cn_hox2"/>
+			<value_node value="cn_hox3"/>
+			<value_node value="cn_hox4"/>
+			<value_node value="cn_big1"/>
+			<value_node value="cn_big2"/>
+			<value_node value="cn_big3"/>
+		</crimenet_videos>
+		<debrief_event/>
+		<experience_mul>
+			<value_node value="2.14"/>
+			<value_node value="2.14"/>
+			<value_node value="2.14"/>
+			<value_node value="2.14"/>
+			<value_node value="2.14"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="53400"/>
+			<value_node value="53400"/>
+			<value_node value="53400"/>
+			<value_node value="53400"/>
+			<value_node value="53400"/>
+			<value_node value="53400"/>
+			<value_node value="53400"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="48800"/>
+			<value_node value="48800"/>
+			<value_node value="48800"/>
+			<value_node value="48800"/>
+			<value_node value="48800"/>
+			<value_node value="48800"/>
+			<value_node value="48800"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="250000"/>
+			<value_node value="500000"/>
+			<value_node value="1.25e+006"/>
+			<value_node value="2.5e+006"/>
+			<value_node value="3.2e+006"/>
+			<value_node value="3.2e+006"/>
+			<value_node value="3.2e+006"/>
+		</payout>
+	</narrative>
+</table>

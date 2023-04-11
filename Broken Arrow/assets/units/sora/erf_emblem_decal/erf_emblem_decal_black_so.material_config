@@ -1,0 +1,5 @@
+<materials version="3">
+	<material name="mat_heist" render_template="decal:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/sora/erf_emblem_decal/erf_emblem_decal_black_so"/>
+    </material>
+</materials>

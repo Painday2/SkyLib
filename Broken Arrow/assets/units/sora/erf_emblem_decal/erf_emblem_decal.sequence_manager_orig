@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Generated with PAYDAY 2: Sequence Manager Generator-->
+<table>
+  <unit>
+    <sequence editable_state="true" triggable="true" name="'black_emblem_semi_opa'">
+      <material_config name="'units/sora/erf_emblem_decal/erf_emblem_decal_black_so'" />
+    </sequence>
+    <sequence editable_state="true" triggable="true" name="'black_emblem_full_opa'">
+      <material_config name="'units/sora/erf_emblem_decal/erf_emblem_decal_black_fo'" />
+    </sequence>
+    <sequence editable_state="true" triggable="true" name="'white_emblem'">
+      <material_config name="'units/sora/erf_emblem_decal/erf_emblem_decal_white'" />
+    </sequence>
+  </unit>
+</table>

@@ -1,0 +1,1454 @@
+<table>
+	<editor_groups>
+		<table continent="lights" name="Group05" reference="800002">
+			<units>
+				<value_node value="800002"/>
+				<value_node value="800003"/>
+				<value_node value="800005"/>
+				<value_node value="800006"/>
+				<value_node value="800008"/>
+				<value_node value="800009"/>
+				<value_node value="800010"/>
+				<value_node value="800012"/>
+				<value_node value="800013"/>
+				<value_node value="800015"/>
+				<value_node value="800018"/>
+				<value_node value="800021"/>
+				<value_node value="800022"/>
+				<value_node value="800023"/>
+				<value_node value="800024"/>
+				<value_node value="800026"/>
+				<value_node value="800027"/>
+				<value_node value="800028"/>
+				<value_node value="800029"/>
+				<value_node value="800030"/>
+				<value_node value="800031"/>
+				<value_node value="800032"/>
+				<value_node value="800033"/>
+				<value_node value="800034"/>
+				<value_node value="800035"/>
+				<value_node value="800037"/>
+				<value_node value="800038"/>
+				<value_node value="800040"/>
+				<value_node value="800041"/>
+				<value_node value="800042"/>
+				<value_node value="800044"/>
+				<value_node value="800046"/>
+				<value_node value="800047"/>
+				<value_node value="800048"/>
+				<value_node value="800049"/>
+				<value_node value="800051"/>
+				<value_node value="800052"/>
+				<value_node value="800053"/>
+				<value_node value="800055"/>
+				<value_node value="800057"/>
+				<value_node value="800058"/>
+				<value_node value="800059"/>
+				<value_node value="800060"/>
+				<value_node value="800061"/>
+				<value_node value="800062"/>
+				<value_node value="800063"/>
+				<value_node value="800064"/>
+				<value_node value="800065"/>
+				<value_node value="800066"/>
+				<value_node value="800067"/>
+				<value_node value="800068"/>
+				<value_node value="800069"/>
+				<value_node value="800070"/>
+				<value_node value="800071"/>
+				<value_node value="800072"/>
+				<value_node value="800074"/>
+				<value_node value="800075"/>
+				<value_node value="800076"/>
+				<value_node value="800077"/>
+				<value_node value="800079"/>
+				<value_node value="800080"/>
+				<value_node value="800081"/>
+				<value_node value="800082"/>
+				<value_node value="800083"/>
+				<value_node value="800084"/>
+				<value_node value="800085"/>
+				<value_node value="800086"/>
+				<value_node value="800088"/>
+				<value_node value="800089"/>
+				<value_node value="800090"/>
+				<value_node value="800091"/>
+				<value_node value="800093"/>
+				<value_node value="800094"/>
+				<value_node value="800095"/>
+				<value_node value="800096"/>
+				<value_node value="800097"/>
+				<value_node value="800098"/>
+				<value_node value="800099"/>
+				<value_node value="800100"/>
+				<value_node value="800101"/>
+				<value_node value="800104"/>
+				<value_node value="800105"/>
+				<value_node value="800106"/>
+				<value_node value="800107"/>
+				<value_node value="800108"/>
+				<value_node value="800109"/>
+				<value_node value="800110"/>
+				<value_node value="800111"/>
+				<value_node value="800112"/>
+				<value_node value="800114"/>
+				<value_node value="800115"/>
+				<value_node value="800116"/>
+				<value_node value="800117"/>
+				<value_node value="800119"/>
+				<value_node value="800120"/>
+				<value_node value="800121"/>
+				<value_node value="800122"/>
+				<value_node value="800123"/>
+				<value_node value="800124"/>
+				<value_node value="800125"/>
+				<value_node value="800126"/>
+				<value_node value="800127"/>
+				<value_node value="800128"/>
+				<value_node value="800129"/>
+				<value_node value="800131"/>
+				<value_node value="800132"/>
+				<value_node value="800133"/>
+				<value_node value="800134"/>
+				<value_node value="800135"/>
+				<value_node value="800136"/>
+				<value_node value="800137"/>
+				<value_node value="800138"/>
+				<value_node value="800139"/>
+				<value_node value="800140"/>
+				<value_node value="800142"/>
+				<value_node value="800143"/>
+				<value_node value="800144"/>
+				<value_node value="800145"/>
+				<value_node value="800147"/>
+				<value_node value="800148"/>
+				<value_node value="800149"/>
+				<value_node value="800150"/>
+				<value_node value="800151"/>
+				<value_node value="800152"/>
+				<value_node value="800153"/>
+				<value_node value="800154"/>
+				<value_node value="800156"/>
+				<value_node value="800157"/>
+				<value_node value="800159"/>
+				<value_node value="800160"/>
+				<value_node value="800161"/>
+				<value_node value="800162"/>
+				<value_node value="800165"/>
+				<value_node value="800166"/>
+				<value_node value="800167"/>
+				<value_node value="800168"/>
+				<value_node value="800169"/>
+				<value_node value="800170"/>
+				<value_node value="800172"/>
+				<value_node value="800173"/>
+				<value_node value="800175"/>
+				<value_node value="800176"/>
+				<value_node value="800178"/>
+				<value_node value="800179"/>
+				<value_node value="800180"/>
+				<value_node value="800181"/>
+				<value_node value="800182"/>
+				<value_node value="800183"/>
+				<value_node value="800185"/>
+				<value_node value="800186"/>
+				<value_node value="800187"/>
+				<value_node value="800188"/>
+				<value_node value="800189"/>
+				<value_node value="800190"/>
+				<value_node value="800192"/>
+			</units>
+		</table>
+	</editor_groups>
+	<statics>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_001" position="-6788 3288 822.526" projection_light="ls_spot" rotation="-0.130526 0.991445 4.33374e-008 -5.70548e-009" unit_id="800002">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.435294 0.67451 1" enabled="true" falloff_exponent="9.1" far_range="1500" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="80" spot_angle_end="111" spot_angle_start="1"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_07_round_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" mesh_variation="omni_off" name="units/payday2/props/ind_prop_street_lamppost/ind_prop_street_lamppost" name_id="ind_prop_street_lamppost_011" position="-6739.65 3135.21 -52.4738" rotation="0 0 1 -0" unit_id="800003"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_002" position="-5413 3288 822.526" projection_light="ls_spot" rotation="0.993572 -0.113203 4.94827e-009 -4.34304e-008" unit_id="800005">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.435294 0.67451 1" enabled="true" falloff_exponent="9.1" far_range="1500" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="80" spot_angle_end="111" spot_angle_start="1"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_07_round_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" mesh_variation="omni_off" name="units/payday2/props/ind_prop_street_lamppost/ind_prop_street_lamppost" name_id="ind_prop_street_lamppost_012" position="-5517.27 2990.89 -52.4738" rotation="0 0 0.983255 0.182235" unit_id="800006"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_003" position="-4613.14 2388 827.76" projection_light="ls_spot" rotation="0.706865 -0.706864 0.0185098 -0.0185098" unit_id="800008">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.435294 0.67451 1" enabled="true" falloff_exponent="9.1" far_range="1500" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="80" spot_angle_end="111" spot_angle_start="1"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_07_round_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" mesh_variation="omni_off" name="units/payday2/props/ind_prop_street_lamppost/ind_prop_street_lamppost" name_id="ind_prop_street_lamppost_013" position="-4875 2325 -52.4738" rotation="0 0 -0.788011 -0.615661" unit_id="800009"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_004" position="-4613.14 1225 827.76" projection_light="ls_spot" rotation="0.706865 -0.706864 0.0185098 -0.0185098" unit_id="800010">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.435294 0.67451 1" enabled="true" falloff_exponent="9.1" far_range="1500" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="80" spot_angle_end="111" spot_angle_start="1"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_07_round_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data _prev_pos="-4875 1225 -52.474" _prev_rot="0 0 -0.707107 -0.707107" continent="lights" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="omni_off" name="units/payday2/props/ind_prop_street_lamppost/ind_prop_street_lamppost" name_id="ind_prop_street_lamppost_014" position="-4875 1225 -52.474" rotation="0 0 -0.707107 -0.707107" unit_id="800012"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_005" position="-4613.14 75 827.76" projection_light="ls_spot" rotation="0.706865 -0.706864 0.0185098 -0.0185098" unit_id="800013">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.435294 0.67451 1" enabled="true" falloff_exponent="9.1" far_range="1500" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="80" spot_angle_end="111" spot_angle_start="1"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_07_round_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" mesh_variation="omni_off" name="units/payday2/props/ind_prop_street_lamppost/ind_prop_street_lamppost" name_id="ind_prop_street_lamppost_015" position="-4875 74.9998 -52.4738" rotation="0 0 -0.707107 -0.707107" unit_id="800015"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="core/units/light_omni/light_omni" name_id="light_omni_003" position="-3625 350 98.6078" rotation="0 0 0 -1" unit_id="800018">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="320" multiplier="@IDa9193f72e0f765a8@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_006" position="-4613.14 -1225 827.76" projection_light="ls_spot" rotation="0.706865 -0.706864 0.0185098 -0.0185098" unit_id="800021">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.435294 0.67451 1" enabled="true" falloff_exponent="9.1" far_range="1500" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="80" spot_angle_end="107" spot_angle_start="1"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_07_round_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="core/units/light_omni/light_omni" name_id="light_omni_005" position="-3225 350 98.6078" rotation="0 0 0 -1" unit_id="800022">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="320" multiplier="@IDa9193f72e0f765a8@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" mesh_variation="omni_off" name="units/payday2/props/ind_prop_street_lamppost/ind_prop_street_lamppost" name_id="ind_prop_street_lamppost_016" position="-4875 -1225 -52.4738" rotation="0 0 -0.707107 -0.707107" unit_id="800023"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="core/units/light_omni/light_omni" name_id="light_omni_006" position="-3625 -356 98.6078" rotation="0 0 0 -1" unit_id="800024">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="320" multiplier="@IDa9193f72e0f765a8@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_001" position="-1285.42 1837.7 -7.539" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800026">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="350" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="core/units/light_omni/light_omni" name_id="light_omni_008" position="-1685 1400 -25.539" rotation="0 0 0 -1" unit_id="800027">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDa9193f72e0f765a8@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_lamp_wall/mcm_prop_garden_lamp_wall" name_id="mcm_prop_garden_lamp_wall_014" position="-1259.71 1812.99 129.461" rotation="0 0 0.382683 -0.92388" unit_id="800028"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_024" position="-1685 1400 -93.539" rotation="0 0 0 -1" unit_id="800029"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="core/units/light_omni/light_omni" name_id="light_omni_009" position="-3225 -356 98.6078" rotation="0 0 0 -1" unit_id="800030">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="320" multiplier="@IDa9193f72e0f765a8@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_002" position="-2543 312 112.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800031">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_003" position="-1171 1730.01 278.647" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800032">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.596078 0.294118 0.0705882" enabled="true" falloff_exponent="10" far_range="450" multiplier="@ID8c34304230e70372@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_lamp_wall/mcm_prop_garden_lamp_wall" name_id="mcm_prop_garden_lamp_wall_015" position="-2503 364 82.461" rotation="0 0 0 -1" unit_id="800033"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="core/units/light_omni/light_omni" name_id="light_omni_010" position="-1700 975 98.6078" rotation="0 0 0 -1" unit_id="800034">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDa9193f72e0f765a8@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_025" position="-1685 975 -10.5389" rotation="0 0 0 -1" unit_id="800035"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="core/units/light_omni/light_omni" name_id="light_omni_012" position="-2125 375 98.6078" rotation="0 0 0 -1" unit_id="800037">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDa9193f72e0f765a8@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_004" position="-656 2268 59.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800038">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="350" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_026" position="-2136 400 -0.538902" rotation="0 0 0 -1" unit_id="800040"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_lamp_wall/mcm_prop_garden_lamp_wall" name_id="mcm_prop_garden_lamp_wall_016" position="-657.412 2215.29 58.461" rotation="0 0 0.707106 -0.707107" unit_id="800041"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_hallway_wall_lamp/mcm_prop_hallway_wall_lamp" name_id="mcm_prop_hallway_wall_lamp_001" position="-917 1760 19.2736" rotation="0 0 -0.707107 -0.707107" unit_id="800042">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_005" position="-917 1730 32.2736" projection_light="lo_omni" rotation="0 0 -0.707107 -0.707107" unit_id="800044">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.596078 0.294118 0.0705882" enabled="true" falloff_exponent="10" far_range="400" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" mesh_variation="light_on" name="units/pd2_mcmansion/props/mcm_prop_hallway_lamp_ceiling/mcm_prop_hallway_lamp_ceiling" name_id="mcm_prop_hallway_lamp_ceiling_001" position="-525 1825 176.477" rotation="0 0 0 -1" unit_id="800046">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_006" position="-1162 1078.01 68.6464" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800047">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.596078 0.294118 0.0705882" enabled="true" falloff_exponent="10" far_range="450" multiplier="@ID8c34304230e70372@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_007" position="-523 1838 82.477" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800048">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.596078 0.294118 0.0705882" enabled="true" falloff_exponent="10" far_range="550" multiplier="@ID3385027996510d31@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="core/units/light_omni/light_omni" name_id="light_omni_015" position="-1700 375 98.6078" rotation="0 0 0 -1" unit_id="800049">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDa9193f72e0f765a8@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_027" position="-1686 350 -0.538902" rotation="0 0 0 -1" unit_id="800051"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_008" position="-1034 806 252.461" projection_light="lo_omni" rotation="0 0 -0.707107 -0.707107" unit_id="800052">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="600" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_009" position="-709.606 1180.51 375.217" projection_light="lo_omni" rotation="0 0 0.492423 -0.870356" unit_id="800053">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.596078 0.294118 0.0705882" enabled="true" falloff_exponent="10" far_range="450" multiplier="@ID8c34304230e70372@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_007" position="-4713 -2850 822.526" projection_light="ls_spot" rotation="0.706865 -0.706864 0.0185098 -0.0185098" unit_id="800055">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.435294 0.67451 1" enabled="true" falloff_exponent="9.1" far_range="1500" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="80" spot_angle_end="111" spot_angle_start="1"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_07_round_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_010" position="-277.28 1545.51 294.217" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800057">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.905882 0.321569 0.0392157" enabled="true" falloff_exponent="10" far_range="400" multiplier="@IDccbbe27c7fdc0fd9@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" mesh_variation="omni_off" name="units/payday2/props/ind_prop_street_lamppost/ind_prop_street_lamppost" name_id="ind_prop_street_lamppost_017" position="-4946.18 -2790.63 -2.4738" rotation="0 0 -0.608761 -0.793353" unit_id="800058"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_011" position="11.002 1746.01 398.423" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800059">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.596078 0.294118 0.0705882" enabled="true" falloff_exponent="10" far_range="450" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_012" position="-612.997 1090.01 -11.353" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800060">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.596078 0.294118 0.0705882" enabled="true" falloff_exponent="10" far_range="350" multiplier="@ID8c34304230e70372@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_013" position="344.002 2373.86 -121.539" projection_light="lo_omni" rotation="0 0 1 -0" unit_id="800061">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_028" position="340 2375 -200.539" rotation="0 0 -0.707107 -0.707107" unit_id="800062"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_014" position="-16.998 1741.01 -45.7499" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800063">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.596078 0.294118 0.0705882" enabled="true" falloff_exponent="10" far_range="350" multiplier="@ID3385027996510d31@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_livingroom_lamp_table/mcm_prop_livingroom_lamp_table" name_id="mcm_prop_livingroom_lamp_table_014" position="-25 1744 -82.2773" rotation="0 0 0 -1" unit_id="800064">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_table_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/pd2_mcmansion/props/mcm_prop_livingroom_table_accent/mcm_prop_livingroom_table_accent" name_id="mcm_prop_livingroom_table_accent_018" position="-26 1738 -147.567" rotation="0 0 0 -1" unit_id="800065"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" mesh_variation="light_on" name="units/pd2_mcmansion/props/mcm_prop_hallway_lamp_ceiling/mcm_prop_hallway_lamp_ceiling" name_id="mcm_prop_hallway_lamp_ceiling_002" position="-124 1260 176.477" rotation="0 0 0 -1" unit_id="800066">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_015" position="-2175 -1078 162.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800067">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDd07c4dc12188729d@" name="lo_omni" near_range="0" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_lamp_wall/mcm_prop_garden_lamp_wall" name_id="mcm_prop_garden_lamp_wall_018" position="-2166 -1073 193.461" rotation="0 0 0 -1" unit_id="800068"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_016" position="-120.997 1256.01 105.647" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800069">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.596078 0.294118 0.0705882" enabled="true" falloff_exponent="10" far_range="350" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_017" position="17.5781 1162.27 402.217" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800070">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.596078 0.294118 0.0705882" enabled="true" falloff_exponent="10" far_range="400" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" mesh_variation="light_on" name="units/pd2_mcmansion/props/mcm_prop_hallway_lamp_pendent/mcm_prop_hallway_lamp_pendent" name_id="mcm_prop_hallway_lamp_pendent_001" position="46 1169 500" rotation="0 0 0 -1" unit_id="800071">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_008" position="-1650 -784 491" projection_light="ls_spot" rotation="0 1 -4.37114e-008 0" unit_id="800072">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.713726 0.921569 0.921569" enabled="true" falloff_exponent="10" far_range="800" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="80" spot_angle_end="125" spot_angle_start="43"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_08_flashlight_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_018" position="-1178 -306 174.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800074">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="400" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_lamp_wall/mcm_prop_garden_lamp_wall" name_id="mcm_prop_garden_lamp_wall_019" position="-1200 -384 193.461" rotation="0 0 0.707107 -0.707107" unit_id="800075"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_009" position="-5363 -4200 972.526" projection_light="ls_spot" rotation="0.92388 0.382683 -1.67276e-008 -4.03841e-008" unit_id="800076">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.435294 0.67451 1" enabled="true" falloff_exponent="9.1" far_range="1500" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="80" spot_angle_end="111" spot_angle_start="1"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_07_round_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_019" position="-2407 -1553 74.4611" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800077">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_020" position="454.002 1721.01 -54.7499" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800079">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.596078 0.294118 0.0705882" enabled="true" falloff_exponent="10" far_range="350" multiplier="@ID3385027996510d31@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_029" position="-2410 -1550 -0.538902" rotation="0 0 0 -1" unit_id="800080"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_021" position="251.003 1330.01 38.1154" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800081">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.192157 0.388235 0.443137" enabled="true" falloff_exponent="10" far_range="250" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_010" position="-317.996 512.007 7.38901" projection_light="ls_spot" rotation="-8.9407e-007 1 -4.37114e-008 4.26326e-014" unit_id="800082">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.713726 0.921569 0.921569" enabled="true" falloff_exponent="10" far_range="800" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="80" spot_angle_end="138" spot_angle_start="43"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_09_halogen_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_022" position="947.002 2373.86 -100.539" projection_light="lo_omni" rotation="0 0 1 -0" unit_id="800083">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_030" position="940 2375 -150.539" rotation="0 0 -0.707107 -0.707107" unit_id="800084"/>
+		</table>
+		<table>
+			<unit_data continent="lights" mesh_variation="omni_off" name="units/payday2/props/ind_prop_street_lamppost/ind_prop_street_lamppost" name_id="ind_prop_street_lamppost_018" position="-5488.77 -4042.87 147.526" rotation="0 0 -0.430511 -0.902585" unit_id="800085"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_023" position="276.003 950.008 614.88" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800086">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.541176 0.2" enabled="true" falloff_exponent="10" far_range="400" multiplier="@ID8c34304230e70372@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_024" position="123.009 949.008 146.868" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800088">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.592157 0.294118 0.0666667" enabled="true" falloff_exponent="1" far_range="150" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="0" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_025" position="251.003 1130.01 38.1154" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800089">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.192157 0.388235 0.443137" enabled="true" falloff_exponent="10" far_range="250" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_011" position="-6313 -5050 972.526" projection_light="ls_spot" rotation="0.92388 0.382683 -1.67276e-008 -4.03841e-008" unit_id="800090">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.435294 0.67451 1" enabled="true" falloff_exponent="9.1" far_range="1500" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="80" spot_angle_end="111" spot_angle_start="1"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_07_round_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_026" position="-98 295 243.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800091">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="1" far_range="280" multiplier="@IDccbbe27c7fdc0fd9@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_hallway_wall_lamp/mcm_prop_hallway_wall_lamp" name_id="mcm_prop_hallway_wall_lamp_002" position="-9.42188 201.577 621.833" rotation="0 0 1 -1.78814e-006" unit_id="800093">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_027" position="1036 1896 10.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800094">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="350" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_028" position="-2.99023 450.008 184.868" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800095">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.592157 0.294118 0.0666667" enabled="true" falloff_exponent="1" far_range="180" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_029" position="-1907 -1553 74.4611" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800096">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="280" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" mesh_variation="light_on" name="units/pd2_mcmansion/props/mcm_prop_hallway_lamp_pendent/mcm_prop_hallway_lamp_pendent" name_id="mcm_prop_hallway_lamp_pendent_002" position="721 1169 500" rotation="0 0 0 -1" unit_id="800097">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_030" position="717.578 1197.27 392.217" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800098">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.596078 0.294118 0.0705882" enabled="true" falloff_exponent="10" far_range="400" multiplier="@ID8c34304230e70372@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_lamp_wall/mcm_prop_garden_lamp_wall" name_id="mcm_prop_garden_lamp_wall_021" position="-66 279 270.461" rotation="0 0 0 -1" unit_id="800099"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_031" position="-1910 -1550 -0.538902" rotation="0 0 0 -1" unit_id="800100"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_031" position="-2 189.999 631.269" projection_light="lo_omni" rotation="0 0 1 -8.9407e-007" unit_id="800101">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.592157 0.294118 0.0666667" enabled="true" falloff_exponent="10" far_range="220" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" mesh_variation="light_on" name="units/pd2_mcmansion/props/mcm_prop_hallway_lamp_ceiling/mcm_prop_hallway_lamp_ceiling" name_id="mcm_prop_hallway_lamp_ceiling_003" position="425 700 400.522" rotation="0 0 0 -1" unit_id="800104">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_032" position="425 700 270.522" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800105">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.592157 0.294118 0.0666667" enabled="true" falloff_exponent="1" far_range="300" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" mesh_variation="omni_off" name="units/payday2/props/ind_prop_street_lamppost/ind_prop_street_lamppost" name_id="ind_prop_street_lamppost_019" position="-6349.44 -4986.53 172.526" rotation="0 0 -0.358368 -0.93358" unit_id="800106"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_033" position="21 274 216.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800107">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.592157 0.294118 0.0666667" enabled="true" falloff_exponent="10" far_range="150" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_034" position="677.003 1246.01 -45.7499" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800108">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.592157 0.294118 0.0666667" enabled="true" falloff_exponent="10" far_range="350" multiplier="@ID3385027996510d31@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_035" position="1350 2275 20.3144" projection_light="lo_omni" rotation="0 0 -0.707107 -0.707107" unit_id="800109">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_032" position="1350 2350 -54.6856" rotation="0 0 -0.707107 -0.707107" unit_id="800110"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_lamp_wall/mcm_prop_garden_lamp_wall" name_id="mcm_prop_garden_lamp_wall_022" position="-1350 -1216 193.461" rotation="0 0 -0.707107 -0.707107" unit_id="800111"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_036" position="-1358 -1232 161.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800112">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="280" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_hallway_wall_lamp/mcm_prop_hallway_wall_lamp" name_id="mcm_prop_hallway_wall_lamp_004" position="317.999 385 213.834" rotation="0 0 -0.707107 -0.707106" unit_id="800114">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_037" position="708.009 917.008 147.868" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800115">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.592157 0.294118 0.0666667" enabled="true" falloff_exponent="1" far_range="150" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="0" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_038" position="-2 -210.001 631.269" projection_light="lo_omni" rotation="0 0 1 -8.9407e-007" unit_id="800116">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.592157 0.294118 0.0666667" enabled="true" falloff_exponent="10" far_range="220" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_039" position="310 378 223.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800117">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.592157 0.294118 0.0666667" enabled="true" falloff_exponent="10" far_range="200" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_040" position="-1407 -1553 57.4611" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800119">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="250" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_041" position="-108 -286 243.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800120">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="1" far_range="280" multiplier="@IDccbbe27c7fdc0fd9@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_033" position="-1410 -1550 -0.538902" rotation="0 0 0 -1" unit_id="800121"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_lamp_wall/mcm_prop_garden_lamp_wall" name_id="mcm_prop_garden_lamp_wall_023" position="-66 -271 270.461" rotation="0 0 0 -1" unit_id="800122"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" mesh_variation="light_on" name="units/pd2_mcmansion/props/mcm_prop_hallway_lamp_pendent/mcm_prop_hallway_lamp_pendent" name_id="mcm_prop_hallway_lamp_pendent_003" position="250 300 -95.8325" rotation="0 0 0 -1" unit_id="800123">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_042" position="250 300 -120.833" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800124">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.541176 0.2" enabled="true" falloff_exponent="10" far_range="300" multiplier="@ID3385027996510d31@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_043" position="-653 -845 -115.768" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800125">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_044" position="437 -4 659.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800126">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.592157 0.294118 0.0666667" enabled="true" falloff_exponent="10" far_range="500" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_012" position="732.322 292.678 642.354" projection_light="ls_spot" rotation="-0.342477 0.826812 0.170752 0.412232" unit_id="800127">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.678431 0.380392 0.152941" enabled="true" falloff_exponent="1" far_range="350" multiplier="@ID18ceffa252d5a43d@" name="ls_spot" near_range="80" spot_angle_end="82" spot_angle_start="43"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_06_downlight_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" mesh_variation="light_on" name="units/pd2_mcmansion/props/mcm_prop_hallway_wall_lamp/mcm_prop_hallway_wall_lamp" name_id="mcm_prop_hallway_wall_lamp_005" position="45 -440 200.834" rotation="0 0 -0.707107 -0.707107" unit_id="800128">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_045" position="14 -462 195.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800129">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.541176 0.2" enabled="true" falloff_exponent="10" far_range="200" multiplier="@ID3385027996510d31@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_046" position="1844.99 2155.03 70.4611" projection_light="lo_omni" rotation="0 0 0.92388 0.382683" unit_id="800131">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_034" position="1845.25 2156.11 -4.53891" rotation="0 0 -0.382683 -0.92388" unit_id="800132"/>
+		</table>
+		<table>
+			<unit_data continent="lights" mesh_variation="omni_off" name="units/payday2/props/ind_prop_street_lamppost/ind_prop_street_lamppost" name_id="ind_prop_street_lamppost_020" position="-7640.61 -6317.31 297.526" rotation="0 0 -0.453991 -0.891006" unit_id="800133"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_013" position="750 9.53674e-007 642.354" projection_light="ls_spot" rotation="0 0.887011 0 0.461749" unit_id="800134">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.678431 0.380392 0.152941" enabled="true" falloff_exponent="1" far_range="500" multiplier="@ID18ceffa252d5a43d@" name="ls_spot" near_range="80" spot_angle_end="82" spot_angle_start="43"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_06_downlight_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_hallway_wall_lamp/mcm_prop_hallway_wall_lamp" name_id="mcm_prop_hallway_wall_lamp_006" position="835.578 162.579 463.833" rotation="0 0 -8.9407e-007 -1" unit_id="800135">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_047" position="-857 -1553 74.4611" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800136">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="280" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_035" position="-860 -1550 -0.538902" rotation="0 0 0 -1" unit_id="800137"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_014" position="683.363 -233.363 642.354" projection_light="ls_spot" rotation="0.342476 0.826812 -0.170752 0.412233" unit_id="800138">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.678431 0.380392 0.152941" enabled="true" falloff_exponent="1" far_range="500" multiplier="@ID18ceffa252d5a43d@" name="ls_spot" near_range="80" spot_angle_end="82" spot_angle_start="43"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_06_downlight_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_048" position="1279 450 198.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800139">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="350" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_lamp_wall/mcm_prop_garden_lamp_wall" name_id="mcm_prop_garden_lamp_wall_024" position="1279 416 245.232" rotation="0 0 0.707107 -0.707107" unit_id="800140"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" mesh_variation="light_on" name="units/pd2_mcmansion/props/mcm_prop_hallway_lamp_pendent/mcm_prop_hallway_lamp_pendent" name_id="mcm_prop_hallway_lamp_pendent_004" position="750 -50 154.167" rotation="0 0 0 -1" unit_id="800142">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_049" position="1058.01 334.009 157.868" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800143">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.984314 0.517647 0.133333" enabled="true" falloff_exponent="1" far_range="250" multiplier="@ID3385027996510d31@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_050" position="766 -131 123.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800144">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.541176 0.2" enabled="true" falloff_exponent="10" far_range="380" multiplier="@ID3385027996510d31@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_hallway_wall_lamp/mcm_prop_hallway_wall_lamp" name_id="mcm_prop_hallway_wall_lamp_007" position="835.579 -148.421 463.833" rotation="0 0 -8.9407e-007 -1" unit_id="800145">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_051" position="-79 -1228 194.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800147">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="350" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_lamp_wall/mcm_prop_garden_lamp_wall" name_id="mcm_prop_garden_lamp_wall_025" position="-67.4141 -1215.34 279.461" rotation="0 0 -0.382684 -0.923879" unit_id="800148"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_hallway_wall_lamp/mcm_prop_hallway_wall_lamp" name_id="mcm_prop_hallway_wall_lamp_008" position="580 -440 200.834" rotation="0 0 -0.707107 -0.707107" unit_id="800149">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_052" position="446 -859 214.018" projection_light="lo_omni" rotation="0 0 0.92388 0.382683" unit_id="800150">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.537255 0.2" enabled="true" falloff_exponent="10" far_range="450" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_053" position="591 -505 223.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800151">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.541176 0.2" enabled="true" falloff_exponent="10" far_range="150" multiplier="@ID3385027996510d31@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_054" position="-357 -1553 74.4611" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800152">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_055" position="2116.88 1766.3 74.4611" projection_light="lo_omni" rotation="0 0 -0.707107 -0.707107" unit_id="800153">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_036" position="-360 -1550 -0.538902" rotation="0 0 0 -1" unit_id="800154"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_037" position="2115 1762 -0.538879" rotation="0 0 0 -1" unit_id="800156"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_056" position="676.005 -749.992 587.497" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800157">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.592157 0.294118 0.0666667" enabled="true" falloff_exponent="10" far_range="350" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_058" position="1677 331.01 580.824" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800159">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.541176 0.2" enabled="true" falloff_exponent="10" far_range="350" multiplier="@ID8c34304230e70372@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_059" position="1376 0.0090332 301.793" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800160">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.984314 0.517647 0.133333" enabled="true" falloff_exponent="1" far_range="400" multiplier="@ID8c34304230e70372@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_060" position="900 -467 184.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800161">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.541176 0.2" enabled="true" falloff_exponent="1" far_range="300" multiplier="@ID3385027996510d31@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="core/units/light_omni/light_omni" name_id="light_omni_017" position="862 -871 566.9" rotation="0 0 0 -1" unit_id="800162">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.592157 0.294118 0.0666667" enabled="true" falloff_exponent="1" far_range="150" multiplier="@IDccbbe27c7fdc0fd9@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_062" position="1683.01 334.01 157.868" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800165">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.984314 0.513726 0.129412" enabled="true" falloff_exponent="1" far_range="250" multiplier="@ID3385027996510d31@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_063" position="2291.88 1229.3 74.4611" projection_light="lo_omni" rotation="0 0 -0.707107 -0.707107" unit_id="800166">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_038" position="2290 1225 -0.538902" rotation="0 0 0 -1" unit_id="800167"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_hallway_wall_lamp/mcm_prop_hallway_wall_lamp" name_id="mcm_prop_hallway_wall_lamp_009" position="1110 -495.999 200.834" rotation="0 0 -8.9407e-007 -1" unit_id="800168">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_064" position="168 -1553 74.4611" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800169">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_039" position="165 -1550 -0.538902" rotation="0 0 0 -1" unit_id="800170"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_066" position="1677 -326.99 641.824" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800172">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.541176 0.2" enabled="true" falloff_exponent="10" far_range="350" multiplier="@ID8c34304230e70372@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_067" position="1091 -979 141.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800173">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.537255 0.2" enabled="true" falloff_exponent="1" far_range="300" multiplier="@ID3385027996510d31@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_068" position="2156.88 873.305 71.4611" projection_light="lo_omni" rotation="0 0 -0.707107 -0.707107" unit_id="800175">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_040" position="2155 869 -3.53893" rotation="0 0 0 -1" unit_id="800176"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_069" position="1683.01 -340.99 157.868" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800178">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.984314 0.517647 0.133333" enabled="true" falloff_exponent="1" far_range="250" multiplier="@ID3385027996510d31@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_070" position="718 -1553 74.4611" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800179">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_041" position="715 -1550 -0.538902" rotation="0 0 0 -1" unit_id="800180"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_lamp_wall/mcm_prop_garden_lamp_wall" name_id="mcm_prop_garden_lamp_wall_026" position="1162.54 -1210.39 279.461" rotation="0 0 0.92388 0.382683" unit_id="800181"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_071" position="1179 -1233 193.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800182">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="350" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_072" position="2115.88 -236.695 74.4611" projection_light="lo_omni" rotation="0 0 -0.707107 -0.707107" unit_id="800183">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_073" position="1343 -1553 74.4611" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800185">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_043" position="1340 -1550 -0.538902" rotation="0 0 0 -1" unit_id="800186"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_074" position="1690.49 -1199.45 74.4611" projection_light="lo_omni" rotation="0 0 -0.382683 -0.92388" unit_id="800187">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_075" position="1991.01 -863.571 74.4611" projection_light="lo_omni" rotation="0 0 -0.382683 -0.92388" unit_id="800188">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_044" position="1690 -1200 -0.538902" rotation="0 0 -0.382683 -0.92388" unit_id="800189"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_045" position="1990 -875 -0.538902" rotation="0 0 -0.382683 -0.92388" unit_id="800190"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_046" position="2117 -226 -1.53891" rotation="0 0 0 -1" unit_id="800192"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_048" position="-3231 -358 -28.5389" rotation="0 0 0 -1" unit_id="800194"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_049" position="-3631 -358 -34.5389" rotation="0 0 0 -1" unit_id="800195"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_053" position="-3631 348 -34.5389" rotation="0 0 0 -1" unit_id="800199"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_054" position="-3231 348 -27.5389" rotation="0 0 0 -1" unit_id="800200"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_059" position="1890 591 -0.538902" rotation="0 0 0 -1" unit_id="800050"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_077" position="1891.88 595.305 52.4611" projection_light="lo_omni" rotation="0 0 -0.707107 -0.707107" unit_id="800205">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="200" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_060" position="1890 410 -0.538902" rotation="0 0 0 -1" unit_id="800206"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_078" position="1891.88 414.305 52.4611" projection_light="lo_omni" rotation="0 0 -0.707107 -0.707107" unit_id="800207">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="200" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_lamp_wall/mcm_prop_garden_lamp_wall" name_id="mcm_prop_garden_lamp_wall_020" position="-2104 -384 193.461" rotation="0 0 0.707107 -0.707107" unit_id="800092"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_081" position="-2103 -306 174.232" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800174">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="400" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_062" position="-1097 350 2.4611" rotation="0 0 0 -1" unit_id="800210"/>
+		</table>
+		<table>
+			<unit_data continent="lights" hide_on_projection_light="true" name="units/pd2_mcmansion/props/mcm_prop_garden_bollard/mcm_prop_garden_bollard_b" name_id="mcm_prop_garden_bollard_b_063" position="-708 -350 17.4611" rotation="0 0 0 -1" unit_id="800213"/>
+		</table>
+		<table>
+			<unit_data continent="lights" name="core/units/light_omni/light_omni" name_id="light_omni_021" position="-268 1600 433.504" rotation="0 0 0 -1" unit_id="800214">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.521569 0.301961 0.137255" enabled="true" falloff_exponent="1" far_range="65" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="0" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="core/units/light_omni/light_omni" name_id="light_omni_022" position="363 1366 388.709" rotation="0 0 0 -1" unit_id="800215">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.521569 0.301961 0.137255" enabled="true" falloff_exponent="1" far_range="75" multiplier="@ID748ce7d9371994d6@" name="lo_omni" near_range="0" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_016" position="1039 105 742.782" projection_light="ls_spot" rotation="0.662327 0.662327 0.247634 0.247634" unit_id="800216">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.678431 0.380392 0.152941" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDc1749c1433ffb099@" name="ls_spot" near_range="80" spot_angle_end="82" spot_angle_start="43"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_06_downlight_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="core/units/light_omni/light_omni" name_id="light_omni_023" position="1223.01 -295.189 592.809" rotation="0 0 0.878817 -0.477159" unit_id="800217">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.521569 0.301961 0.137255" enabled="true" falloff_exponent="1" far_range="75" multiplier="@IDd07c4dc12188729d@" name="lo_omni" near_range="0" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_017" position="-650 -10 -101.178" projection_light="ls_spot" rotation="0.707107 0.707107 3.09086e-008 3.09086e-008" unit_id="800155">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.713726 0.921569 0.921569" enabled="true" falloff_exponent="10" far_range="400" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="0" spot_angle_end="116" spot_angle_start="43"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_09_halogen_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_018" position="-650 -460 -101.178" projection_light="ls_spot" rotation="0.707107 0.707107 3.09086e-008 3.09086e-008" unit_id="800164">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.713726 0.921569 0.921569" enabled="true" falloff_exponent="10" far_range="400" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="0" spot_angle_end="116" spot_angle_start="43"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_09_halogen_df"/>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_079" position="-1097 350 102.461" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800087">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_080" position="-708 -350 117.461" projection_light="lo_omni" rotation="0 0 0 -1" unit_id="800208">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 0.509804 0.184314" enabled="true" falloff_exponent="10" far_range="300" multiplier="@ID5035addc43a80b74@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/pd2_mcmansion/props/mcm_prop_hallway_wall_lamp/mcm_prop_hallway_wall_lamp" name_id="mcm_prop_hallway_wall_lamp_003" position="-9.42041 -210.423 621.833" rotation="0 0 1 -1.78814e-006" unit_id="800001">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="0" multiplier="@ID3385027996510d31@" name="li_hanging_lamp" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_omni_shadow_projection_01/light_omni_shadow_projection_01" name_id="light_omni_shadow_projection_01_057" position="-250 1075 -49.4946" projection_light="lo_omni" rotation="0 0 -8.9407e-007 -1" unit_id="800004">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.596078 0.294118 0.0705882" enabled="true" falloff_exponent="10" far_range="450" multiplier="@ID8c34304230e70372@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+				<projection_lights>
+					<lo_omni x="64" y="64"/>
+				</projection_lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="lights" name="units/lights/light_projection_01/light_projection_01" name_id="light_projection_01_020" position="-317.996 721.007 7.38899" projection_light="ls_spot" rotation="-8.9407e-007 1 -4.37114e-008 4.26326e-014" unit_id="800007">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.713726 0.921569 0.921569" enabled="true" falloff_exponent="10" far_range="800" multiplier="@ID8c34304230e70372@" name="ls_spot" near_range="80" spot_angle_end="138" spot_angle_start="43"/>
+				</lights>
+				<projection_textures ls_spot="units/lights/spot_light_projection_textures/spotprojection_09_halogen_df"/>
+			</unit_data>
+		</table>
+	</statics>
+	<values>
+		<workviews/>
+	</values>
+</table>

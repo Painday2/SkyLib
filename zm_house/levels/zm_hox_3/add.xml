@@ -1,0 +1,91 @@
+<table directory="assets">
+	<texture path="guis/saw_battery"/>
+	<texture path="guis/saw_body"/>
+	<texture path="guis/saw_blade"/>
+	<add from_db="true" path="units/pd2_dlc_peta/props/pta_prop_barn_lamp_lantern/pta_prop_barn_lamp_lantern" type="unit">
+		<material_config path="units/pd2_dlc_peta/props/pta_prop_barn_lamp_lantern/pta_prop_barn_lamp_lantern"/>
+		<object path="units/pd2_dlc_peta/props/pta_prop_barn_lamp_lantern/pta_prop_barn_lamp_lantern"/>
+		<unit path="units/pd2_dlc_peta/props/pta_prop_barn_lamp_lantern/pta_prop_barn_lamp_lantern"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/dev_bag_collision/dev_bag_collision_1x3m" type="unit">
+		<material_config path="core/material_configs/hub_elements"/>
+		<object path="units/dev_tools/level_tools/dev_bag_collision/dev_bag_collision_1x3m"/>
+		<unit path="units/dev_tools/level_tools/dev_bag_collision/dev_bag_collision_1x3m"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_casino/props/cas_prop_drill_toolbox/cas_prop_drill_toolbox" type="unit">
+		<material_config path="units/pd2_dlc_casino/props/cas_prop_drill_toolbox/cas_prop_drill_toolbox"/>
+		<object path="units/pd2_dlc_casino/props/cas_prop_drill_toolbox/cas_prop_drill_toolbox"/>
+		<sequence_manager path="units/pd2_dlc_casino/props/cas_prop_drill_toolbox/cas_prop_drill_toolbox"/>
+		<unit path="units/pd2_dlc_casino/props/cas_prop_drill_toolbox/cas_prop_drill_toolbox"/>
+	</add>
+	<add from_db="true" path="units/world/props/tools/tools_saw" type="unit">
+		<material_config path="units/world/props/tools/tools_saw"/>
+		<object path="units/world/props/tools/tools_saw"/>
+		<unit path="units/world/props/tools/tools_saw"/>
+	</add>
+	<add from_db="true" path="units/payday2/equipment/gen_interactable_door_wooden_a/gen_interactable_door_wooden_a" type="unit">
+		<unit path="units/payday2/equipment/gen_interactable_door_wooden_a/gen_interactable_door_wooden_a"/>
+		<object path="units/payday2/equipment/gen_interactable_door_wooden_a/gen_interactable_door_wooden_a"/>
+		<material_config path="units/payday2/equipment/gen_interactable_door_wooden_a/gen_interactable_door_wooden_a"/>
+		<unit path="units/payday2/equipment/gen_interactable_door_wooden_a/spawn_debris_door_wooden_a"/>
+		<object path="units/payday2/equipment/gen_interactable_door_wooden_a/spawn_debris_door_wooden_a"/>
+		<material_config path="units/payday2/equipment/gen_interactable_door_wooden_a/spawn_debris_door_wooden_a"/>
+		<effect load="true" path="effects/payday2/particles/wood/wood_door_shotgun_dmg_in"/>
+		<effect load="true" path="effects/payday2/particles/wood/wood_door_shotgun_dmg_out"/>
+		<physic_effect path="physic_effects/push_sphere"/>
+		<sequence_manager path="units/payday2/equipment/gen_interactable_door_wooden_a/gen_interactable_door_wooden_a"/>
+	</add>
+	<add from_db="true" path="units/pd2_mcmansion/props/mcm_prop_garden_fence_gate_set/mcm_prop_garden_fence_gate_small" type="unit">
+		<material_config path="units/pd2_mcmansion/props/mcm_prop_garden_fence_gate_set/mcm_prop_garden_fence_gate_set"/>
+		<object path="units/pd2_mcmansion/props/mcm_prop_garden_fence_gate_set/mcm_prop_garden_fence_gate_small"/>
+		<sequence_manager path="units/pd2_mcmansion/props/mcm_prop_garden_fence_gate_set/mcm_prop_garden_fence_gate_small"/>
+		<unit path="units/pd2_mcmansion/props/mcm_prop_garden_fence_gate_set/mcm_prop_garden_fence_gate_small"/>
+	</add>
+	<add from_db="true" path="units/world/props/bridge/construction_blueprint/blueprint" type="unit">
+		<material_config path="units/world/props/bridge/construction_blueprint/blueprint"/>
+		<object path="units/world/props/bridge/construction_blueprint/blueprint"/>
+		<unit path="units/world/props/bridge/construction_blueprint/blueprint"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_chill/props/chl_prop_timer_large/chl_prop_timer_large" type="unit">
+		<material_config path="units/pd2_dlc_chill/props/chl_prop_timer_large/chl_prop_timer_large"/>
+		<object path="units/pd2_dlc_chill/props/chl_prop_timer_large/chl_prop_timer_large"/>
+		<sequence_manager path="units/pd2_dlc_chill/props/chl_prop_timer_large/chl_prop_timer_large"/>
+		<unit path="units/pd2_dlc_chill/props/chl_prop_timer_large/chl_prop_timer_large"/>
+	</add>
+	<add unload_on_restart="true">
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/wpn_fps_saw_body_df"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/wpn_fps_saw_body_nm"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/wpn_fps_saw_protection_df"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/wpn_fps_saw_protection_nm"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/wpn_fps_saw_blade_df"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/wpn_fps_saw_blade_nm"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/speed_df"/>
+		<texture path="units/pd2_mod_zombies/props/zmhouse_saw/speed_nm"/>
+		<material_config path="units/pd2_mod_zombies/props/zmhouse_saw/zmhouse_saw"/>
+		<model path="units/pd2_mod_zombies/props/zmhouse_saw/zmhouse_saw"/>
+		<object path="units/pd2_mod_zombies/props/zmhouse_saw/zmhouse_saw"/>
+		<sequence_manager path="units/pd2_mod_zombies/props/zmhouse_saw/zmhouse_saw"/>
+		<unit path="units/pd2_mod_zombies/props/zmhouse_saw/zmhouse_saw"/>
+	</add>
+	<add from_db="true" path="units/pd2_mcmansion/props/mcm_prop_window_house/mcm_prop_window" type="unit">
+		<material_config path="units/pd2_mcmansion/props/mcm_prop_window_house/mcm_prop_window"/>
+		<material_config path="units/payday2/props/dest_glass/glass_shatter"/>
+		<effect load="true" path="effects/payday2/particles/window/office_divider_glass"/>
+		<object path="units/pd2_mcmansion/props/mcm_prop_window_house/mcm_prop_window"/>
+		<sequence_manager path="units/pd2_mcmansion/props/mcm_prop_window_house/mcm_prop_window"/>
+		<unit path="units/pd2_mcmansion/props/mcm_prop_window_house/mcm_prop_window"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/door_blocker/door_blocker" type="unit">
+		<material_config path="core/material_configs/hub_elements"/>
+		<object path="units/dev_tools/level_tools/door_blocker/door_blocker"/>
+		<unit path="units/dev_tools/level_tools/door_blocker/door_blocker"/>
+	</add>
+	<add from_db="true" path="units/pd2_mcmansion/architecture/mcm_ext_house/mcm_a_ext_window_b_01" type="unit">
+		<unit path="units/pd2_mcmansion/architecture/mcm_ext_house/mcm_a_ext_window_b_01"/>
+		<object path="units/pd2_mcmansion/architecture/mcm_ext_house/mcm_a_ext_window_b_01"/>
+		<material_config path="units/pd2_mcmansion/architecture/mcm_ext_house/mcm_a_ext_house"/>
+		<sequence_manager path="units/pd2_mcmansion/architecture/mcm_ext_house/mcm_a_ext_window_b_01"/>
+		<effect load="true" path="effects/payday2/particles/window/office_divider_glass"/>
+		<material_config path="units/payday2/props/dest_glass/glass_shatter"/>
+	</add>
+</table>

@@ -1,5 +1,4 @@
 <table global_key="himom" name="despacito2_theheist">
-	<Dependency mod="SkyLib" type="blt"/>
 	<Localization default="english.txt" directory="loc">
 		<loc file="english.txt" language="english"/>
 	</Localization>

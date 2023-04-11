@@ -1,0 +1,46 @@
+<table>
+	<editor_groups>
+		<table continent="effects" name="new_stuff_02" reference="400001">
+			<units>
+				<value_node value="400001"/>
+				<value_node value="400002"/>
+				<value_node value="400003"/>
+				<value_node value="400004"/>
+				<value_node value="400007"/>
+				<value_node value="400009"/>
+				<value_node value="400011"/>
+				<value_node value="400013"/>
+			</units>
+		</table>
+	</editor_groups>
+	<instances/>
+	<statics>
+		<table>
+			<unit_data continent="effects" name="units/payday2/props/ind_prop_light_cones/ind_prop_light_cones_docks_orange_v2" name_id="ind_prop_light_cones_docks_orange_v2_001" position="-715 2850 884.925" rotation="0.442543 0.156713 -0.294734 -0.832303" unit_id="400001"/>
+		</table>
+		<table>
+			<unit_data continent="effects" name="units/payday2/props/ind_prop_light_cones/ind_prop_light_cones_docks_orange_v2" name_id="ind_prop_light_cones_docks_orange_v2_002" position="-195 2875.77 984.44" rotation="2.23517e-007 0.430511 0.902585 5.36442e-007" unit_id="400002"/>
+		</table>
+		<table>
+			<unit_data continent="effects" name="units/payday2/props/ind_prop_light_cones/ind_prop_light_cones_docks_orange_v2" name_id="ind_prop_light_cones_docks_orange_v2_003" position="309 2850 884.925" rotation="0.445211 -0.148966 0.280163 -0.83732" unit_id="400003"/>
+		</table>
+		<table>
+			<unit_data continent="effects" name="units/payday2/props/ind_prop_light_cones/ind_prop_light_cones_docks_orange_v2" name_id="ind_prop_light_cones_docks_orange_v2_004" position="-475 1338 656.028" rotation="0 0 -2.98023e-007 -1" unit_id="400004"/>
+		</table>
+		<table>
+			<unit_data continent="effects" name="units/payday2/props/ind_prop_light_cones/ind_prop_light_cones_docks_orange_v2" name_id="ind_prop_light_cones_docks_orange_v2_005" position="75 1338 656.028" rotation="0 0 -2.98023e-007 -1" unit_id="400007"/>
+		</table>
+		<table>
+			<unit_data continent="effects" name="units/payday2/props/ind_prop_light_cones/ind_prop_light_cones_docks_orange_v2" name_id="ind_prop_light_cones_docks_orange_v2_006" position="800 1200 641.028" rotation="0 0 -2.98023e-007 -1" unit_id="400009"/>
+		</table>
+		<table>
+			<unit_data continent="effects" name="units/payday2/props/ind_prop_light_cones/ind_prop_light_cones_docks_orange_v2" name_id="ind_prop_light_cones_docks_orange_v2_007" position="800 600 641.028" rotation="0 0 -2.98023e-007 -1" unit_id="400011"/>
+		</table>
+		<table>
+			<unit_data continent="effects" name="units/payday2/props/ind_prop_light_cones/ind_prop_light_cones_docks_orange_v2" name_id="ind_prop_light_cones_docks_orange_v2_008" position="800 0 641.028" rotation="0 0 -2.98023e-007 -1" unit_id="400013"/>
+		</table>
+	</statics>
+	<values>
+		<workviews/>
+	</values>
+</table>

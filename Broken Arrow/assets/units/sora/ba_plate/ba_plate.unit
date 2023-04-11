@@ -1,0 +1,6 @@
+<unit type="chl" slot="1">
+	<object file="units/sora/ba_plate/ba_plate" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>

@@ -1,0 +1,5 @@
+<materials version="3">
+    <material name="clipboard" render_template="generic:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/ecl_paper_hint/paper_seq/textures/ecl_paper_hint_1"/>
+    </material>
+</materials>

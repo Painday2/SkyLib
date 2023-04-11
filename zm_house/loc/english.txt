@@ -1,0 +1,20 @@
+{
+	"zombies_mode_name":			"Zombies Mode",
+	"heist_zm_house_name":		"Zombie House",
+	"heist_zm_house_brief":		"",
+	"heist_zm_hox_3_name":		"Zombie House",
+	"heist_zm_hox_3_brief":	"",
+	
+	"take_battery" : "Press $BTN_INTERACT to grab the Saw battery",
+	"take_blade" : "Press $BTN_INTERACT to grab the Saw blade",
+	"take_body" : "Press $BTN_INTERACT to grab the Saw body",
+	"hud_saw_battery" : "Part Aquired : Saw battery",
+	"hud_saw_blade" : "Part Aquired : Saw blade",
+	"hud_saw_body" : "Part Aquired : Saw body",
+	"add_battery" : "Press $BTN_INTERACT to add the Saw battery",
+	"add_blade" : "Press $BTN_INTERACT to add the Saw blade",
+	"add_body" : "Press $BTN_INTERACT to add the Saw body",
+	"no_battery" : "You don't have a Saw battery",
+	"no_blade" : "You don't have a Saw blade",
+	"no_body" : "You don't have a Saw body",
+}

@@ -1,0 +1,8 @@
+{
+	"heist_Despacito2Redux_name" : "A Strange Underpass",
+	"heist_Despacito2Redux_brief" : "Guns, ammo, some magical drinks and a magic gun eating machine. Should be enough to kill these things.",
+	"zom_teleport" : "Hold $BTN_INTERACT to teleport",
+	"zom_teleporting" : "Teleporting...",
+	"zombies_mode_name": "Zombies Mode",
+        
+}

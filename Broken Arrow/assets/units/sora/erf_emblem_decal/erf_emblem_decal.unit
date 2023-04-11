@@ -1,0 +1,7 @@
+<unit type="str" slot="1" >
+    <object file="units/sora/erf_emblem_decal/erf_emblem_decal" />
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension name="damage" class="UnitDamage" />
+    </extensions>
+</unit>

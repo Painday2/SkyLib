@@ -1,0 +1,98 @@
+<table directory="assets">
+	<texture path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_security_door_df" unload="true"/>
+	<texture path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_security_door_nm" unload="true"/>
+	<add from_db="true" path="units/world/props/gym/stn_prop_locker/stn_prop_locker" type="unit">
+		<material_config path="units/world/props/gym/stn_prop_locker/stn_prop_locker"/>
+		<object path="units/world/props/gym/stn_prop_locker/stn_prop_locker"/>
+		<unit path="units/world/props/gym/stn_prop_locker/stn_prop_locker"/>
+	</add>
+	<add from_db="true" path="units/payday2/props/stn_prop_armory_shelf_ammo/stn_prop_armory_shelf_ammo" type="unit">
+		<material_config path="units/payday2/props/stn_prop_armory_shelf_ammo/stn_prop_armory_shelf_ammo"/>
+		<object path="units/payday2/props/stn_prop_armory_shelf_ammo/stn_prop_armory_shelf_ammo"/>
+		<sequence_manager path="units/payday2/props/stn_prop_armory_shelf_ammo/stn_prop_armory_shelf_ammo"/>
+		<unit path="units/payday2/props/stn_prop_armory_shelf_ammo/stn_prop_armory_shelf_ammo"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_security_door" type="unit">
+		<material_config path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_security_door"/>
+		<object path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_security_door"/>
+		<sequence_manager path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_security_door"/>
+		<unit path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_security_door"/>
+	</add>
+	<add from_db="true" path="units/payday2/pickups/gen_pku_keychain_cessna/gen_pku_keychain_cessna" type="unit">
+		<object path="units/payday2/pickups/gen_pku_keychain_cessna/gen_pku_keychain_cessna"/>
+		<sequence_manager path="units/payday2/pickups/gen_pku_keychain_cessna/gen_pku_keychain_cessna"/>
+		<unit path="units/payday2/pickups/gen_pku_keychain_cessna/gen_pku_keychain_cessna"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_ceiling_tile_explosion_4x4m" type="unit">
+		<unit path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_ceiling_tile_explosion_4x4m"/>
+		<object path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_ceiling_tile_explosion_4x4m"/>
+		<sequence_manager path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_ceiling_tile_explosion_4x4m"/>
+		<unit path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_ceiling_tile_debris"/>
+		<object path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_ceiling_tile_debris"/>
+		<sequence_manager path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_ceiling_tile_debris"/>
+		<material_config path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_ceiling_tile"/>
+		<physic_effect path="physic_effects/push_sphere_unit"/>
+	</add>
+	<add from_db="true" path="units/payday2/equipment/gen_pku_gas_can/gen_pku_gas_can" type="unit">
+		<material_config path="units/payday2/equipment/gen_pku_gas_can/gen_pku_gas_can"/>
+		<object path="units/payday2/equipment/gen_pku_gas_can/gen_pku_gas_can"/>
+		<sequence_manager path="units/payday2/equipment/gen_pku_gas_can/gen_pku_gas_can"/>
+		<unit path="units/payday2/equipment/gen_pku_gas_can/gen_pku_gas_can"/>
+	</add>
+	<add from_db="true" path="units/payday2/pickups/gen_pku_crowbar/gen_pku_crowbar" type="unit">
+		<object path="units/payday2/pickups/gen_pku_crowbar/gen_pku_crowbar"/>
+		<sequence_manager path="units/payday2/pickups/gen_pku_crowbar/gen_pku_crowbar"/>
+		<unit path="units/payday2/pickups/gen_pku_crowbar/gen_pku_crowbar"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_wall_door_4m_b" type="unit">
+		<material_config path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_lobby"/>
+		<object path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_wall_door_4m_b"/>
+		<unit path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_wall_door_4m_b"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_armory" type="unit">
+		<material_config path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_armory"/>
+		<object path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_armory"/>
+		<unit path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_armory"/>
+	</add>
+	<cooked_physics path="units/weapon_walls/crate_mysterybox"/>
+	<material_config path="units/weapon_walls/crate_mysterybox"/>
+	<model path="units/weapon_walls/crate_mysterybox"/>
+	<object path="units/weapon_walls/crate_mysterybox"/>
+	<unit path="units/weapon_walls/crate_mysterybox"/>
+	<texture path="units/weapon_walls/wpn_falcon"/>
+	<cooked_physics path="units/weapon_walls/wpn_falcon"/>
+	<material_config path="units/weapon_walls/wpn_falcon"/>
+	<model path="units/weapon_walls/wpn_falcon"/>
+	<object path="units/weapon_walls/wpn_falcon"/>
+	<unit path="units/weapon_walls/wpn_falcon"/>
+	<texture path="units/weapon_walls/wpn_joceline"/>
+	<cooked_physics path="units/weapon_walls/wpn_joceline"/>
+	<material_config path="units/weapon_walls/wpn_joceline"/>
+	<model path="units/weapon_walls/wpn_joceline"/>
+	<object path="units/weapon_walls/wpn_joceline"/>
+	<unit path="units/weapon_walls/wpn_joceline"/>
+	<texture path="units/weapon_walls/wpn_m14"/>
+	<cooked_physics path="units/weapon_walls/wpn_m14"/>
+	<material_config path="units/weapon_walls/wpn_m14"/>
+	<model path="units/weapon_walls/wpn_m14"/>
+	<object path="units/weapon_walls/wpn_m14"/>
+	<unit path="units/weapon_walls/wpn_m14"/>
+	<texture path="units/weapon_walls/wpn_mp9"/>
+	<cooked_physics path="units/weapon_walls/wpn_mp9"/>
+	<material_config path="units/weapon_walls/wpn_mp9"/>
+	<model path="units/weapon_walls/wpn_mp9"/>
+	<object path="units/weapon_walls/wpn_mp9"/>
+	<unit path="units/weapon_walls/wpn_mp9"/>
+	<texture path="units/weapon_walls/wpn_msr"/>
+	<cooked_physics path="units/weapon_walls/wpn_msr"/>
+	<material_config path="units/weapon_walls/wpn_msr"/>
+	<model path="units/weapon_walls/wpn_msr"/>
+	<object path="units/weapon_walls/wpn_msr"/>
+	<unit path="units/weapon_walls/wpn_msr"/>
+	<texture path="units/weapon_walls/code"/>
+	<cooked_physics path="units/weapon_walls/code"/>
+	<material_config path="units/weapon_walls/code"/>
+	<model path="units/weapon_walls/code"/>
+	<object path="units/weapon_walls/code"/>
+	<unit path="units/weapon_walls/code"/>
+</table>
