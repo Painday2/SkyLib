@@ -2,7 +2,7 @@ SkyLib.CODZ = SkyLib.CODZ or class()
 SkyLib.CODZ.INITIALIZED = false
 
 function SkyLib.CODZ:init(custom_rules)
-    self._starting_money = custom_rules and custom_rules.mod_start_money or 500
+    self._starting_money = custom_rules and custom_rules.mod_start_money or 5000
     self._pregame_music = custom_rules and custom_rules.mod_pregame_music or nil
     self._gameover_music = custom_rules and custom_rules.mod_gameover_music or nil
     self._victory_music = custom_rules and custom_rules.mod_victory_music or nil
@@ -177,7 +177,7 @@ function SkyLib.CODZ:_init_hooks()
         "classes/Gamemodes/Sora/CODZ/Hooks/CopDamage",
         "classes/Gamemodes/Sora/CODZ/Hooks/CoreUnit",
         "classes/Gamemodes/Sora/CODZ/Hooks/EnemyManager",
-        --"classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
+        "classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBase",
         "classes/Gamemodes/Sora/CODZ/Hooks/GroupAIStateBesiege",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDManager",
         "classes/Gamemodes/Sora/CODZ/Hooks/HUDManagerPD2",
@@ -441,6 +441,13 @@ function SkyLib.CODZ:check_contours()
 			self:_create_last_enemies_outline()
 		end
 	end
+end
+
+function SkyLib.CODZ:create_good_end()
+    managers.hud:init_ending_screen()
+    SkyLib:wait(2, function()
+        managers.statistics:send_zm_stats()
+    end)
 end
 
 function SkyLib.CODZ:_increase_wave()
