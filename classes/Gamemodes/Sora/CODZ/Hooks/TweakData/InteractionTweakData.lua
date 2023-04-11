@@ -820,7 +820,7 @@ SkyHook:Post(InteractionTweakData, "init", function(self, tweak_data)
 		mystery_box = true,
 		points_cost = 950,
 		action_text_id = "zm_buy_weapon",
-		start_active = false,
+		start_active = true,
         --TODO: fix this by rotating the interact point 180 in model
 		--axis = "y",
 		timer = 0.5
